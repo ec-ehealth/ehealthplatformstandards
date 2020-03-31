@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="be-beproductorservice-value-set"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>ValueSet productor service</h2><div><p>NIHDI codes for use to describe eAgreement products or services in the MyCareNet eAgreement flows.</p>
+</div><ul><li>Include all codes defined in <a href="NIHDILegalPhysiotherapyFa.html"><code>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/NIHDILegalPhysiotherapyFa</code></a></li></ul></div>
+  </text>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-beproductorservice-value-set"/>
+  <version value="0.1.0"/>
+  <name value="BeProductorServiceNihdiEAgreement"/>
+  <title value="ValueSet productor service"/>
+  <status value="active"/>
+  <date value="2020-03-31T08:44:59+02:00"/>
+  <publisher value="eHealth Platform"/>
+  <contact>
+    <name value="Etienne Cantineau"/>
+    <telecom>
+      <system value="email"/>
+      <value value="etienne.cantineau@ehealth.fgov.be"/>
+    </telecom>
+  </contact>
+  <description value="NIHDI codes for use to describe eAgreement products or services in the MyCareNet eAgreement flows."/>
+  <compose>
+    <include>
+      <system value="https://www.ehealth.fgov.be/standards/fhir/CodeSystem/NIHDILegalPhysiotherapyFa"/>
+    </include>
+  </compose>
+</ValueSet>
