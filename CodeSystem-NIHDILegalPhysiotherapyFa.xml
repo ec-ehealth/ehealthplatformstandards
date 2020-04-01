@@ -8,11 +8,11 @@ The codes are not defined here. Consult the cookbooks on mycarenet.be for concre
 </div><p>This code system https://www.ehealth.fgov.be/standards/fhir/CodeSystem/NIHDILegalPhysiotherapyFa defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Definition</b></td></tr></table></div>
   </text>
   <url value="https://www.ehealth.fgov.be/standards/fhir/CodeSystem/NIHDILegalPhysiotherapyFa"/>
-  <version value="0.1.0"/>
+  <version value="1.0.0"/>
   <name value="NIHDILegalPhysiotherapyFa"/>
   <title value="CodeSystem NIHDILegalPhysiotherapyFa"/>
   <status value="active"/>
-  <date value="2020-03-31T08:44:59+02:00"/>
+  <date value="2020-04-01T09:14:57+02:00"/>
   <publisher value="eHealth Platform"/>
   <contact>
     <name value="Etienne Cantineau"/>

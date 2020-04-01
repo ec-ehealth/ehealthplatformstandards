@@ -13,11 +13,11 @@
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>CodeSystem NIHDILegalPhysiotherapyFa</h2><div><p>Legal pathology codes as defined by NIHDI to be used in the pathology registration flows of MyCareNet. These values are managed by NIHDI.\nThe codes are not defined here. Consult the cookbooks on mycarenet.be for concrete usage intstrcutions.</p>\n</div><p>This code system https://www.ehealth.fgov.be/standards/fhir/CodeSystem/NIHDILegalPhysiotherapyFa defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Definition</b></td></tr></table></div>"
   ];
   fhir:CodeSystem.url [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/NIHDILegalPhysiotherapyFa"];
-  fhir:CodeSystem.version [ fhir:value "0.1.0"];
+  fhir:CodeSystem.version [ fhir:value "1.0.0"];
   fhir:CodeSystem.name [ fhir:value "NIHDILegalPhysiotherapyFa"];
   fhir:CodeSystem.title [ fhir:value "CodeSystem NIHDILegalPhysiotherapyFa"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2020-03-31T08:44:59+02:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2020-04-01T09:14:57+02:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "eHealth Platform"];
   fhir:CodeSystem.contact [
      fhir:index 0;

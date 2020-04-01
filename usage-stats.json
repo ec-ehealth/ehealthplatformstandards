@@ -1,6 +1,6 @@
 {
-  "package": "The Core Belgian Federal FHIR Profiles",
-  "version": "0.1.0",
+  "package": "BeCoreImplementationGuide",
+  "version": "1.0.0",
   "fhirVersion": "4.0.1",
   "extensions": [],
   "profiles": {
@@ -8,6 +8,12 @@
       {
         "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/Bemycareneteagreementdemand",
         "title": "My CareNet eAgreement Demand Bundle BE profile"
+      }
+    ],
+    "Patient": [
+      {
+        "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient",
+        "title": "Patient core BE profile"
       }
     ],
     "Claim": [
@@ -26,12 +32,6 @@
       {
         "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/beorganization",
         "title": "Organization core BE profile"
-      }
-    ],
-    "Patient": [
-      {
-        "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/bepatient",
-        "title": "Patient core BE profile"
       }
     ],
     "Practitioner": [

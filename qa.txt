@@ -1,0 +1,64 @@
+﻿BeCoreImplementationGuide : Validation Results
+=========================================
+
+err = 0, warn = 16, info = 0
+IG Publisher Version: v1.0.76-SNAPSHOT
+Generated Wed Apr 01 09:15:41 CEST 2020. FHIR version 4.0.1 for BeCoreImplementationGuide#1.0.0 (canonical = https://www.ehealth.fgov.be/standards/fhir)
+
+ Build Errors : 16 / 0
+ C:\Sushi\Belgium profiles - IG eHealth\build\input\ImplementationGuide-BeCoreImplementationGuide : 0 / 0
+ C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\structuredefinition-Bemycareneteagreementdemand : 0 / 1
+ C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\structuredefinition-be-patient : 0 / 1
+ C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\structuredefinition-beaddress : 0 / 1
+ C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\structuredefinition-bemycarenetclaim : 0 / 1
+ C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\structuredefinition-bemycareneteagreementmessageheader : 0 / 1
+ C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\structuredefinition-beorganization : 0 / 1
+ C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\structuredefinition-bepractitioner : 0 / 1
+ C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\structuredefinition-bepractitionerrole : 0 / 1
+ C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\codesystem-Cdcivilstate : 0 / 0
+ C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\codesystem-Cdcontactperson : 0 / 0
+ C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\codesystem-NIHDILegalPhysiotherapyFa : 0 / 0
+ C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\valueset-be-beproductorservice-value-set : 0 / 0
+ C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\valueset-be-civilstate-value-set : 0 / 0
+ C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\valueset-be-contactperson-value-set : 0 / 0
+</table>
+== n/a ==
+ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\Bemycareneteagreementdemand.html#/html/body/div/div/div/div/div/p/a at Line 1641, column 41: The link 'Bemycareneteagreementdemand.sch' for "Schematron" cannot be resolved
+ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\be-patient.html#/html/body/div/div/div/div/div/p/a at Line 905, column 41: The link 'be-patient.sch' for "Schematron" cannot be resolved
+ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\beaddress.html#/html/body/div/div/div/div/div/p/a at Line 387, column 41: The link 'beaddress.sch' for "Schematron" cannot be resolved
+ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\bemycarenetclaim.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 244, column 893: The link 'bemycarenetclaim-definitions.html#Claim.supportingInfo.category.coding' for "coding" cannot be resolved (valid targets: 254 targets)
+ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\bemycarenetclaim.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 251, column 880: The link 'bemycarenetclaim-definitions.html#Claim.supportingInfo.category.coding' for "coding" cannot be resolved (valid targets: 254 targets)
+ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\bemycarenetclaim.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 850, column 893: The link 'bemycarenetclaim-definitions.html#Claim.supportingInfo.category.coding' for "coding" cannot be resolved (valid targets: 254 targets)
+ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\bemycarenetclaim.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 857, column 880: The link 'bemycarenetclaim-definitions.html#Claim.supportingInfo.category.coding' for "coding" cannot be resolved (valid targets: 254 targets)
+ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\bemycarenetclaim.html#/html/body/div/div/div/div/div/p/a at Line 1411, column 41: The link 'bemycarenetclaim.sch' for "Schematron" cannot be resolved
+ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\bemycareneteagreementmessageheader.html#/html/body/div/div/div/div/div/p/a at Line 539, column 41: The link 'bemycareneteagreementmessageheader.sch' for "Schematron" cannot be resolved
+ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\beorganization.html#/html/body/div/div/div/div/div/p/a at Line 447, column 41: The link 'beorganization.sch' for "Schematron" cannot be resolved
+ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\bepractitioner.html#/html/body/div/div/div/div/div/p/a at Line 451, column 41: The link 'bepractitioner.sch' for "Schematron" cannot be resolved
+ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\bepractitionerrole.html#/html/body/div/div/div/div/div/p/a at Line 487, column 41: The link 'bepractitionerrole.sch' for "Schematron" cannot be resolved
+ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\index.html#/html/body/div/div/div/div/div/div/li/li/p/a at Line 174, column 68: The link 'artifacts.html#terminology' for "Value Sets and Code Systems" cannot be resolved (valid targets: [segment-header, publish-box, segment-post-footer, ehealth-logo, standards-logo, 1, 2, 3, 4, belgium-logo, hl7-status, stripe, segment-footer, hl7-nav, segment-navbar, segment-content, segment-breadcrumb])
+ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\index.html#/html/body/div/div/div/div/div/div/li/li/p/a at Line 175, column 68: The link 'artifacts.html#core-profiles' for "Core profiles" cannot be resolved (valid targets: [segment-header, publish-box, segment-post-footer, ehealth-logo, standards-logo, 1, 2, 3, 4, belgium-logo, hl7-status, stripe, segment-footer, hl7-nav, segment-navbar, segment-content, segment-breadcrumb])
+ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\index.html#/html/body/div/div/div/div/div/div/li/li/p/a at Line 176, column 68: The link 'artifacts.html#conditions' for "Functional profiles" cannot be resolved (valid targets: [segment-header, publish-box, segment-post-footer, ehealth-logo, standards-logo, 1, 2, 3, 4, belgium-logo, hl7-status, stripe, segment-footer, hl7-nav, segment-navbar, segment-content, segment-breadcrumb])
+ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\index.html#/html/body/div/div/div/div/div/div/li/li/p/a at Line 177, column 65: The link 'artifacts.html#examples' for "Examples" cannot be resolved (valid targets: [segment-header, publish-box, segment-post-footer, ehealth-logo, standards-logo, 1, 2, 3, 4, belgium-logo, hl7-status, stripe, segment-footer, hl7-nav, segment-navbar, segment-content, segment-breadcrumb])
+== C:\Sushi\Belgium profiles - IG eHealth\build\input\ImplementationGuide-BeCoreImplementationGuide.json ==
+== C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\StructureDefinition-Bemycareneteagreementdemand.json ==
+WARNING: https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/Bemycareneteagreementdemand: The Implementation Guide contains no examples for this profile
+== C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\StructureDefinition-be-patient.json ==
+WARNING: https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient: The Implementation Guide contains no examples for this profile
+== C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\StructureDefinition-beaddress.json ==
+WARNING: https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/beaddress: The Implementation Guide contains no examples for this data type profile
+== C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\StructureDefinition-bemycarenetclaim.json ==
+WARNING: https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/bemycarenetclaim: The Implementation Guide contains no examples for this profile
+== C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\StructureDefinition-bemycareneteagreementmessageheader.json ==
+WARNING: https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/bemycareneteagreementmessageheader: The Implementation Guide contains no examples for this profile
+== C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\StructureDefinition-beorganization.json ==
+WARNING: https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/beorganization: The Implementation Guide contains no examples for this profile
+== C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\StructureDefinition-bepractitioner.json ==
+WARNING: https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/bepractitioner: The Implementation Guide contains no examples for this profile
+== C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\StructureDefinition-bepractitionerrole.json ==
+WARNING: https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/bepractitionerrole: The Implementation Guide contains no examples for this profile
+== C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\CodeSystem-Cdcivilstate.json ==
+== C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\CodeSystem-Cdcontactperson.json ==
+== C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\CodeSystem-NIHDILegalPhysiotherapyFa.json ==
+== C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\ValueSet-be-beproductorservice-value-set.json ==
+== C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\ValueSet-be-civilstate-value-set.json ==
+== C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\ValueSet-be-contactperson-value-set.json ==

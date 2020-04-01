@@ -9,11 +9,11 @@ for the Belgian specific code.</p>
 </div><ul><li>Include codes from <a href="http://hl7.org/fhir/R4/v3/MaritalStatus/cs.html"><code>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</code></a> where concept  is-a  <a href="http://hl7.org/fhir/R4/v3/MaritalStatus/cs.html#v3-MaritalStatus-A">A</a></li><li>Include codes from <a href="http://hl7.org/fhir/R4/v3/MaritalStatus/cs.html"><code>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</code></a> where concept  is-a  <a href="http://hl7.org/fhir/R4/v3/MaritalStatus/cs.html#v3-MaritalStatus-D">D</a></li><li>Include codes from <a href="http://hl7.org/fhir/R4/v3/MaritalStatus/cs.html"><code>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</code></a> where concept  is-a  <a href="http://hl7.org/fhir/R4/v3/MaritalStatus/cs.html#v3-MaritalStatus-M">M</a></li><li>Include codes from <a href="http://hl7.org/fhir/R4/v3/MaritalStatus/cs.html"><code>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</code></a> where concept  is-a  <a href="http://hl7.org/fhir/R4/v3/MaritalStatus/cs.html#v3-MaritalStatus-U">U</a></li><li>Include codes from <a href="http://hl7.org/fhir/R4/v3/MaritalStatus/cs.html"><code>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</code></a> where concept  is-a  <a href="http://hl7.org/fhir/R4/v3/MaritalStatus/cs.html#v3-MaritalStatus-W">W</a></li><li>Include all codes defined in <a href="Cdcivilstate.html"><code>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/Cdcivilstate</code></a></li></ul><p>This value set includes codes based on the following rules:</p></div>
   </text>
   <url value="https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-civilstate-value-set"/>
-  <version value="0.1.0"/>
+  <version value="1.0.0"/>
   <name value="BeCivilState"/>
   <title value="ValueSet civil state"/>
   <status value="active"/>
-  <date value="2020-03-31T08:44:59+02:00"/>
+  <date value="2020-04-01T09:14:57+02:00"/>
   <publisher value="eHealth Platform"/>
   <contact>
     <name value="Etienne Cantineau"/>

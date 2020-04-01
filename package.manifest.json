@@ -1,6 +1,6 @@
 {
-  "version": "0.1.0",
+  "version": "1.0.0",
   "fhirVersion": "[4.0.1]",
-  "date": "20200331084429",
-  "name": "The Core Belgian Federal FHIR Profiles"
+  "date": "20200401091438",
+  "name": "BeCoreImplementationGuide"
 }

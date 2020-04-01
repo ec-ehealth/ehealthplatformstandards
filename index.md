@@ -1,25 +1,23 @@
-<div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd" >
+﻿<div xmlns="http://www.w3.org/1999/xhtml" xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <a name="scope"> </a>
   <h3>Scope</h3>
 	
-	<p>eHealth Platform publishes specific profiles and underlying valuesets, codesystems etc. and implementation guidelines as a federal initiative.</p>
-	<!-- -->
+	<p>With this FHIR Implementation Guide eHealth Platform publishes guidelines, specific profiles and underlying valuesets, codesystems etc. as a federal initiative.</p>
+	  <!--  -->
 <p>As such, they are the base Belgian federal profiles and projects can use them, refer to them and build on them in their use cases.</p>
 
-<blockquote class="stu-note">
+  <!-- <blockquote class="stu-note">
   <a name="dstu"></a>
-<strong>This documentation and set of artefacts are still undergoing development, and they are NOT to be taken by implementations.</strong>
 Contact <a href="mailto:message-structure@ehealth.fgov.be">message-structure@ehealth.fgov.be</a> for any questions concerning this IG.
 The working groups of HL7 and the different interested parties are still defining the process, the requirements and the tooling. This is a placeholder or sandbox for content, and not any recommendation or preview, so there is no guarantee of completeness or correctness.
- THIS IS ONLY A TESTING PAGE!!!!!! NO OFFICIAL CONTENT HERE - THANK YOU FOR VISITING!!!!!!!!!!!!!!
-</blockquote>
+</blockquote> -->
 <p>
-When needed, eHealth Platform does these publications as downloadable technical profiles according to the FHIR specs as published on this page. 
-As a general rule, the FHIR standard is to be used as close as possible to the basic HL7 published standard. 
+When needed, eHealth Platform does these publications as downloadable technical profiles according to the FHIR specs as published in this Implementation Guide. 
+As a general rule, the FHIR standard is used as close as possible to the basic HL7 published standard. 
 As a consequence of this, when needed eHealth Platform will only focus on nuances and clarifications 
 between the Belgian initiative and the published standard.</p>
 
-  <p>There will be no federal Belgian publications replacing or describing the overall
+  <p>There will be no Belgian federal publications replacing or describing the overall
 base specifications of the HL7 FHIR standard – the pages by HL7 are considered to be sufficient.</p>
 
 
@@ -35,32 +33,30 @@ rules.</p>
 
 
 <p>The Belgian profiling effort consists of an iterative approach. This
-first iteration (2019) contains a basic set of profiles and guidelines on the resources
-Patient, Practitioner, PractitionerRole, Organization, Observation, Provenance
-and AllergyIntolerance.</p>
+first iteration (Q4 2019) contains a basic set of guidelines, profiled resources and their supporting coding systems and valuesets.
+In this first set, the profiled resources are Patient, Practitioner, PractitionerRole, Organization, Observation, Provenance and AllergyIntolerance.</p>
 
 <p>Other profiles will be created and/or validated and added to this Belgian
-set on on ongoing use case driven basis. </p>
+set on an ongoing use case driven basis. </p>
 	
 
 
 This specification contains: 
 	<ul>
-    <!--<li>Logical Models (in a future iteration), which describe describing several data sets and elements used in Belgian systems</li>-->
-<li>Generalities and guidance (on this page and on the <a href="guidance.html">Guidance page</a>)</li>    
-    <li>Value Sets and code systems, containing specific Belgian value sets</li>
-    <li>Core profiles, which constitute the basis for Belgium FHIR profiling and can be reused in other profiles </li>
-    <li>Functional Profiles, split by functional area for ease of access</li>
-	<li>Examples, usage note: every effort has been made to ensure that the examples are correct and useful, but they are not a normative part of the specification.</li>
+      <!-- <li>Logical Models (in a future iteration), which describe describing several data sets and elements used in Belgian systems</li> -->
+<li>Generalities on this page</li> 
+<li>Content specifics on the <a href="guidance.html">Guidance page</a></li>   
+    <li><a name="32f6716a-f990-46ab-a440-0641cccb407c">​</a><a href="artifacts.html#terminology">Value Sets and Code Systems</a>, containing specific Belgian value sets</li>
+    <li><a name="340a39cd-2388-49e9-aa20-12f339ecee0c">​</a><a href="artifacts.html#core-profiles">Core profiles</a>, which constitute the basis for Belgian FHIR profiling and can be reused in other profiles </li>
+    <li><a name="ed95d80a-544d-4739-b15e-37f0bc9cb1c0">​</a><a href="artifacts.html#conditions">Functional profiles</a>, split by functional area for ease of access</li>
+	<li><a name="108b3023-c4e9-4652-923e-8fbc448ba6e3">​</a><a href="artifacts.html#examples">Examples</a>, note every effort has been made to ensure the examples are correct and useful, but they are not a normative part of the specification.</li>
 	</ul>
-	<!--
-	<ul>
+	  <!-- <ul>
     <li><a href="http://fhir.ivlab.ilabt.imec.be/be-fhir/artifacts.html#communication">Care coordination and Communication</a>, </li>
     <li><a href="http://fhir.ivlab.ilabt.imec.be/be-fhir/artifacts.html#communication">Patient conditions</a></li>
 	</ul>
     <li>Required <a href="http://fhir.ivlab.ilabt.imec.be/be-fhir/artifacts.html#logical-models">Capability Statements</a> for systems to implement</li>
-	</ul>
-	-->
+	</ul> -->
 	<p>
     The implementation guide is structured to allow implementers to pick and choose the capabilities they need and combine them as necessary.
 	</p>
@@ -74,13 +70,13 @@ This specification contains:
   </p>
 	<p>
     A <a href="toc.html">Table of Contents</a> page is provided that lists all of the pages defined as part of this implementation guide.  (Do be aware 
-    that some pages have multiple tabs.)  A table of contents is also available for the full <a href="{{site.data.fhir.path}}toc.html">FHIR specification</a> 
+    that some pages have multiple tabs.)  A table of contents is also available for the full <a href="http://hl7.org/fhir/R4/toc.html">FHIR specification</a> 
     if you really want to read absolutely everything.  There's also an <a href="artifacts.html">Artifact index</a> that lists all formal FHIR artifacts 
     defined within this implementation guide. General guidelines can be found on the <a href="guidance.html">Guidance page</a> that lists all guidelines and attention points that are not explicitely linked to a specific profile. The <i>Support</i> menu provides links to the HL7 standards used by this implementation guide as well as
-    providing a <a href="downloads.html">downloads</a> link to retrieve a local copy of this implementation guide and/or particular subsets of it.
+    providing a <a href="downloads.html">Downloads</a> link to retrieve a local copy of this implementation guide and/or particular subsets of it.
   </p>
 	<p>
-    Bread-crumb navigation is provided in the gray bar just below the menu at the top of each page, allowing
+    Breadcrumb navigation is provided in the gray bar just below the menu at the top of each page, allowing
     easy navigation back to the main page.
   </p>
 
@@ -100,10 +96,7 @@ This specification contains:
 	<a name="disclaimer"> </a>
 	<h3>Disclaimer</h3>
 	<p>
-  
-    The specification herewith documented is a draft working specification, and may not be used for any implementation purposes. 
-    This draft is provided without warranty of completeness or consistency, and the official publication supersedes this draft.
-    No liability can be inferred from the use or misuse of this specification, or its consequences.
+    The specification herewith documented is the first published version of the Belgian profiling initiative. Every effort has been made to remain within the FHIR standard and to be enabling in nature above all else. It is expected there will be further clarifications and guidelines in the future. Should an implementation encounter ambiguities due to this guide, your feedback is most welcome on <a href="mailto:message-structure@ehealth.fgov.be">message-structure@ehealth.fgov.be</a>. 
   </p>
   
 </div>
