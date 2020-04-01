@@ -3,7 +3,7 @@
 
 err = 0, warn = 16, info = 0
 IG Publisher Version: v1.0.76-SNAPSHOT
-Generated Wed Apr 01 09:32:10 CEST 2020. FHIR version 4.0.1 for BeCoreImplementationGuide#1.0.0 (canonical = https://www.ehealth.fgov.be/standards/fhir)
+Generated Wed Apr 01 10:08:28 CEST 2020. FHIR version 4.0.1 for BeCoreImplementationGuide#1.0.0 (canonical = https://www.ehealth.fgov.be/standards/fhir)
 
  Build Errors : 16 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\ImplementationGuide-BeCoreImplementationGuide : 0 / 0
