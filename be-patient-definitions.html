@@ -571,7 +571,7 @@ Many systems use this property to mark as non-current patients, such as those th
 <p>It is RECOMMENDED to include an address when available. When needed to express the availablity of a Patient at home (e.g. only Wednesdays), another solution will be defined.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: ele-1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Address">Address</a>(<a href="beaddress.html" title="[CanonicalType[https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/beaddress]]">BeAddress</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Address">Address</a>(<a href="be-address.html" title="[CanonicalType[https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-address]]">BeAddress</a>)</td></tr>
   <tr><td>Requirements</td><td><p>May need to keep track of patient addresses for contacting, billing or reporting requirements and also to help with identification.</p>
 </td></tr>
   <tr><td>Comments</td><td><p>Note: address is intended to describe postal addresses for administrative purposes, not to describe absolute geographical coordinates. Postal addresses are often used as proxies for physical locations (also see the resource).</p>
@@ -807,7 +807,7 @@ Please note this is an element of the Reference datatype. This means when it is 
 Alternatively, there is only an internal reference and the GP is included as a ‘contained resource’ (cfr. the HL7 FHIR specifications in what cases this applies).</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..*</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="beorganization.html" title="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/beorganization">BeOrganization</a> | <a href="bepractitioner.html" title="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/bepractitioner">BePractitioner</a> | <a href="bepractitionerrole.html" title="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/bepractitionerrole">BePractitionerRole</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="be-organization.html" title="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization">BeOrganization</a> | <a href="be-practitioner.html" title="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner">BePractitioner</a> | <a href="be-practitionerrole.html" title="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitionerrole">BePractitionerRole</a>)</td></tr>
   <tr><td title="Other names by which this resource/element may be known">Alternate Names</td><td>careProvider</td></tr>
   <tr><td>Comments</td><td><p>This may be the primary care provider (in a GP context), or it may be a patient nominated care manager in a community/disability setting, or even organization that will provide people to perform the care provider roles.
 It is not to be used to record Care Teams, these should be in a CareTeam resource that may be linked to the CarePlan or EpisodeOfCare resources. Multiple GPs may be recorded against the patient for various reasons, such as a student that has his home GP listed along with the GP at university during the school semesters, or a &quot;fly-in/fly-out&quot; worker that has the onsite GP also included with his home GP to remain aware of medical issues.</p>
@@ -825,7 +825,7 @@ the general practioner referenced here. Note in the FHIR base definition of this
 Alternatively, there is only an internal reference and the Organization is included as a ‘contained resource’ (cfr. the HL7 FHIR specifications in what cases this applies).</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="beorganization.html" title="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/beorganization">BeOrganization</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="be-organization.html" title="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization">BeOrganization</a>)</td></tr>
   <tr><td>Requirements</td><td><p>Need to know who recognizes this patient record, manages and updates it.</p>
 </td></tr>
   <tr><td>Comments</td><td><p>There is only one managing organization for a specific patient record. Other organizations will have their own Patient record, and may use the Link property to join the records together (or a Person resource which can include confidence ratings for the association).</p>

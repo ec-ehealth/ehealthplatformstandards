@@ -10,7 +10,7 @@
   "name": "BeCoreImplementationGuide",
   "title": "BeCoreImplementationGuide",
   "status": "active",
-  "date": "2020-04-01T09:14:57+02:00",
+  "date": "2020-04-01T09:31:27+02:00",
   "publisher": "eHealth Platform",
   "contact": [
     {
@@ -249,14 +249,14 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "beaddress.html"
+            "valueUri": "be-address.html"
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/beaddress"
+          "reference": "StructureDefinition/be-address"
         },
         "name": "Address core BE profile",
-        "description": "desc",
+        "description": "Belgain federal profile on address, to provide the possibility in the 'line' element to provide a seperate streetname, housenumber and postal box. It is always RECOMMENDED to give these elements seperately.",
         "exampleBoolean": false
       },
       {
@@ -267,11 +267,11 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "bemycarenetclaim.html"
+            "valueUri": "be-mycarenetclaim.html"
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/bemycarenetclaim"
+          "reference": "StructureDefinition/be-mycarenetclaim"
         },
         "name": "My CareNet Claim BE profile",
         "description": "Claim profile for use in the different eAgreement flow from MyCareNet.",
@@ -285,11 +285,11 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "Bemycareneteagreementdemand.html"
+            "valueUri": "Be-mycareneteagreementdemand.html"
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/Bemycareneteagreementdemand"
+          "reference": "StructureDefinition/Be-mycareneteagreementdemand"
         },
         "name": "My CareNet eAgreement Demand Bundle BE profile",
         "description": "The profile for the demand for an agreement.",
@@ -303,11 +303,11 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "bemycareneteagreementmessageheader.html"
+            "valueUri": "be-mycareneteagreementmessageheader.html"
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/bemycareneteagreementmessageheader"
+          "reference": "StructureDefinition/be-mycareneteagreementmessageheader"
         },
         "name": "My CareNet eAgreement MessageHeader BE profile",
         "description": "This is the generic MessageHeader profile for use in the different eAgreement flows from MyCareNet.",
@@ -321,14 +321,14 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "beorganization.html"
+            "valueUri": "be-organization.html"
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/beorganization"
+          "reference": "StructureDefinition/be-organization"
         },
         "name": "Organization core BE profile",
-        "description": "desc",
+        "description": "Belgian federal profile for an organization. Initially based on the functional description of the NIHDI.",
         "exampleBoolean": false
       },
       {
@@ -357,14 +357,14 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "bepractitioner.html"
+            "valueUri": "be-practitioner.html"
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/bepractitioner"
+          "reference": "StructureDefinition/be-practitioner"
         },
         "name": "Practitioner core BE profile",
-        "description": "desc",
+        "description": "Belgian federal profile for a practitioner. Initially based on the functional description of the NIHDI.",
         "exampleBoolean": false
       },
       {
@@ -375,14 +375,14 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "bepractitionerrole.html"
+            "valueUri": "be-practitionerrole.html"
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/bepractitionerrole"
+          "reference": "StructureDefinition/be-practitionerrole"
         },
         "name": "Practitioner Role core BE profile",
-        "description": "desc",
+        "description": "Belgian federal profile for a practitioner role. Initially based on the functional description of the NIHDI.",
         "exampleBoolean": false
       },
       {
@@ -505,13 +505,13 @@
           "generation": "markdown"
         },
         {
-          "nameUrl": "guidance.html",
-          "title": "Guidance",
+          "nameUrl": "downloads.html",
+          "title": "Downloads",
           "generation": "markdown"
         },
         {
-          "nameUrl": "downloads.html",
-          "title": "Downloads",
+          "nameUrl": "guidance.html",
+          "title": "Guidance",
           "generation": "markdown"
         }
       ]

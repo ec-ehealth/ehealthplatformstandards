@@ -153,7 +153,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 
 It is RECOMMENDED to include deceased information when applicable","If there's no value in the instance, it means there is no statement on whether or not the individual is deceased. Most systems will interpret the absence of a value as a sign of the person being alive.","The fact that a patient is deceased influences the clinical process. Also, in human communication and relation management it is necessary to know whether the person is alive.","","","","","","","",,,,,"",,,,"Patient.deceased[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","player[classCode=PSN|ANM and determinerCode=INSTANCE]/deceasedInd, player[classCode=PSN|ANM and determinerCode=INSTANCE]/deceasedTime","n/a","PID-30  (bool) and PID-29 (datetime)"
-"Patient.address","","","",0,*,"","","","Address {[CanonicalType[https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/beaddress]]} {[]}
+"Patient.address","","","",0,*,"","","","Address {[CanonicalType[https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-address]]} {[]}
 ","An address expressed using postal conventions (as opposed to GPS or other location definition formats)","An address for the individual.
 
 It is RECOMMENDED to include an address when available. When needed to express the availablity of a Patient at home (e.g. only Wednesdays), another solution will be defined.","Note: address is intended to describe postal addresses for administrative purposes, not to describe absolute geographical coordinates. Postal addresses are often used as proxies for physical locations (also see the resource).
@@ -253,7 +253,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Language preference indicator","Indicates whether or not the patient prefers this language (over other languages he masters up a certain level).","This language is specifically identified for communicating healthcare information.","People that master multiple languages up to certain level may prefer one or more, i.e. feel more confident in communicating in a particular language making other languages sort of a fall back method.","","","","","","","",,,,,"",,,,"Patient.communication.preferred",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","preferenceInd",".preferenceInd","PID-15"
 "Patient.generalPractitioner","","careProvider
-","",0,*,"","","","Reference {[]} {[CanonicalType[https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/beorganization], CanonicalType[https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/bepractitioner], CanonicalType[https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/bepractitionerrole]]}
+","",0,*,"","","","Reference {[]} {[CanonicalType[https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization], CanonicalType[https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner], CanonicalType[https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitionerrole]]}
 ","Patient's nominated primary care provider","Patient's nominated care provider.
 
 Take note this does not automatically imply any legal form of therapeutic link or consent relationship with this GP. It is RECOMMENDED to include this when available if the flow is in any way medical. 
@@ -269,7 +269,7 @@ The general practioner is in many KMEHR use cases known by being the author or s
 (Consult the published definition on the HL7 webpage) It is also possible in KMEHR to add a general practioner via an item and using the correct value from CD-ITEM. That way is functionally closer to 
 the general practioner referenced here. Note in the FHIR base definition of this element that the scope of this element might be wider then just the general practicioner.","","","","","","","","",,,,,"",,,,"Patient.generalPractitioner",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","subjectOf.CareEvent.performer.AssignedEntity","n/a","PD1-4"
-"Patient.managingOrganization","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/beorganization]]}
+"Patient.managingOrganization","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization]]}
 ","Organization that is the custodian of the patient record","Organization that is the custodian of the patient record.
 
 This SHOULD be included when available.Please note this is an element of the Reference datatype. This means when it is available it will contain either a relative or absolute URL where this Organization can be found. 

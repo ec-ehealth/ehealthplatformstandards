@@ -17,7 +17,7 @@
   fhir:CodeSystem.name [ fhir:value "Cdcivilstate"];
   fhir:CodeSystem.title [ fhir:value "CodeSystem CD-CIVILSTATE"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2020-04-01T09:14:57+02:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2020-04-01T09:31:27+02:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "eHealth Platform"];
   fhir:CodeSystem.contact [
      fhir:index 0;

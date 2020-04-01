@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "BeCoreImplementationGuide"];
   fhir:ImplementationGuide.title [ fhir:value "BeCoreImplementationGuide"];
   fhir:ImplementationGuide.status [ fhir:value "active"];
-  fhir:ImplementationGuide.date [ fhir:value "2020-04-01T09:14:57+02:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2020-04-01T09:31:27+02:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "eHealth Platform"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -238,14 +238,14 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "beaddress.html" ]
+         fhir:Extension.valueUri [ fhir:value "be-address.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/beaddress>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/beaddress" ]
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-address>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/be-address" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Address core BE profile" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "desc" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Belgain federal profile on address, to provide the possibility in the 'line' element to provide a seperate streetname, housenumber and postal box. It is always RECOMMENDED to give these elements seperately." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 1;
@@ -256,11 +256,11 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "bemycarenetclaim.html" ]
+         fhir:Extension.valueUri [ fhir:value "be-mycarenetclaim.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/bemycarenetclaim>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/bemycarenetclaim" ]
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-mycarenetclaim>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/be-mycarenetclaim" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "My CareNet Claim BE profile" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Claim profile for use in the different eAgreement flow from MyCareNet." ];
@@ -274,11 +274,11 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "Bemycareneteagreementdemand.html" ]
+         fhir:Extension.valueUri [ fhir:value "Be-mycareneteagreementdemand.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/Bemycareneteagreementdemand>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/Bemycareneteagreementdemand" ]
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/Be-mycareneteagreementdemand>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Be-mycareneteagreementdemand" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "My CareNet eAgreement Demand Bundle BE profile" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The profile for the demand for an agreement." ];
@@ -292,11 +292,11 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "bemycareneteagreementmessageheader.html" ]
+         fhir:Extension.valueUri [ fhir:value "be-mycareneteagreementmessageheader.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/bemycareneteagreementmessageheader>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/bemycareneteagreementmessageheader" ]
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-mycareneteagreementmessageheader>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/be-mycareneteagreementmessageheader" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "My CareNet eAgreement MessageHeader BE profile" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "This is the generic MessageHeader profile for use in the different eAgreement flows from MyCareNet." ];
@@ -310,14 +310,14 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "beorganization.html" ]
+         fhir:Extension.valueUri [ fhir:value "be-organization.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/beorganization>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/beorganization" ]
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/be-organization" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Organization core BE profile" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "desc" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Belgian federal profile for an organization. Initially based on the functional description of the NIHDI." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 5;
@@ -346,14 +346,14 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "bepractitioner.html" ]
+         fhir:Extension.valueUri [ fhir:value "be-practitioner.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/bepractitioner>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/bepractitioner" ]
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/be-practitioner" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Practitioner core BE profile" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "desc" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Belgian federal profile for a practitioner. Initially based on the functional description of the NIHDI." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 7;
@@ -364,14 +364,14 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "bepractitionerrole.html" ]
+         fhir:Extension.valueUri [ fhir:value "be-practitionerrole.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/bepractitionerrole>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/bepractitionerrole" ]
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitionerrole>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/be-practitionerrole" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Practitioner Role core BE profile" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "desc" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Belgian federal profile for a practitioner role. Initially based on the functional description of the NIHDI." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 8;
@@ -493,13 +493,13 @@
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
          fhir:index 1;
-         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "guidance.html" ];
-         fhir:ImplementationGuide.definition.page.title [ fhir:value "Guidance" ];
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "downloads.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Downloads" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
          fhir:index 2;
-         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "downloads.html" ];
-         fhir:ImplementationGuide.definition.page.title [ fhir:value "Downloads" ];
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "guidance.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Guidance" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ]
      ];

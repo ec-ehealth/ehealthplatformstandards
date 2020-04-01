@@ -6,8 +6,26 @@
   "profiles": {
     "Bundle": [
       {
-        "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/Bemycareneteagreementdemand",
+        "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/Be-mycareneteagreementdemand",
         "title": "My CareNet eAgreement Demand Bundle BE profile"
+      }
+    ],
+    "Claim": [
+      {
+        "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-mycarenetclaim",
+        "title": "My CareNet Claim BE profile"
+      }
+    ],
+    "MessageHeader": [
+      {
+        "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-mycareneteagreementmessageheader",
+        "title": "My CareNet eAgreement MessageHeader BE profile"
+      }
+    ],
+    "Organization": [
+      {
+        "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization",
+        "title": "Organization core BE profile"
       }
     ],
     "Patient": [
@@ -16,33 +34,15 @@
         "title": "Patient core BE profile"
       }
     ],
-    "Claim": [
-      {
-        "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/bemycarenetclaim",
-        "title": "My CareNet Claim BE profile"
-      }
-    ],
-    "MessageHeader": [
-      {
-        "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/bemycareneteagreementmessageheader",
-        "title": "My CareNet eAgreement MessageHeader BE profile"
-      }
-    ],
-    "Organization": [
-      {
-        "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/beorganization",
-        "title": "Organization core BE profile"
-      }
-    ],
     "Practitioner": [
       {
-        "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/bepractitioner",
+        "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner",
         "title": "Practitioner core BE profile"
       }
     ],
     "PractitionerRole": [
       {
-        "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/bepractitionerrole",
+        "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitionerrole",
         "title": "Practitioner Role core BE profile"
       }
     ]

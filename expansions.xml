@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="a8180861-47d4-44de-8d90-37079f5c40c9"/>
+  <id value="3dbc82ac-1475-4d09-8c9b-c1a93b1c7b87"/>
   <meta>
-    <lastUpdated value="2020-04-01T09:14:57.798+02:00"/>
+    <lastUpdated value="2020-04-01T09:31:27.690+02:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -193,7 +193,7 @@
         <name value="BeCivilState"/>
         <title value="ValueSet civil state"/>
         <status value="active"/>
-        <date value="2020-04-01T09:14:57+02:00"/>
+        <date value="2020-04-01T09:31:27+02:00"/>
         <publisher value="eHealth Platform"/>
         <contact>
           <name value="Etienne Cantineau"/>
@@ -204,8 +204,8 @@
         </contact>
         <description value="Codes supported by eHealth Platform differentiating types of civil state. This valueset supports the Belgian federal FHIR profiling effort. &#xA;Whenever possible add a code from http://terminology.hl7.org/CodeSystem/v3-MaritalStatus for international interoperability but also use https://www.ehealth.fgov.be/standards/fhir/CodeSystem/CD-CIVILSTATE &#xA;for the Belgian specific code."/>
         <expansion>
-          <identifier value="urn:uuid:fea8d0ca-2aff-491c-82c9-f8a7f1325bf0"/>
-          <timestamp value="2020-04-01T09:15:08+02:00"/>
+          <identifier value="urn:uuid:b40e28cf-6edc-46ce-a7ca-3def6c70d5f0"/>
+          <timestamp value="2020-04-01T09:31:37+02:00"/>
           <total value="17"/>
           <parameter>
             <name value="excludeNested"/>
@@ -612,7 +612,7 @@
         <name value="BeContactPerson"/>
         <title value="ValueSet contact person"/>
         <status value="active"/>
-        <date value="2020-04-01T09:14:57+02:00"/>
+        <date value="2020-04-01T09:31:27+02:00"/>
         <publisher value="eHealth Platform"/>
         <contact>
           <name value="Etienne Cantineau"/>
@@ -623,8 +623,8 @@
         </contact>
         <description value="Maximum valuest to define category of a contact person, using the HL7 values and the Belgian CD-CONTACT-PERSON values."/>
         <expansion>
-          <identifier value="urn:uuid:449846e4-d771-4bb1-9e3a-84866f4032a9"/>
-          <timestamp value="2020-04-01T09:15:08+02:00"/>
+          <identifier value="urn:uuid:2784659b-99f3-442f-8720-8f4460747db5"/>
+          <timestamp value="2020-04-01T09:31:37+02:00"/>
           <total value="30"/>
           <parameter>
             <name value="excludeNested"/>
@@ -822,7 +822,7 @@
         <name value="BeProductorServiceNihdiEAgreement"/>
         <title value="ValueSet productor service"/>
         <status value="active"/>
-        <date value="2020-04-01T09:14:57+02:00"/>
+        <date value="2020-04-01T09:31:27+02:00"/>
         <publisher value="eHealth Platform"/>
         <contact>
           <name value="Etienne Cantineau"/>
@@ -833,8 +833,8 @@
         </contact>
         <description value="NIHDI codes for use to describe eAgreement products or services in the MyCareNet eAgreement flows."/>
         <expansion>
-          <identifier value="urn:uuid:3b97425a-c573-4bf9-a467-6b97d7181fc3"/>
-          <timestamp value="2020-04-01T09:15:08+02:00"/>
+          <identifier value="urn:uuid:220ea6a1-69a4-478c-994e-58a78f086683"/>
+          <timestamp value="2020-04-01T09:31:37+02:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>

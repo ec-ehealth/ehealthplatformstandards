@@ -11,7 +11,7 @@
   <name value="BeCoreImplementationGuide"/>
   <title value="BeCoreImplementationGuide"/>
   <status value="active"/>
-  <date value="2020-04-01T09:14:57+02:00"/>
+  <date value="2020-04-01T09:31:27+02:00"/>
   <publisher value="eHealth Platform"/>
   <contact>
     <name value="Etienne Cantineau"/>
@@ -158,13 +158,13 @@
         <valueString value="StructureDefinition:complex-type"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="beaddress.html"/>
+        <valueUri value="be-address.html"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/beaddress"/>
+        <reference value="StructureDefinition/be-address"/>
       </reference>
       <name value="Address core BE profile"/>
-      <description value="desc"/>
+      <description value="Belgain federal profile on address, to provide the possibility in the &#39;line&#39; element to provide a seperate streetname, housenumber and postal box. It is always RECOMMENDED to give these elements seperately."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -172,10 +172,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="bemycarenetclaim.html"/>
+        <valueUri value="be-mycarenetclaim.html"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/bemycarenetclaim"/>
+        <reference value="StructureDefinition/be-mycarenetclaim"/>
       </reference>
       <name value="My CareNet Claim BE profile"/>
       <description value="Claim profile for use in the different eAgreement flow from MyCareNet."/>
@@ -186,10 +186,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Bemycareneteagreementdemand.html"/>
+        <valueUri value="Be-mycareneteagreementdemand.html"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/Bemycareneteagreementdemand"/>
+        <reference value="StructureDefinition/Be-mycareneteagreementdemand"/>
       </reference>
       <name value="My CareNet eAgreement Demand Bundle BE profile"/>
       <description value="The profile for the demand for an agreement."/>
@@ -200,10 +200,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="bemycareneteagreementmessageheader.html"/>
+        <valueUri value="be-mycareneteagreementmessageheader.html"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/bemycareneteagreementmessageheader"/>
+        <reference value="StructureDefinition/be-mycareneteagreementmessageheader"/>
       </reference>
       <name value="My CareNet eAgreement MessageHeader BE profile"/>
       <description value="This is the generic MessageHeader profile for use in the different eAgreement flows from MyCareNet."/>
@@ -214,13 +214,13 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="beorganization.html"/>
+        <valueUri value="be-organization.html"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/beorganization"/>
+        <reference value="StructureDefinition/be-organization"/>
       </reference>
       <name value="Organization core BE profile"/>
-      <description value="desc"/>
+      <description value="Belgian federal profile for an organization. Initially based on the functional description of the NIHDI."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -242,13 +242,13 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="bepractitioner.html"/>
+        <valueUri value="be-practitioner.html"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/bepractitioner"/>
+        <reference value="StructureDefinition/be-practitioner"/>
       </reference>
       <name value="Practitioner core BE profile"/>
-      <description value="desc"/>
+      <description value="Belgian federal profile for a practitioner. Initially based on the functional description of the NIHDI."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -256,13 +256,13 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="bepractitionerrole.html"/>
+        <valueUri value="be-practitionerrole.html"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/bepractitionerrole"/>
+        <reference value="StructureDefinition/be-practitionerrole"/>
       </reference>
       <name value="Practitioner Role core BE profile"/>
-      <description value="desc"/>
+      <description value="Belgian federal profile for a practitioner role. Initially based on the functional description of the NIHDI."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -359,13 +359,13 @@
         <generation value="markdown"/>
       </page>
       <page>
-        <nameUrl value="guidance.html"/>
-        <title value="Guidance"/>
+        <nameUrl value="downloads.html"/>
+        <title value="Downloads"/>
         <generation value="markdown"/>
       </page>
       <page>
-        <nameUrl value="downloads.html"/>
-        <title value="Downloads"/>
+        <nameUrl value="guidance.html"/>
+        <title value="Guidance"/>
         <generation value="markdown"/>
       </page>
     </page>
