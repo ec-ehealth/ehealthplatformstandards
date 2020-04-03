@@ -46,10 +46,10 @@ This specification contains:
       <!-- <li>Logical Models (in a future iteration), which describe describing several data sets and elements used in Belgian systems</li> -->
 <li>Generalities on this page</li> 
 <li>Content specifics on the <a href="guidance.html">Guidance page</a></li>   
-    <li><a name="32f6716a-f990-46ab-a440-0641cccb407c">​</a><a href="artifacts.html#terminology">Value Sets and Code Systems</a>, containing specific Belgian value sets</li>
-    <li><a name="340a39cd-2388-49e9-aa20-12f339ecee0c">​</a><a href="artifacts.html#core-profiles">Core profiles</a>, which constitute the basis for Belgian FHIR profiling and can be reused in other profiles </li>
-    <li><a name="ed95d80a-544d-4739-b15e-37f0bc9cb1c0">​</a><a href="artifacts.html#conditions">Functional profiles</a>, split by functional area for ease of access</li>
-	<li><a name="108b3023-c4e9-4652-923e-8fbc448ba6e3">​</a><a href="artifacts.html#examples">Examples</a>, note every effort has been made to ensure the examples are correct and useful, but they are not a normative part of the specification.</li>
+    <li><a name="32f6716a-f990-46ab-a440-0641cccb407c">​</a><a href="artifacts.html#3">Value Sets and Code Systems</a>, containing specific Belgian value sets</li>
+    <li><a name="340a39cd-2388-49e9-aa20-12f339ecee0c">​</a><a href="artifacts.html#1">Core profiles</a>, which constitute the basis for Belgian FHIR profiling and can be reused in other profiles </li>
+    <li><a name="ed95d80a-544d-4739-b15e-37f0bc9cb1c0">​</a><a href="artifacts.html#2">Functional profiles</a>, split by functional area for ease of access</li>
+	<li><a name="108b3023-c4e9-4652-923e-8fbc448ba6e3">​</a><a href="artifacts.html#5">Examples</a>, note every effort has been made to ensure the examples are correct and useful, but they are not a normative part of the specification.</li>
 	</ul>
 	  <!-- <ul>
     <li><a href="http://fhir.ivlab.ilabt.imec.be/be-fhir/artifacts.html#communication">Care coordination and Communication</a>, </li>

@@ -3,9 +3,9 @@
 
 err = 0, warn = 14, info = 0
 IG Publisher Version: v1.0.77-SNAPSHOT
-Generated Fri Apr 03 08:24:32 CEST 2020. FHIR version 4.0.1 for BeCoreImplementationGuide#1.0.0 (canonical = https://www.ehealth.fgov.be/standards/fhir)
+Generated Fri Apr 03 11:35:58 CEST 2020. FHIR version 4.0.1 for BeCoreImplementationGuide#1.0.0 (canonical = https://www.ehealth.fgov.be/standards/fhir)
 
- Build Errors : 131 / 0
+ Build Errors : 127 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\ImplementationGuide-BeCoreImplementationGuide : 0 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\patient-patient1 : 0 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\structuredefinition-Be-mycareneteagreementdemand : 0 / 1
@@ -17,7 +17,7 @@ Generated Fri Apr 03 08:24:32 CEST 2020. FHIR version 4.0.1 for BeCoreImplementa
  C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\structuredefinition-be-practitioner : 0 / 1
  C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\structuredefinition-be-practitionerrole : 0 / 1
  C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\codesystem-cd-civilstate : 0 / 0
- C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\codesystem-cd-contactperson : 0 / 0
+ C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\codesystem-cd-contact-person : 0 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\codesystem-nihdi-legal-physiotherapy-fa : 0 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\valueset-be-beproductorservice-value-set : 0 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\valueset-be-civilstate-value-set : 0 / 0
@@ -122,18 +122,14 @@ ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\cd-civilstate.html: T
 ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\cd-civilstate.json.html: The html source does not contain the publish box
 ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\cd-civilstate.ttl.html: The html source does not contain the publish box
 ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\cd-civilstate.xml.html: The html source does not contain the publish box
-ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\cd-contactperson.html: The html source does not contain the publish box
-ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\cd-contactperson.json.html: The html source does not contain the publish box
-ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\cd-contactperson.ttl.html: The html source does not contain the publish box
-ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\cd-contactperson.xml.html: The html source does not contain the publish box
+ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\cd-contact-person.html: The html source does not contain the publish box
+ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\cd-contact-person.json.html: The html source does not contain the publish box
+ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\cd-contact-person.ttl.html: The html source does not contain the publish box
+ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\cd-contact-person.xml.html: The html source does not contain the publish box
 ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\changes.html: The html source does not contain the publish box
 ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\downloads.html: The html source does not contain the publish box
 ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\guidance.html: The html source does not contain the publish box
 ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\index.html: The html source does not contain the publish box
-ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\index.html#/html/body/div/div/div/div/div/div/li/li/p/a at Line 174, column 68: The link 'artifacts.html#terminology' for "Value Sets and Code Systems" cannot be resolved (valid targets: [segment-header, publish-box, segment-post-footer, ehealth-logo, standards-logo, 1, 2, 3, 4, belgium-logo, 5, hl7-status, stripe, segment-footer, hl7-nav, segment-navbar, segment-content, segment-breadcrumb])
-ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\index.html#/html/body/div/div/div/div/div/div/li/li/p/a at Line 175, column 68: The link 'artifacts.html#core-profiles' for "Core profiles" cannot be resolved (valid targets: [segment-header, publish-box, segment-post-footer, ehealth-logo, standards-logo, 1, 2, 3, 4, belgium-logo, 5, hl7-status, stripe, segment-footer, hl7-nav, segment-navbar, segment-content, segment-breadcrumb])
-ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\index.html#/html/body/div/div/div/div/div/div/li/li/p/a at Line 176, column 68: The link 'artifacts.html#conditions' for "Functional profiles" cannot be resolved (valid targets: [segment-header, publish-box, segment-post-footer, ehealth-logo, standards-logo, 1, 2, 3, 4, belgium-logo, 5, hl7-status, stripe, segment-footer, hl7-nav, segment-navbar, segment-content, segment-breadcrumb])
-ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\index.html#/html/body/div/div/div/div/div/div/li/li/p/a at Line 177, column 65: The link 'artifacts.html#examples' for "Examples" cannot be resolved (valid targets: [segment-header, publish-box, segment-post-footer, ehealth-logo, standards-logo, 1, 2, 3, 4, belgium-logo, 5, hl7-status, stripe, segment-footer, hl7-nav, segment-navbar, segment-content, segment-breadcrumb])
 ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\nihdi-legal-physiotherapy-fa.html: The html source does not contain the publish box
 ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\nihdi-legal-physiotherapy-fa.json.html: The html source does not contain the publish box
 ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\nihdi-legal-physiotherapy-fa.ttl.html: The html source does not contain the publish box
@@ -173,7 +169,7 @@ WARNING: https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-pract
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\StructureDefinition-be-practitionerrole.json ==
 WARNING: https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitionerrole: The Implementation Guide contains no examples for this profile
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\CodeSystem-cd-civilstate.json ==
-== C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\CodeSystem-cd-contactperson.json ==
+== C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\CodeSystem-cd-contact-person.json ==
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\CodeSystem-nihdi-legal-physiotherapy-fa.json ==
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\ValueSet-be-beproductorservice-value-set.json ==
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\ValueSet-be-civilstate-value-set.json ==

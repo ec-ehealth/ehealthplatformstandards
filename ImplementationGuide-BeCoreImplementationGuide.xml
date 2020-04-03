@@ -11,7 +11,7 @@
   <name value="TheCoreBelgianFederalFHIRProfiles"/>
   <title value="The Core Belgian Federal FHIR Profiles"/>
   <status value="active"/>
-  <date value="2020-04-03T08:23:51+02:00"/>
+  <date value="2020-04-03T11:35:15+02:00"/>
   <publisher value="eHealth Platform"/>
   <contact>
     <name value="Etienne Cantineau"/>
@@ -326,12 +326,12 @@
         <valueString value="CodeSystem"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="cd-contactperson.html"/>
+        <valueUri value="cd-contact-person.html"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/cd-contactperson"/>
+        <reference value="CodeSystem/cd-contact-person"/>
       </reference>
-      <name value="CodeSystem CD-CONTACTPERSON"/>
+      <name value="CodeSystem CD-CONTACT-PERSON"/>
       <description value="Contact person"/>
       <exampleBoolean value="false"/>
     </resource>

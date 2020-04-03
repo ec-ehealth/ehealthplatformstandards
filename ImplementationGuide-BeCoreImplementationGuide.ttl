@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "TheCoreBelgianFederalFHIRProfiles"];
   fhir:ImplementationGuide.title [ fhir:value "The Core Belgian Federal FHIR Profiles"];
   fhir:ImplementationGuide.status [ fhir:value "active"];
-  fhir:ImplementationGuide.date [ fhir:value "2020-04-03T08:23:51+02:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2020-04-03T11:35:15+02:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "eHealth Platform"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -454,13 +454,13 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "cd-contactperson.html" ]
+         fhir:Extension.valueUri [ fhir:value "cd-contact-person.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contactperson>;
-         fhir:Reference.reference [ fhir:value "CodeSystem/cd-contactperson" ]
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contact-person>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/cd-contact-person" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CodeSystem CD-CONTACTPERSON" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CodeSystem CD-CONTACT-PERSON" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Contact person" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [

@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "6a4a8b56-14c8-4e77-870d-3de3dd2c6d42",
+  "id" : "0c62c90e-0efd-47e6-b2ea-abcabb8490ab",
   "meta" : {
-    "lastUpdated" : "2020-04-03T08:23:51.499+02:00"
+    "lastUpdated" : "2020-04-03T11:35:15.076+02:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -19,7 +19,7 @@
       "name" : "BeCivilState",
       "title" : "ValueSet civil state",
       "status" : "active",
-      "date" : "2020-04-03T08:23:51+02:00",
+      "date" : "2020-04-03T11:35:15+02:00",
       "publisher" : "eHealth Platform",
       "contact" : [{
         "name" : "Etienne Cantineau",
@@ -30,8 +30,8 @@
       }],
       "description" : "Codes supported by eHealth Platform differentiating types of civil state. This valueset supports the Belgian federal FHIR profiling effort. \nWhenever possible add a code from http://terminology.hl7.org/CodeSystem/v3-MaritalStatus for international interoperability but also use https://www.ehealth.fgov.be/standards/fhir/CodeSystem/CD-CIVILSTATE \nfor the Belgian specific code.",
       "expansion" : {
-        "identifier" : "urn:uuid:4d9e4933-eed4-47a8-b9a9-6df7733b30dc",
-        "timestamp" : "2020-04-03T08:24:01+02:00",
+        "identifier" : "urn:uuid:870b205e-23f8-49b2-a671-96deb9d42309",
+        "timestamp" : "2020-04-03T11:35:25+02:00",
         "total" : 17,
         "parameter" : [{
           "name" : "excludeNested",
@@ -140,14 +140,14 @@
       "id" : "be-contactperson-value-set",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 30 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px\"/>Expansion based on http://terminology.hl7.org/CodeSystem/v2-0131 version 2.9<br/>Expansion based on http://terminology.hl7.org/CodeSystem/v2-0131 version 2.9, https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contactperson version 1.0.0<table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v2-0131-C\"> </a><a href=\"http://hl7.org/fhir/R4/v2/0131/index.html#v2-0131-C\">C</a></td><td>http://terminology.hl7.org/CodeSystem/v2-0131</td><td>Emergency Contact</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v2-0131-E\"> </a><a href=\"http://hl7.org/fhir/R4/v2/0131/index.html#v2-0131-E\">E</a></td><td>http://terminology.hl7.org/CodeSystem/v2-0131</td><td>Employer</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v2-0131-F\"> </a><a href=\"http://hl7.org/fhir/R4/v2/0131/index.html#v2-0131-F\">F</a></td><td>http://terminology.hl7.org/CodeSystem/v2-0131</td><td>Federal Agency</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v2-0131-I\"> </a><a href=\"http://hl7.org/fhir/R4/v2/0131/index.html#v2-0131-I\">I</a></td><td>http://terminology.hl7.org/CodeSystem/v2-0131</td><td>Insurance Company</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v2-0131-N\"> </a><a href=\"http://hl7.org/fhir/R4/v2/0131/index.html#v2-0131-N\">N</a></td><td>http://terminology.hl7.org/CodeSystem/v2-0131</td><td>Next-of-Kin</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v2-0131-S\"> </a><a href=\"http://hl7.org/fhir/R4/v2/0131/index.html#v2-0131-S\">S</a></td><td>http://terminology.hl7.org/CodeSystem/v2-0131</td><td>State Agency</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v2-0131-U\"> </a><a href=\"http://hl7.org/fhir/R4/v2/0131/index.html#v2-0131-U\">U</a></td><td>http://terminology.hl7.org/CodeSystem/v2-0131</td><td>Unknown</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-cd-contactperson-father\"> </a><a href=\"cd-contactperson.html#cd-contactperson-father\">father</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contactperson</td><td>father</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-cd-contactperson-mother\"> </a><a href=\"cd-contactperson.html#cd-contactperson-mother\">mother</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contactperson</td><td>mother</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-cd-contactperson-child\"> </a><a href=\"cd-contactperson.html#cd-contactperson-child\">child</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contactperson</td><td>child</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-cd-contactperson-spouse\"> </a><a href=\"cd-contactperson.html#cd-contactperson-spouse\">spouse</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contactperson</td><td>spouse</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-cd-contactperson-husband\"> </a><a href=\"cd-contactperson.html#cd-contactperson-husband\">husband</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contactperson</td><td>husband</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-cd-contactperson-partner\"> </a><a href=\"cd-contactperson.html#cd-contactperson-partner\">partner</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contactperson</td><td>partner</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-cd-contactperson-brother\"> </a><a href=\"cd-contactperson.html#cd-contactperson-brother\">brother</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contactperson</td><td>brother</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-cd-contactperson-sister\"> </a><a href=\"cd-contactperson.html#cd-contactperson-sister\">sister</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contactperson</td><td>sister</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-cd-contactperson-brotherinlaw\"> </a><a href=\"cd-contactperson.html#cd-contactperson-brotherinlaw\">brotherinlaw</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contactperson</td><td>brotherinlaw</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-cd-contactperson-tutor\"> </a><a href=\"cd-contactperson.html#cd-contactperson-tutor\">tutor</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contactperson</td><td>tutor</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-cd-contactperson-notary\"> </a><a href=\"cd-contactperson.html#cd-contactperson-notary\">notary</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contactperson</td><td>notary</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-cd-contactperson-lawyer\"> </a><a href=\"cd-contactperson.html#cd-contactperson-lawyer\">lawyer</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contactperson</td><td>lawyer</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-cd-contactperson-employer\"> </a><a href=\"cd-contactperson.html#cd-contactperson-employer\">employer</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contactperson</td><td>employer</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-cd-contactperson-grandparent\"> </a><a href=\"cd-contactperson.html#cd-contactperson-grandparent\">grandparent</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contactperson</td><td>grandparent</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-cd-contactperson-son\"> </a><a href=\"cd-contactperson.html#cd-contactperson-son\">son</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contactperson</td><td>son</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-cd-contactperson-daughter\"> </a><a href=\"cd-contactperson.html#cd-contactperson-daughter\">daughter</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contactperson</td><td>daughter</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-cd-contactperson-grandchild\"> </a><a href=\"cd-contactperson.html#cd-contactperson-grandchild\">grandchild</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contactperson</td><td>grandchild</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-cd-contactperson-neighbour\"> </a><a href=\"cd-contactperson.html#cd-contactperson-neighbour\">neighbour</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contactperson</td><td>neighbour</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-cd-contactperson-stepson\"> </a><a href=\"cd-contactperson.html#cd-contactperson-stepson\">stepson</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contactperson</td><td>stepson</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-cd-contactperson-stepdaughter\"> </a><a href=\"cd-contactperson.html#cd-contactperson-stepdaughter\">stepdaughter</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contactperson</td><td>stepdaughter</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-cd-contactperson-stepfather\"> </a><a href=\"cd-contactperson.html#cd-contactperson-stepfather\">stepfather</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contactperson</td><td>stepfather</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-cd-contactperson-stepmother\"> </a><a href=\"cd-contactperson.html#cd-contactperson-stepmother\">stepmother</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contactperson</td><td>stepmother</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-cd-contactperson-sisterinlaw\"> </a><a href=\"cd-contactperson.html#cd-contactperson-sisterinlaw\">sisterinlaw</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contactperson</td><td>sisterinlaw</td><td/></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 30 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px\"/>Expansion based on http://terminology.hl7.org/CodeSystem/v2-0131 version 2.9<br/>Expansion based on https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contact-person version 1.0.0, http://terminology.hl7.org/CodeSystem/v2-0131 version 2.9<table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v2-0131-C\"> </a><a href=\"http://hl7.org/fhir/R4/v2/0131/index.html#v2-0131-C\">C</a></td><td>http://terminology.hl7.org/CodeSystem/v2-0131</td><td>Emergency Contact</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v2-0131-E\"> </a><a href=\"http://hl7.org/fhir/R4/v2/0131/index.html#v2-0131-E\">E</a></td><td>http://terminology.hl7.org/CodeSystem/v2-0131</td><td>Employer</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v2-0131-F\"> </a><a href=\"http://hl7.org/fhir/R4/v2/0131/index.html#v2-0131-F\">F</a></td><td>http://terminology.hl7.org/CodeSystem/v2-0131</td><td>Federal Agency</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v2-0131-I\"> </a><a href=\"http://hl7.org/fhir/R4/v2/0131/index.html#v2-0131-I\">I</a></td><td>http://terminology.hl7.org/CodeSystem/v2-0131</td><td>Insurance Company</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v2-0131-N\"> </a><a href=\"http://hl7.org/fhir/R4/v2/0131/index.html#v2-0131-N\">N</a></td><td>http://terminology.hl7.org/CodeSystem/v2-0131</td><td>Next-of-Kin</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v2-0131-S\"> </a><a href=\"http://hl7.org/fhir/R4/v2/0131/index.html#v2-0131-S\">S</a></td><td>http://terminology.hl7.org/CodeSystem/v2-0131</td><td>State Agency</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---terminology.hl7.org-CodeSystem-v2-0131-U\"> </a><a href=\"http://hl7.org/fhir/R4/v2/0131/index.html#v2-0131-U\">U</a></td><td>http://terminology.hl7.org/CodeSystem/v2-0131</td><td>Unknown</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-cd-contact-person-father\"> </a><a href=\"cd-contact-person.html#cd-contact-person-father\">father</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contact-person</td><td>father</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-cd-contact-person-mother\"> </a><a href=\"cd-contact-person.html#cd-contact-person-mother\">mother</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contact-person</td><td>mother</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-cd-contact-person-child\"> </a><a href=\"cd-contact-person.html#cd-contact-person-child\">child</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contact-person</td><td>child</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-cd-contact-person-spouse\"> </a><a href=\"cd-contact-person.html#cd-contact-person-spouse\">spouse</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contact-person</td><td>spouse</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-cd-contact-person-husband\"> </a><a href=\"cd-contact-person.html#cd-contact-person-husband\">husband</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contact-person</td><td>husband</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-cd-contact-person-partner\"> </a><a href=\"cd-contact-person.html#cd-contact-person-partner\">partner</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contact-person</td><td>partner</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-cd-contact-person-brother\"> </a><a href=\"cd-contact-person.html#cd-contact-person-brother\">brother</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contact-person</td><td>brother</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-cd-contact-person-sister\"> </a><a href=\"cd-contact-person.html#cd-contact-person-sister\">sister</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contact-person</td><td>sister</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-cd-contact-person-brotherinlaw\"> </a><a href=\"cd-contact-person.html#cd-contact-person-brotherinlaw\">brotherinlaw</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contact-person</td><td>brotherinlaw</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-cd-contact-person-tutor\"> </a><a href=\"cd-contact-person.html#cd-contact-person-tutor\">tutor</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contact-person</td><td>tutor</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-cd-contact-person-notary\"> </a><a href=\"cd-contact-person.html#cd-contact-person-notary\">notary</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contact-person</td><td>notary</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-cd-contact-person-lawyer\"> </a><a href=\"cd-contact-person.html#cd-contact-person-lawyer\">lawyer</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contact-person</td><td>lawyer</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-cd-contact-person-employer\"> </a><a href=\"cd-contact-person.html#cd-contact-person-employer\">employer</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contact-person</td><td>employer</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-cd-contact-person-grandparent\"> </a><a href=\"cd-contact-person.html#cd-contact-person-grandparent\">grandparent</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contact-person</td><td>grandparent</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-cd-contact-person-son\"> </a><a href=\"cd-contact-person.html#cd-contact-person-son\">son</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contact-person</td><td>son</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-cd-contact-person-daughter\"> </a><a href=\"cd-contact-person.html#cd-contact-person-daughter\">daughter</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contact-person</td><td>daughter</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-cd-contact-person-grandchild\"> </a><a href=\"cd-contact-person.html#cd-contact-person-grandchild\">grandchild</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contact-person</td><td>grandchild</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-cd-contact-person-neighbour\"> </a><a href=\"cd-contact-person.html#cd-contact-person-neighbour\">neighbour</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contact-person</td><td>neighbour</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-cd-contact-person-stepson\"> </a><a href=\"cd-contact-person.html#cd-contact-person-stepson\">stepson</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contact-person</td><td>stepson</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-cd-contact-person-stepdaughter\"> </a><a href=\"cd-contact-person.html#cd-contact-person-stepdaughter\">stepdaughter</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contact-person</td><td>stepdaughter</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-cd-contact-person-stepfather\"> </a><a href=\"cd-contact-person.html#cd-contact-person-stepfather\">stepfather</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contact-person</td><td>stepfather</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-cd-contact-person-stepmother\"> </a><a href=\"cd-contact-person.html#cd-contact-person-stepmother\">stepmother</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contact-person</td><td>stepmother</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---www.ehealth.fgov.be-standards-fhir-CodeSystem-cd-contact-person-sisterinlaw\"> </a><a href=\"cd-contact-person.html#cd-contact-person-sisterinlaw\">sisterinlaw</a></td><td>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contact-person</td><td>sisterinlaw</td><td/></tr></table></div>"
       },
       "url" : "https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-contactperson-value-set",
       "version" : "1.0.0",
       "name" : "BeContactPerson",
       "title" : "ValueSet contact person",
       "status" : "active",
-      "date" : "2020-04-03T08:23:51+02:00",
+      "date" : "2020-04-03T11:35:15+02:00",
       "publisher" : "eHealth Platform",
       "contact" : [{
         "name" : "Etienne Cantineau",
@@ -158,8 +158,8 @@
       }],
       "description" : "Maximum valuest to define category of a contact person, using the HL7 values and the Belgian CD-CONTACT-PERSON values.",
       "expansion" : {
-        "identifier" : "urn:uuid:bc6ae620-1f33-4e78-86c4-98fd0981a5b0",
-        "timestamp" : "2020-04-03T08:24:01+02:00",
+        "identifier" : "urn:uuid:6085fdf0-2c99-4eeb-8872-cf0bd6946712",
+        "timestamp" : "2020-04-03T11:35:25+02:00",
         "total" : 30,
         "parameter" : [{
           "name" : "excludeNested",
@@ -171,7 +171,7 @@
         },
         {
           "name" : "version",
-          "valueUri" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contactperson|1.0.0"
+          "valueUri" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contact-person|1.0.0"
         }],
         "contains" : [{
           "system" : "http://terminology.hl7.org/CodeSystem/v2-0131",
@@ -209,117 +209,117 @@
           "display" : "Unknown"
         },
         {
-          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contactperson",
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contact-person",
           "code" : "father",
           "display" : "father"
         },
         {
-          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contactperson",
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contact-person",
           "code" : "mother",
           "display" : "mother"
         },
         {
-          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contactperson",
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contact-person",
           "code" : "child",
           "display" : "child"
         },
         {
-          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contactperson",
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contact-person",
           "code" : "spouse",
           "display" : "spouse"
         },
         {
-          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contactperson",
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contact-person",
           "code" : "husband",
           "display" : "husband"
         },
         {
-          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contactperson",
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contact-person",
           "code" : "partner",
           "display" : "partner"
         },
         {
-          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contactperson",
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contact-person",
           "code" : "brother",
           "display" : "brother"
         },
         {
-          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contactperson",
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contact-person",
           "code" : "sister",
           "display" : "sister"
         },
         {
-          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contactperson",
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contact-person",
           "code" : "brotherinlaw",
           "display" : "brotherinlaw"
         },
         {
-          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contactperson",
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contact-person",
           "code" : "tutor",
           "display" : "tutor"
         },
         {
-          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contactperson",
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contact-person",
           "code" : "notary",
           "display" : "notary"
         },
         {
-          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contactperson",
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contact-person",
           "code" : "lawyer",
           "display" : "lawyer"
         },
         {
-          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contactperson",
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contact-person",
           "code" : "employer",
           "display" : "employer"
         },
         {
-          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contactperson",
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contact-person",
           "code" : "grandparent",
           "display" : "grandparent"
         },
         {
-          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contactperson",
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contact-person",
           "code" : "son",
           "display" : "son"
         },
         {
-          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contactperson",
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contact-person",
           "code" : "daughter",
           "display" : "daughter"
         },
         {
-          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contactperson",
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contact-person",
           "code" : "grandchild",
           "display" : "grandchild"
         },
         {
-          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contactperson",
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contact-person",
           "code" : "neighbour",
           "display" : "neighbour"
         },
         {
-          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contactperson",
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contact-person",
           "code" : "stepson",
           "display" : "stepson"
         },
         {
-          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contactperson",
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contact-person",
           "code" : "stepdaughter",
           "display" : "stepdaughter"
         },
         {
-          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contactperson",
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contact-person",
           "code" : "stepfather",
           "display" : "stepfather"
         },
         {
-          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contactperson",
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contact-person",
           "code" : "stepmother",
           "display" : "stepmother"
         },
         {
-          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contactperson",
+          "system" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contact-person",
           "code" : "sisterinlaw",
           "display" : "sisterinlaw"
         }]
@@ -340,7 +340,7 @@
       "name" : "BeProductorServiceNihdiEAgreement",
       "title" : "ValueSet productor service",
       "status" : "active",
-      "date" : "2020-04-03T08:23:51+02:00",
+      "date" : "2020-04-03T11:35:15+02:00",
       "publisher" : "eHealth Platform",
       "contact" : [{
         "name" : "Etienne Cantineau",
@@ -351,8 +351,8 @@
       }],
       "description" : "NIHDI codes for use to describe eAgreement products or services in the MyCareNet eAgreement flows.",
       "expansion" : {
-        "identifier" : "urn:uuid:64ab4cd1-1fbb-4161-a061-7dde7afe5bb9",
-        "timestamp" : "2020-04-03T08:24:01+02:00",
+        "identifier" : "urn:uuid:c7e4ff30-6fe2-433c-8ff5-ceb489298370",
+        "timestamp" : "2020-04-03T11:35:25+02:00",
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
