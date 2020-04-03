@@ -3,14 +3,14 @@
   "id": "be-beproductorservice-value-set",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ValueSet productor service</h2><div><p>NIHDI codes for use to describe eAgreement products or services in the MyCareNet eAgreement flows.</p>\n</div><ul><li>Include all codes defined in <a href=\"NIHDILegalPhysiotherapyFa.html\"><code>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/NIHDILegalPhysiotherapyFa</code></a></li></ul></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ValueSet productor service</h2><div><p>NIHDI codes for use to describe eAgreement products or services in the MyCareNet eAgreement flows.</p>\n</div><ul><li>Include all codes defined in <a href=\"nihdi-legal-physiotherapy-fa.html\"><code>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/nihdi-legal-physiotherapy-fa</code></a></li></ul></div>"
   },
   "url": "https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-beproductorservice-value-set",
   "version": "1.0.0",
   "name": "BeProductorServiceNihdiEAgreement",
   "title": "ValueSet productor service",
   "status": "active",
-  "date": "2020-04-01T10:07:45+02:00",
+  "date": "2020-04-03T08:23:51+02:00",
   "publisher": "eHealth Platform",
   "contact": [
     {
@@ -27,7 +27,7 @@
   "compose": {
     "include": [
       {
-        "system": "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/NIHDILegalPhysiotherapyFa"
+        "system": "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/nihdi-legal-physiotherapy-fa"
       }
     ]
   }

@@ -1,0 +1,24 @@
+{
+  "resourceType": "Patient",
+  "id": "patient1",
+  "meta": {
+    "profile": [
+      "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: patient1</p><p><b>meta</b>: </p><p><b>name</b>: Josephine Nessa La Paradisio </p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1979-12-11</p></div>"
+  },
+  "name": [
+    {
+      "family": "La Paradisio",
+      "given": [
+        "Josephine",
+        "Nessa"
+      ]
+    }
+  ],
+  "gender": "female",
+  "birthDate": "1979-12-11"
+}

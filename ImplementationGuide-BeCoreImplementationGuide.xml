@@ -3,15 +3,15 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="BeCoreImplementationGuide"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>BeCoreImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>https://www.ehealth.fgov.be/standards/fhir/ImplementationGuide/BeCoreImplementationGuide</pre><div><p>The Core Belgian Profiles provide the essential and common requirement for FHIR implementations in Belgium.</p>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>TheCoreBelgianFederalFHIRProfiles</h2><p>The official URL for this implementation guide is: </p><pre>https://www.ehealth.fgov.be/standards/fhir/ImplementationGuide/BeCoreImplementationGuide</pre><div><p>The Core Belgian Profiles provide the essential and common requirement for FHIR implementations in Belgium.</p>
 </div></div>
   </text>
   <url value="https://www.ehealth.fgov.be/standards/fhir/ImplementationGuide/BeCoreImplementationGuide"/>
   <version value="1.0.0"/>
-  <name value="BeCoreImplementationGuide"/>
-  <title value="BeCoreImplementationGuide"/>
+  <name value="TheCoreBelgianFederalFHIRProfiles"/>
+  <title value="The Core Belgian Federal FHIR Profiles"/>
   <status value="active"/>
-  <date value="2020-04-01T10:07:45+02:00"/>
+  <date value="2020-04-03T08:23:51+02:00"/>
   <publisher value="eHealth Platform"/>
   <contact>
     <name value="Etienne Cantineau"/>
@@ -312,10 +312,10 @@
         <valueString value="CodeSystem"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Cdcivilstate.html"/>
+        <valueUri value="cd-civilstate.html"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/Cdcivilstate"/>
+        <reference value="CodeSystem/cd-civilstate"/>
       </reference>
       <name value="CodeSystem CD-CIVILSTATE"/>
       <description value="Civil state in Belgium."/>
@@ -326,10 +326,10 @@
         <valueString value="CodeSystem"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="Cdcontactperson.html"/>
+        <valueUri value="cd-contactperson.html"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/Cdcontactperson"/>
+        <reference value="CodeSystem/cd-contactperson"/>
       </reference>
       <name value="CodeSystem CD-CONTACTPERSON"/>
       <description value="Contact person"/>
@@ -340,14 +340,27 @@
         <valueString value="CodeSystem"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="NIHDILegalPhysiotherapyFa.html"/>
+        <valueUri value="nihdi-legal-physiotherapy-fa.html"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/NIHDILegalPhysiotherapyFa"/>
+        <reference value="CodeSystem/nihdi-legal-physiotherapy-fa"/>
       </reference>
       <name value="CodeSystem NIHDILegalPhysiotherapyFa"/>
       <description value="Legal pathology codes as defined by NIHDI to be used in the pathology registration flows of MyCareNet. These values are managed by NIHDI. &#xD;&#xA;&#x9;The codes are not defined here. Consult the cookbooks on mycarenet.be for concrete usage intstrcutions."/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="patient1.html"/>
+      </extension>
+      <reference>
+        <reference value="Patient/patient1"/>
+      </reference>
+      <name value="Patient 1"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient"/>
     </resource>
     <page>
       <nameUrl value="toc.html"/>
@@ -356,6 +369,11 @@
       <page>
         <nameUrl value="index.html"/>
         <title value="Home"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="changes.html"/>
+        <title value="Changes"/>
         <generation value="markdown"/>
       </page>
       <page>

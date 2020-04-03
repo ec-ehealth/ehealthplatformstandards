@@ -10,14 +10,14 @@
   fhir:Resource.id [ fhir:value "BeCoreImplementationGuide"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>BeCoreImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>https://www.ehealth.fgov.be/standards/fhir/ImplementationGuide/BeCoreImplementationGuide</pre><div><p>The Core Belgian Profiles provide the essential and common requirement for FHIR implementations in Belgium.</p>\n</div></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>TheCoreBelgianFederalFHIRProfiles</h2><p>The official URL for this implementation guide is: </p><pre>https://www.ehealth.fgov.be/standards/fhir/ImplementationGuide/BeCoreImplementationGuide</pre><div><p>The Core Belgian Profiles provide the essential and common requirement for FHIR implementations in Belgium.</p>\n</div></div>"
   ];
   fhir:ImplementationGuide.url [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/ImplementationGuide/BeCoreImplementationGuide"];
   fhir:ImplementationGuide.version [ fhir:value "1.0.0"];
-  fhir:ImplementationGuide.name [ fhir:value "BeCoreImplementationGuide"];
-  fhir:ImplementationGuide.title [ fhir:value "BeCoreImplementationGuide"];
+  fhir:ImplementationGuide.name [ fhir:value "TheCoreBelgianFederalFHIRProfiles"];
+  fhir:ImplementationGuide.title [ fhir:value "The Core Belgian Federal FHIR Profiles"];
   fhir:ImplementationGuide.status [ fhir:value "active"];
-  fhir:ImplementationGuide.date [ fhir:value "2020-04-01T10:07:45+02:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2020-04-03T08:23:51+02:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "eHealth Platform"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -436,11 +436,11 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "Cdcivilstate.html" ]
+         fhir:Extension.valueUri [ fhir:value "cd-civilstate.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.ehealth.fgov.be/standards/fhir/CodeSystem/Cdcivilstate>;
-         fhir:Reference.reference [ fhir:value "CodeSystem/Cdcivilstate" ]
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-civilstate>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/cd-civilstate" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "CodeSystem CD-CIVILSTATE" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Civil state in Belgium." ];
@@ -454,11 +454,11 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "Cdcontactperson.html" ]
+         fhir:Extension.valueUri [ fhir:value "cd-contactperson.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.ehealth.fgov.be/standards/fhir/CodeSystem/Cdcontactperson>;
-         fhir:Reference.reference [ fhir:value "CodeSystem/Cdcontactperson" ]
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contactperson>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/cd-contactperson" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "CodeSystem CD-CONTACTPERSON" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Contact person" ];
@@ -472,15 +472,35 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
-         fhir:Extension.valueUri [ fhir:value "NIHDILegalPhysiotherapyFa.html" ]
+         fhir:Extension.valueUri [ fhir:value "nihdi-legal-physiotherapy-fa.html" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.ehealth.fgov.be/standards/fhir/CodeSystem/NIHDILegalPhysiotherapyFa>;
-         fhir:Reference.reference [ fhir:value "CodeSystem/NIHDILegalPhysiotherapyFa" ]
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/CodeSystem/nihdi-legal-physiotherapy-fa>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/nihdi-legal-physiotherapy-fa" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "CodeSystem NIHDILegalPhysiotherapyFa" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Legal pathology codes as defined by NIHDI to be used in the pathology registration flows of MyCareNet. These values are managed by NIHDI. \r\n	The codes are not defined here. Consult the cookbooks on mycarenet.be for concrete usage intstrcutions." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 14;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Patient" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "patient1.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/Patient/patient1>;
+         fhir:Reference.reference [ fhir:value "Patient/patient1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Patient 1" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient";
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient>
+       ]
      ];
      fhir:ImplementationGuide.definition.page [
        fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "toc.html" ];
@@ -493,11 +513,16 @@
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
          fhir:index 1;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "changes.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Changes" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 2;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "downloads.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Downloads" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
-         fhir:index 2;
+         fhir:index 3;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "guidance.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Guidance" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]

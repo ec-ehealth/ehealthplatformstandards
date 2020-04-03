@@ -3,14 +3,14 @@
   "id": "BeCoreImplementationGuide",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>BeCoreImplementationGuide</h2><p>The official URL for this implementation guide is: </p><pre>https://www.ehealth.fgov.be/standards/fhir/ImplementationGuide/BeCoreImplementationGuide</pre><div><p>The Core Belgian Profiles provide the essential and common requirement for FHIR implementations in Belgium.</p>\n</div></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>TheCoreBelgianFederalFHIRProfiles</h2><p>The official URL for this implementation guide is: </p><pre>https://www.ehealth.fgov.be/standards/fhir/ImplementationGuide/BeCoreImplementationGuide</pre><div><p>The Core Belgian Profiles provide the essential and common requirement for FHIR implementations in Belgium.</p>\n</div></div>"
   },
   "url": "https://www.ehealth.fgov.be/standards/fhir/ImplementationGuide/BeCoreImplementationGuide",
   "version": "1.0.0",
-  "name": "BeCoreImplementationGuide",
-  "title": "BeCoreImplementationGuide",
+  "name": "TheCoreBelgianFederalFHIRProfiles",
+  "title": "The Core Belgian Federal FHIR Profiles",
   "status": "active",
-  "date": "2020-04-01T10:07:45+02:00",
+  "date": "2020-04-03T08:23:51+02:00",
   "publisher": "eHealth Platform",
   "contact": [
     {
@@ -447,11 +447,11 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "Cdcivilstate.html"
+            "valueUri": "cd-civilstate.html"
           }
         ],
         "reference": {
-          "reference": "CodeSystem/Cdcivilstate"
+          "reference": "CodeSystem/cd-civilstate"
         },
         "name": "CodeSystem CD-CIVILSTATE",
         "description": "Civil state in Belgium.",
@@ -465,11 +465,11 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "Cdcontactperson.html"
+            "valueUri": "cd-contactperson.html"
           }
         ],
         "reference": {
-          "reference": "CodeSystem/Cdcontactperson"
+          "reference": "CodeSystem/cd-contactperson"
         },
         "name": "CodeSystem CD-CONTACTPERSON",
         "description": "Contact person",
@@ -483,15 +483,32 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "NIHDILegalPhysiotherapyFa.html"
+            "valueUri": "nihdi-legal-physiotherapy-fa.html"
           }
         ],
         "reference": {
-          "reference": "CodeSystem/NIHDILegalPhysiotherapyFa"
+          "reference": "CodeSystem/nihdi-legal-physiotherapy-fa"
         },
         "name": "CodeSystem NIHDILegalPhysiotherapyFa",
         "description": "Legal pathology codes as defined by NIHDI to be used in the pathology registration flows of MyCareNet. These values are managed by NIHDI. \r\n\tThe codes are not defined here. Consult the cookbooks on mycarenet.be for concrete usage intstrcutions.",
         "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Patient"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "patient1.html"
+          }
+        ],
+        "reference": {
+          "reference": "Patient/patient1"
+        },
+        "name": "Patient 1",
+        "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient"
       }
     ],
     "page": {
@@ -502,6 +519,11 @@
         {
           "nameUrl": "index.html",
           "title": "Home",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "changes.html",
+          "title": "Changes",
           "generation": "markdown"
         },
         {

@@ -10,14 +10,14 @@
   fhir:Resource.id [ fhir:value "be-contactperson-value-set"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ValueSet contact person</h2><div><p>Maximum valuest to define category of a contact person, using the HL7 values and the Belgian CD-CONTACT-PERSON values.</p>\n</div><ul><li>Include codes from <a href=\"http://hl7.org/fhir/R4/v2/0131/index.html\"><code>http://terminology.hl7.org/CodeSystem/v2-0131</code></a> where concept  is-not-a  <a href=\"http://hl7.org/fhir/R4/v2/0131/index.html#v2-0131-O\">O</a></li><li>Include all codes defined in <a href=\"Cdcontactperson.html\"><code>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/Cdcontactperson</code></a></li></ul><p>This value set includes codes based on the following rules:</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ValueSet contact person</h2><div><p>Maximum valuest to define category of a contact person, using the HL7 values and the Belgian CD-CONTACT-PERSON values.</p>\n</div><ul><li>Include codes from <a href=\"http://hl7.org/fhir/R4/v2/0131/index.html\"><code>http://terminology.hl7.org/CodeSystem/v2-0131</code></a> where concept  is-not-a  <a href=\"http://hl7.org/fhir/R4/v2/0131/index.html#v2-0131-O\">O</a></li><li>Include all codes defined in <a href=\"cd-contactperson.html\"><code>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contactperson</code></a></li></ul><p>This value set includes codes based on the following rules:</p></div>"
   ];
   fhir:ValueSet.url [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-contactperson-value-set"];
   fhir:ValueSet.version [ fhir:value "1.0.0"];
   fhir:ValueSet.name [ fhir:value "BeContactPerson"];
   fhir:ValueSet.title [ fhir:value "ValueSet contact person"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2020-04-01T10:07:45+02:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2020-04-03T08:23:51+02:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "eHealth Platform"];
   fhir:ValueSet.contact [
      fhir:index 0;
@@ -41,7 +41,7 @@
        ]
      ], [
        fhir:index 1;
-       fhir:ValueSet.compose.include.system [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/Cdcontactperson" ]
+       fhir:ValueSet.compose.include.system [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contactperson" ]
      ]
   ] .
 

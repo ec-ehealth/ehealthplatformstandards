@@ -1,0 +1,122 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "cd-contactperson",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>CodeSystem CD-CONTACTPERSON</h2><div><p>Contact person</p>\n</div><p>This code system https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contactperson defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">father<a name=\"cd-contactperson-father\"> </a></td><td>father</td><td/></tr><tr><td style=\"white-space:nowrap\">mother<a name=\"cd-contactperson-mother\"> </a></td><td>mother</td><td/></tr><tr><td style=\"white-space:nowrap\">child<a name=\"cd-contactperson-child\"> </a></td><td>child</td><td/></tr><tr><td style=\"white-space:nowrap\">spouse<a name=\"cd-contactperson-spouse\"> </a></td><td>spouse</td><td/></tr><tr><td style=\"white-space:nowrap\">husband<a name=\"cd-contactperson-husband\"> </a></td><td>husband</td><td/></tr><tr><td style=\"white-space:nowrap\">partner<a name=\"cd-contactperson-partner\"> </a></td><td>partner</td><td/></tr><tr><td style=\"white-space:nowrap\">brother<a name=\"cd-contactperson-brother\"> </a></td><td>brother</td><td/></tr><tr><td style=\"white-space:nowrap\">sister<a name=\"cd-contactperson-sister\"> </a></td><td>sister</td><td/></tr><tr><td style=\"white-space:nowrap\">brotherinlaw<a name=\"cd-contactperson-brotherinlaw\"> </a></td><td>brotherinlaw</td><td/></tr><tr><td style=\"white-space:nowrap\">tutor<a name=\"cd-contactperson-tutor\"> </a></td><td>tutor</td><td/></tr><tr><td style=\"white-space:nowrap\">notary<a name=\"cd-contactperson-notary\"> </a></td><td>notary</td><td/></tr><tr><td style=\"white-space:nowrap\">lawyer<a name=\"cd-contactperson-lawyer\"> </a></td><td>lawyer</td><td/></tr><tr><td style=\"white-space:nowrap\">employer<a name=\"cd-contactperson-employer\"> </a></td><td>employer</td><td/></tr><tr><td style=\"white-space:nowrap\">grandparent<a name=\"cd-contactperson-grandparent\"> </a></td><td>grandparent</td><td/></tr><tr><td style=\"white-space:nowrap\">son<a name=\"cd-contactperson-son\"> </a></td><td>son</td><td/></tr><tr><td style=\"white-space:nowrap\">daughter<a name=\"cd-contactperson-daughter\"> </a></td><td>daughter</td><td/></tr><tr><td style=\"white-space:nowrap\">grandchild<a name=\"cd-contactperson-grandchild\"> </a></td><td>grandchild</td><td/></tr><tr><td style=\"white-space:nowrap\">neighbour<a name=\"cd-contactperson-neighbour\"> </a></td><td>neighbour</td><td/></tr><tr><td style=\"white-space:nowrap\">stepson<a name=\"cd-contactperson-stepson\"> </a></td><td>stepson</td><td/></tr><tr><td style=\"white-space:nowrap\">stepdaughter<a name=\"cd-contactperson-stepdaughter\"> </a></td><td>stepdaughter</td><td/></tr><tr><td style=\"white-space:nowrap\">stepfather<a name=\"cd-contactperson-stepfather\"> </a></td><td>stepfather</td><td/></tr><tr><td style=\"white-space:nowrap\">stepmother<a name=\"cd-contactperson-stepmother\"> </a></td><td>stepmother</td><td/></tr><tr><td style=\"white-space:nowrap\">sisterinlaw<a name=\"cd-contactperson-sisterinlaw\"> </a></td><td>sisterinlaw</td><td/></tr></table></div>"
+  },
+  "url": "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contactperson",
+  "version": "1.0.0",
+  "name": "Cdcontactperson",
+  "title": "CodeSystem CD-CONTACTPERSON",
+  "status": "active",
+  "date": "2020-04-03T08:23:51+02:00",
+  "publisher": "eHealth Platform",
+  "contact": [
+    {
+      "name": "Etienne Cantineau",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "etienne.cantineau@ehealth.fgov.be"
+        }
+      ]
+    }
+  ],
+  "description": "Contact person",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "father",
+      "display": "father"
+    },
+    {
+      "code": "mother",
+      "display": "mother"
+    },
+    {
+      "code": "child",
+      "display": "child"
+    },
+    {
+      "code": "spouse",
+      "display": "spouse"
+    },
+    {
+      "code": "husband",
+      "display": "husband"
+    },
+    {
+      "code": "partner",
+      "display": "partner"
+    },
+    {
+      "code": "brother",
+      "display": "brother"
+    },
+    {
+      "code": "sister",
+      "display": "sister"
+    },
+    {
+      "code": "brotherinlaw",
+      "display": "brotherinlaw"
+    },
+    {
+      "code": "tutor",
+      "display": "tutor"
+    },
+    {
+      "code": "notary",
+      "display": "notary"
+    },
+    {
+      "code": "lawyer",
+      "display": "lawyer"
+    },
+    {
+      "code": "employer",
+      "display": "employer"
+    },
+    {
+      "code": "grandparent",
+      "display": "grandparent"
+    },
+    {
+      "code": "son",
+      "display": "son"
+    },
+    {
+      "code": "daughter",
+      "display": "daughter"
+    },
+    {
+      "code": "grandchild",
+      "display": "grandchild"
+    },
+    {
+      "code": "neighbour",
+      "display": "neighbour"
+    },
+    {
+      "code": "stepson",
+      "display": "stepson"
+    },
+    {
+      "code": "stepdaughter",
+      "display": "stepdaughter"
+    },
+    {
+      "code": "stepfather",
+      "display": "stepfather"
+    },
+    {
+      "code": "stepmother",
+      "display": "stepmother"
+    },
+    {
+      "code": "sisterinlaw",
+      "display": "sisterinlaw"
+    }
+  ]
+}
