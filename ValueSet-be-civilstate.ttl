@@ -1,0 +1,90 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-civilstate> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "be-civilstate"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ValueSet civil state</h2><div><p>Codes supported by eHealth Platform differentiating types of civil state. This valueset supports the Belgian federal FHIR profiling effort.\nWhenever possible add a code from http://terminology.hl7.org/CodeSystem/v3-MaritalStatus for international interoperability but also use https://www.ehealth.fgov.be/standards/fhir/CodeSystem/CD-CIVILSTATE\nfor the Belgian specific code.</p>\n</div><ul><li>Include codes from <a href=\"http://hl7.org/fhir/R4/v3/MaritalStatus/cs.html\"><code>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</code></a> where concept  is-a  <a href=\"http://hl7.org/fhir/R4/v3/MaritalStatus/cs.html#v3-MaritalStatus-A\">A</a></li><li>Include codes from <a href=\"http://hl7.org/fhir/R4/v3/MaritalStatus/cs.html\"><code>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</code></a> where concept  is-a  <a href=\"http://hl7.org/fhir/R4/v3/MaritalStatus/cs.html#v3-MaritalStatus-D\">D</a></li><li>Include codes from <a href=\"http://hl7.org/fhir/R4/v3/MaritalStatus/cs.html\"><code>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</code></a> where concept  is-a  <a href=\"http://hl7.org/fhir/R4/v3/MaritalStatus/cs.html#v3-MaritalStatus-M\">M</a></li><li>Include codes from <a href=\"http://hl7.org/fhir/R4/v3/MaritalStatus/cs.html\"><code>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</code></a> where concept  is-a  <a href=\"http://hl7.org/fhir/R4/v3/MaritalStatus/cs.html#v3-MaritalStatus-U\">U</a></li><li>Include codes from <a href=\"http://hl7.org/fhir/R4/v3/MaritalStatus/cs.html\"><code>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</code></a> where concept  is-a  <a href=\"http://hl7.org/fhir/R4/v3/MaritalStatus/cs.html#v3-MaritalStatus-W\">W</a></li><li>Include all codes defined in <a href=\"CodeSystem-cd-civilstate.html\"><code>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-civilstate</code></a></li></ul><p>This value set includes codes based on the following rules:</p></div>"
+  ];
+  fhir:ValueSet.url [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-civilstate"];
+  fhir:ValueSet.version [ fhir:value "1.0.0"];
+  fhir:ValueSet.name [ fhir:value "BeCivilState"];
+  fhir:ValueSet.title [ fhir:value "ValueSet civil state"];
+  fhir:ValueSet.status [ fhir:value "active"];
+  fhir:ValueSet.date [ fhir:value "2020-04-06T11:05:00+02:00"^^xsd:dateTime];
+  fhir:ValueSet.publisher [ fhir:value "eHealth Platform"];
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Etienne Cantineau" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "etienne.cantineau@ehealth.fgov.be" ]
+     ]
+  ];
+  fhir:ValueSet.description [ fhir:value "Codes supported by eHealth Platform differentiating types of civil state. This valueset supports the Belgian federal FHIR profiling effort. \nWhenever possible add a code from http://terminology.hl7.org/CodeSystem/v3-MaritalStatus for international interoperability but also use https://www.ehealth.fgov.be/standards/fhir/CodeSystem/CD-CIVILSTATE \nfor the Belgian specific code."];
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus" ];
+       fhir:ValueSet.compose.include.filter [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.filter.property [ fhir:value "concept" ];
+         fhir:ValueSet.compose.include.filter.op [ fhir:value "is-a" ];
+         fhir:ValueSet.compose.include.filter.value [ fhir:value "A" ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus" ];
+       fhir:ValueSet.compose.include.filter [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.filter.property [ fhir:value "concept" ];
+         fhir:ValueSet.compose.include.filter.op [ fhir:value "is-a" ];
+         fhir:ValueSet.compose.include.filter.value [ fhir:value "D" ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus" ];
+       fhir:ValueSet.compose.include.filter [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.filter.property [ fhir:value "concept" ];
+         fhir:ValueSet.compose.include.filter.op [ fhir:value "is-a" ];
+         fhir:ValueSet.compose.include.filter.value [ fhir:value "M" ]
+       ]
+     ], [
+       fhir:index 3;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus" ];
+       fhir:ValueSet.compose.include.filter [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.filter.property [ fhir:value "concept" ];
+         fhir:ValueSet.compose.include.filter.op [ fhir:value "is-a" ];
+         fhir:ValueSet.compose.include.filter.value [ fhir:value "U" ]
+       ]
+     ], [
+       fhir:index 4;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus" ];
+       fhir:ValueSet.compose.include.filter [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.filter.property [ fhir:value "concept" ];
+         fhir:ValueSet.compose.include.filter.op [ fhir:value "is-a" ];
+         fhir:ValueSet.compose.include.filter.value [ fhir:value "W" ]
+       ]
+     ], [
+       fhir:index 5;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-civilstate" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-civilstate.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

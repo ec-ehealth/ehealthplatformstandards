@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="cd-civilstate"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>CodeSystem CD-CIVILSTATE</h2><div><p>Civil state in Belgium.</p>
+</div><p>This code system https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-civilstate defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">10<a name="cd-civilstate-10"> </a></td><td>Unmarried</td><td/></tr><tr><td style="white-space:nowrap">20<a name="cd-civilstate-20"> </a></td><td>Married</td><td/></tr><tr><td style="white-space:nowrap">25<a name="cd-civilstate-25"> </a></td><td>Annuled</td><td/></tr><tr><td style="white-space:nowrap">26<a name="cd-civilstate-26"> </a></td><td>Putative marriage</td><td/></tr><tr><td style="white-space:nowrap">30<a name="cd-civilstate-30"> </a></td><td>Widowed</td><td/></tr><tr><td style="white-space:nowrap">40<a name="cd-civilstate-40"> </a></td><td>Divorced</td><td/></tr><tr><td style="white-space:nowrap">41<a name="cd-civilstate-41"> </a></td><td>Divorced since 1/10/1994</td><td/></tr><tr><td style="white-space:nowrap">50<a name="cd-civilstate-50"> </a></td><td>Legal separation</td><td/></tr><tr><td style="white-space:nowrap">51<a name="cd-civilstate-51"> </a></td><td>Legal separation since 1/10/1994</td><td/></tr><tr><td style="white-space:nowrap">60<a name="cd-civilstate-60"> </a></td><td>Repudiation</td><td/></tr><tr><td style="white-space:nowrap">80<a name="cd-civilstate-80"> </a></td><td>Partnership</td><td/></tr><tr><td style="white-space:nowrap">81<a name="cd-civilstate-81"> </a></td><td>End of partnership</td><td/></tr></table></div>
+  </text>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-civilstate"/>
+  <version value="1.0.0"/>
+  <name value="Cdcivilstate"/>
+  <title value="CodeSystem CD-CIVILSTATE"/>
+  <status value="active"/>
+  <date value="2020-04-06T11:05:00+02:00"/>
+  <publisher value="eHealth Platform"/>
+  <contact>
+    <name value="Etienne Cantineau"/>
+    <telecom>
+      <system value="email"/>
+      <value value="etienne.cantineau@ehealth.fgov.be"/>
+    </telecom>
+  </contact>
+  <description value="Civil state in Belgium."/>
+  <content value="complete"/>
+  <concept>
+    <code value="10"/>
+    <display value="Unmarried"/>
+  </concept>
+  <concept>
+    <code value="20"/>
+    <display value="Married"/>
+  </concept>
+  <concept>
+    <code value="25"/>
+    <display value="Annuled"/>
+  </concept>
+  <concept>
+    <code value="26"/>
+    <display value="Putative marriage"/>
+  </concept>
+  <concept>
+    <code value="30"/>
+    <display value="Widowed"/>
+  </concept>
+  <concept>
+    <code value="40"/>
+    <display value="Divorced"/>
+  </concept>
+  <concept>
+    <code value="41"/>
+    <display value="Divorced since 1/10/1994"/>
+  </concept>
+  <concept>
+    <code value="50"/>
+    <display value="Legal separation"/>
+  </concept>
+  <concept>
+    <code value="51"/>
+    <display value="Legal separation since 1/10/1994"/>
+  </concept>
+  <concept>
+    <code value="60"/>
+    <display value="Repudiation"/>
+  </concept>
+  <concept>
+    <code value="80"/>
+    <display value="Partnership"/>
+  </concept>
+  <concept>
+    <code value="81"/>
+    <display value="End of partnership"/>
+  </concept>
+</CodeSystem>

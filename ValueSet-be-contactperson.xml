@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="be-contactperson"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>ValueSet contact person</h2><div><p>Maximum valuest to define category of a contact person, using the HL7 values and the Belgian CD-CONTACT-PERSON values.</p>
+</div><ul><li>Include codes from <a href="http://hl7.org/fhir/R4/v2/0131/index.html"><code>http://terminology.hl7.org/CodeSystem/v2-0131</code></a> where concept  is-not-a  <a href="http://hl7.org/fhir/R4/v2/0131/index.html#v2-0131-O">O</a></li><li>Include all codes defined in <a href="CodeSystem-cd-contact-person.html"><code>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contact-person</code></a></li></ul><p>This value set includes codes based on the following rules:</p></div>
+  </text>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-contactperson"/>
+  <version value="1.0.0"/>
+  <name value="BeContactPerson"/>
+  <title value="ValueSet contact person"/>
+  <status value="active"/>
+  <date value="2020-04-06T11:05:00+02:00"/>
+  <publisher value="eHealth Platform"/>
+  <contact>
+    <name value="Etienne Cantineau"/>
+    <telecom>
+      <system value="email"/>
+      <value value="etienne.cantineau@ehealth.fgov.be"/>
+    </telecom>
+  </contact>
+  <description value="Maximum valuest to define category of a contact person, using the HL7 values and the Belgian CD-CONTACT-PERSON values."/>
+  <compose>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/v2-0131"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-not-a"/>
+        <value value="O"/>
+      </filter>
+    </include>
+    <include>
+      <system value="https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contact-person"/>
+    </include>
+  </compose>
+</ValueSet>
