@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "e89b2aa4-26d3-4365-bba1-cf7e04aede96",
+  "id" : "523ae520-fdd2-41fc-9f46-bd8e8b35bc51",
   "meta" : {
-    "lastUpdated" : "2020-04-07T11:29:50.538+02:00"
+    "lastUpdated" : "2020-04-07T11:40:20.536+02:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -19,7 +19,7 @@
       "name" : "BeCivilState",
       "title" : "ValueSet civil state",
       "status" : "active",
-      "date" : "2020-04-07T11:29:50+02:00",
+      "date" : "2020-04-07T11:40:20+02:00",
       "publisher" : "eHealth Platform",
       "contact" : [{
         "name" : "Etienne Cantineau",
@@ -30,8 +30,8 @@
       }],
       "description" : "Codes supported by eHealth Platform differentiating types of civil state. This valueset supports the Belgian federal FHIR profiling effort. \nWhenever possible add a code from http://terminology.hl7.org/CodeSystem/v3-MaritalStatus for international interoperability but also use https://www.ehealth.fgov.be/standards/fhir/CodeSystem/CD-CIVILSTATE \nfor the Belgian specific code.",
       "expansion" : {
-        "identifier" : "urn:uuid:db1e3bc9-dbc0-4f8c-95f9-8073567c5bae",
-        "timestamp" : "2020-04-07T11:30:03+02:00",
+        "identifier" : "urn:uuid:b30ff746-43ea-49b4-b88c-50ec2e678243",
+        "timestamp" : "2020-04-07T11:40:33+02:00",
         "total" : 17,
         "parameter" : [{
           "name" : "excludeNested",
@@ -147,7 +147,7 @@
       "name" : "BeContactPerson",
       "title" : "ValueSet contact person",
       "status" : "active",
-      "date" : "2020-04-07T11:29:50+02:00",
+      "date" : "2020-04-07T11:40:20+02:00",
       "publisher" : "eHealth Platform",
       "contact" : [{
         "name" : "Etienne Cantineau",
@@ -158,8 +158,8 @@
       }],
       "description" : "Maximum valuest to define category of a contact person, using the HL7 values and the Belgian CD-CONTACT-PERSON values.",
       "expansion" : {
-        "identifier" : "urn:uuid:97f3dbdd-a1b5-4de9-824b-9790ed127ac3",
-        "timestamp" : "2020-04-07T11:30:03+02:00",
+        "identifier" : "urn:uuid:d5937d55-3dbd-4ceb-890b-dbd65f901a87",
+        "timestamp" : "2020-04-07T11:40:33+02:00",
         "total" : 30,
         "parameter" : [{
           "name" : "excludeNested",
@@ -340,7 +340,7 @@
       "name" : "BeProductorServiceNihdiEAgreement",
       "title" : "ValueSet productor service",
       "status" : "active",
-      "date" : "2020-04-07T11:29:50+02:00",
+      "date" : "2020-04-07T11:40:20+02:00",
       "publisher" : "eHealth Platform",
       "contact" : [{
         "name" : "Etienne Cantineau",
@@ -351,8 +351,8 @@
       }],
       "description" : "NIHDI codes for use to describe eAgreement products or services in the MyCareNet eAgreement flows.",
       "expansion" : {
-        "identifier" : "urn:uuid:c9f35b89-4d3c-4a22-aa9c-71057b9aa864",
-        "timestamp" : "2020-04-07T11:30:03+02:00",
+        "identifier" : "urn:uuid:e37fc1b5-6d7a-4d52-812c-8d9bf5f17d8a",
+        "timestamp" : "2020-04-07T11:40:33+02:00",
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false

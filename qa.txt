@@ -1,13 +1,13 @@
 ﻿TheCoreBelgianFederalFHIRProfiles : Validation Results
 =========================================
 
-err = 14, warn = 12, info = 2
+err = 6, warn = 12, info = 2
 IG Publisher Version: v1.0.78-SNAPSHOT
-Generated Tue Apr 07 11:30:34 CEST 2020. FHIR version 4.0.1 for BeCoreImplementationGuide#1.0.0 (canonical = https://www.ehealth.fgov.be/standards/fhir)
+Generated Tue Apr 07 11:41:03 CEST 2020. FHIR version 4.0.1 for BeCoreImplementationGuide#1.0.0 (canonical = https://www.ehealth.fgov.be/standards/fhir)
 
- Build Errors : 14 / 0
+ Build Errors : 17 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\ImplementationGuide-BeCoreImplementationGuide : 0 / 0
- C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\claim-bemycarenetclaim1 : 7 / 1
+ C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\claim-bemycarenetclaim1 : 3 / 1
  C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\messageheader-bemycareneteagreementmessageheader1 : 0 / 1
  C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\patient-patient1 : 0 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\structuredefinition-be-address : 0 / 1
@@ -27,6 +27,9 @@ Generated Tue Apr 07 11:30:34 CEST 2020. FHIR version 4.0.1 for BeCoreImplementa
 </table>
 == n/a ==
 ERROR: ImplementationGuide.definition.parameter[20].value: Supressed messages file is not using the new format (see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters)
+ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\Claim-bemycarenetclaim1.html#/html/body/div/div/div/div/div/div/p/a at Line 145, column 821: The link 'enterer1' for "enterer1" cannot be resolved
+ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\Claim-bemycarenetclaim1.html#/html/body/div/div/div/div/div/div/p/a at Line 145, column 876: The link 'provider1' for "provider1" cannot be resolved
+ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\Claim-bemycarenetclaim1.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 145, column 1258: The link 'coverage1' for "coverage1" cannot be resolved
 ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\MessageHeader-bemycareneteagreementmessageheader1.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 145, column 348: The link 'testuri' for "testuri" cannot be resolved
 ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\StructureDefinition-be-mycarenetclaim.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 243, column 940: The link 'StructureDefinition-be-mycarenetclaim-definitions.html#Claim.supportingInfo.category.coding' for "coding" cannot be resolved (valid targets: 254 targets)
 ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\StructureDefinition-be-mycarenetclaim.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 250, column 927: The link 'StructureDefinition-be-mycarenetclaim-definitions.html#Claim.supportingInfo.category.coding' for "coding" cannot be resolved (valid targets: 254 targets)
@@ -42,14 +45,10 @@ ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\index.html#/html/body
 ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\toc.html: The html source does not contain the publish box
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\ImplementationGuide-BeCoreImplementationGuide.json ==
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\Claim-bemycarenetclaim1.json ==
-ERROR: Claim/bemycarenetclaim1: Claim.identifier[0]: Identifier.system must be an absolute reference, not a local reference
 INFORMATION: Claim/bemycarenetclaim1: Claim.subType.coding[0]: Code System URI "https://www.mycarenet.be/fhir/CodeSystem/agreement-types" is unknown so the code cannot be validated
-ERROR: Claim/bemycarenetclaim1: Claim.enterer: Unable to find matching profile for Patient/patient1 (by type) among choices: ; [CanonicalType[https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner], CanonicalType[https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitionerrole]]
-ERROR: Claim/bemycarenetclaim1: Claim.enterer: Invalid Resource target type. Found Patient, but expected one of ([Practitioner, PractitionerRole])
-ERROR: Claim/bemycarenetclaim1: Claim.provider: Unable to find matching profile for Patient/patient1 (by type) among choices: ; [CanonicalType[https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner], CanonicalType[https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitionerrole]]
-ERROR: Claim/bemycarenetclaim1: Claim.provider: Invalid Resource target type. Found Patient, but expected one of ([Practitioner, PractitionerRole])
-ERROR: Claim/bemycarenetclaim1: Claim.insurance[0].coverage: Unable to find matching profile for Patient/patient1 (by type) among choices: ; [CanonicalType[http://hl7.org/fhir/StructureDefinition/Coverage]]
-ERROR: Claim/bemycarenetclaim1: Claim.insurance[0].coverage: Invalid Resource target type. Found Patient, but expected one of ([Coverage])
+ERROR: Claim/bemycarenetclaim1: Claim.enterer: Unable to resolve resource "enterer1"
+ERROR: Claim/bemycarenetclaim1: Claim.provider: Unable to resolve resource "provider1"
+ERROR: Claim/bemycarenetclaim1: Claim.insurance[0].coverage: Unable to resolve resource "coverage1"
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\MessageHeader-bemycareneteagreementmessageheader1.json ==
 WARNING: MessageHeader/bemycareneteagreementmessageheader1: MessageHeader.event.ofType(Coding): A code with no system has no defined meaning. A system should be provided
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\Patient-Patient1.json ==
