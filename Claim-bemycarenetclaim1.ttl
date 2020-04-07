@@ -1,0 +1,76 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.ehealth.fgov.be/standards/fhir/Claim/bemycarenetclaim1> a fhir:Claim;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "bemycarenetclaim1"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-mycarenetclaim";
+       fhir:index 0;
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-mycarenetclaim>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: bemycarenetclaim1</p><p><b>meta</b>: </p><p><b>identifier</b>: 1111</p><p><b>status</b>: active</p><p><b>type</b>: testtype <span style=\"background: LightGoldenRodYellow\">(Details : {[not stated] code 'testtype' = 'testtype)</span></p><p><b>subType</b>: testcoding <span style=\"background: LightGoldenRodYellow\">(Details : {[not stated] code 'testcoding' = 'testcoding)</span></p><p><b>use</b>: claim</p><p><b>patient</b>: <a href=\"Patient-patient1.html\">Generated Summary: id: patient1; Josephine Nessa La Paradisio ; gender: female; birthDate: 1979-12-11</a></p><p><b>created</b>: 07-avr.-2020 0:00:00</p><p><b>enterer</b>: <a href=\"Patient-patient1.html\">Generated Summary: id: patient1; Josephine Nessa La Paradisio ; gender: female; birthDate: 1979-12-11</a></p><p><b>provider</b>: <a href=\"Patient-patient1.html\">Generated Summary: id: patient1; Josephine Nessa La Paradisio ; gender: female; birthDate: 1979-12-11</a></p><p><b>priority</b>: testprio <span style=\"background: LightGoldenRodYellow\">(Details : {[not stated] code 'testprio' = 'testprio)</span></p><h3>Insurances</h3><table class=\"grid\"><tr><td>-</td><td><b>Sequence</b></td><td><b>Focal</b></td><td><b>Coverage</b></td></tr><tr><td>*</td><td>111</td><td>true</td><td><a href=\"Patient-patient1.html\">Generated Summary: id: patient1; Josephine Nessa La Paradisio ; gender: female; birthDate: 1979-12-11</a></td></tr></table></div>"
+  ];
+  fhir:Claim.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "testuri" ];
+     fhir:Identifier.value [ fhir:value "1111" ]
+  ];
+  fhir:Claim.status [ fhir:value "active"];
+  fhir:Claim.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.code [ fhir:value "testtype" ]
+     ]
+  ];
+  fhir:Claim.subType [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.code [ fhir:value "testcoding" ]
+     ]
+  ];
+  fhir:Claim.use [ fhir:value "claim"];
+  fhir:Claim.patient [
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/Patient/patient1>;
+     fhir:Reference.reference [ fhir:value "Patient/patient1" ]
+  ];
+  fhir:Claim.created [ fhir:value "2020-04-07"^^xsd:date];
+  fhir:Claim.enterer [
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/Patient/patient1>;
+     fhir:Reference.reference [ fhir:value "Patient/patient1" ]
+  ];
+  fhir:Claim.provider [
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/Patient/patient1>;
+     fhir:Reference.reference [ fhir:value "Patient/patient1" ]
+  ];
+  fhir:Claim.priority [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.code [ fhir:value "testprio" ]
+     ]
+  ];
+  fhir:Claim.insurance [
+     fhir:index 0;
+     fhir:Claim.insurance.sequence [ fhir:value "111"^^xsd:positiveInteger ];
+     fhir:Claim.insurance.focal [ fhir:value "true"^^xsd:boolean ];
+     fhir:Claim.insurance.coverage [
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/Patient/patient1>;
+       fhir:Reference.reference [ fhir:value "Patient/patient1" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.ehealth.fgov.be/standards/fhir/Claim/bemycarenetclaim1.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

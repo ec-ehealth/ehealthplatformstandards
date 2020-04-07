@@ -1,0 +1,61 @@
+{
+  "resourceType": "Claim",
+  "id": "bemycarenetclaim1",
+  "meta": {
+    "profile": [
+      "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-mycarenetclaim"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: bemycarenetclaim1</p><p><b>meta</b>: </p><p><b>identifier</b>: 1111</p><p><b>status</b>: active</p><p><b>type</b>: testtype <span style=\"background: LightGoldenRodYellow\">(Details : {[not stated] code 'testtype' = 'testtype)</span></p><p><b>subType</b>: testcoding <span style=\"background: LightGoldenRodYellow\">(Details : {[not stated] code 'testcoding' = 'testcoding)</span></p><p><b>use</b>: claim</p><p><b>patient</b>: <a href=\"Patient-patient1.html\">Generated Summary: id: patient1; Josephine Nessa La Paradisio ; gender: female; birthDate: 1979-12-11</a></p><p><b>created</b>: 07-avr.-2020 0:00:00</p><p><b>enterer</b>: <a href=\"Patient-patient1.html\">Generated Summary: id: patient1; Josephine Nessa La Paradisio ; gender: female; birthDate: 1979-12-11</a></p><p><b>provider</b>: <a href=\"Patient-patient1.html\">Generated Summary: id: patient1; Josephine Nessa La Paradisio ; gender: female; birthDate: 1979-12-11</a></p><p><b>priority</b>: testprio <span style=\"background: LightGoldenRodYellow\">(Details : {[not stated] code 'testprio' = 'testprio)</span></p><h3>Insurances</h3><table class=\"grid\"><tr><td>-</td><td><b>Sequence</b></td><td><b>Focal</b></td><td><b>Coverage</b></td></tr><tr><td>*</td><td>111</td><td>true</td><td><a href=\"Patient-patient1.html\">Generated Summary: id: patient1; Josephine Nessa La Paradisio ; gender: female; birthDate: 1979-12-11</a></td></tr></table></div>"
+  },
+  "identifier": [
+    {
+      "system": "testuri",
+      "value": "1111"
+    }
+  ],
+  "status": "active",
+  "type": {
+    "coding": [
+      {
+        "code": "testtype"
+      }
+    ]
+  },
+  "subType": {
+    "coding": [
+      {
+        "code": "testcoding"
+      }
+    ]
+  },
+  "use": "claim",
+  "patient": {
+    "reference": "Patient/patient1"
+  },
+  "created": "2020-04-07",
+  "enterer": {
+    "reference": "Patient/patient1"
+  },
+  "provider": {
+    "reference": "Patient/patient1"
+  },
+  "priority": {
+    "coding": [
+      {
+        "code": "testprio"
+      }
+    ]
+  },
+  "insurance": [
+    {
+      "sequence": 111,
+      "focal": true,
+      "coverage": {
+        "reference": "Patient/patient1"
+      }
+    }
+  ]
+}

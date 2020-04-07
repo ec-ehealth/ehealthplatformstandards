@@ -11,7 +11,7 @@
   <name value="TheCoreBelgianFederalFHIRProfiles"/>
   <title value="The Core Belgian Federal FHIR Profiles"/>
   <status value="active"/>
-  <date value="2020-04-07T09:21:34+02:00"/>
+  <date value="2020-04-07T11:09:41+02:00"/>
   <publisher value="eHealth Platform"/>
   <contact>
     <name value="Etienne Cantineau"/>
@@ -380,6 +380,34 @@
       <name value="CodeSystem NIHDILegalPhysiotherapyFa"/>
       <description value="Legal pathology codes as defined by NIHDI to be used in the pathology registration flows of MyCareNet. These values are managed by NIHDI. &#xD;&#xA;&#x9;The codes are not defined here. Consult the cookbooks on mycarenet.be for concrete usage intstrcutions."/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Claim"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Claim-bemycarenetclaim1.html"/>
+      </extension>
+      <reference>
+        <reference value="Claim/bemycarenetclaim1"/>
+      </reference>
+      <name value="BeMyCareNetClaim 1"/>
+      <description value="BeMyCareNetClaim 1"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-mycarenetclaim"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MessageHeader"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="MessageHeader-bemycareneteagreementmessageheader1.html"/>
+      </extension>
+      <reference>
+        <reference value="MessageHeader/bemycareneteagreementmessageheader1"/>
+      </reference>
+      <name value="BeMyCareNetEAgreementMessageHeader 1"/>
+      <description value="BeMyCareNetEAgreementMessageHeader 1"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-mycareneteagreementmessageheader"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

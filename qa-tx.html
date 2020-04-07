@@ -1,2 +1,114 @@
 <html><head><title>Terminology Server Log</title></head><body><h2>Terminology Server Log</h2>
+<hr/><a name="l1"> </a>
+<pre>
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: Java FHIR Client for FHIR
+Accept: application/fhir+xml
+Content-Type: application/fhir+xml;charset=UTF-8
+Accept-Charset: UTF-8
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;coding&quot;/&gt;&lt;valueCoding&gt;&lt;code value=&quot;testtype&quot;/&gt;&lt;/valueCoding&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;profile&quot;/&gt;&lt;resource&gt;&lt;Parameters&gt;&lt;parameter&gt;&lt;name value=&quot;profile-url&quot;/&gt;&lt;valueString value=&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;&lt;/resource&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<pre>
+HTTP/1.1 200 OK
+Connection: close
+Content-Type: application/fhir+xml; charset=UTF-8
+Content-Length: 495
+Cache-control: public, max-age=600
+Date: Tue, 07 Apr 2020 09:09:44 GMT
+Pragma: no-cache
+X-Request-Id: 275-402139
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Content-Location, Location
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+X-GDPR-Disclosure: All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+Last-Modified: Tue, 07 Apr 2020 09:09:44 GMT
+Server: Health Intersections FHIR Server
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;result&quot;/&gt;&lt;valueBoolean value=&quot;false&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;message&quot;/&gt;&lt;valueString value=&quot;The code system &amp;quot;&amp;quot; is not known (encountered paired with code = &amp;quot;testtype&amp;quot;); The code provided (#testtype) is not  valid in the value set All codes known to the system&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;cause&quot;/&gt;&lt;valueString value=&quot;Unknown&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<hr/><a name="l2"> </a>
+<pre>
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: Java FHIR Client for FHIR
+Accept: application/fhir+xml
+Content-Type: application/fhir+xml;charset=UTF-8
+Accept-Charset: UTF-8
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;coding&quot;/&gt;&lt;valueCoding&gt;&lt;code value=&quot;testcoding&quot;/&gt;&lt;/valueCoding&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;profile&quot;/&gt;&lt;resource&gt;&lt;Parameters&gt;&lt;parameter&gt;&lt;name value=&quot;profile-url&quot;/&gt;&lt;valueString value=&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;&lt;/resource&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<pre>
+HTTP/1.1 200 OK
+Connection: close
+Content-Type: application/fhir+xml; charset=UTF-8
+Content-Length: 499
+Cache-control: public, max-age=600
+Date: Tue, 07 Apr 2020 09:09:44 GMT
+Pragma: no-cache
+X-Request-Id: 275-402140
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Content-Location, Location
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+X-GDPR-Disclosure: All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+Last-Modified: Tue, 07 Apr 2020 09:09:44 GMT
+Server: Health Intersections FHIR Server
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;result&quot;/&gt;&lt;valueBoolean value=&quot;false&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;message&quot;/&gt;&lt;valueString value=&quot;The code system &amp;quot;&amp;quot; is not known (encountered paired with code = &amp;quot;testcoding&amp;quot;); The code provided (#testcoding) is not  valid in the value set All codes known to the system&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;cause&quot;/&gt;&lt;valueString value=&quot;Unknown&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<hr/><a name="l3"> </a>
+<pre>
+POST http://tx.fhir.org/r4/CodeSystem/$validate-code? HTTP/1.0
+User-Agent: Java FHIR Client for FHIR
+Accept: application/fhir+xml
+Content-Type: application/fhir+xml;charset=UTF-8
+Accept-Charset: UTF-8
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;coding&quot;/&gt;&lt;valueCoding&gt;&lt;code value=&quot;testprio&quot;/&gt;&lt;/valueCoding&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;profile&quot;/&gt;&lt;resource&gt;&lt;Parameters&gt;&lt;parameter&gt;&lt;name value=&quot;profile-url&quot;/&gt;&lt;valueString value=&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;&lt;/resource&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<pre>
+HTTP/1.1 200 OK
+Connection: close
+Content-Type: application/fhir+xml; charset=UTF-8
+Content-Length: 495
+Cache-control: public, max-age=600
+Date: Tue, 07 Apr 2020 09:09:44 GMT
+Pragma: no-cache
+X-Request-Id: 275-402141
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Content-Location, Location
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+X-GDPR-Disclosure: All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+Last-Modified: Tue, 07 Apr 2020 09:09:44 GMT
+Server: Health Intersections FHIR Server
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;result&quot;/&gt;&lt;valueBoolean value=&quot;false&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;message&quot;/&gt;&lt;valueString value=&quot;The code system &amp;quot;&amp;quot; is not known (encountered paired with code = &amp;quot;testprio&amp;quot;); The code provided (#testprio) is not  valid in the value set All codes known to the system&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;cause&quot;/&gt;&lt;valueString value=&quot;Unknown&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<hr/><a name="l4"> </a>
+<pre>
+POST http://tx.fhir.org/r4/ValueSet/$validate-code? HTTP/1.0
+User-Agent: Java FHIR Client for FHIR
+Accept: application/fhir+xml
+Content-Type: application/fhir+xml;charset=UTF-8
+Accept-Charset: UTF-8
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;codeableConcept&quot;/&gt;&lt;valueCodeableConcept&gt;&lt;coding&gt;&lt;code value=&quot;testtype&quot;/&gt;&lt;/coding&gt;&lt;/valueCodeableConcept&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;valueSetMode&quot;/&gt;&lt;valueString value=&quot;CHECK_MEMERSHIP_ONLY&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;valueSet&quot;/&gt;&lt;resource&gt;&lt;ValueSet&gt;&lt;id value=&quot;claim-type&quot;/&gt;&lt;meta&gt;&lt;lastUpdated value=&quot;2019-10-31T23:29:23.356+01:00&quot;/&gt;&lt;profile value=&quot;http://hl7.org/fhir/StructureDefinition/shareablevalueset&quot;/&gt;&lt;/meta&gt;&lt;extension url=&quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-wg&quot;&gt;&lt;valueCode value=&quot;fm&quot;/&gt;&lt;/extension&gt;&lt;extension url=&quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status&quot;&gt;&lt;valueCode value=&quot;trial-use&quot;/&gt;&lt;/extension&gt;&lt;extension url=&quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm&quot;&gt;&lt;valueInteger value=&quot;2&quot;/&gt;&lt;/extension&gt;&lt;url value=&quot;http://hl7.org/fhir/ValueSet/claim-type&quot;/&gt;&lt;identifier&gt;&lt;system value=&quot;urn:ietf:rfc:3986&quot;/&gt;&lt;value value=&quot;urn:oid:2.16.840.1.113883.4.642.3.558&quot;/&gt;&lt;/identifier&gt;&lt;version value=&quot;4.0.1&quot;/&gt;&lt;name value=&quot;ClaimTypeCodes&quot;/&gt;&lt;title value=&quot;Claim Type Codes&quot;/&gt;&lt;status value=&quot;draft&quot;/&gt;&lt;experimental value=&quot;false&quot;/&gt;&lt;date value=&quot;2019-10-31T23:29:23+01:00&quot;/&gt;&lt;publisher value=&quot;Financial Management&quot;/&gt;&lt;contact&gt;&lt;telecom&gt;&lt;system value=&quot;url&quot;/&gt;&lt;value value=&quot;http://hl7.org/fhir&quot;/&gt;&lt;/telecom&gt;&lt;/contact&gt;&lt;description value=&quot;This value set includes Claim Type codes.&quot;/&gt;&lt;immutable value=&quot;true&quot;/&gt;&lt;copyright value=&quot;HL7 Inc.&quot;/&gt;&lt;compose&gt;&lt;include&gt;&lt;system value=&quot;http://terminology.hl7.org/CodeSystem/claim-type&quot;/&gt;&lt;/include&gt;&lt;/compose&gt;&lt;/ValueSet&gt;&lt;/resource&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;profile&quot;/&gt;&lt;resource&gt;&lt;Parameters&gt;&lt;parameter&gt;&lt;name value=&quot;profile-url&quot;/&gt;&lt;valueString value=&quot;dc8fd4bc-091a-424a-8a3b-6198ef146891&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;&lt;/resource&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
+<pre>
+HTTP/1.1 200 OK
+Connection: close
+Content-Type: application/fhir+xml; charset=UTF-8
+Content-Length: 480
+Cache-control: public, max-age=600
+Date: Tue, 07 Apr 2020 09:09:45 GMT
+Pragma: no-cache
+X-Request-Id: 275-402142
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: Content-Location, Location
+Access-Control-Allow-Methods: GET, POST, PUT, PATCH, DELETE
+X-GDPR-Disclosure: All access to this server is logged as AuditEvent Resources, and these store your ip address (and logged in user, if one exists). Also, your IP address is logged with Google Analytics for building geomaps of server usage. Your continued use of the API constitutes agreement to these terms. See [link] for erasure requests
+Last-Modified: Tue, 07 Apr 2020 09:09:45 GMT
+Server: Health Intersections FHIR Server
+
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&lt;Parameters xmlns=&quot;http://hl7.org/fhir&quot;&gt;&lt;parameter&gt;&lt;name value=&quot;result&quot;/&gt;&lt;valueBoolean value=&quot;false&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;message&quot;/&gt;&lt;valueString value=&quot;The code system &amp;quot;&amp;quot; is not known (encountered paired with code = &amp;quot;testtype&amp;quot;); The code provided (#testtype) is not  valid in the value set ClaimTypeCodes&quot;/&gt;&lt;/parameter&gt;&lt;parameter&gt;&lt;name value=&quot;cause&quot;/&gt;&lt;valueString value=&quot;Unknown&quot;/&gt;&lt;/parameter&gt;&lt;/Parameters&gt;
+</pre>
 </head></html>

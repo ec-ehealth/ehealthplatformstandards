@@ -1,17 +1,19 @@
 ﻿TheCoreBelgianFederalFHIRProfiles : Validation Results
 =========================================
 
-err = 0, warn = 14, info = 0
+err = 14, warn = 18, info = 0
 IG Publisher Version: v1.0.78-SNAPSHOT
-Generated Tue Apr 07 09:22:15 CEST 2020. FHIR version 4.0.1 for BeCoreImplementationGuide#1.0.0 (canonical = https://www.ehealth.fgov.be/standards/fhir)
+Generated Tue Apr 07 11:10:25 CEST 2020. FHIR version 4.0.1 for BeCoreImplementationGuide#1.0.0 (canonical = https://www.ehealth.fgov.be/standards/fhir)
 
- Build Errors : 16 / 0
+ Build Errors : 14 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\ImplementationGuide-BeCoreImplementationGuide : 0 / 0
+ C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\claim-bemycarenetclaim1 : 7 / 3
+ C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\messageheader-bemycareneteagreementmessageheader1 : 0 / 1
  C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\patient-patient1 : 0 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\structuredefinition-be-address : 0 / 1
- C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\structuredefinition-be-mycarenetclaim : 0 / 1
+ C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\structuredefinition-be-mycarenetclaim : 0 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\structuredefinition-be-mycareneteagreementdemand : 0 / 1
- C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\structuredefinition-be-mycareneteagreementmessageheader : 0 / 1
+ C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\structuredefinition-be-mycareneteagreementmessageheader : 0 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\structuredefinition-be-organization : 0 / 1
  C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\structuredefinition-be-patient : 0 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\structuredefinition-be-practitioner : 0 / 1
@@ -25,6 +27,7 @@ Generated Tue Apr 07 09:22:15 CEST 2020. FHIR version 4.0.1 for BeCoreImplementa
 </table>
 == n/a ==
 ERROR: ImplementationGuide.definition.parameter[20].value: Supressed messages file is not using the new format (see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters)
+ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\MessageHeader-bemycareneteagreementmessageheader1.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 145, column 348: The link 'testuri' for "testuri" cannot be resolved
 ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\StructureDefinition-be-mycarenetclaim.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 243, column 940: The link 'StructureDefinition-be-mycarenetclaim-definitions.html#Claim.supportingInfo.category.coding' for "coding" cannot be resolved (valid targets: 254 targets)
 ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\StructureDefinition-be-mycarenetclaim.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 250, column 927: The link 'StructureDefinition-be-mycarenetclaim-definitions.html#Claim.supportingInfo.category.coding' for "coding" cannot be resolved (valid targets: 254 targets)
 ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\StructureDefinition-be-mycarenetclaim.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 849, column 940: The link 'StructureDefinition-be-mycarenetclaim-definitions.html#Claim.supportingInfo.category.coding' for "coding" cannot be resolved (valid targets: 254 targets)
@@ -35,21 +38,29 @@ ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\conventions.html: The
 ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\downloads.html: The html source does not contain the publish box
 ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\guidance.html: The html source does not contain the publish box
 ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\index.html: The html source does not contain the publish box
-ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\index.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 191, column 11: The link 'artifacts.html#terminology' for "Value Sets and Code Systems" cannot be resolved (valid targets: [segment-header, publish-box, segment-post-footer, ehealth-logo, standards-logo, 1, 2, 3, 4, belgium-logo, 5, hl7-status, stripe, segment-footer, hl7-nav, segment-navbar, segment-content, segment-breadcrumb])
-ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\index.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 193, column 11: The link 'artifacts.html#core-profiles' for "Core profiles" cannot be resolved (valid targets: [segment-header, publish-box, segment-post-footer, ehealth-logo, standards-logo, 1, 2, 3, 4, belgium-logo, 5, hl7-status, stripe, segment-footer, hl7-nav, segment-navbar, segment-content, segment-breadcrumb])
-ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\index.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 195, column 11: The link 'artifacts.html#conditions' for "Functional profiles" cannot be resolved (valid targets: [segment-header, publish-box, segment-post-footer, ehealth-logo, standards-logo, 1, 2, 3, 4, belgium-logo, 5, hl7-status, stripe, segment-footer, hl7-nav, segment-navbar, segment-content, segment-breadcrumb])
-ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\index.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 197, column 11: The link 'artifacts.html#examples' for "Examples" cannot be resolved (valid targets: [segment-header, publish-box, segment-post-footer, ehealth-logo, standards-logo, 1, 2, 3, 4, belgium-logo, 5, hl7-status, stripe, segment-footer, hl7-nav, segment-navbar, segment-content, segment-breadcrumb])
+ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\index.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 199, column 11: The link 'artifacts.html#conditions' for "Functional profiles" cannot be resolved (valid targets: [segment-header, publish-box, segment-post-footer, ehealth-logo, standards-logo, 1, 2, 3, 4, belgium-logo, 5, hl7-status, stripe, segment-footer, hl7-nav, segment-navbar, segment-content, segment-breadcrumb])
 ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\toc.html: The html source does not contain the publish box
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\ImplementationGuide-BeCoreImplementationGuide.json ==
+== C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\Claim-bemycarenetclaim1.json ==
+ERROR: Claim/bemycarenetclaim1: Claim.identifier[0]: Identifier.system must be an absolute reference, not a local reference
+WARNING: Claim/bemycarenetclaim1: Claim.type.coding[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: Claim/bemycarenetclaim1: Claim.subType.coding[0]: A code with no system has no defined meaning. A system should be provided
+ERROR: Claim/bemycarenetclaim1: Claim.enterer: Unable to find matching profile for Patient/patient1 (by type) among choices: ; [CanonicalType[https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner], CanonicalType[https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitionerrole]]
+ERROR: Claim/bemycarenetclaim1: Claim.enterer: Invalid Resource target type. Found Patient, but expected one of ([Practitioner, PractitionerRole])
+ERROR: Claim/bemycarenetclaim1: Claim.provider: Unable to find matching profile for Patient/patient1 (by type) among choices: ; [CanonicalType[https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner], CanonicalType[https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitionerrole]]
+ERROR: Claim/bemycarenetclaim1: Claim.provider: Invalid Resource target type. Found Patient, but expected one of ([Practitioner, PractitionerRole])
+WARNING: Claim/bemycarenetclaim1: Claim.priority.coding[0]: A code with no system has no defined meaning. A system should be provided
+ERROR: Claim/bemycarenetclaim1: Claim.insurance[0].coverage: Unable to find matching profile for Patient/patient1 (by type) among choices: ; [CanonicalType[http://hl7.org/fhir/StructureDefinition/Coverage]]
+ERROR: Claim/bemycarenetclaim1: Claim.insurance[0].coverage: Invalid Resource target type. Found Patient, but expected one of ([Coverage])
+== C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\MessageHeader-bemycareneteagreementmessageheader1.json ==
+WARNING: MessageHeader/bemycareneteagreementmessageheader1: MessageHeader.event.ofType(Coding): A code with no system has no defined meaning. A system should be provided
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\Patient-Patient1.json ==
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\StructureDefinition-be-address.json ==
 WARNING: https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-address: The Implementation Guide contains no examples for this data type profile
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\StructureDefinition-be-mycarenetclaim.json ==
-WARNING: https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-mycarenetclaim: The Implementation Guide contains no examples for this profile
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\StructureDefinition-be-mycareneteagreementdemand.json ==
 WARNING: https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-mycareneteagreementdemand: The Implementation Guide contains no examples for this profile
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\StructureDefinition-be-mycareneteagreementmessageheader.json ==
-WARNING: https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-mycareneteagreementmessageheader: The Implementation Guide contains no examples for this profile
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\StructureDefinition-be-organization.json ==
 WARNING: https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization: The Implementation Guide contains no examples for this profile
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\StructureDefinition-be-patient.json ==

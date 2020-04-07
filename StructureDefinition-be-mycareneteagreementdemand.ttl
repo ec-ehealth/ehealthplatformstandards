@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "BeMyCareNetEAgreementDemand"];
   fhir:StructureDefinition.title [ fhir:value "My CareNet eAgreement Demand Bundle BE profile"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2020-04-07T09:21:34+02:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2020-04-07T11:09:41+02:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "eHealth Platform"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -10330,17 +10330,6 @@
          fhir:ElementDefinition.constraint.source [
            fhir:value "http://hl7.org/fhir/StructureDefinition/DomainResource";
            fhir:link <http://hl7.org/fhir/StructureDefinition/DomainResource>
-         ]
-       ], [
-         fhir:index 5;
-         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue()" ];
-         fhir:ElementDefinition.constraint.xpath [ fhir:value "f:Patient.name" ];
-         fhir:ElementDefinition.constraint.source [
-           fhir:value "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient";
-           fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient>
          ]
        ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];

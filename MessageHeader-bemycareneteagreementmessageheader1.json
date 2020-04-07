@@ -1,0 +1,19 @@
+{
+  "resourceType": "MessageHeader",
+  "id": "bemycareneteagreementmessageheader1",
+  "meta": {
+    "profile": [
+      "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-mycareneteagreementmessageheader"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: bemycareneteagreementmessageheader1</p><p><b>meta</b>: </p><p><b>event</b>: test (Details: [not stated] code test = 'test', stated as 'null')</p><h3>Sources</h3><table class=\"grid\"><tr><td>-</td><td><b>Endpoint</b></td></tr><tr><td>*</td><td><a href=\"testuri\">testuri</a></td></tr></table></div>"
+  },
+  "eventCoding": {
+    "code": "test"
+  },
+  "source": {
+    "endpoint": "testuri"
+  }
+}

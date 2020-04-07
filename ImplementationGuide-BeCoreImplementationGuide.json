@@ -10,7 +10,7 @@
   "name": "TheCoreBelgianFederalFHIRProfiles",
   "title": "The Core Belgian Federal FHIR Profiles",
   "status": "active",
-  "date": "2020-04-07T09:21:34+02:00",
+  "date": "2020-04-07T11:09:41+02:00",
   "publisher": "eHealth Platform",
   "contact": [
     {
@@ -544,6 +544,42 @@
         "name": "CodeSystem NIHDILegalPhysiotherapyFa",
         "description": "Legal pathology codes as defined by NIHDI to be used in the pathology registration flows of MyCareNet. These values are managed by NIHDI. \r\n\tThe codes are not defined here. Consult the cookbooks on mycarenet.be for concrete usage intstrcutions.",
         "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Claim"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Claim-bemycarenetclaim1.html"
+          }
+        ],
+        "reference": {
+          "reference": "Claim/bemycarenetclaim1"
+        },
+        "name": "BeMyCareNetClaim 1",
+        "description": "BeMyCareNetClaim 1",
+        "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-mycarenetclaim"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MessageHeader"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "MessageHeader-bemycareneteagreementmessageheader1.html"
+          }
+        ],
+        "reference": {
+          "reference": "MessageHeader/bemycareneteagreementmessageheader1"
+        },
+        "name": "BeMyCareNetEAgreementMessageHeader 1",
+        "description": "BeMyCareNetEAgreementMessageHeader 1",
+        "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-mycareneteagreementmessageheader"
       },
       {
         "extension": [

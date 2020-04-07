@@ -10,7 +10,7 @@
   "name": "BeMyCareNetEAgreementDemand",
   "title": "My CareNet eAgreement Demand Bundle BE profile",
   "status": "active",
-  "date": "2020-04-07T09:21:34+02:00",
+  "date": "2020-04-07T11:09:41+02:00",
   "publisher": "eHealth Platform",
   "contact": [
     {
@@ -9613,14 +9613,6 @@
             "expression": "text.`div`.exists()",
             "xpath": "exists(f:text/h:div)",
             "source": "http://hl7.org/fhir/StructureDefinition/DomainResource"
-          },
-          {
-            "key": "ele-1",
-            "severity": "error",
-            "human": "All FHIR elements must have a @value",
-            "expression": "hasValue()",
-            "xpath": "f:Patient.name",
-            "source": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient"
           }
         ],
         "isModifier": false,
