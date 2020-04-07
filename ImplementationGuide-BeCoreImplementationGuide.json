@@ -10,7 +10,7 @@
   "name": "TheCoreBelgianFederalFHIRProfiles",
   "title": "The Core Belgian Federal FHIR Profiles",
   "status": "active",
-  "date": "2020-04-06T11:05:00+02:00",
+  "date": "2020-04-07T09:21:34+02:00",
   "publisher": "eHealth Platform",
   "contact": [
     {
@@ -572,22 +572,27 @@
         {
           "nameUrl": "index.html",
           "title": "Home",
-          "generation": "markdown"
+          "generation": "html"
         },
         {
           "nameUrl": "changes.html",
           "title": "Changes",
+          "generation": "html"
+        },
+        {
+          "nameUrl": "conventions.html",
+          "title": "Conventions",
           "generation": "markdown"
         },
         {
           "nameUrl": "downloads.html",
           "title": "Downloads",
-          "generation": "markdown"
+          "generation": "html"
         },
         {
           "nameUrl": "guidance.html",
           "title": "Guidance",
-          "generation": "markdown"
+          "generation": "html"
         }
       ]
     },

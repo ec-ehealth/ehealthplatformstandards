@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>BECOREIMPLEMENTATIONGUIDE\Patient core BE profile - Examples - FHIR v4.0.1</title>
+    <title>BECOREIMPLEMENTATIONGUIDE\Conventions - FHIR v4.0.1</title>
   
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -35,8 +35,8 @@
   <body>
 
 
-    <style type="text/css">h2{--heading-prefix:"6.5"}
-    h3,h4,h5,h6{--heading-prefix:"6.5"}</style>
+    <style type="text/css">h2{--heading-prefix:"3"}
+    h3,h4,h5,h6{--heading-prefix:"3"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <div id="hl7-nav">
@@ -99,7 +99,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->  
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Patient core BE profile</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Conventions</b></li>
         </ul>  
       </div>  <!-- /container -->
     </div>  <!-- /segment-breadcrumb -->
@@ -108,98 +108,108 @@
       <div class="container">  <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
-
-
-
-
-<div style="counter-reset: section 6" class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">The Core Belgian Federal FHIR Profiles - Local Development build (v1.0.0). See the <a href="https://www.ehealth.fgov.be/standards/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
-  <ul class="nav nav-tabs">
-    <li>
-      <a href="StructureDefinition-be-patient.html">Content</a>
-    </li>
-    <li>
-      <a href="StructureDefinition-be-patient-definitions.html">Detailed Descriptions</a>
-    </li>
-
-    <li>
-      <a href="StructureDefinition-be-patient-mappings.html">Mappings</a>
-    </li>
-
-    <li class="active">
-      <a href="#">Examples</a>
-    </li>
-
-    <li>
-      <a href="StructureDefinition-be-patient.profile.xml.html">XML</a>
-    </li>
-
-
-    <li>
-      <a href="StructureDefinition-be-patient.profile.json.html">JSON</a>
-    </li>
-
-
-    <li>
-      <a href="StructureDefinition-be-patient.profile.ttl.html">Turtle</a>
-    </li>
-
-  </ul>
-  <a name="root"> </a>
-  <h2 id="root">StructureDefinition: BePatient - Examples</h4>
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">The Core Belgian Federal FHIR Profiles (v1.0.0). See the <a href="changes.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Conventions</h2>
   
   
   
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#use-of-must-should-may" id="markdown-toc-use-of-must-should-may">Use of MUST, SHOULD, MAY</a></li>
+  <li><a href="#must-support" id="markdown-toc-must-support">Must Support</a></li>
+</ul>
 
-
-  <p>Examples for the be-patient Profile.</p>
-  <table style="grid">
-    <tbody>
-      
-        <tr>
-          <td>
-            <a href="Patient-patient1.html">Patient 1</a>
-          </td>
-        </tr>
-      
-    </tbody>
-  </table>
-
-
-  
-  
 </div>
+<p>Throughout this document, the following conventions apply:</p>
 
+<h3 id="use-of-must-should-may">Use of MUST, SHOULD, MAY</h3>
+
+<p>The key words “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL NOT”, “SHOULD”, “SHOULD NOT”, “RECOMMENDED”,  “MAY”, and “OPTIONAL” in this document are to be interpreted as described in <a href="https://www.ietf.org/rfc/rfc2119.txt">RFC 2119</a>:</p>
+
+<blockquote>
+  <ol>
+    <li>
+      <p><strong>MUST</strong>, or the terms “<strong>REQUIRED</strong>” or “<strong>SHALL</strong>”, mean that the definition is an absolute requirement of the specification.</p>
+    </li>
+    <li>
+      <p><strong>MUST NOT</strong>, or the phrase “<strong>SHALL NOT</strong>”, mean that the definition is an absolute prohibition of the specification.</p>
+    </li>
+    <li>
+      <p><strong>SHOULD</strong>, or the adjective “<strong>RECOMMENDED</strong>”, mean that there may exist valid reasons in particular circumstances to ignore a particular item, but the full implications must be understood and carefully weighed before choosing a different course.</p>
+    </li>
+    <li>
+      <p><strong>SHOULD NOT</strong>, or the phrase “<strong>NOT RECOMMENDED</strong>” mean that there may exist valid reasons in particular circumstances when the particular behaviour is acceptable or even useful, but the full implications should be understood and the case carefully weighed before implementing any behaviour described with this label.</p>
+    </li>
+    <li>
+      <p><strong>MAY</strong>, or the adjective “<strong>OPTIONAL</strong>”, mean that an item is truly optional.  One vendor may choose to include the item because a particular marketplace requires it or because the vendor feels that it enhances the product while another vendor may omit the same item. An implementation which does not include a particular option MUST be prepared to interoperate with another implementation which does include the option, though perhaps with reduced functionality. In the same vein an implementation which does include a particular option
+MUST be prepared to interoperate with another implementation which does not include the option (except, of course, for the feature the option provides.)</p>
+    </li>
+  </ol>
+</blockquote>
+
+<h3 id="must-support">Must Support</h3>
+
+<p>Unless otherwise stated, the following criteria apply to elements marked as “Must Support” in this Implementation Guide:</p>
+
+<h5 id="for-technical-profiles">For technical profiles</h5>
+
+<p><strong>Systems supporting the profile MUST NOT ignore the field.</strong></p>
+
+<ul>
+  <li>
+    <p>Systems receiving or consuming a resource instance:</p>
+
+    <ul>
+      <li>MUST be able to process the field’s content when it is present</li>
+      <li>MUST process the content according to the rules defined for the profile</li>
+      <li>MUST NOT fail when the value is not present.</li>
+    </ul>
+  </li>
+  <li>
+    <p>Systems sending or creating a resource instance</p>
+
+    <ul>
+      <li>SHOULD populate the element when the information is available</li>
+      <li>MUST populate the element according to the rules defined for the profile</li>
+    </ul>
+  </li>
+</ul>
+
+<h5 id="for-logical-models">For Logical Models</h5>
+
+<ul>
+  <li>
+    <p><strong>Functional Analysis MUST consider the data element as defined</strong></p>
+
+    <ul>
+      <li>“Must Support” elements that are used in an implementation MUST inherit the behaviour and constraints defined for the data element</li>
+      <li>“Must Support” elements not needed in a particular implementation MAY be excluded from implementation but such exclusion MUST be described</li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Derived implementations SHOULD inherit the field’s “Must Support” flag</strong></p>
+  </li>
+</ul>
+
+<hr />
+
+<!-- This is commented out. -->
+
+
+</div>
         </div>  <!-- /inner-wrapper -->
       </div>  <!-- /row -->
     </div>  <!-- /container -->
   </div>  <!-- /segment-content -->
 
-
-  <script type="text/javascript" src="jquery.js"> </script>
-  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
-  <script type="text/javascript">
-    try {
-      var currentTabIndex = sessionStorage.getItem('fhir-resource-tab-index');
-    } catch(exception) {
-    }
-
-    if (!currentTabIndex)
-      currentTabIndex = '0';
-
-    $( '#tabs' ).tabs({
-      active: currentTabIndex,
-      activate: function( event, ui ) {
-        var active = $('.selector').tabs('option', 'active');
-        currentTabIndex = ui.newTab.index();
-        document.activeElement.blur();
-        try {
-          sessionStorage.setItem('fhir-resource-tab-index', currentTabIndex);
-        } catch(exception) {
-        }
-      }
-    });
-  </script>
 
   <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
     <div class="container">  <!-- container -->

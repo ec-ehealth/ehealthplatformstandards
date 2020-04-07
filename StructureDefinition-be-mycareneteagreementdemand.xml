@@ -26,7 +26,7 @@
   <name value="BeMyCareNetEAgreementDemand"/>
   <title value="My CareNet eAgreement Demand Bundle BE profile"/>
   <status value="active"/>
-  <date value="2020-04-06T11:05:00+02:00"/>
+  <date value="2020-04-07T09:21:34+02:00"/>
   <publisher value="eHealth Platform"/>
   <contact>
     <name value="Etienne Cantineau"/>
@@ -7884,6 +7884,14 @@
         <expression value="text.`div`.exists()"/>
         <xpath value="exists(f:text/h:div)"/>
         <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
+      </constraint>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value"/>
+        <expression value="hasValue()"/>
+        <xpath value="f:Patient.name"/>
+        <source value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient"/>
       </constraint>
       <isModifier value="false"/>
       <isSummary value="false"/>
