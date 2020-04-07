@@ -17,7 +17,7 @@
   fhir:CodeSystem.name [ fhir:value "NIHDILegalPhysiotherapyFa"];
   fhir:CodeSystem.title [ fhir:value "CodeSystem NIHDILegalPhysiotherapyFa"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2020-04-07T11:09:41+02:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2020-04-07T11:29:50+02:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "eHealth Platform"];
   fhir:CodeSystem.contact [
      fhir:index 0;
