@@ -17,7 +17,12 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: patient1</p><p><b>meta</b>: </p><p><b>name</b>: Josephine Nessa La Paradisio </p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1979-12-11</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: patient1</p><p><b>meta</b>: </p><p><b>identifier</b>: 79121137740</p><p><b>name</b>: Josephine Nessa La Paradisio </p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1979-12-11</p></div>"
+  ];
+  fhir:Patient.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin" ];
+     fhir:Identifier.value [ fhir:value "79121137740" ]
   ];
   fhir:Patient.name [
      fhir:index 0;

@@ -6,10 +6,11 @@
     <profile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-mycareneteagreementmessageheader"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: bemycareneteagreementmessageheader1</p><p><b>meta</b>: </p><p><b>event</b>: test (Details: [not stated] code test = 'test', stated as 'null')</p><h3>Sources</h3><table class="grid"><tr><td>-</td><td><b>Endpoint</b></td></tr><tr><td>*</td><td><a href="testuri">testuri</a></td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: bemycareneteagreementmessageheader1</p><p><b>meta</b>: </p><p><b>event</b>: mycode (Details: https://www.mycarenet.be/fhir/CodeSystem/message-events code mycode = 'mycode', stated as 'null')</p><h3>Sources</h3><table class="grid"><tr><td>-</td><td><b>Endpoint</b></td></tr><tr><td>*</td><td><a href="testuri">testuri</a></td></tr></table></div>
   </text>
   <eventCoding>
-    <code value="test"/>
+    <system value="https://www.mycarenet.be/fhir/CodeSystem/message-events"/>
+    <code value="mycode"/>
   </eventCoding>
   <source>
     <endpoint value="testuri"/>

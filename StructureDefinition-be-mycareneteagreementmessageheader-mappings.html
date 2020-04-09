@@ -65,7 +65,16 @@
             </button>
             <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
             <div class="nav-collapse collapse navbar-inverse-collapse">
-              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+              
+
+
+
+
+
+
+
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
   <li><a href="index.html">IG Home</a></li>
   <li><a href="guidance.html">Guidance</a></li>
   <li><a href="toc.html">Table of Contents</a></li>
@@ -152,6 +161,7 @@
  <tr><td colspan="3"><b>BeMyCareNetEAgreementMessageHeader</b></td></tr>
  <tr><td>MessageHeader</td><td>MSH / MSA / ERR</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;event[x]</td><td>MSH-9.2</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;event[x] (eventCoding)</td><td>MSH-9.2</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;system</td><td>C*E.3</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;version</td><td>C*E.7</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;code</td><td>C*E.1</td> </tr>
@@ -181,6 +191,7 @@
  <tr><td>&nbsp;&nbsp;&nbsp;extension</td><td>N/A</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;modifierExtension</td><td>N/A</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;event[x]</td><td>./payload[classCode=&quot;CACT&quot; and moodCode=&quot;EVN&quot; and isNormalAct()]/code[isNormalDatatype()]/code</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;event[x] (eventCoding)</td><td>./payload[classCode=&quot;CACT&quot; and moodCode=&quot;EVN&quot; and isNormalAct()]/code[isNormalDatatype()]/code</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;system</td><td>./codeSystem</td> </tr>
@@ -219,6 +230,7 @@
  <tr><td colspan="3"><b>BeMyCareNetEAgreementMessageHeader</b></td></tr>
  <tr><td>MessageHeader</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;event[x]</td><td>FiveWs.what[x]</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;event[x] (eventCoding)</td><td>FiveWs.what[x]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;destination</td><td>FiveWs.subject[x], FiveWs.subject</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;receiver</td><td>FiveWs.subject[x], FiveWs.subject</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;sender</td><td>FiveWs.subject[x], FiveWs.subject</td> </tr>

@@ -17,10 +17,11 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: bemycareneteagreementmessageheader1</p><p><b>meta</b>: </p><p><b>event</b>: test (Details: [not stated] code test = 'test', stated as 'null')</p><h3>Sources</h3><table class=\"grid\"><tr><td>-</td><td><b>Endpoint</b></td></tr><tr><td>*</td><td><a href=\"testuri\">testuri</a></td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: bemycareneteagreementmessageheader1</p><p><b>meta</b>: </p><p><b>event</b>: mycode (Details: https://www.mycarenet.be/fhir/CodeSystem/message-events code mycode = 'mycode', stated as 'null')</p><h3>Sources</h3><table class=\"grid\"><tr><td>-</td><td><b>Endpoint</b></td></tr><tr><td>*</td><td><a href=\"testuri\">testuri</a></td></tr></table></div>"
   ];
   fhir:MessageHeader.eventCoding [
-     fhir:Coding.code [ fhir:value "test" ]
+     fhir:Coding.system [ fhir:value "https://www.mycarenet.be/fhir/CodeSystem/message-events" ];
+     fhir:Coding.code [ fhir:value "mycode" ]
   ];
   fhir:MessageHeader.source [
      fhir:MessageHeader.source.endpoint [ fhir:value "testuri" ]

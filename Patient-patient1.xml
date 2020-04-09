@@ -6,8 +6,12 @@
     <profile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: patient1</p><p><b>meta</b>: </p><p><b>name</b>: Josephine Nessa La Paradisio </p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1979-12-11</p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: patient1</p><p><b>meta</b>: </p><p><b>identifier</b>: 79121137740</p><p><b>name</b>: Josephine Nessa La Paradisio </p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1979-12-11</p></div>
   </text>
+  <identifier>
+    <system value="https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"/>
+    <value value="79121137740"/>
+  </identifier>
   <name>
     <family value="La Paradisio"/>
     <given value="Josephine"/>
