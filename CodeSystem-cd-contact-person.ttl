@@ -17,7 +17,7 @@
   fhir:CodeSystem.name [ fhir:value "Cdcontactperson"];
   fhir:CodeSystem.title [ fhir:value "CodeSystem CD-CONTACT-PERSON"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2020-04-09T10:29:01+02:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2020-04-15T11:19:02+02:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "eHealth Platform"];
   fhir:CodeSystem.contact [
      fhir:index 0;

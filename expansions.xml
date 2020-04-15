@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="d5691bd7-0b5a-43ce-bd7a-f41f2d70fee9"/>
+  <id value="5feeba5a-d6f5-4db2-8064-e5003c3f874a"/>
   <meta>
-    <lastUpdated value="2020-04-09T10:29:01.002+02:00"/>
+    <lastUpdated value="2020-04-15T11:19:02.913+02:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -15,8 +15,17 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 17 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px"/>Expansion based on http://terminology.hl7.org/CodeSystem/v3-MaritalStatus version 2018-08-12
-            <br/>Expansion based on https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-civilstate version 1.0.0, http://terminology.hl7.org/CodeSystem/v3-MaritalStatus version 2018-08-12
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>
+                  <a href="CodeSystem-cd-civilstate.html">CodeSystem CD-CIVILSTATE v1.0.0 (CodeSystem)</a>
+                </li>
+                <li>
+                  <a href="http://hl7.org/fhir/R4/v3/MaritalStatus/cs.html">v3 Code System MaritalStatus v2018-08-12 (CodeSystem)</a>
+                </li>
+              </ul>
+            </div>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -193,7 +202,7 @@
         <name value="BeCivilState"/>
         <title value="ValueSet civil state"/>
         <status value="active"/>
-        <date value="2020-04-09T10:29:01+02:00"/>
+        <date value="2020-04-15T11:19:02+02:00"/>
         <publisher value="eHealth Platform"/>
         <contact>
           <name value="Etienne Cantineau"/>
@@ -204,8 +213,8 @@
         </contact>
         <description value="Codes supported by eHealth Platform differentiating types of civil state. This valueset supports the Belgian federal FHIR profiling effort. &#xA;Whenever possible add a code from http://terminology.hl7.org/CodeSystem/v3-MaritalStatus for international interoperability but also use https://www.ehealth.fgov.be/standards/fhir/CodeSystem/CD-CIVILSTATE &#xA;for the Belgian specific code."/>
         <expansion>
-          <identifier value="urn:uuid:e03c5ee4-f562-4aad-9339-5f7f0b5fa905"/>
-          <timestamp value="2020-04-09T10:29:13+02:00"/>
+          <identifier value="urn:uuid:e01020b0-fe59-4b96-9cd7-c766247cc296"/>
+          <timestamp value="2020-04-15T11:19:16+02:00"/>
           <total value="17"/>
           <parameter>
             <name value="excludeNested"/>
@@ -317,8 +326,17 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 30 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px"/>Expansion based on http://terminology.hl7.org/CodeSystem/v2-0131 version 2.9
-            <br/>Expansion based on https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contact-person version 1.0.0, http://terminology.hl7.org/CodeSystem/v2-0131 version 2.9
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>
+                  <a href="CodeSystem-cd-contact-person.html">CodeSystem CD-CONTACT-PERSON v1.0.0 (CodeSystem)</a>
+                </li>
+                <li>
+                  <a href="http://hl7.org/fhir/R4/v2/0131/index.html">v2 Contact Role v2.9 (CodeSystem)</a>
+                </li>
+              </ul>
+            </div>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -612,7 +630,7 @@
         <name value="BeContactPerson"/>
         <title value="ValueSet contact person"/>
         <status value="active"/>
-        <date value="2020-04-09T10:29:01+02:00"/>
+        <date value="2020-04-15T11:19:02+02:00"/>
         <publisher value="eHealth Platform"/>
         <contact>
           <name value="Etienne Cantineau"/>
@@ -623,8 +641,8 @@
         </contact>
         <description value="Maximum valuest to define category of a contact person, using the HL7 values and the Belgian CD-CONTACT-PERSON values."/>
         <expansion>
-          <identifier value="urn:uuid:b9252587-0126-496b-9881-a3aa44b8736f"/>
-          <timestamp value="2020-04-09T10:29:13+02:00"/>
+          <identifier value="urn:uuid:efe95f3e-6022-471a-99a7-d992ee41ed41"/>
+          <timestamp value="2020-04-15T11:19:16+02:00"/>
           <total value="30"/>
           <parameter>
             <name value="excludeNested"/>
@@ -801,7 +819,9 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 0 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px"/>Expansion based on https://www.ehealth.fgov.be/standards/fhir/CodeSystem/nihdi-legal-physiotherapy-fa version 1.0.0
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-nihdi-legal-physiotherapy-fa.html">CodeSystem NIHDILegalPhysiotherapyFa v1.0.0 (CodeSystem)</a>
+            </p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -822,7 +842,7 @@
         <name value="BeProductorServiceNihdiEAgreement"/>
         <title value="ValueSet productor service"/>
         <status value="active"/>
-        <date value="2020-04-09T10:29:01+02:00"/>
+        <date value="2020-04-15T11:19:02+02:00"/>
         <publisher value="eHealth Platform"/>
         <contact>
           <name value="Etienne Cantineau"/>
@@ -833,8 +853,8 @@
         </contact>
         <description value="NIHDI codes for use to describe eAgreement products or services in the MyCareNet eAgreement flows."/>
         <expansion>
-          <identifier value="urn:uuid:f1c8b4d5-e9c9-434d-83ce-ad44f72cfdb8"/>
-          <timestamp value="2020-04-09T10:29:13+02:00"/>
+          <identifier value="urn:uuid:15e29201-dec8-4853-bbbd-eb96f6b722fb"/>
+          <timestamp value="2020-04-15T11:19:16+02:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
