@@ -17,10 +17,31 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: patient1</p><p><b>meta</b>: </p><p><b>identifier</b>: 79121137740, Social Beneficiary Identifier = 79121137740 (OFFICIAL), Medical record number = 45XXP0PA-4 (USUAL)</p><p><b>name</b>: Josephine Nessa La Paradisio </p><p><b>telecom</b>: nessa.laparadisio@belgium.be, ph: +322476792979(MOBILE), ph: +3226718655(HOME), ph: +322476799(WORK)</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1979-12-11</p><p><b>address</b>: </p><ul><li>Sloordelle 42, 1160 Oudergem(HOME)</li><li>42, Allee des Colzas, 1160 Auderghem(HOME)</li></ul><p><b>maritalStatus</b>: Divorced <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus code 'D' = 'Divorced; {https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-civilstate code 'mother' = 'mother)</span></p><h3>Contacts</h3><table class=\"grid\"><tr><td>-</td><td><b>Relationship</b></td><td><b>Name</b></td><td><b>Telecom</b></td></tr><tr><td>*</td><td>Next-of-Kin <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/v2-0131 code 'N' = 'Next-of-Kin; {https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contact-person code 'mother' = 'mother)</span></td><td>Leia Vogels </td><td>ph: +31201234567(MOBILE)</td></tr></table><p><b>generalPractitioner</b>: <a href=\"practitioner1\">practitioner1</a></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: patient1</p><p><b>meta</b>: </p><p><b>identifier</b>: 79121137740 (OFFICIAL), Social Beneficiary Identifier = 79121137740 (OFFICIAL), Medical record number = 45XXP0PA-4 (USUAL)</p><p><b>name</b>: Josephine Nessa La Paradisio </p><p><b>telecom</b>: nessa.laparadisio@belgium.be, ph: +322476792979(MOBILE), ph: +3226718655(HOME), ph: +322476799(WORK)</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1979-12-11</p><p><b>address</b>: </p><ul><li>Sloordelle 42, 1160 Oudergem(HOME)</li><li>42, Allee des Colzas, 1160 Auderghem(HOME)</li></ul><p><b>maritalStatus</b>: Divorced <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus code 'D' = 'Divorced', given as 'Divorced'}; {https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-civilstate code '41' = 'Divorced since 1/10/1994', given as 'Divorced since 1/10/1994'})</span></p><h3>Contacts</h3><table class=\"grid\"><tr><td>-</td><td><b>Relationship</b></td><td><b>Name</b></td><td><b>Telecom</b></td></tr><tr><td>*</td><td>Next-of-Kin <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/v2-0131 code 'N' = 'Next-of-Kin', given as 'Next-of-Kin'}; {https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contact-person code 'mother' = 'mother', given as 'mother'})</span></td><td>Leia Vogels </td><td>ph: +31201234567(MOBILE)</td></tr></table><p><b>generalPractitioner</b>: <a href=\"practitioner1\">practitioner1</a></p></div>"
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "code" ];
+       fhir:Extension.valueCodeableConcept [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           fhir:Coding.system [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-fed-country" ];
+           fhir:Coding.code [ fhir:value "BE" ];
+           fhir:Coding.display [ fhir:value "Belgium" ]
+         ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:Extension.url [ fhir:value "period" ];
+       fhir:Extension.valuePeriod [
+         fhir:Period.start [ fhir:value "1979-12-11"^^xsd:date ]
+       ]
+     ];
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/patient-nationality" ]
+  ], [
+     fhir:index 1;
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/patient-birthPlace" ];
      fhir:Extension.valueAddress [
        fhir:Address.city [ fhir:value "Namen" ];
@@ -29,6 +50,7 @@
   ];
   fhir:Patient.identifier [
      fhir:index 0;
+     fhir:Identifier.use [ fhir:value "official" ];
      fhir:Identifier.system [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin" ];
      fhir:Identifier.value [ fhir:value "79121137740" ]
   ], [
@@ -137,11 +159,13 @@
      fhir:CodeableConcept.coding [
        fhir:index 0;
        fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus" ];
-       fhir:Coding.code [ fhir:value "D" ]
+       fhir:Coding.code [ fhir:value "D" ];
+       fhir:Coding.display [ fhir:value "Divorced" ]
      ], [
        fhir:index 1;
-       fhir:Coding.system [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-civilstate" ];
-       fhir:Coding.code [ fhir:value "mother" ]
+       fhir:Coding.system [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-civilstate" ];
+       fhir:Coding.code [ fhir:value "41" ];
+       fhir:Coding.display [ fhir:value "Divorced since 1/10/1994" ]
      ]
   ];
   fhir:Patient.contact [
@@ -151,11 +175,13 @@
        fhir:CodeableConcept.coding [
          fhir:index 0;
          fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0131" ];
-         fhir:Coding.code [ fhir:value "N" ]
+         fhir:Coding.code [ fhir:value "N" ];
+         fhir:Coding.display [ fhir:value "Next-of-Kin" ]
        ], [
          fhir:index 1;
          fhir:Coding.system [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contact-person" ];
-         fhir:Coding.code [ fhir:value "mother" ]
+         fhir:Coding.code [ fhir:value "mother" ];
+         fhir:Coding.display [ fhir:value "mother" ]
        ]
      ];
      fhir:Patient.contact.name [

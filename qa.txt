@@ -1,15 +1,15 @@
 ﻿TheCoreBelgianFederalFHIRProfiles : Validation Results
 =========================================
 
-err = 22, warn = 8, info = 6
+err = 18, warn = 8, info = 6
 IG Publisher Version: v1.0.80-SNAPSHOT
-Generated Wed Apr 15 11:19:47 CEST 2020. FHIR version 4.0.1 for BeCoreImplementationGuide#1.0.0 (canonical = https://www.ehealth.fgov.be/standards/fhir)
+Generated Thu Apr 16 11:19:16 CEST 2020. FHIR version 4.0.1 for BeCoreImplementationGuide#1.0.0 (canonical = https://www.ehealth.fgov.be/standards/fhir)
 
  Build Errors : 17 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\ImplementationGuide-BeCoreImplementationGuide : 0 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\claim-bemycarenetclaim1 : 5 / 1
  C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\messageheader-bemycareneteagreementmessageheader1 : 0 / 1
- C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\patient-patient1 : 6 / 1
+ C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\patient-patient1 : 4 / 1
  C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\structuredefinition-be-address : 0 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\structuredefinition-be-mycarenetclaim : 0 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\structuredefinition-be-mycareneteagreementdemand : 0 / 1
@@ -26,11 +26,11 @@ Generated Wed Apr 15 11:19:47 CEST 2020. FHIR version 4.0.1 for BeCoreImplementa
  C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\valueset-be-contactperson : 0 / 0
 </table>
 == n/a ==
-ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\Claim-bemycarenetclaim1.html#/html/body/div/div/div/div/div/div/p/a at Line 146, column 1209: The link 'enterer1' for "enterer1" cannot be resolved
-ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\Claim-bemycarenetclaim1.html#/html/body/div/div/div/div/div/div/p/a at Line 146, column 1264: The link 'provider1' for "provider1" cannot be resolved
-ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\Claim-bemycarenetclaim1.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 146, column 2238: The link 'coverage1' for "coverage1" cannot be resolved
+ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\Claim-bemycarenetclaim1.html#/html/body/div/div/div/div/div/div/p/a at Line 146, column 1218: The link 'enterer1' for "enterer1" cannot be resolved
+ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\Claim-bemycarenetclaim1.html#/html/body/div/div/div/div/div/div/p/a at Line 146, column 1273: The link 'provider1' for "provider1" cannot be resolved
+ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\Claim-bemycarenetclaim1.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 146, column 2247: The link 'coverage1' for "coverage1" cannot be resolved
 ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\MessageHeader-bemycareneteagreementmessageheader1.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 146, column 397: The link 'testuri' for "testuri" cannot be resolved
-ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\Patient-patient1.html#/html/body/div/div/div/div/div/div/p/a at Line 146, column 1402: The link 'practitioner1' for "practitioner1" cannot be resolved
+ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\Patient-patient1.html#/html/body/div/div/div/div/div/div/p/a at Line 146, column 1538: The link 'practitioner1' for "practitioner1" cannot be resolved
 ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\StructureDefinition-be-mycarenetclaim.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 244, column 940: The link 'StructureDefinition-be-mycarenetclaim-definitions.html#Claim.supportingInfo.category.coding' for "coding" cannot be resolved (valid targets: 254 targets)
 ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\StructureDefinition-be-mycarenetclaim.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 251, column 927: The link 'StructureDefinition-be-mycarenetclaim-definitions.html#Claim.supportingInfo.category.coding' for "coding" cannot be resolved (valid targets: 254 targets)
 ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\StructureDefinition-be-mycarenetclaim.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 850, column 940: The link 'StructureDefinition-be-mycarenetclaim-definitions.html#Claim.supportingInfo.category.coding' for "coding" cannot be resolved (valid targets: 254 targets)
@@ -57,9 +57,7 @@ INFORMATION: MessageHeader/bemycareneteagreementmessageheader1: MessageHeader.ev
 ERROR: Patient/patient1: Patient.identifier[0]: Unsupported fixed pattern type for discriminator(system) for slice Patient.identifier:SSIN: org.hl7.fhir.r5.model.UriType
 ERROR: Patient/patient1: Patient.identifier[1]: Unsupported fixed pattern type for discriminator(system) for slice Patient.identifier:SSIN: org.hl7.fhir.r5.model.UriType
 ERROR: Patient/patient1: Patient.identifier[2]: Unsupported fixed pattern type for discriminator(system) for slice Patient.identifier:SSIN: org.hl7.fhir.r5.model.UriType
-ERROR: Patient/patient1: Patient.maritalStatus.coding[1]: The Coding references a value set, not a code system ("https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-civilstate")
-ERROR: Patient/patient1: Patient.maritalStatus.coding[1]: Invalid System URI: https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-civilstate - cannot use a value set URI as a system
-INFORMATION: Patient/patient1: Patient.maritalStatus.coding[1]: Code System URI "https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-civilstate" is unknown so the code cannot be validated
+INFORMATION: Patient/patient1: Patient.extension[0].extension[0].value.ofType(CodeableConcept).coding[0]: Code System URI "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-fed-country" is unknown so the code cannot be validated
 ERROR: Patient/patient1: Patient.generalPractitioner[0]: Unable to resolve resource "practitioner1"
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\StructureDefinition-be-address.json ==
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\StructureDefinition-be-mycarenetclaim.json ==
