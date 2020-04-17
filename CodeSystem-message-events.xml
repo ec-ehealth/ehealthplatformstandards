@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="message-events"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>CodeSystem message events</h2><div><p>Message events for MyCareNet flows.Not all codes are defined here, a full list can be found on mycarenet.be</p>
+</div><p>This code system https://www.ehealth.fgov.be/standards/fhir/CodeSystem/message-events defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">claim-ask<a name="message-events-claim-ask"> </a></td><td>claim-ask</td><td/></tr></table></div>
+  </text>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/CodeSystem/message-events"/>
+  <version value="1.0.0"/>
+  <name value="MyCareNetMessageEvents"/>
+  <title value="CodeSystem message events"/>
+  <status value="active"/>
+  <date value="2020-04-17T09:12:27+02:00"/>
+  <publisher value="eHealth Platform"/>
+  <contact>
+    <name value="Etienne Cantineau"/>
+    <telecom>
+      <system value="email"/>
+      <value value="etienne.cantineau@ehealth.fgov.be"/>
+    </telecom>
+  </contact>
+  <description value="Message events for MyCareNet flows.Not all codes are defined here, a full list can be found on mycarenet.be"/>
+  <content value="complete"/>
+  <concept>
+    <code value="claim-ask"/>
+    <display value="claim-ask"/>
+  </concept>
+</CodeSystem>

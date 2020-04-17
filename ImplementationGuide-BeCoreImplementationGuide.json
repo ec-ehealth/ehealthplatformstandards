@@ -10,7 +10,7 @@
   "name": "TheCoreBelgianFederalFHIRProfiles",
   "title": "The Core Belgian Federal FHIR Profiles",
   "status": "active",
-  "date": "2020-04-16T11:18:30+02:00",
+  "date": "2020-04-17T09:12:27+02:00",
   "publisher": "eHealth Platform",
   "contact": [
     {
@@ -525,6 +525,42 @@
         },
         "name": "CodeSystem CD-CONTACT-PERSON",
         "description": "Contact person",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "CodeSystem-agreement-types.html"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/agreement-types"
+        },
+        "name": "CodeSystem agreement types",
+        "description": "Agreement types for MyCareNet flows. Not all codes are defined here, a full list can be found on mycarenet.be",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "CodeSystem-message-events.html"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/message-events"
+        },
+        "name": "CodeSystem message events",
+        "description": "Message events for MyCareNet flows.Not all codes are defined here, a full list can be found on mycarenet.be",
         "exampleBoolean": false
       },
       {

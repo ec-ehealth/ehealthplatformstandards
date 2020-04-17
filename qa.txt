@@ -3,7 +3,7 @@
 
 err = 18, warn = 8, info = 6
 IG Publisher Version: v1.0.80-SNAPSHOT
-Generated Thu Apr 16 11:19:16 CEST 2020. FHIR version 4.0.1 for BeCoreImplementationGuide#1.0.0 (canonical = https://www.ehealth.fgov.be/standards/fhir)
+Generated Fri Apr 17 09:13:23 CEST 2020. FHIR version 4.0.1 for BeCoreImplementationGuide#1.0.0 (canonical = https://www.ehealth.fgov.be/standards/fhir)
 
  Build Errors : 17 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\ImplementationGuide-BeCoreImplementationGuide : 0 / 0
@@ -18,8 +18,10 @@ Generated Thu Apr 16 11:19:16 CEST 2020. FHIR version 4.0.1 for BeCoreImplementa
  C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\structuredefinition-be-patient : 0 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\structuredefinition-be-practitioner : 0 / 1
  C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\structuredefinition-be-practitionerrole : 0 / 1
+ C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\codesystem-agreement-types : 0 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\codesystem-cd-civilstate : 0 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\codesystem-cd-contact-person : 0 / 0
+ C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\codesystem-message-events : 0 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\codesystem-nihdi-legal-physiotherapy-fa : 0 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\valueset-be-beproductorservice : 0 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\valueset-be-civilstate : 0 / 0
@@ -71,8 +73,10 @@ WARNING: https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organ
 WARNING: https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner: The Implementation Guide contains no examples for this profile
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\StructureDefinition-be-practitionerrole.json ==
 WARNING: https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitionerrole: The Implementation Guide contains no examples for this profile
+== C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\CodeSystem-agreement-types.json ==
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\CodeSystem-cd-civilstate.json ==
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\CodeSystem-cd-contact-person.json ==
+== C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\CodeSystem-message-events.json ==
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\CodeSystem-nihdi-legal-physiotherapy-fa.json ==
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\ValueSet-be-beproductorservice.json ==
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\ValueSet-be-civilstate.json ==

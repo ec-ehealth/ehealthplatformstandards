@@ -1,0 +1,34 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "agreement-types",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>CodeSystem agreement types</h2><div><p>Agreement types for MyCareNet flows. Not all codes are defined here, a full list can be found on mycarenet.be</p>\n</div><p>This code system https://www.ehealth.fgov.be/standards/fhir/CodeSystem/agreement-types defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">physiotherapy_fa<a name=\"agreement-types-physiotherapy_fa\"> </a></td><td>physiotherapy_fa</td><td/></tr></table></div>"
+  },
+  "url": "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/agreement-types",
+  "version": "1.0.0",
+  "name": "MyCareNetAgreementTypes",
+  "title": "CodeSystem agreement types",
+  "status": "active",
+  "date": "2020-04-17T09:12:27+02:00",
+  "publisher": "eHealth Platform",
+  "contact": [
+    {
+      "name": "Etienne Cantineau",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "etienne.cantineau@ehealth.fgov.be"
+        }
+      ]
+    }
+  ],
+  "description": "Agreement types for MyCareNet flows. Not all codes are defined here, a full list can be found on mycarenet.be",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "physiotherapy_fa",
+      "display": "physiotherapy_fa"
+    }
+  ]
+}
