@@ -63,7 +63,7 @@ Alternatively, there is only an internal reference and the Organization is inclu
   <name value="BePatient"/>
   <title value="Patient core BE profile"/>
   <status value="active"/>
-  <date value="2020-04-17T09:12:27+02:00"/>
+  <date value="2020-04-17T11:15:53+02:00"/>
   <publisher value="eHealth Platform"/>
   <contact>
     <name value="Etienne Cantineau"/>
@@ -1252,7 +1252,6 @@ Alternatively, there is only an internal reference and the Organization is inclu
           <type value="value"/>
           <path value="system"/>
         </discriminator>
-        <description value="Slice based on the identifier.code pattern"/>
         <rules value="open"/>
       </slicing>
       <short value="An identifier for this patient"/>
@@ -3394,7 +3393,6 @@ Alternatively, there is only an internal reference and the Organization is inclu
           <type value="value"/>
           <path value="system"/>
         </discriminator>
-        <description value="Slice based on the identifier.code pattern"/>
         <rules value="open"/>
       </slicing>
     </element>

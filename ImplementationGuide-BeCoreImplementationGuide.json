@@ -10,7 +10,7 @@
   "name": "TheCoreBelgianFederalFHIRProfiles",
   "title": "The Core Belgian Federal FHIR Profiles",
   "status": "active",
-  "date": "2020-04-17T09:12:27+02:00",
+  "date": "2020-04-17T11:15:53+02:00",
   "publisher": "eHealth Platform",
   "contact": [
     {
@@ -535,6 +535,24 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "CodeSystem-cd-hcparty.html"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/cd-hcparty"
+        },
+        "name": "CodeSystem CD-HCPARTY",
+        "description": "healthcare party in Belgium.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "CodeSystem-agreement-types.html"
           }
         ],
@@ -616,6 +634,24 @@
         "name": "BeMyCareNetEAgreementMessageHeader 1",
         "description": "BeMyCareNetEAgreementMessageHeader 1",
         "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-mycareneteagreementmessageheader"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Organization"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Organization-organization1.html"
+          }
+        ],
+        "reference": {
+          "reference": "Organization/organization1"
+        },
+        "name": "Organization 1",
+        "description": "Organization 1",
+        "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization"
       },
       {
         "extension": [

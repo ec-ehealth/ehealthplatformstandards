@@ -10,7 +10,7 @@
   "name": "BeMyCareNetEAgreementDemand",
   "title": "My CareNet eAgreement Demand Bundle BE profile",
   "status": "active",
-  "date": "2020-04-17T09:12:27+02:00",
+  "date": "2020-04-17T11:15:53+02:00",
   "publisher": "eHealth Platform",
   "contact": [
     {
@@ -8360,7 +8360,7 @@
             "human": "The organization SHALL at least have a name or an identifier, and possibly more than one",
             "expression": "(identifier.count() + name.count()) > 0",
             "xpath": "count(f:identifier | f:name) > 0",
-            "source": "http://hl7.org/fhir/StructureDefinition/Organization"
+            "source": "http://hl7.org/fhir/StructureDefinition/Bundle"
           }
         ],
         "isModifier": false,

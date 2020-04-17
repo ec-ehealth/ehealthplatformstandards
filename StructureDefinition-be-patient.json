@@ -10,7 +10,7 @@
   "name": "BePatient",
   "title": "Patient core BE profile",
   "status": "active",
-  "date": "2020-04-17T09:12:27+02:00",
+  "date": "2020-04-17T11:15:53+02:00",
   "publisher": "eHealth Platform",
   "contact": [
     {
@@ -1449,7 +1449,6 @@
               "path": "system"
             }
           ],
-          "description": "Slice based on the identifier.code pattern",
           "rules": "open"
         },
         "short": "An identifier for this patient",
@@ -4084,7 +4083,6 @@
               "path": "system"
             }
           ],
-          "description": "Slice based on the identifier.code pattern",
           "rules": "open"
         }
       },

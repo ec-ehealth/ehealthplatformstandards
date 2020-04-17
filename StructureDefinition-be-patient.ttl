@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "BePatient"];
   fhir:StructureDefinition.title [ fhir:value "Patient core BE profile"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2020-04-17T09:12:27+02:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2020-04-17T11:15:53+02:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "eHealth Platform"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -1514,7 +1514,6 @@
            fhir:ElementDefinition.slicing.discriminator.type [ fhir:value "value" ];
            fhir:ElementDefinition.slicing.discriminator.path [ fhir:value "system" ]
          ];
-         fhir:ElementDefinition.slicing.description [ fhir:value "Slice based on the identifier.code pattern" ];
          fhir:ElementDefinition.slicing.rules [ fhir:value "open" ]
        ];
        fhir:ElementDefinition.short [ fhir:value "An identifier for this patient" ];
@@ -4237,7 +4236,6 @@
            fhir:ElementDefinition.slicing.discriminator.type [ fhir:value "value" ];
            fhir:ElementDefinition.slicing.discriminator.path [ fhir:value "system" ]
          ];
-         fhir:ElementDefinition.slicing.description [ fhir:value "Slice based on the identifier.code pattern" ];
          fhir:ElementDefinition.slicing.rules [ fhir:value "open" ]
        ]
      ], [
