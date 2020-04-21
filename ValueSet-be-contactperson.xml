@@ -7,11 +7,11 @@
 </div><ul><li>Include codes from <a href="http://hl7.org/fhir/R4/v2/0131/index.html"><code>http://terminology.hl7.org/CodeSystem/v2-0131</code></a> where concept  is-not-a  <a href="http://hl7.org/fhir/R4/v2/0131/index.html#v2-0131-O">O</a></li><li>Include all codes defined in <a href="CodeSystem-cd-contact-person.html"><code>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contact-person</code></a></li></ul><p>This value set includes codes based on the following rules:</p></div>
   </text>
   <url value="https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-contactperson"/>
-  <version value="1.0.0"/>
+  <version value="1.1.0"/>
   <name value="BeContactPerson"/>
   <title value="ValueSet contact person"/>
   <status value="active"/>
-  <date value="2020-04-17T11:15:53+02:00"/>
+  <date value="2020-04-21T09:51:51+02:00"/>
   <publisher value="eHealth Platform"/>
   <contact>
     <name value="Etienne Cantineau"/>

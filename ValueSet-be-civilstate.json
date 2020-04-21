@@ -6,11 +6,11 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ValueSet civil state</h2><div><p>Codes supported by eHealth Platform differentiating types of civil state. This valueset supports the Belgian federal FHIR profiling effort.\nWhenever possible add a code from http://terminology.hl7.org/CodeSystem/v3-MaritalStatus for international interoperability but also use https://www.ehealth.fgov.be/standards/fhir/CodeSystem/CD-CIVILSTATE\nfor the Belgian specific code.</p>\n</div><ul><li>Include codes from <a href=\"http://hl7.org/fhir/R4/v3/MaritalStatus/cs.html\"><code>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</code></a> where concept  is-a  <a href=\"http://hl7.org/fhir/R4/v3/MaritalStatus/cs.html#v3-MaritalStatus-A\">A</a></li><li>Include codes from <a href=\"http://hl7.org/fhir/R4/v3/MaritalStatus/cs.html\"><code>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</code></a> where concept  is-a  <a href=\"http://hl7.org/fhir/R4/v3/MaritalStatus/cs.html#v3-MaritalStatus-D\">D</a></li><li>Include codes from <a href=\"http://hl7.org/fhir/R4/v3/MaritalStatus/cs.html\"><code>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</code></a> where concept  is-a  <a href=\"http://hl7.org/fhir/R4/v3/MaritalStatus/cs.html#v3-MaritalStatus-M\">M</a></li><li>Include codes from <a href=\"http://hl7.org/fhir/R4/v3/MaritalStatus/cs.html\"><code>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</code></a> where concept  is-a  <a href=\"http://hl7.org/fhir/R4/v3/MaritalStatus/cs.html#v3-MaritalStatus-U\">U</a></li><li>Include codes from <a href=\"http://hl7.org/fhir/R4/v3/MaritalStatus/cs.html\"><code>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</code></a> where concept  is-a  <a href=\"http://hl7.org/fhir/R4/v3/MaritalStatus/cs.html#v3-MaritalStatus-W\">W</a></li><li>Include all codes defined in <a href=\"CodeSystem-cd-civilstate.html\"><code>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-civilstate</code></a></li></ul><p>This value set includes codes based on the following rules:</p></div>"
   },
   "url": "https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-civilstate",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "name": "BeCivilState",
   "title": "ValueSet civil state",
   "status": "active",
-  "date": "2020-04-17T11:15:53+02:00",
+  "date": "2020-04-21T09:51:51+02:00",
   "publisher": "eHealth Platform",
   "contact": [
     {

@@ -1,6 +1,6 @@
 {
   "package": "BeCoreImplementationGuide",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "fhirVersion": "4.0.1",
   "extensions": [],
   "profiles": {
@@ -78,7 +78,8 @@
     "http://hl7.org/fhir/StructureDefinition/language": [
       "Address",
       "Organization.address",
-      "Patient.address"
+      "Patient.address",
+      "Practitioner.address"
     ],
     "http://hl7.org/fhir/StructureDefinition/patient-birthPlace": [
       "Patient"

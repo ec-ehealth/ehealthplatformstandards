@@ -6,11 +6,11 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>TheCoreBelgianFederalFHIRProfiles</h2><p>The official URL for this implementation guide is: </p><pre>https://www.ehealth.fgov.be/standards/fhir/ImplementationGuide/BeCoreImplementationGuide</pre><div><p>The Core Belgian Profiles provide the essential and common requirement for FHIR implementations in Belgium.</p>\n</div></div>"
   },
   "url": "https://www.ehealth.fgov.be/standards/fhir/ImplementationGuide/BeCoreImplementationGuide",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "name": "TheCoreBelgianFederalFHIRProfiles",
   "title": "The Core Belgian Federal FHIR Profiles",
   "status": "active",
-  "date": "2020-04-17T11:15:53+02:00",
+  "date": "2020-04-21T09:51:51+02:00",
   "publisher": "eHealth Platform",
   "contact": [
     {
@@ -621,6 +621,24 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Bundle"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Bundle-bemycareneteagreementdemand1.html"
+          }
+        ],
+        "reference": {
+          "reference": "Bundle/bemycareneteagreementdemand1"
+        },
+        "name": "BeMyCareNetEAgreementDemand 1",
+        "description": "BeMyCareNetEAgreementDemand 1",
+        "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-mycareneteagreementdemand"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "MessageHeader"
           },
           {
@@ -670,6 +688,42 @@
         "name": "Patient 1",
         "description": "Patient 1",
         "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Practitioner"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Practitioner-practitioner1.html"
+          }
+        ],
+        "reference": {
+          "reference": "Practitioner/practitioner1"
+        },
+        "name": "Practitioner 1",
+        "description": "Practitioner 1",
+        "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "PractitionerRole"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "PractitionerRole-practitionerrole1.html"
+          }
+        ],
+        "reference": {
+          "reference": "PractitionerRole/practitionerrole1"
+        },
+        "name": "Practitioner role 1",
+        "description": "Practitioner role 1",
+        "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitionerrole"
       }
     ],
     "page": {

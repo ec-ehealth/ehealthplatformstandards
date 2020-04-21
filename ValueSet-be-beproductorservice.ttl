@@ -13,11 +13,11 @@
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ValueSet productor service</h2><div><p>NIHDI codes for use to describe eAgreement products or services in the MyCareNet eAgreement flows.</p>\n</div><ul><li>Include all codes defined in <a href=\"CodeSystem-nihdi-legal-physiotherapy-fa.html\"><code>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/nihdi-legal-physiotherapy-fa</code></a></li></ul></div>"
   ];
   fhir:ValueSet.url [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-beproductorservice"];
-  fhir:ValueSet.version [ fhir:value "1.0.0"];
+  fhir:ValueSet.version [ fhir:value "1.1.0"];
   fhir:ValueSet.name [ fhir:value "BeProductorServiceNihdiEAgreement"];
   fhir:ValueSet.title [ fhir:value "ValueSet productor service"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2020-04-17T11:15:53+02:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2020-04-21T09:51:51+02:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "eHealth Platform"];
   fhir:ValueSet.contact [
      fhir:index 0;

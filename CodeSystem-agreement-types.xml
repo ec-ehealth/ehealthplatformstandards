@@ -7,11 +7,11 @@
 </div><p>This code system https://www.ehealth.fgov.be/standards/fhir/CodeSystem/agreement-types defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">physiotherapy_fa<a name="agreement-types-physiotherapy_fa"> </a></td><td>physiotherapy_fa</td><td/></tr></table></div>
   </text>
   <url value="https://www.ehealth.fgov.be/standards/fhir/CodeSystem/agreement-types"/>
-  <version value="1.0.0"/>
+  <version value="1.1.0"/>
   <name value="MyCareNetAgreementTypes"/>
   <title value="CodeSystem agreement types"/>
   <status value="active"/>
-  <date value="2020-04-17T11:15:53+02:00"/>
+  <date value="2020-04-21T09:51:51+02:00"/>
   <publisher value="eHealth Platform"/>
   <contact>
     <name value="Etienne Cantineau"/>

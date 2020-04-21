@@ -2,11 +2,11 @@
   "url": "https://www.ehealth.fgov.be/standards/fhir/ImplementationGuide/BeCoreImplementationGuide",
   "name": "TheCoreBelgianFederalFHIRProfiles",
   "package-id": "BeCoreImplementationGuide",
-  "ig-ver": "1.0.0",
-  "date": "Fri, 17 Apr, 2020 11:15:53 +0200",
-  "errs": 34,
-  "warnings": 6,
-  "hints": 6,
+  "ig-ver": "1.1.0",
+  "date": "Tue, 21 Apr, 2020 09:51:51 +0200",
+  "errs": 29,
+  "warnings": 7,
+  "hints": 4,
   "version": "4.0.1",
   "tool": "4.2.0 (3)"
 }

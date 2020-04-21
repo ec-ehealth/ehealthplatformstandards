@@ -1,24 +1,27 @@
 ﻿TheCoreBelgianFederalFHIRProfiles : Validation Results
 =========================================
 
-err = 34, warn = 6, info = 6
-IG Publisher Version: v1.0.80-SNAPSHOT
-Generated Fri Apr 17 11:16:40 CEST 2020. FHIR version 4.0.1 for BeCoreImplementationGuide#1.0.0 (canonical = https://www.ehealth.fgov.be/standards/fhir)
+err = 29, warn = 7, info = 4
+IG Publisher Version: v1.0.81-SNAPSHOT
+Generated Tue Apr 21 09:52:45 CEST 2020. FHIR version 4.0.1 for BeCoreImplementationGuide#1.1.0 (canonical = https://www.ehealth.fgov.be/standards/fhir)
 
- Build Errors : 19 / 0
+ Build Errors : 24 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\ImplementationGuide-BeCoreImplementationGuide : 0 / 0
+ C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\bundle-bemycareneteagreementdemand1 : 2 / 8
  C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\claim-bemycarenetclaim1 : 5 / 1
  C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\messageheader-bemycareneteagreementmessageheader1 : 0 / 1
  C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\organization-organization1 : 8 / 0
- C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\patient-patient1 : 4 / 1
+ C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\patient-patient1 : 3 / 1
+ C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\practitioner-practitioner1 : 6 / 0
+ C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\practitionerrole-practitionerrole1 : 5 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\structuredefinition-be-address : 0 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\structuredefinition-be-mycarenetclaim : 0 / 0
- C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\structuredefinition-be-mycareneteagreementdemand : 0 / 1
+ C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\structuredefinition-be-mycareneteagreementdemand : 0 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\structuredefinition-be-mycareneteagreementmessageheader : 0 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\structuredefinition-be-organization : 0 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\structuredefinition-be-patient : 0 / 0
- C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\structuredefinition-be-practitioner : 0 / 1
- C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\structuredefinition-be-practitionerrole : 0 / 1
+ C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\structuredefinition-be-practitioner : 0 / 0
+ C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\structuredefinition-be-practitionerrole : 0 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\codesystem-agreement-types : 0 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\codesystem-cd-civilstate : 0 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\codesystem-cd-contact-person : 0 / 0
@@ -34,22 +37,38 @@ ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\Claim-bemycarenetclai
 ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\Claim-bemycarenetclaim1.html#/html/body/div/div/div/div/div/div/p/a at Line 146, column 1281: The link 'provider1' for "provider1" cannot be resolved
 ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\Claim-bemycarenetclaim1.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 146, column 2255: The link 'coverage1' for "coverage1" cannot be resolved
 ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\MessageHeader-bemycareneteagreementmessageheader1.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 146, column 397: The link 'testuri' for "testuri" cannot be resolved
-ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\Patient-patient1.html#/html/body/div/div/div/div/div/div/p/a at Line 146, column 1564: The link 'practitioner1' for "practitioner1" cannot be resolved
 ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\StructureDefinition-be-mycarenetclaim.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 244, column 940: The link 'StructureDefinition-be-mycarenetclaim-definitions.html#Claim.supportingInfo.category.coding' for "coding" cannot be resolved (valid targets: 254 targets)
 ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\StructureDefinition-be-mycarenetclaim.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 251, column 927: The link 'StructureDefinition-be-mycarenetclaim-definitions.html#Claim.supportingInfo.category.coding' for "coding" cannot be resolved (valid targets: 254 targets)
 ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\StructureDefinition-be-mycarenetclaim.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 850, column 940: The link 'StructureDefinition-be-mycarenetclaim-definitions.html#Claim.supportingInfo.category.coding' for "coding" cannot be resolved (valid targets: 254 targets)
 ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\StructureDefinition-be-mycarenetclaim.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 857, column 927: The link 'StructureDefinition-be-mycarenetclaim-definitions.html#Claim.supportingInfo.category.coding' for "coding" cannot be resolved (valid targets: 254 targets)
 ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\StructureDefinition-be-organization.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 253, column 845: The link 'StructureDefinition-be-organization-definitions.html#Organization.type.coding' for "coding" cannot be resolved (valid targets: 88 targets)
 ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\StructureDefinition-be-organization.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 541, column 845: The link 'StructureDefinition-be-organization-definitions.html#Organization.type.coding' for "coding" cannot be resolved (valid targets: 88 targets)
+ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\StructureDefinition-be-practitionerrole.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 243, column 852: The link 'StructureDefinition-be-practitionerrole-definitions.html#PractitionerRole.code.coding' for "coding" cannot be resolved (valid targets: 85 targets)
+ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\StructureDefinition-be-practitionerrole.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 247, column 845: The link 'StructureDefinition-be-practitionerrole-definitions.html#PractitionerRole.code.coding' for "coding" cannot be resolved (valid targets: 85 targets)
+ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\StructureDefinition-be-practitionerrole.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 252, column 839: The link 'StructureDefinition-be-practitionerrole-definitions.html#PractitionerRole.specialty.coding' for "coding" cannot be resolved (valid targets: 85 targets)
+ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\StructureDefinition-be-practitionerrole.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 514, column 852: The link 'StructureDefinition-be-practitionerrole-definitions.html#PractitionerRole.code.coding' for "coding" cannot be resolved (valid targets: 85 targets)
+ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\StructureDefinition-be-practitionerrole.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 518, column 845: The link 'StructureDefinition-be-practitionerrole-definitions.html#PractitionerRole.code.coding' for "coding" cannot be resolved (valid targets: 85 targets)
+ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\StructureDefinition-be-practitionerrole.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 523, column 839: The link 'StructureDefinition-be-practitionerrole-definitions.html#PractitionerRole.specialty.coding' for "coding" cannot be resolved (valid targets: 85 targets)
 ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\artifacts.html: The html source does not contain the publish box <!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader--> (see note at http://wiki.hl7.org/index.php?title=FHIR_Implementation_Guide_Publishing_Requirements#HL7_HTML_Standards_considerations)
 ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\changes.html: The html source does not contain the publish box
 ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\conventions.html: The html source does not contain the publish box
 ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\downloads.html: The html source does not contain the publish box
 ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\guidance.html: The html source does not contain the publish box
 ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\index.html: The html source does not contain the publish box
-ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\index.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 200, column 11: The link 'artifacts.html#conditions' for "Functional profiles" cannot be resolved (valid targets: [segment-header, publish-box, segment-post-footer, ehealth-logo, standards-logo, 1, 2, 3, 4, belgium-logo, 5, hl7-status, stripe, segment-footer, hl7-nav, segment-navbar, segment-content, segment-breadcrumb])
+ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\index.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 203, column 11: The link 'artifacts.html#conditions' for "Functional profiles" cannot be resolved (valid targets: [segment-header, publish-box, segment-post-footer, ehealth-logo, standards-logo, 1, 2, 3, 4, belgium-logo, 5, hl7-status, stripe, segment-footer, hl7-nav, segment-navbar, segment-content, segment-breadcrumb])
 ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\toc.html: The html source does not contain the publish box
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\ImplementationGuide-BeCoreImplementationGuide.json ==
+== C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\Bundle-bemycareneteagreementdemand1.json ==
+WARNING: Bundle/bemycareneteagreementdemand1: Bundle.entry[0].resource.event.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+INFORMATION: Bundle/bemycareneteagreementdemand1: Bundle.entry[2].resource.subType.coding[0]: Code System URI "https://www.mycarenet.be/fhir/CodeSystem/agreement-types" is unknown so the code cannot be validated
+ERROR: Bundle/bemycareneteagreementdemand1: Bundle.entry[2].resource.enterer: Unable to resolve resource "enterer/1"
+ERROR: Bundle/bemycareneteagreementdemand1: Bundle.entry[2].resource.provider: Unable to resolve resource "provider/1"
+WARNING: Bundle/bemycareneteagreementdemand1: Bundle.entry[2]: Entry 'test2' isn't reachable by traversing from first Bundle entry
+WARNING: Bundle/bemycareneteagreementdemand1: Bundle.entry[3]: Entry 'test3' isn't reachable by traversing from first Bundle entry
+WARNING: Bundle/bemycareneteagreementdemand1: Bundle.entry[4]: Entry 'test4' isn't reachable by traversing from first Bundle entry
+WARNING: Bundle/bemycareneteagreementdemand1: Bundle.entry[5]: Entry 'test5' isn't reachable by traversing from first Bundle entry
+WARNING: Bundle/bemycareneteagreementdemand1: Bundle.entry[6]: Entry 'test6' isn't reachable by traversing from first Bundle entry
+WARNING: Bundle/bemycareneteagreementdemand1: Bundle.entry[7]: Entry 'test7' isn't reachable by traversing from first Bundle entry
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\Claim-bemycarenetclaim1.json ==
 ERROR: Claim/bemycarenetclaim1: Claim.supportingInfo[0]: Unable to resolve discriminator in definitions: system
 ERROR: Claim/bemycarenetclaim1: Claim.supportingInfo[1]: Unable to resolve discriminator in definitions: system
@@ -73,18 +92,27 @@ ERROR: Patient/patient1: Patient.identifier[0]: Unsupported fixed pattern type f
 ERROR: Patient/patient1: Patient.identifier[1]: Unsupported fixed pattern type for discriminator(system) for slice Patient.identifier:SSIN: org.hl7.fhir.r5.model.UriType
 ERROR: Patient/patient1: Patient.identifier[2]: Unsupported fixed pattern type for discriminator(system) for slice Patient.identifier:SSIN: org.hl7.fhir.r5.model.UriType
 INFORMATION: Patient/patient1: Patient.extension[0].extension[0].value.ofType(CodeableConcept).coding[0]: Code System URI "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-fed-country" is unknown so the code cannot be validated
-ERROR: Patient/patient1: Patient.generalPractitioner[0]: Unable to resolve resource "practitioner1"
+== C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\Practitioner-practitioner1.json ==
+ERROR: Practitioner/practitioner1: Practitioner.identifier[0]: Unsupported fixed pattern type for discriminator(system) for slice Practitioner.identifier:NIHDI: org.hl7.fhir.r5.model.UriType
+ERROR: Practitioner/practitioner1: Practitioner.identifier[1]: Unsupported fixed pattern type for discriminator(system) for slice Practitioner.identifier:NIHDI: org.hl7.fhir.r5.model.UriType
+ERROR: Practitioner/practitioner1: Practitioner.identifier[0]: Unsupported fixed pattern type for discriminator(system) for slice Practitioner.identifier:CBE: org.hl7.fhir.r5.model.UriType
+ERROR: Practitioner/practitioner1: Practitioner.identifier[1]: Unsupported fixed pattern type for discriminator(system) for slice Practitioner.identifier:CBE: org.hl7.fhir.r5.model.UriType
+ERROR: Practitioner/practitioner1: Practitioner.identifier[0]: Unsupported fixed pattern type for discriminator(system) for slice Practitioner.identifier:SSIN: org.hl7.fhir.r5.model.UriType
+ERROR: Practitioner/practitioner1: Practitioner.identifier[1]: Unsupported fixed pattern type for discriminator(system) for slice Practitioner.identifier:SSIN: org.hl7.fhir.r5.model.UriType
+== C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\PractitionerRole-practitionerrole1.json ==
+ERROR: PractitionerRole/practitionerrole1: PractitionerRole.code[0]: Unsupported fixed pattern type for discriminator(coding.system) for slice PractitionerRole.code:CD-HCPARTY: org.hl7.fhir.r5.model.UriType
+ERROR: PractitionerRole/practitionerrole1: PractitionerRole.code[0]: Unsupported fixed pattern type for discriminator(coding.system) for slice PractitionerRole.code:SNOMED-CT: org.hl7.fhir.r5.model.UriType
+ERROR: PractitionerRole/practitionerrole1: PractitionerRole.specialty[0]: Unsupported fixed pattern type for discriminator(coding.system) for slice PractitionerRole.specialty:SNOMED-CT: org.hl7.fhir.r5.model.UriType
+ERROR: PractitionerRole/practitionerrole1: PractitionerRole.practitioner: Unable to resolve resource "https://www.anotherfhirserver.be/fhir/Practitioner/01"
+ERROR: PractitionerRole/practitionerrole1: PractitionerRole.code[0].coding[0]: Unknown Code https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty#persphysician in https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty for "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty#persphysician"
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\StructureDefinition-be-address.json ==
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\StructureDefinition-be-mycarenetclaim.json ==
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\StructureDefinition-be-mycareneteagreementdemand.json ==
-WARNING: https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-mycareneteagreementdemand: The Implementation Guide contains no examples for this profile
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\StructureDefinition-be-mycareneteagreementmessageheader.json ==
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\StructureDefinition-be-organization.json ==
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\StructureDefinition-be-patient.json ==
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\StructureDefinition-be-practitioner.json ==
-WARNING: https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner: The Implementation Guide contains no examples for this profile
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\StructureDefinition-be-practitionerrole.json ==
-WARNING: https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitionerrole: The Implementation Guide contains no examples for this profile
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\CodeSystem-agreement-types.json ==
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\CodeSystem-cd-civilstate.json ==
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\CodeSystem-cd-contact-person.json ==

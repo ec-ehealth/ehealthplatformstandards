@@ -1,0 +1,222 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.ehealth.fgov.be/standards/fhir/Bundle/bemycareneteagreementdemand1> a fhir:Bundle;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "bemycareneteagreementdemand1"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-mycareneteagreementdemand";
+       fhir:index 0;
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-mycareneteagreementdemand>
+     ]
+  ];
+  fhir:Bundle.type [ fhir:value "message"];
+  fhir:Bundle.entry [
+     fhir:index 0;
+     fhir:Bundle.entry.fullUrl [ fhir:value "test1" ];
+     fhir:Bundle.entry.resource <test1>
+  ], [
+     fhir:index 1;
+     fhir:Bundle.entry.fullUrl [ fhir:value "test2" ];
+     fhir:Bundle.entry.resource <test2>
+  ], [
+     fhir:index 2;
+     fhir:Bundle.entry.fullUrl [ fhir:value "test3" ];
+     fhir:Bundle.entry.resource <test3>
+  ], [
+     fhir:index 3;
+     fhir:Bundle.entry.fullUrl [ fhir:value "test4" ];
+     fhir:Bundle.entry.resource <test4>
+  ], [
+     fhir:index 4;
+     fhir:Bundle.entry.fullUrl [ fhir:value "test5" ];
+     fhir:Bundle.entry.resource <test5>
+  ], [
+     fhir:index 5;
+     fhir:Bundle.entry.fullUrl [ fhir:value "test6" ];
+     fhir:Bundle.entry.resource <test6>
+  ], [
+     fhir:index 6;
+     fhir:Bundle.entry.fullUrl [ fhir:value "test7" ];
+     fhir:Bundle.entry.resource <test7>
+  ] .
+
+<test1> a fhir:MessageHeader;
+  fhir:Resource.id [ fhir:value "MessageHeader2"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-mycareneteagreementmessageheader";
+       fhir:index 0;
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-mycareneteagreementmessageheader>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: MessageHeader2</p><p><b>meta</b>: </p><p><b>event</b>: test (Details: [not stated] code test = 'test', stated as 'null')</p><h3>Sources</h3><table class=\"grid\"><tr><td>-</td><td><b>Endpoint</b></td></tr><tr><td>*</td><td><a href=\"testuri\">testuri</a></td></tr></table></div>"
+  ];
+  fhir:MessageHeader.eventCoding [
+     fhir:Coding.code [ fhir:value "test" ]
+  ];
+  fhir:MessageHeader.source [
+     fhir:MessageHeader.source.endpoint [ fhir:value "testuri" ]
+  ] .
+
+<test2> a fhir:Practitioner;
+  fhir:Resource.id [ fhir:value "Practitioner2"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner";
+       fhir:index 0;
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: Practitioner2</p><p><b>meta</b>: </p><p><b>name</b>: Dupont</p></div>"
+  ];
+  fhir:Practitioner.name [
+     fhir:index 0;
+     fhir:HumanName.text [ fhir:value "Dupont" ]
+  ] .
+
+<test3> a fhir:Claim;
+  fhir:Resource.id [ fhir:value "Claim2"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-mycarenetclaim";
+       fhir:index 0;
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-mycarenetclaim>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: Claim2</p><p><b>meta</b>: </p><p><b>identifier</b>: 1111</p><p><b>status</b>: active</p><p><b>type</b>: Institutional <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/claim-type code 'institutional' = 'Institutional)</span></p><p><b>subType</b>: testtype <span style=\"background: LightGoldenRodYellow\">(Details : {https://www.mycarenet.be/fhir/CodeSystem/agreement-types code 'testtype' = 'testtype)</span></p><p><b>use</b>: claim</p><p><b>patient</b>: <a href=\"#backboneelement_Patient2\">Generated Summary: unknown resource entry</a></p><p><b>created</b>: 07-avr.-2020 0:00:00</p><p><b>enterer</b>: <a href=\"enterer/1\">enterer/1</a></p><p><b>provider</b>: <a href=\"provider/1\">provider/1</a></p><p><b>priority</b>: Normal <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/processpriority code 'normal' = 'Normal)</span></p><h3>Insurances</h3><table class=\"grid\"><tr><td>-</td><td><b>Sequence</b></td><td><b>Focal</b></td><td><b>Coverage</b></td></tr><tr><td>*</td><td>1</td><td>true</td><td><a href=\"#backboneelement_Coverage2\">Generated Summary: unknown resource entry</a></td></tr></table></div>"
+  ];
+  fhir:Claim.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/id" ];
+     fhir:Identifier.value [ fhir:value "1111" ]
+  ];
+  fhir:Claim.status [ fhir:value "active"];
+  fhir:Claim.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/claim-type" ];
+       fhir:Coding.code [ fhir:value "institutional" ]
+     ]
+  ];
+  fhir:Claim.subType [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://www.mycarenet.be/fhir/CodeSystem/agreement-types" ];
+       fhir:Coding.code [ fhir:value "testtype" ]
+     ]
+  ];
+  fhir:Claim.use [ fhir:value "claim"];
+  fhir:Claim.patient [
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/Patient/Patient2>;
+     fhir:Reference.reference [ fhir:value "Patient/Patient2" ]
+  ];
+  fhir:Claim.created [ fhir:value "2020-04-07"^^xsd:date];
+  fhir:Claim.enterer [
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/enterer/1>;
+     fhir:Reference.reference [ fhir:value "enterer/1" ]
+  ];
+  fhir:Claim.provider [
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/provider/1>;
+     fhir:Reference.reference [ fhir:value "provider/1" ]
+  ];
+  fhir:Claim.priority [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/processpriority" ];
+       fhir:Coding.code [ fhir:value "normal" ]
+     ]
+  ];
+  fhir:Claim.insurance [
+     fhir:index 0;
+     fhir:Claim.insurance.sequence [ fhir:value "1"^^xsd:positiveInteger ];
+     fhir:Claim.insurance.focal [ fhir:value "true"^^xsd:boolean ];
+     fhir:Claim.insurance.coverage [
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/Coverage/Coverage2>;
+       fhir:Reference.reference [ fhir:value "Coverage/Coverage2" ]
+     ]
+  ] .
+
+<test4> a fhir:PractitionerRole;
+  fhir:Resource.id [ fhir:value "PractitionerRole2"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitionerrole";
+       fhir:index 0;
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitionerrole>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: PractitionerRole2</p><p><b>meta</b>: </p><p><b>practitioner</b>: <a href=\"#backboneelement_Practitioner2\">Generated Summary: unknown resource entry</a></p></div>"
+  ];
+  fhir:PractitionerRole.practitioner [
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/Practitioner/Practitioner2>;
+     fhir:Reference.reference [ fhir:value "Practitioner/Practitioner2" ]
+  ] .
+
+<test5> a fhir:Coverage;
+  fhir:Resource.id [ fhir:value "Coverage2"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: Coverage2</p><p><b>status</b>: active</p><p><b>beneficiary</b>: <a href=\"#backboneelement_Patient2\">Generated Summary: unknown resource entry</a></p><p><b>payor</b>: <a href=\"#backboneelement_Patient2\">Generated Summary: unknown resource entry</a></p></div>"
+  ];
+  fhir:Coverage.status [ fhir:value "active"];
+  fhir:Coverage.beneficiary [
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/Patient/Patient2>;
+     fhir:Reference.reference [ fhir:value "Patient/Patient2" ]
+  ];
+  fhir:Coverage.payor [
+     fhir:index 0;
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/Patient/Patient2>;
+     fhir:Reference.reference [ fhir:value "Patient/Patient2" ]
+  ] .
+
+<test6> a fhir:Organization;
+  fhir:Resource.id [ fhir:value "Organization2"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization";
+       fhir:index 0;
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: Organization2</p><p><b>meta</b>: </p><p><b>name</b>: testorga</p></div>"
+  ];
+  fhir:Organization.name [ fhir:value "testorga"] .
+
+<test7> a fhir:Patient;
+  fhir:Resource.id [ fhir:value "Patient2"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient";
+       fhir:index 0;
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: Patient2</p><p><b>meta</b>: </p><p><b>gender</b>: male</p></div>"
+  ];
+  fhir:Patient.gender [ fhir:value "male"] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.ehealth.fgov.be/standards/fhir/Bundle/bemycareneteagreementdemand1.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

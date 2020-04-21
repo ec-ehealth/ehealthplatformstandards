@@ -7,11 +7,11 @@
 </div></div>
   </text>
   <url value="https://www.ehealth.fgov.be/standards/fhir/ImplementationGuide/BeCoreImplementationGuide"/>
-  <version value="1.0.0"/>
+  <version value="1.1.0"/>
   <name value="TheCoreBelgianFederalFHIRProfiles"/>
   <title value="The Core Belgian Federal FHIR Profiles"/>
   <status value="active"/>
-  <date value="2020-04-17T11:15:53+02:00"/>
+  <date value="2020-04-21T09:51:51+02:00"/>
   <publisher value="eHealth Platform"/>
   <contact>
     <name value="Etienne Cantineau"/>
@@ -439,6 +439,20 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Bundle-bemycareneteagreementdemand1.html"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/bemycareneteagreementdemand1"/>
+      </reference>
+      <name value="BeMyCareNetEAgreementDemand 1"/>
+      <description value="BeMyCareNetEAgreementDemand 1"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-mycareneteagreementdemand"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="MessageHeader"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
@@ -478,6 +492,34 @@
       <name value="Patient 1"/>
       <description value="Patient 1"/>
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Practitioner-practitioner1.html"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/practitioner1"/>
+      </reference>
+      <name value="Practitioner 1"/>
+      <description value="Practitioner 1"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PractitionerRole"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="PractitionerRole-practitionerrole1.html"/>
+      </extension>
+      <reference>
+        <reference value="PractitionerRole/practitionerrole1"/>
+      </reference>
+      <name value="Practitioner role 1"/>
+      <description value="Practitioner role 1"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitionerrole"/>
     </resource>
     <page>
       <nameUrl value="toc.html"/>

@@ -13,11 +13,11 @@
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>TheCoreBelgianFederalFHIRProfiles</h2><p>The official URL for this implementation guide is: </p><pre>https://www.ehealth.fgov.be/standards/fhir/ImplementationGuide/BeCoreImplementationGuide</pre><div><p>The Core Belgian Profiles provide the essential and common requirement for FHIR implementations in Belgium.</p>\n</div></div>"
   ];
   fhir:ImplementationGuide.url [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/ImplementationGuide/BeCoreImplementationGuide"];
-  fhir:ImplementationGuide.version [ fhir:value "1.0.0"];
+  fhir:ImplementationGuide.version [ fhir:value "1.1.0"];
   fhir:ImplementationGuide.name [ fhir:value "TheCoreBelgianFederalFHIRProfiles"];
   fhir:ImplementationGuide.title [ fhir:value "The Core Belgian Federal FHIR Profiles"];
   fhir:ImplementationGuide.status [ fhir:value "active"];
-  fhir:ImplementationGuide.date [ fhir:value "2020-04-17T11:15:53+02:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2020-04-21T09:51:51+02:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "eHealth Platform"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -609,6 +609,27 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Bundle-bemycareneteagreementdemand1.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/Bundle/bemycareneteagreementdemand1>;
+         fhir:Reference.reference [ fhir:value "Bundle/bemycareneteagreementdemand1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "BeMyCareNetEAgreementDemand 1" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "BeMyCareNetEAgreementDemand 1" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-mycareneteagreementdemand";
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-mycareneteagreementdemand>
+       ]
+     ], [
+       fhir:index 19;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "MessageHeader" ]
        ], [
          fhir:index 1;
@@ -626,7 +647,7 @@
          fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-mycareneteagreementmessageheader>
        ]
      ], [
-       fhir:index 19;
+       fhir:index 20;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -647,7 +668,7 @@
          fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization>
        ]
      ], [
-       fhir:index 20;
+       fhir:index 21;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -666,6 +687,48 @@
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient";
          fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient>
+       ]
+     ], [
+       fhir:index 22;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Practitioner" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Practitioner-practitioner1.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/Practitioner/practitioner1>;
+         fhir:Reference.reference [ fhir:value "Practitioner/practitioner1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Practitioner 1" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Practitioner 1" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner";
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner>
+       ]
+     ], [
+       fhir:index 23;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "PractitionerRole" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "PractitionerRole-practitionerrole1.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/PractitionerRole/practitionerrole1>;
+         fhir:Reference.reference [ fhir:value "PractitionerRole/practitionerrole1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Practitioner role 1" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Practitioner role 1" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitionerrole";
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitionerrole>
        ]
      ];
      fhir:ImplementationGuide.definition.page [

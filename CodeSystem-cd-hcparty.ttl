@@ -13,11 +13,11 @@
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>CodeSystem CD-HCPARTY</h2><div><p>healthcare party in Belgium.</p>\n</div><p>This code system https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Definition</b></td></tr></table></div>"
   ];
   fhir:CodeSystem.url [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty"];
-  fhir:CodeSystem.version [ fhir:value "1.0.0"];
+  fhir:CodeSystem.version [ fhir:value "1.1.0"];
   fhir:CodeSystem.name [ fhir:value "Cdhcparty"];
   fhir:CodeSystem.title [ fhir:value "CodeSystem CD-HCPARTY"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2020-04-17T11:15:53+02:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2020-04-21T09:51:51+02:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "eHealth Platform"];
   fhir:CodeSystem.contact [
      fhir:index 0;

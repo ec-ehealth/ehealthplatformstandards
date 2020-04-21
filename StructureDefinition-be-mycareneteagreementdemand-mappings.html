@@ -45,7 +45,7 @@
           </a>
         </div>
         <div id="hl7-status">
-          <p><span style="font-size:12pt;font-weight:bold">The Core Belgian Federal FHIR Profiles</span><br/>1.0.0 - </p>
+          <p><span style="font-size:12pt;font-weight:bold">The Core Belgian Federal FHIR Profiles</span><br/>1.1.0 - active</p>
         </div>
       </div> <!-- /container -->
     </div>  <!-- /segment-header -->
@@ -113,7 +113,7 @@
 
 
 <div style="counter-reset: section 5" class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">The Core Belgian Federal FHIR Profiles - Local Development build (v1.0.0). See the <a href="https://www.ehealth.fgov.be/standards/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">The Core Belgian Federal FHIR Profiles - Local Development build (v1.1.0). See the <a href="https://www.ehealth.fgov.be/standards/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <ul class="nav nav-tabs">
     <li>
       <a href="StructureDefinition-be-mycareneteagreementdemand.html">Content</a>
@@ -153,12 +153,12 @@
  <tr><td colspan="3"><b>BeMyCareNetEAgreementDemand</b></td></tr>
  <tr><td>Bundle</td><td>N/A</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;entry</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;entry (messageheader)</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;entry (messageHeader)</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resource</td><td>MSH / MSA / ERR</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;entry (practitioner)</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resource</td><td>PRD (as one example)</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;entry (claim)</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;entry (practitionerrole)</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;entry (practitionerRole)</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resource</td><td>PRD (as one example)</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;entry (coverage)</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;entry (organization)</td><td></td> </tr>
@@ -187,7 +187,7 @@
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modifierExtension</td><td>N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;entry (messageheader)</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;entry (messageHeader)</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modifierExtension</td><td>N/A</td> </tr>
@@ -238,7 +238,7 @@
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modifierExtension</td><td>N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;entry (practitionerrole)</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;entry (practitionerRole)</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modifierExtension</td><td>N/A</td> </tr>
@@ -292,6 +292,7 @@
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modifierExtension</td><td>N/A</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resource</td><td>Entity. Role, or Act, Patient[classCode=PAT]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;search</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
@@ -310,6 +311,15 @@
  <tr><td>Bundle</td><td>ClinicalDocument, if bundle.type = document</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>ClinicalDocument.id</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;timestamp</td><td>ClinicalDocument.effectiveTime</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;entry</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;entry (messageHeader)</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;entry (practitioner)</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;entry (claim)</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;entry (practitionerRole)</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;entry (coverage)</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;entry (organization)</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;entry (patient)</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;resource</td><td>ClinicalDocument.recordTarget.patientRole</td> </tr>
 </table>
 <a name="w5"> </a><h3>Mappings for FiveWs Pattern Mapping (http://hl7.org/fhir/fivews)</h3><table class="grid">
  <tr><td colspan="3"><b>BeMyCareNetEAgreementDemand</b></td></tr>

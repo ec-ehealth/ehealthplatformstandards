@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="40f4cf2f-ecee-46f3-8f4e-52ee4b80a7dc"/>
+  <id value="d323cbb2-a76b-449f-bf32-7846192d9305"/>
   <meta>
-    <lastUpdated value="2020-04-17T11:15:53.794+02:00"/>
+    <lastUpdated value="2020-04-21T09:51:51.786+02:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -19,10 +19,10 @@
               <p>Expansion based on: </p>
               <ul>
                 <li>
-                  <a href="CodeSystem-cd-civilstate.html">CodeSystem CD-CIVILSTATE v1.0.0 (CodeSystem)</a>
+                  <a href="http://hl7.org/fhir/R4/v3/MaritalStatus/cs.html">v3 Code System MaritalStatus v2018-08-12 (CodeSystem)</a>
                 </li>
                 <li>
-                  <a href="http://hl7.org/fhir/R4/v3/MaritalStatus/cs.html">v3 Code System MaritalStatus v2018-08-12 (CodeSystem)</a>
+                  <a href="CodeSystem-cd-civilstate.html">CodeSystem CD-CIVILSTATE v1.1.0 (CodeSystem)</a>
                 </li>
               </ul>
             </div>
@@ -198,11 +198,11 @@
           </div>
         </text>
         <url value="https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-civilstate"/>
-        <version value="1.0.0"/>
+        <version value="1.1.0"/>
         <name value="BeCivilState"/>
         <title value="ValueSet civil state"/>
         <status value="active"/>
-        <date value="2020-04-17T11:15:53+02:00"/>
+        <date value="2020-04-21T09:51:51+02:00"/>
         <publisher value="eHealth Platform"/>
         <contact>
           <name value="Etienne Cantineau"/>
@@ -213,8 +213,8 @@
         </contact>
         <description value="Codes supported by eHealth Platform differentiating types of civil state. This valueset supports the Belgian federal FHIR profiling effort. &#xA;Whenever possible add a code from http://terminology.hl7.org/CodeSystem/v3-MaritalStatus for international interoperability but also use https://www.ehealth.fgov.be/standards/fhir/CodeSystem/CD-CIVILSTATE &#xA;for the Belgian specific code."/>
         <expansion>
-          <identifier value="urn:uuid:e00a32d3-22a4-40fc-8f08-9f12f47c8e06"/>
-          <timestamp value="2020-04-17T11:16:07+02:00"/>
+          <identifier value="urn:uuid:7aac6e59-eec1-4acf-a3be-bad4dfe3e0ce"/>
+          <timestamp value="2020-04-21T09:52:07+02:00"/>
           <total value="17"/>
           <parameter>
             <name value="excludeNested"/>
@@ -226,7 +226,7 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-civilstate|1.0.0"/>
+            <valueUri value="https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-civilstate|1.1.0"/>
           </parameter>
           <contains>
             <system value="http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"/>
@@ -330,7 +330,7 @@
               <p>Expansion based on: </p>
               <ul>
                 <li>
-                  <a href="CodeSystem-cd-contact-person.html">CodeSystem CD-CONTACT-PERSON v1.0.0 (CodeSystem)</a>
+                  <a href="CodeSystem-cd-contact-person.html">CodeSystem CD-CONTACT-PERSON v1.1.0 (CodeSystem)</a>
                 </li>
                 <li>
                   <a href="http://hl7.org/fhir/R4/v2/0131/index.html">v2 Contact Role v2.9 (CodeSystem)</a>
@@ -626,11 +626,11 @@
           </div>
         </text>
         <url value="https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-contactperson"/>
-        <version value="1.0.0"/>
+        <version value="1.1.0"/>
         <name value="BeContactPerson"/>
         <title value="ValueSet contact person"/>
         <status value="active"/>
-        <date value="2020-04-17T11:15:53+02:00"/>
+        <date value="2020-04-21T09:51:51+02:00"/>
         <publisher value="eHealth Platform"/>
         <contact>
           <name value="Etienne Cantineau"/>
@@ -641,8 +641,8 @@
         </contact>
         <description value="Maximum valuest to define category of a contact person, using the HL7 values and the Belgian CD-CONTACT-PERSON values."/>
         <expansion>
-          <identifier value="urn:uuid:0deadd37-67f8-4c26-bf33-d054c9042a1a"/>
-          <timestamp value="2020-04-17T11:16:07+02:00"/>
+          <identifier value="urn:uuid:39ca027c-2c55-49b1-b875-ac3bdfceeb0e"/>
+          <timestamp value="2020-04-21T09:52:07+02:00"/>
           <total value="30"/>
           <parameter>
             <name value="excludeNested"/>
@@ -654,7 +654,7 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contact-person|1.0.0"/>
+            <valueUri value="https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contact-person|1.1.0"/>
           </parameter>
           <contains>
             <system value="http://terminology.hl7.org/CodeSystem/v2-0131"/>
@@ -820,7 +820,7 @@
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 0 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-nihdi-legal-physiotherapy-fa.html">CodeSystem NIHDILegalPhysiotherapyFa v1.0.0 (CodeSystem)</a>
+              <a href="CodeSystem-nihdi-legal-physiotherapy-fa.html">CodeSystem NIHDILegalPhysiotherapyFa v1.1.0 (CodeSystem)</a>
             </p>
             <table class="codes">
               <tr>
@@ -838,11 +838,11 @@
           </div>
         </text>
         <url value="https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-beproductorservice"/>
-        <version value="1.0.0"/>
+        <version value="1.1.0"/>
         <name value="BeProductorServiceNihdiEAgreement"/>
         <title value="ValueSet productor service"/>
         <status value="active"/>
-        <date value="2020-04-17T11:15:53+02:00"/>
+        <date value="2020-04-21T09:51:51+02:00"/>
         <publisher value="eHealth Platform"/>
         <contact>
           <name value="Etienne Cantineau"/>
@@ -853,15 +853,15 @@
         </contact>
         <description value="NIHDI codes for use to describe eAgreement products or services in the MyCareNet eAgreement flows."/>
         <expansion>
-          <identifier value="urn:uuid:a2c60e52-2252-4d7b-9513-862193d140ee"/>
-          <timestamp value="2020-04-17T11:16:07+02:00"/>
+          <identifier value="urn:uuid:dc183d47-4925-4d36-9ecc-51d639b31842"/>
+          <timestamp value="2020-04-21T09:52:07+02:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="https://www.ehealth.fgov.be/standards/fhir/CodeSystem/nihdi-legal-physiotherapy-fa|1.0.0"/>
+            <valueUri value="https://www.ehealth.fgov.be/standards/fhir/CodeSystem/nihdi-legal-physiotherapy-fa|1.1.0"/>
           </parameter>
         </expansion>
       </ValueSet>

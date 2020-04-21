@@ -7,11 +7,11 @@
 </div><p>This code system https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Definition</b></td></tr></table></div>
   </text>
   <url value="https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty"/>
-  <version value="1.0.0"/>
+  <version value="1.1.0"/>
   <name value="Cdhcparty"/>
   <title value="CodeSystem CD-HCPARTY"/>
   <status value="active"/>
-  <date value="2020-04-17T11:15:53+02:00"/>
+  <date value="2020-04-21T09:51:51+02:00"/>
   <publisher value="eHealth Platform"/>
   <contact>
     <name value="Etienne Cantineau"/>

@@ -7,11 +7,11 @@
 </div><ul><li>Include all codes defined in <a href="CodeSystem-nihdi-legal-physiotherapy-fa.html"><code>https://www.ehealth.fgov.be/standards/fhir/CodeSystem/nihdi-legal-physiotherapy-fa</code></a></li></ul></div>
   </text>
   <url value="https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-beproductorservice"/>
-  <version value="1.0.0"/>
+  <version value="1.1.0"/>
   <name value="BeProductorServiceNihdiEAgreement"/>
   <title value="ValueSet productor service"/>
   <status value="active"/>
-  <date value="2020-04-17T11:15:53+02:00"/>
+  <date value="2020-04-21T09:51:51+02:00"/>
   <publisher value="eHealth Platform"/>
   <contact>
     <name value="Etienne Cantineau"/>
