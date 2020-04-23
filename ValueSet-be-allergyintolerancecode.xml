@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="be-allergyintolerancecode"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>ValueSet allergy intolerance code</h2><div><p>Codes as communicated by NIHDI and the FOD Terminology Center differentiating types of allergy intolerance codes. This valueset supports the Belgian federal FHIR profiling effort.</p>
+</div><ul><li>Include all codes defined in <code>https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-causativeagent</code></li><li>Include all codes defined in <code>https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-noallergy</code></li></ul><p>This value set includes codes based on the following rules:</p></div>
+  </text>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-allergyintolerancecode"/>
+  <version value="1.1.0"/>
+  <name value="BeAllergyIntoleranceCode"/>
+  <title value="ValueSet allergy intolerance code"/>
+  <status value="active"/>
+  <date value="2020-04-23T09:52:51+02:00"/>
+  <publisher value="eHealth Platform"/>
+  <contact>
+    <name value="Etienne Cantineau"/>
+    <telecom>
+      <system value="email"/>
+      <value value="etienne.cantineau@ehealth.fgov.be"/>
+    </telecom>
+  </contact>
+  <description value="Codes as communicated by NIHDI and the FOD Terminology Center differentiating types of allergy intolerance codes. This valueset supports the Belgian federal FHIR profiling effort."/>
+  <compose>
+    <include>
+      <system value="https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-causativeagent"/>
+    </include>
+    <include>
+      <system value="https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-noallergy"/>
+    </include>
+  </compose>
+</ValueSet>

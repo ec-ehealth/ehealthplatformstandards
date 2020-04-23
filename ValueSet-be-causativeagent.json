@@ -1,0 +1,27 @@
+{
+  "resourceType": "ValueSet",
+  "id": "be-causativeagent",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ValueSet causative agent</h2><div><p>Codes as communicated by NIHDI and the FPS Terminology Center differentiating types of causative agent. This valueset supports the Belgian federal FHIR profiling effort.</p>\n</div><ul/><p>This value set includes codes based on the following rules:</p></div>"
+  },
+  "url": "https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-causativeagent",
+  "version": "1.1.0",
+  "name": "BeCausativeAgent",
+  "title": "ValueSet causative agent",
+  "status": "active",
+  "date": "2020-04-23T09:52:51+02:00",
+  "publisher": "eHealth Platform",
+  "contact": [
+    {
+      "name": "Etienne Cantineau",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "etienne.cantineau@ehealth.fgov.be"
+        }
+      ]
+    }
+  ],
+  "description": "Codes as communicated by NIHDI and the FPS Terminology Center differentiating types of causative agent. This valueset supports the Belgian federal FHIR profiling effort."
+}

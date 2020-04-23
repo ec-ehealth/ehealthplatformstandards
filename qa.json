@@ -3,9 +3,9 @@
   "name": "TheCoreBelgianFederalFHIRProfiles",
   "package-id": "BeCoreImplementationGuide",
   "ig-ver": "1.1.0",
-  "date": "Tue, 21 Apr, 2020 09:51:51 +0200",
+  "date": "Thu, 23 Apr, 2020 09:52:51 +0200",
   "errs": 29,
-  "warnings": 7,
+  "warnings": 11,
   "hints": 4,
   "version": "4.0.1",
   "tool": "4.2.0 (3)"

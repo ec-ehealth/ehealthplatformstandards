@@ -4,6 +4,12 @@
   "fhirVersion": "4.0.1",
   "extensions": [],
   "profiles": {
+    "AllergyIntolerance": [
+      {
+        "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-allergyintolerance",
+        "title": "Allergy Intolerance core BE profile"
+      }
+    ],
     "Claim": [
       {
         "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-mycarenetclaim",
@@ -20,6 +26,12 @@
       {
         "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-mycareneteagreementmessageheader",
         "title": "My CareNet eAgreement MessageHeader BE profile"
+      }
+    ],
+    "Observation": [
+      {
+        "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-observation",
+        "title": "Observation core BE profile"
       }
     ],
     "Organization": [
@@ -92,6 +104,9 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/regex": [
       "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name": [
       "StructureDefinition.snapshot.element"

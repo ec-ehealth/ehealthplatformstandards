@@ -11,7 +11,7 @@
   <name value="TheCoreBelgianFederalFHIRProfiles"/>
   <title value="The Core Belgian Federal FHIR Profiles"/>
   <status value="active"/>
-  <date value="2020-04-21T09:51:51+02:00"/>
+  <date value="2020-04-23T09:52:51+02:00"/>
   <publisher value="eHealth Platform"/>
   <contact>
     <name value="Etienne Cantineau"/>
@@ -204,6 +204,20 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-be-allergyintolerance.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/be-allergyintolerance"/>
+      </reference>
+      <name value="Allergy Intolerance core BE profile"/>
+      <description value="Belgian federal profile for an allergy and/or an intolerance. Initially based on the functional description of the NIHDI."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-be-mycarenetclaim.html"/>
       </extension>
       <reference>
@@ -239,6 +253,34 @@
       </reference>
       <name value="My CareNet eAgreement MessageHeader BE profile"/>
       <description value="This is the generic MessageHeader profile for use in the different eAgreement flows from MyCareNet."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-be-observation.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/be-observation"/>
+      </reference>
+      <name value="Observation core BE profile"/>
+      <description value="Belgian federal profile for an observation. Initially based on the functional description of the NIHDI. As Observation is used in many instances in FHIR, &#xA;please refer to the HL7 specs of the base resource for guidance around expression of actual values using UCUM, methods, location on body etc.&#xA;Special remarks for KMEHR users: The FHIR Observation resource captures many things that are in a KMEHR message structured as an &#39;item&#39;. &#xA;This includes things like &#39;vital signs such as body weight, blood pressure, and temperature [&#x2026;], personal characteristics such as eye-color [&#x2026;] social history like tobacco use, family support, &#xA;or cognitive status [&#x2026;]&#39; ( https://www.hl7.org/fhir/R4/observation.html ) For some of these things, HL7 already has worked out profiles and they SHALL be used when such a use case is needed. &#xA;Specifically, projects SHALL take note of the existing profiles described on https://www.hl7.org/fhir/R4/observation-vitalsigns.html."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:complex-type"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-be-observationcodeableconcept.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/be-observationcodeableconcept"/>
+      </reference>
+      <name value="Observation codeable concept core BE profile"/>
+      <description value="This is a supporting profile, only to give guidelines how to express a few of the typical coding systems. In general, it shall be noted SNOMED-CT is the preferred national terminology. &#xA;Other coding systems remain allowed or MAY be preferred in specific flows (e.g. the use of LOINC codes to express a laboratory test.)"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -302,6 +344,34 @@
         <valueString value="ValueSet"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-be-allergyintolerancecode.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/be-allergyintolerancecode"/>
+      </reference>
+      <name value="ValueSet allergy intolerance code"/>
+      <description value="Codes as communicated by NIHDI and the FOD Terminology Center differentiating types of allergy intolerance codes. This valueset supports the Belgian federal FHIR profiling effort."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-be-causativeagent.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/be-causativeagent"/>
+      </reference>
+      <name value="ValueSet causative agent"/>
+      <description value="Codes as communicated by NIHDI and the FPS Terminology Center differentiating types of causative agent. This valueset supports the Belgian federal FHIR profiling effort."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="ValueSet-be-civilstate.html"/>
       </extension>
       <reference>
@@ -330,6 +400,34 @@
         <valueString value="ValueSet"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-be-exposureroute.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/be-exposureroute"/>
+      </reference>
+      <name value="ValueSet exposureroute"/>
+      <description value="Codes to illustrate differentiating types of exposure route. This valueset supports the Belgian federal FHIR profiling effort."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-be-noallergy.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/be-noallergy"/>
+      </reference>
+      <name value="ValueSet ano allergies"/>
+      <description value="Codes as communicated by the FOD Terminology Center differentiating types of no allergies. This valueset supports the Belgian federal FHIR profiling effort."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="ValueSet-be-beproductorservice.html"/>
       </extension>
       <reference>
@@ -337,6 +435,20 @@
       </reference>
       <name value="ValueSet productor service"/>
       <description value="NIHDI codes for use to describe eAgreement products or services in the MyCareNet eAgreement flows."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-be-riskmanifestation.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/be-riskmanifestation"/>
+      </reference>
+      <name value="ValueSet risk manifestation"/>
+      <description value="Codes as communicated by NIHDI and the FPS Terminology Center differentiating types of risk manifestation. This valueset supports the Belgian federal FHIR profiling effort."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

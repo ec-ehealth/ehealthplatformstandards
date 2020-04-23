@@ -1,23 +1,26 @@
 ﻿TheCoreBelgianFederalFHIRProfiles : Validation Results
 =========================================
 
-err = 29, warn = 7, info = 4
+err = 29, warn = 11, info = 4
 IG Publisher Version: v1.0.81-SNAPSHOT
-Generated Tue Apr 21 09:52:45 CEST 2020. FHIR version 4.0.1 for BeCoreImplementationGuide#1.1.0 (canonical = https://www.ehealth.fgov.be/standards/fhir)
+Generated Thu Apr 23 09:53:51 CEST 2020. FHIR version 4.0.1 for BeCoreImplementationGuide#1.1.0 (canonical = https://www.ehealth.fgov.be/standards/fhir)
 
  Build Errors : 24 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\ImplementationGuide-BeCoreImplementationGuide : 0 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\bundle-bemycareneteagreementdemand1 : 2 / 8
- C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\claim-bemycarenetclaim1 : 5 / 1
+ C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\claim-bemycarenetclaim1 : 7 / 1
  C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\messageheader-bemycareneteagreementmessageheader1 : 0 / 1
  C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\organization-organization1 : 8 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\patient-patient1 : 3 / 1
  C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\practitioner-practitioner1 : 6 / 0
- C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\practitionerrole-practitionerrole1 : 5 / 0
+ C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\practitionerrole-practitionerrole1 : 3 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\structuredefinition-be-address : 0 / 0
+ C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\structuredefinition-be-allergyintolerance : 0 / 1
  C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\structuredefinition-be-mycarenetclaim : 0 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\structuredefinition-be-mycareneteagreementdemand : 0 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\structuredefinition-be-mycareneteagreementmessageheader : 0 / 0
+ C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\structuredefinition-be-observation : 0 / 1
+ C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\structuredefinition-be-observationcodeableconcept : 0 / 1
  C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\structuredefinition-be-organization : 0 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\structuredefinition-be-patient : 0 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\structuredefinition-be-practitioner : 0 / 0
@@ -28,9 +31,14 @@ Generated Tue Apr 21 09:52:45 CEST 2020. FHIR version 4.0.1 for BeCoreImplementa
  C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\codesystem-cd-hcparty : 0 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\codesystem-message-events : 0 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\codesystem-nihdi-legal-physiotherapy-fa : 0 / 0
+ C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\valueset-be-allergyintolerancecode : 0 / 1
  C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\valueset-be-beproductorservice : 0 / 0
+ C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\valueset-be-causativeagent : 0 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\valueset-be-civilstate : 0 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\valueset-be-contactperson : 0 / 0
+ C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\valueset-be-exposureroute : 0 / 0
+ C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\valueset-be-noallergy : 0 / 0
+ C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\valueset-be-riskmanifestation : 0 / 0
 </table>
 == n/a ==
 ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\Claim-bemycarenetclaim1.html#/html/body/div/div/div/div/div/div/p/a at Line 146, column 1226: The link 'enterer1' for "enterer1" cannot be resolved
@@ -70,8 +78,10 @@ WARNING: Bundle/bemycareneteagreementdemand1: Bundle.entry[5]: Entry 'test5' isn
 WARNING: Bundle/bemycareneteagreementdemand1: Bundle.entry[6]: Entry 'test6' isn't reachable by traversing from first Bundle entry
 WARNING: Bundle/bemycareneteagreementdemand1: Bundle.entry[7]: Entry 'test7' isn't reachable by traversing from first Bundle entry
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\Claim-bemycarenetclaim1.json ==
-ERROR: Claim/bemycarenetclaim1: Claim.supportingInfo[0]: Unable to resolve discriminator in definitions: system
-ERROR: Claim/bemycarenetclaim1: Claim.supportingInfo[1]: Unable to resolve discriminator in definitions: system
+ERROR: Claim/bemycarenetclaim1: Claim.supportingInfo[0]: Unsupported fixed pattern type for discriminator(category.coding.code) for slice Claim.supportingInfo:Annex: org.hl7.fhir.r5.model.CodeType
+ERROR: Claim/bemycarenetclaim1: Claim.supportingInfo[1]: Unsupported fixed pattern type for discriminator(category.coding.code) for slice Claim.supportingInfo:Annex: org.hl7.fhir.r5.model.CodeType
+ERROR: Claim/bemycarenetclaim1: Claim.supportingInfo[0]: Unsupported fixed pattern type for discriminator(category.coding.code) for slice Claim.supportingInfo:AdditionalInformation: org.hl7.fhir.r5.model.CodeType
+ERROR: Claim/bemycarenetclaim1: Claim.supportingInfo[1]: Unsupported fixed pattern type for discriminator(category.coding.code) for slice Claim.supportingInfo:AdditionalInformation: org.hl7.fhir.r5.model.CodeType
 INFORMATION: Claim/bemycarenetclaim1: Claim.subType.coding[0]: Code System URI "https://www.mycarenet.be/fhir/CodeSystem/agreement-types" is unknown so the code cannot be validated
 ERROR: Claim/bemycarenetclaim1: Claim.enterer: Unable to resolve resource "enterer1"
 ERROR: Claim/bemycarenetclaim1: Claim.provider: Unable to resolve resource "provider1"
@@ -100,15 +110,19 @@ ERROR: Practitioner/practitioner1: Practitioner.identifier[1]: Unsupported fixed
 ERROR: Practitioner/practitioner1: Practitioner.identifier[0]: Unsupported fixed pattern type for discriminator(system) for slice Practitioner.identifier:SSIN: org.hl7.fhir.r5.model.UriType
 ERROR: Practitioner/practitioner1: Practitioner.identifier[1]: Unsupported fixed pattern type for discriminator(system) for slice Practitioner.identifier:SSIN: org.hl7.fhir.r5.model.UriType
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\PractitionerRole-practitionerrole1.json ==
-ERROR: PractitionerRole/practitionerrole1: PractitionerRole.code[0]: Unsupported fixed pattern type for discriminator(coding.system) for slice PractitionerRole.code:CD-HCPARTY: org.hl7.fhir.r5.model.UriType
-ERROR: PractitionerRole/practitionerrole1: PractitionerRole.code[0]: Unsupported fixed pattern type for discriminator(coding.system) for slice PractitionerRole.code:SNOMED-CT: org.hl7.fhir.r5.model.UriType
 ERROR: PractitionerRole/practitionerrole1: PractitionerRole.specialty[0]: Unsupported fixed pattern type for discriminator(coding.system) for slice PractitionerRole.specialty:SNOMED-CT: org.hl7.fhir.r5.model.UriType
 ERROR: PractitionerRole/practitionerrole1: PractitionerRole.practitioner: Unable to resolve resource "https://www.anotherfhirserver.be/fhir/Practitioner/01"
 ERROR: PractitionerRole/practitionerrole1: PractitionerRole.code[0].coding[0]: Unknown Code https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty#persphysician in https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty for "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty#persphysician"
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\StructureDefinition-be-address.json ==
+== C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\StructureDefinition-be-allergyintolerance.json ==
+WARNING: https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-allergyintolerance: The Implementation Guide contains no examples for this profile
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\StructureDefinition-be-mycarenetclaim.json ==
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\StructureDefinition-be-mycareneteagreementdemand.json ==
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\StructureDefinition-be-mycareneteagreementmessageheader.json ==
+== C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\StructureDefinition-be-observation.json ==
+WARNING: https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-observation: The Implementation Guide contains no examples for this profile
+== C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\StructureDefinition-be-observationcodeableconcept.json ==
+WARNING: https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-observationcodeableconcept: The Implementation Guide contains no examples for this data type profile
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\StructureDefinition-be-organization.json ==
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\StructureDefinition-be-patient.json ==
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\StructureDefinition-be-practitioner.json ==
@@ -119,6 +133,12 @@ ERROR: PractitionerRole/practitionerrole1: PractitionerRole.code[0].coding[0]: U
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\CodeSystem-cd-hcparty.json ==
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\CodeSystem-message-events.json ==
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\CodeSystem-nihdi-legal-physiotherapy-fa.json ==
+== C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\ValueSet-be-allergyintolerancecode.json ==
+WARNING: be-allergyintolerancecode: Error from server: Unable to provide support for code system https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-causativeagent
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\ValueSet-be-beproductorservice.json ==
+== C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\ValueSet-be-causativeagent.json ==
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\ValueSet-be-civilstate.json ==
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\ValueSet-be-contactperson.json ==
+== C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\ValueSet-be-exposureroute.json ==
+== C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\ValueSet-be-noallergy.json ==
+== C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\ValueSet-be-riskmanifestation.json ==

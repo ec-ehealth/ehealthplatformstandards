@@ -198,7 +198,7 @@ Exception Codes
 Occurrence Codes
 Value codes
 ","",0,*,"","","","BackboneElement {[]} {[]}
-","Supporting information","Additional information codes regarding exceptions, special considerations, the condition, situation, prior or concurrent issues.","Often there are multiple jurisdiction specific valuesets which are required.","Typically these information codes are required to support the services rendered or the adjudication of the services rendered.","","","","","","","",,,,,"","value:system}
+","Supporting information","Additional information codes regarding exceptions, special considerations, the condition, situation, prior or concurrent issues.","Often there are multiple jurisdiction specific valuesets which are required.","Typically these information codes are required to support the services rendered or the adjudication of the services rendered.","","","","","","","",,,,,"","value:category.coding.code}
 ","Slice based on the supportingInfo.code pattern",,"open","Claim.supportingInfo",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Request.supportingInfo"
 "Claim.supportingInfo.id","","","",0,1,"","","","string {[]} {[]}
@@ -279,7 +279,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Claim.supportingInfo.category.coding.version","","","",0,1,"","","Y","string {[]} {[]}
 ","Version of the system - if relevant","The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured, and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.","Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.","","","","","","","","",,,,,"",,,,"Coding.version",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","./codeSystemVersion"
-"Claim.supportingInfo.category.coding.code","","","",0,1,"","","Y","code {[]} {[]}
+"Claim.supportingInfo.category.coding.code","","","",1,1,"","","Y","code {[]} {[]}
 ","Symbol in syntax defined by the system","A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).","","Need to refer to a particular code in the system.","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""attachment""/>","","","",,,,,"",,,,"Coding.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","./code"
 "Claim.supportingInfo.category.coding.display","","","",0,1,"","","Y","string {[]} {[]}
@@ -355,7 +355,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Claim.supportingInfo.category.coding.version","","","",0,1,"","","Y","string {[]} {[]}
 ","Version of the system - if relevant","The version of the code system which was used when choosing this code. Note that a well-maintained code system does not need the version reported, because the meaning of codes is consistent across versions. However this cannot consistently be assured, and when the meaning is not guaranteed to be consistent, the version SHOULD be exchanged.","Where the terminology does not clearly define what string should be used to identify code system versions, the recommendation is to use the date (expressed in FHIR date format) on which that version was officially published as the version date.","","","","","","","","",,,,,"",,,,"Coding.version",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","./codeSystemVersion"
-"Claim.supportingInfo.category.coding.code","","","",0,1,"","","Y","code {[]} {[]}
+"Claim.supportingInfo.category.coding.code","","","",1,1,"","","Y","code {[]} {[]}
 ","Symbol in syntax defined by the system","A symbol in syntax defined by the system. The symbol may be a predefined code or an expression in a syntax defined by the coding system (e.g. post-coordination).","","Need to refer to a particular code in the system.","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""info""/>","","","",,,,,"",,,,"Coding.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","./code"
 "Claim.supportingInfo.category.coding.display","","","",0,1,"","","Y","string {[]} {[]}
