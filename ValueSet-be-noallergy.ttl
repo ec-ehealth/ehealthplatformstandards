@@ -10,14 +10,14 @@
   fhir:Resource.id [ fhir:value "be-noallergy"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ValueSet ano allergies</h2><div><p>Codes as communicated by the FOD Terminology Center differentiating types of no allergies. This valueset supports the Belgian federal FHIR profiling effort.</p>\n</div><ul/><p>This value set includes codes based on the following rules:</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ValueSet no allergies</h2><div><p>Codes as communicated by the FOD Terminology Center differentiating types of no allergies. This valueset supports the Belgian federal FHIR profiling effort.</p>\n</div><ul/><p>This value set includes codes based on the following rules:</p></div>"
   ];
   fhir:ValueSet.url [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-noallergy"];
   fhir:ValueSet.version [ fhir:value "1.1.0"];
   fhir:ValueSet.name [ fhir:value "BeNoAllergy"];
-  fhir:ValueSet.title [ fhir:value "ValueSet ano allergies"];
+  fhir:ValueSet.title [ fhir:value "ValueSet no allergies"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2020-04-23T09:52:51+02:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2020-04-23T10:38:56+02:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "eHealth Platform"];
   fhir:ValueSet.contact [
      fhir:index 0;

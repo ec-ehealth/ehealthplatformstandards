@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<AllergyIntolerance xmlns="http://hl7.org/fhir">
+  <id value="allergyIntolerance1"/>
+  <meta>
+    <profile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-allergyintolerance"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: allergyIntolerance1</p><p><b>meta</b>: </p><p><b>clinicalStatus</b>: Active <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical code 'active' = 'Active', given as 'Active'})</span></p><p><b>verificationStatus</b>: Confirmed <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-verification code 'confirmed' = 'Confirmed)</span></p><p><b>type</b>: allergy</p><p><b>category</b>: food</p><p><b>criticality</b>: high</p><p><b>code</b>: Allergic to peanut <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code '762952008' = 'Peanut (substance)', given as 'Peanut (substance)'})</span></p><p><b>patient</b>: <a href="Patient/example">Patient/example</a></p><p><b>onset</b>: 01-janv.-2004 0:00:00</p><p><b>recordedDate</b>: 09-oct.-2014 5:58:00</p><p><b>recorder</b>: <a href="Practitioner/example">Practitioner/example</a></p><p><b>asserter</b>: <a href="Patient/example">Patient/example</a></p><p><b>lastOccurrence</b>: 01-juin-2012 0:00:00</p><p><b>note</b>: Some extra information can be given here.</p><h3>Reactions</h3><table class="grid"><tr><td>-</td><td><b>Manifestation</b></td><td><b>Onset</b></td><td><b>Severity</b></td></tr><tr><td>*</td><td>Anaphylactic reaction <span style="background: LightGoldenRodYellow">(Details : {SNOMED CT code '39579001' = 'Anaphylaxis', given as 'Anaphylactic reaction'})</span></td><td>12-juin-2012 0:00:00</td><td>severe</td></tr></table></div>
+  </text>
+  <clinicalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"/>
+      <code value="active"/>
+      <display value="Active"/>
+    </coding>
+  </clinicalStatus>
+  <verificationStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"/>
+      <code value="confirmed"/>
+    </coding>
+  </verificationStatus>
+  <type value="allergy"/>
+  <category value="food"/>
+  <criticality value="high"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="762952008"/>
+      <display value="Peanut (substance)"/>
+    </coding>
+    <text value="Allergic to peanut"/>
+  </code>
+  <patient>
+    <reference value="Patient/example"/>
+  </patient>
+  <onsetDateTime value="2004"/>
+  <recordedDate value="2014-10-09T14:58:00+11:00"/>
+  <recorder>
+    <reference value="Practitioner/example"/>
+  </recorder>
+  <asserter>
+    <reference value="Patient/example"/>
+  </asserter>
+  <lastOccurrence value="2012-06"/>
+  <note>
+    <text value="Some extra information can be given here."/>
+  </note>
+  <reaction>
+    <manifestation>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="39579001"/>
+        <display value="Anaphylactic reaction"/>
+      </coding>
+    </manifestation>
+    <onset value="2012-06-12"/>
+    <severity value="severe"/>
+  </reaction>
+</AllergyIntolerance>

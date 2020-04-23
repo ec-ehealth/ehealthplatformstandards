@@ -1,0 +1,61 @@
+{
+  "resourceType": "Observation",
+  "id": "observation1",
+  "meta": {
+    "profile": [
+      "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-observation"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: observation1</p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/observation-category code 'vital-signs' = 'Vital Signs', given as 'Vital Signs'})</span></p><p><b>code</b>: Heart rate <span style=\"background: LightGoldenRodYellow\">(Details : {LOINC code '8867-4' = 'Heart rate', given as 'Heart rate'}; {SNOMED CT code '364075005' = 'Heart rate', given as 'Heart rate (observable entity)'}; {http://my-own-custom-codes code 'H-RATE' = 'H-RATE', given as 'Heart rate'})</span></p><p><b>subject</b>: <a href=\"Patient/example\">Patient/example</a></p><p><b>effective</b>: 02-juil.-1999 0:00:00</p><p><b>performer</b>: <a href=\"Practitioner/example\">Practitioner/example</a></p><p><b>value</b>: 44 beats/minute<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code /min = '/min')</span></p></div>"
+  },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "vital-signs",
+          "display": "Vital Signs"
+        }
+      ],
+      "text": "Vital Signs"
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "8867-4",
+        "display": "Heart rate"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "364075005",
+        "display": "Heart rate (observable entity)"
+      },
+      {
+        "system": "http://my-own-custom-codes",
+        "code": "H-RATE",
+        "display": "Heart rate"
+      }
+    ],
+    "text": "Heart rate"
+  },
+  "subject": {
+    "reference": "Patient/example"
+  },
+  "effectiveDateTime": "1999-07-02",
+  "performer": [
+    {
+      "reference": "Practitioner/example"
+    }
+  ],
+  "valueQuantity": {
+    "value": 44,
+    "unit": "beats/minute",
+    "system": "http://unitsofmeasure.org",
+    "code": "/min"
+  }
+}

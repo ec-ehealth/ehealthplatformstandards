@@ -10,7 +10,7 @@
   "name": "TheCoreBelgianFederalFHIRProfiles",
   "title": "The Core Belgian Federal FHIR Profiles",
   "status": "active",
-  "date": "2020-04-23T09:52:51+02:00",
+  "date": "2020-04-23T10:38:56+02:00",
   "publisher": "eHealth Platform",
   "contact": [
     {
@@ -595,7 +595,7 @@
         "reference": {
           "reference": "ValueSet/be-noallergy"
         },
-        "name": "ValueSet ano allergies",
+        "name": "ValueSet no allergies",
         "description": "Codes as communicated by the FOD Terminology Center differentiating types of no allergies. This valueset supports the Belgian federal FHIR profiling effort.",
         "exampleBoolean": false
       },
@@ -747,6 +747,24 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "AllergyIntolerance"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "AllergyIntolerance-allergyIntolerance1.html"
+          }
+        ],
+        "reference": {
+          "reference": "AllergyIntolerance/allergyIntolerance1"
+        },
+        "name": "AllergyIntolerance 1",
+        "description": "AllergyIntolerance 1",
+        "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-allergyintolerance"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Claim"
           },
           {
@@ -796,6 +814,24 @@
         "name": "BeMyCareNetEAgreementMessageHeader 1",
         "description": "BeMyCareNetEAgreementMessageHeader 1",
         "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-mycareneteagreementmessageheader"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Observation-observation1.html"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/observation1"
+        },
+        "name": "Observation 1",
+        "description": "Observation 1",
+        "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-observation"
       },
       {
         "extension": [
