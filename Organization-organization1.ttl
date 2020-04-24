@@ -25,12 +25,11 @@
      fhir:Identifier.type [
        fhir:CodeableConcept.coding [
          fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ];
          fhir:Coding.code [ fhir:value "PRN" ];
          fhir:Coding.display [ fhir:value "Provider Number" ]
        ]
      ];
-     fhir:Identifier.system [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/cb" ];
+     fhir:Identifier.system [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/cbe" ];
      fhir:Identifier.value [ fhir:value "0425.222.333" ]
   ], [
      fhir:index 1;
@@ -38,7 +37,6 @@
      fhir:Identifier.type [
        fhir:CodeableConcept.coding [
          fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ];
          fhir:Coding.code [ fhir:value "MD" ];
          fhir:Coding.display [ fhir:value "Medical License number" ]
        ]
@@ -66,7 +64,16 @@
      fhir:Address.text [ fhir:value "Vulcansstraat 120, 1000 Brussel" ];
      fhir:Address.line [
        fhir:value "Vulcansstraat 120";
-       fhir:index 0
+       fhir:index 0;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName" ];
+         fhir:Extension.valueString [ fhir:value "Vulcansstraat" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber" ];
+         fhir:Extension.valueString [ fhir:value "120" ]
+       ]
      ];
      fhir:Address.city [ fhir:value "Brussel" ];
      fhir:Address.postalCode [ fhir:value "1000" ];
@@ -83,7 +90,16 @@
      fhir:Address.text [ fhir:value "120, Rue des Vulcans, 1000 Bruxelles" ];
      fhir:Address.line [
        fhir:value "120, Rue des Vulcans";
-       fhir:index 0
+       fhir:index 0;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName" ];
+         fhir:Extension.valueString [ fhir:value "Rue des Vulcans" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber" ];
+         fhir:Extension.valueString [ fhir:value "120" ]
+       ]
      ];
      fhir:Address.city [ fhir:value "Bruxelles" ];
      fhir:Address.postalCode [ fhir:value "1000" ];

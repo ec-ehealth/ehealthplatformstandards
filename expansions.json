@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "d8544bf3-9e71-4fef-9891-d8131767d015",
+  "id" : "51389b7c-feb1-4d1a-af48-042ed01a2fd8",
   "meta" : {
-    "lastUpdated" : "2020-04-23T10:38:56.028+02:00"
+    "lastUpdated" : "2020-04-24T08:49:07.692+02:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -19,7 +19,7 @@
       "name" : "BeCausativeAgent",
       "title" : "ValueSet causative agent",
       "status" : "active",
-      "date" : "2020-04-23T10:38:56+02:00",
+      "date" : "2020-04-24T08:49:07+02:00",
       "publisher" : "eHealth Platform",
       "contact" : [{
         "name" : "Etienne Cantineau",
@@ -30,8 +30,8 @@
       }],
       "description" : "Codes as communicated by NIHDI and the FPS Terminology Center differentiating types of causative agent. This valueset supports the Belgian federal FHIR profiling effort.",
       "expansion" : {
-        "identifier" : "urn:uuid:bcd34e3c-9441-4b9a-ad1b-261a7a776c06",
-        "timestamp" : "2020-04-23T10:39:12+02:00",
+        "identifier" : "urn:uuid:c271ea14-8cf2-41a2-8771-f70152291b6e",
+        "timestamp" : "2020-04-24T08:49:31+02:00",
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
@@ -53,7 +53,7 @@
       "name" : "BeCivilState",
       "title" : "ValueSet civil state",
       "status" : "active",
-      "date" : "2020-04-23T10:38:56+02:00",
+      "date" : "2020-04-24T08:49:07+02:00",
       "publisher" : "eHealth Platform",
       "contact" : [{
         "name" : "Etienne Cantineau",
@@ -64,8 +64,8 @@
       }],
       "description" : "Codes supported by eHealth Platform differentiating types of civil state. This valueset supports the Belgian federal FHIR profiling effort. \nWhenever possible add a code from http://terminology.hl7.org/CodeSystem/v3-MaritalStatus for international interoperability but also use https://www.ehealth.fgov.be/standards/fhir/CodeSystem/CD-CIVILSTATE \nfor the Belgian specific code.",
       "expansion" : {
-        "identifier" : "urn:uuid:02cbb57f-8f45-4a4a-8471-2208c42de11a",
-        "timestamp" : "2020-04-23T10:39:12+02:00",
+        "identifier" : "urn:uuid:35392363-27d6-4cad-8454-c571d2b614f7",
+        "timestamp" : "2020-04-24T08:49:31+02:00",
         "total" : 17,
         "parameter" : [{
           "name" : "excludeNested",
@@ -181,7 +181,7 @@
       "name" : "BeContactPerson",
       "title" : "ValueSet contact person",
       "status" : "active",
-      "date" : "2020-04-23T10:38:56+02:00",
+      "date" : "2020-04-24T08:49:07+02:00",
       "publisher" : "eHealth Platform",
       "contact" : [{
         "name" : "Etienne Cantineau",
@@ -192,8 +192,8 @@
       }],
       "description" : "Maximum valuest to define category of a contact person, using the HL7 values and the Belgian CD-CONTACT-PERSON values.",
       "expansion" : {
-        "identifier" : "urn:uuid:de830b3c-9116-4634-b33f-a1e15cd222fe",
-        "timestamp" : "2020-04-23T10:39:12+02:00",
+        "identifier" : "urn:uuid:be3f7833-81f7-440f-8aec-b649ba07e17d",
+        "timestamp" : "2020-04-24T08:49:31+02:00",
         "total" : 30,
         "parameter" : [{
           "name" : "excludeNested",
@@ -374,7 +374,7 @@
       "name" : "BeCausativeAgent",
       "title" : "ValueSet causative agent",
       "status" : "active",
-      "date" : "2020-04-23T10:38:56+02:00",
+      "date" : "2020-04-24T08:49:07+02:00",
       "publisher" : "eHealth Platform",
       "contact" : [{
         "name" : "Etienne Cantineau",
@@ -385,8 +385,8 @@
       }],
       "description" : "Codes as communicated by NIHDI and the FPS Terminology Center differentiating types of causative agent. This valueset supports the Belgian federal FHIR profiling effort.",
       "expansion" : {
-        "identifier" : "urn:uuid:bcd34e3c-9441-4b9a-ad1b-261a7a776c06",
-        "timestamp" : "2020-04-23T10:39:12+02:00",
+        "identifier" : "urn:uuid:c271ea14-8cf2-41a2-8771-f70152291b6e",
+        "timestamp" : "2020-04-24T08:49:31+02:00",
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
@@ -408,7 +408,7 @@
       "name" : "BeCausativeAgent",
       "title" : "ValueSet causative agent",
       "status" : "active",
-      "date" : "2020-04-23T10:38:56+02:00",
+      "date" : "2020-04-24T08:49:07+02:00",
       "publisher" : "eHealth Platform",
       "contact" : [{
         "name" : "Etienne Cantineau",
@@ -419,8 +419,8 @@
       }],
       "description" : "Codes as communicated by NIHDI and the FPS Terminology Center differentiating types of causative agent. This valueset supports the Belgian federal FHIR profiling effort.",
       "expansion" : {
-        "identifier" : "urn:uuid:bcd34e3c-9441-4b9a-ad1b-261a7a776c06",
-        "timestamp" : "2020-04-23T10:39:12+02:00",
+        "identifier" : "urn:uuid:c271ea14-8cf2-41a2-8771-f70152291b6e",
+        "timestamp" : "2020-04-24T08:49:31+02:00",
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
@@ -442,7 +442,7 @@
       "name" : "BeProductorServiceNihdiEAgreement",
       "title" : "ValueSet productor service",
       "status" : "active",
-      "date" : "2020-04-23T10:38:56+02:00",
+      "date" : "2020-04-24T08:49:07+02:00",
       "publisher" : "eHealth Platform",
       "contact" : [{
         "name" : "Etienne Cantineau",
@@ -453,8 +453,8 @@
       }],
       "description" : "NIHDI codes for use to describe eAgreement products or services in the MyCareNet eAgreement flows.",
       "expansion" : {
-        "identifier" : "urn:uuid:260a5370-1268-4a8e-9782-f099a0657cb1",
-        "timestamp" : "2020-04-23T10:39:12+02:00",
+        "identifier" : "urn:uuid:efc11aaa-ba0e-49eb-8c1c-126af3596dc4",
+        "timestamp" : "2020-04-24T08:49:31+02:00",
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
@@ -480,7 +480,7 @@
       "name" : "BeCausativeAgent",
       "title" : "ValueSet causative agent",
       "status" : "active",
-      "date" : "2020-04-23T10:38:56+02:00",
+      "date" : "2020-04-24T08:49:07+02:00",
       "publisher" : "eHealth Platform",
       "contact" : [{
         "name" : "Etienne Cantineau",
@@ -491,8 +491,8 @@
       }],
       "description" : "Codes as communicated by NIHDI and the FPS Terminology Center differentiating types of causative agent. This valueset supports the Belgian federal FHIR profiling effort.",
       "expansion" : {
-        "identifier" : "urn:uuid:bcd34e3c-9441-4b9a-ad1b-261a7a776c06",
-        "timestamp" : "2020-04-23T10:39:12+02:00",
+        "identifier" : "urn:uuid:c271ea14-8cf2-41a2-8771-f70152291b6e",
+        "timestamp" : "2020-04-24T08:49:31+02:00",
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false

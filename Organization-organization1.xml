@@ -12,19 +12,17 @@
     <use value="official"/>
     <type>
       <coding>
-        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
         <code value="PRN"/>
         <display value="Provider Number"/>
       </coding>
     </type>
-    <system value="https://www.ehealth.fgov.be/standards/fhir/NamingSystem/cb"/>
+    <system value="https://www.ehealth.fgov.be/standards/fhir/NamingSystem/cbe"/>
     <value value="0425.222.333"/>
   </identifier>
   <identifier>
     <use value="official"/>
     <type>
       <coding>
-        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
         <code value="MD"/>
         <display value="Medical License number"/>
       </coding>
@@ -46,7 +44,14 @@
     <use value="work"/>
     <type value="both"/>
     <text value="Vulcansstraat 120, 1000 Brussel"/>
-    <line value="Vulcansstraat 120"/>
+    <line value="Vulcansstraat 120">
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+        <valueString value="Vulcansstraat"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+        <valueString value="120"/>
+      </extension>
+    </line>
     <city value="Brussel"/>
     <postalCode value="1000"/>
     <country value="BE"/>
@@ -58,7 +63,14 @@
     <use value="work"/>
     <type value="both"/>
     <text value="120, Rue des Vulcans, 1000 Bruxelles"/>
-    <line value="120, Rue des Vulcans"/>
+    <line value="120, Rue des Vulcans">
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+        <valueString value="Rue des Vulcans"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+        <valueString value="120"/>
+      </extension>
+    </line>
     <city value="Bruxelles"/>
     <postalCode value="1000"/>
     <country value="BE"/>

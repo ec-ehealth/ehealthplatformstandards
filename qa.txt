@@ -1,21 +1,21 @@
 ﻿TheCoreBelgianFederalFHIRProfiles : Validation Results
 =========================================
 
-err = 43, warn = 8, info = 5
-IG Publisher Version: v1.0.81-SNAPSHOT
-Generated Thu Apr 23 10:39:56 CEST 2020. FHIR version 4.0.1 for BeCoreImplementationGuide#1.1.0 (canonical = https://www.ehealth.fgov.be/standards/fhir)
+err = 16, warn = 12, info = 7
+IG Publisher Version: v1.0.81-SNAPSHOT Out of date - current version is v1.0.82-SNAPSHOT
+Generated Fri Apr 24 08:50:32 CEST 2020. FHIR version 4.0.1 for BeCoreImplementationGuide#1.1.0 (canonical = https://www.ehealth.fgov.be/standards/fhir)
 
- Build Errors : 29 / 0
+ Build Errors : 28 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\ImplementationGuide-BeCoreImplementationGuide : 0 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\allergyintolerance-allergyIntolerance1 : 3 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\bundle-bemycareneteagreementdemand1 : 2 / 8
- C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\claim-bemycarenetclaim1 : 7 / 1
+ C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\claim-bemycarenetclaim1 : 7 / 3
  C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\messageheader-bemycareneteagreementmessageheader1 : 0 / 1
- C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\observation-observation1 : 11 / 1
- C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\organization-organization1 : 8 / 0
- C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\patient-patient1 : 3 / 1
- C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\practitioner-practitioner1 : 6 / 0
- C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\practitionerrole-practitionerrole1 : 3 / 0
+ C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\observation-observation1 : 2 / 2
+ C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\organization-organization1 : 0 / 2
+ C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\patient-patient1 : 0 / 2
+ C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\practitioner-practitioner1 : 0 / 0
+ C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\practitionerrole-practitionerrole1 : 2 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\structuredefinition-be-address : 0 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\structuredefinition-be-allergyintolerance : 0 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\structuredefinition-be-mycarenetclaim : 0 / 0
@@ -48,7 +48,7 @@ ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\AllergyIntolerance-al
 ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\AllergyIntolerance-allergyIntolerance1.html#/html/body/div/div/div/div/div/div/p/a at Line 146, column 1103: The link 'Patient/example' for "Patient/example" cannot be resolved
 ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\Claim-bemycarenetclaim1.html#/html/body/div/div/div/div/div/div/p/a at Line 146, column 1226: The link 'enterer1' for "enterer1" cannot be resolved
 ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\Claim-bemycarenetclaim1.html#/html/body/div/div/div/div/div/div/p/a at Line 146, column 1281: The link 'provider1' for "provider1" cannot be resolved
-ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\Claim-bemycarenetclaim1.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 146, column 2255: The link 'coverage1' for "coverage1" cannot be resolved
+ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\Claim-bemycarenetclaim1.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 146, column 2141: The link 'coverage1' for "coverage1" cannot be resolved
 ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\MessageHeader-bemycareneteagreementmessageheader1.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 146, column 397: The link 'testuri' for "testuri" cannot be resolved
 ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\Observation-observation1.html#/html/body/div/div/div/div/div/div/p/a at Line 146, column 731: The link 'Patient/example' for "Patient/example" cannot be resolved
 ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\Observation-observation1.html#/html/body/div/div/div/div/div/div/p/a at Line 146, column 847: The link 'Practitioner/example' for "Practitioner/example" cannot be resolved
@@ -70,7 +70,6 @@ ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\conventions.html: The
 ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\downloads.html: The html source does not contain the publish box
 ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\guidance.html: The html source does not contain the publish box
 ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\index.html: The html source does not contain the publish box
-ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\index.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 203, column 11: The link 'artifacts.html#conditions' for "Functional profiles" cannot be resolved (valid targets: [segment-header, publish-box, segment-post-footer, ehealth-logo, standards-logo, 1, 2, 3, 4, belgium-logo, 5, hl7-status, stripe, segment-footer, hl7-nav, segment-navbar, segment-content, segment-breadcrumb])
 ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\toc.html: The html source does not contain the publish box
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\ImplementationGuide-BeCoreImplementationGuide.json ==
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\AllergyIntolerance-allergyIntolerance1.json ==
@@ -96,45 +95,24 @@ ERROR: Claim/bemycarenetclaim1: Claim.supportingInfo[1]: Unsupported fixed patte
 INFORMATION: Claim/bemycarenetclaim1: Claim.subType.coding[0]: Code System URI "https://www.mycarenet.be/fhir/CodeSystem/agreement-types" is unknown so the code cannot be validated
 ERROR: Claim/bemycarenetclaim1: Claim.enterer: Unable to resolve resource "enterer1"
 ERROR: Claim/bemycarenetclaim1: Claim.provider: Unable to resolve resource "provider1"
+WARNING: Claim/bemycarenetclaim1: Claim.supportingInfo[0].category.coding[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: Claim/bemycarenetclaim1: Claim.supportingInfo[1].category.coding[0]: A code with no system has no defined meaning. A system should be provided
 ERROR: Claim/bemycarenetclaim1: Claim.insurance[0].coverage: Unable to resolve resource "coverage1"
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\MessageHeader-bemycareneteagreementmessageheader1.json ==
 INFORMATION: MessageHeader/bemycareneteagreementmessageheader1: MessageHeader.event.ofType(Coding): Code System URI "https://www.mycarenet.be/fhir/CodeSystem/message-events" is unknown so the code cannot be validated
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\Observation-observation1.json ==
-ERROR: Observation/observation1: Observation.code.coding[0]: Unsupported fixed pattern type for discriminator(system) for slice CodeableConcept.coding:LOINC: org.hl7.fhir.r5.model.UriType
-ERROR: Observation/observation1: Observation.code.coding[1]: Unsupported fixed pattern type for discriminator(system) for slice CodeableConcept.coding:LOINC: org.hl7.fhir.r5.model.UriType
-ERROR: Observation/observation1: Observation.code.coding[2]: Unsupported fixed pattern type for discriminator(system) for slice CodeableConcept.coding:LOINC: org.hl7.fhir.r5.model.UriType
-ERROR: Observation/observation1: Observation.code.coding[0]: Unsupported fixed pattern type for discriminator(system) for slice CodeableConcept.coding:SNOMED-CT: org.hl7.fhir.r5.model.UriType
-ERROR: Observation/observation1: Observation.code.coding[1]: Unsupported fixed pattern type for discriminator(system) for slice CodeableConcept.coding:SNOMED-CT: org.hl7.fhir.r5.model.UriType
-ERROR: Observation/observation1: Observation.code.coding[2]: Unsupported fixed pattern type for discriminator(system) for slice CodeableConcept.coding:SNOMED-CT: org.hl7.fhir.r5.model.UriType
-ERROR: Observation/observation1: Observation.code.coding[0]: Unsupported fixed pattern type for discriminator(system) for slice CodeableConcept.coding:ALBERTCODE: org.hl7.fhir.r5.model.UriType
-ERROR: Observation/observation1: Observation.code.coding[1]: Unsupported fixed pattern type for discriminator(system) for slice CodeableConcept.coding:ALBERTCODE: org.hl7.fhir.r5.model.UriType
-ERROR: Observation/observation1: Observation.code.coding[2]: Unsupported fixed pattern type for discriminator(system) for slice CodeableConcept.coding:ALBERTCODE: org.hl7.fhir.r5.model.UriType
+INFORMATION: Observation/observation1: Observation.code.coding[2]: This element does not match any known slice defined in the profile https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-observationcodeableconcept
 INFORMATION: Observation/observation1: Observation.code.coding[2]: Code System URI "http://my-own-custom-codes" is unknown so the code cannot be validated
 ERROR: Observation/observation1: Observation.subject: Unable to resolve resource "Patient/example"
 ERROR: Observation/observation1: Observation.performer[0]: Unable to resolve resource "Practitioner/example"
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\Organization-organization1.json ==
-ERROR: Organization/organization1: Organization.identifier[0]: Unsupported fixed pattern type for discriminator(system) for slice Organization.identifier:NIHDI: org.hl7.fhir.r5.model.UriType
-ERROR: Organization/organization1: Organization.identifier[1]: Unsupported fixed pattern type for discriminator(system) for slice Organization.identifier:NIHDI: org.hl7.fhir.r5.model.UriType
-ERROR: Organization/organization1: Organization.identifier[0]: Unsupported fixed pattern type for discriminator(system) for slice Organization.identifier:CBE: org.hl7.fhir.r5.model.UriType
-ERROR: Organization/organization1: Organization.identifier[1]: Unsupported fixed pattern type for discriminator(system) for slice Organization.identifier:CBE: org.hl7.fhir.r5.model.UriType
-ERROR: Organization/organization1: Organization.identifier[0]: Unsupported fixed pattern type for discriminator(system) for slice Organization.identifier:SSIN: org.hl7.fhir.r5.model.UriType
-ERROR: Organization/organization1: Organization.identifier[1]: Unsupported fixed pattern type for discriminator(system) for slice Organization.identifier:SSIN: org.hl7.fhir.r5.model.UriType
-ERROR: Organization/organization1: Organization.identifier[0]: Unsupported fixed pattern type for discriminator(system) for slice Organization.identifier:EHP: org.hl7.fhir.r5.model.UriType
-ERROR: Organization/organization1: Organization.identifier[1]: Unsupported fixed pattern type for discriminator(system) for slice Organization.identifier:EHP: org.hl7.fhir.r5.model.UriType
+WARNING: Organization/organization1: Organization.identifier[0].type.coding[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: Organization/organization1: Organization.identifier[1].type.coding[0]: A code with no system has no defined meaning. A system should be provided
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\Patient-Patient1.json ==
-ERROR: Patient/patient1: Patient.identifier[0]: Unsupported fixed pattern type for discriminator(system) for slice Patient.identifier:SSIN: org.hl7.fhir.r5.model.UriType
-ERROR: Patient/patient1: Patient.identifier[1]: Unsupported fixed pattern type for discriminator(system) for slice Patient.identifier:SSIN: org.hl7.fhir.r5.model.UriType
-ERROR: Patient/patient1: Patient.identifier[2]: Unsupported fixed pattern type for discriminator(system) for slice Patient.identifier:SSIN: org.hl7.fhir.r5.model.UriType
+INFORMATION: Patient/patient1: Patient.identifier[2]: This element does not match any known slice defined in the profile https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient
 INFORMATION: Patient/patient1: Patient.extension[0].extension[0].value.ofType(CodeableConcept).coding[0]: Code System URI "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-fed-country" is unknown so the code cannot be validated
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\Practitioner-practitioner1.json ==
-ERROR: Practitioner/practitioner1: Practitioner.identifier[0]: Unsupported fixed pattern type for discriminator(system) for slice Practitioner.identifier:NIHDI: org.hl7.fhir.r5.model.UriType
-ERROR: Practitioner/practitioner1: Practitioner.identifier[1]: Unsupported fixed pattern type for discriminator(system) for slice Practitioner.identifier:NIHDI: org.hl7.fhir.r5.model.UriType
-ERROR: Practitioner/practitioner1: Practitioner.identifier[0]: Unsupported fixed pattern type for discriminator(system) for slice Practitioner.identifier:CBE: org.hl7.fhir.r5.model.UriType
-ERROR: Practitioner/practitioner1: Practitioner.identifier[1]: Unsupported fixed pattern type for discriminator(system) for slice Practitioner.identifier:CBE: org.hl7.fhir.r5.model.UriType
-ERROR: Practitioner/practitioner1: Practitioner.identifier[0]: Unsupported fixed pattern type for discriminator(system) for slice Practitioner.identifier:SSIN: org.hl7.fhir.r5.model.UriType
-ERROR: Practitioner/practitioner1: Practitioner.identifier[1]: Unsupported fixed pattern type for discriminator(system) for slice Practitioner.identifier:SSIN: org.hl7.fhir.r5.model.UriType
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\PractitionerRole-practitionerrole1.json ==
-ERROR: PractitionerRole/practitionerrole1: PractitionerRole.specialty[0]: Unsupported fixed pattern type for discriminator(coding.system) for slice PractitionerRole.specialty:SNOMED-CT: org.hl7.fhir.r5.model.UriType
 ERROR: PractitionerRole/practitionerrole1: PractitionerRole.practitioner: Unable to resolve resource "https://www.anotherfhirserver.be/fhir/Practitioner/01"
 ERROR: PractitionerRole/practitionerrole1: PractitionerRole.code[0].coding[0]: Unknown Code https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty#persphysician in https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty for "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty#persphysician"
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\StructureDefinition-be-address.json ==

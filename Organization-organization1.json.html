@@ -145,13 +145,12 @@
       "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.type">type</a>" : {
         "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
           {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/v2-0203",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "PRN",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Provider Number"
           }
         ]
       },
-      "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/cb",
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a>" : "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/cbe",
       "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "0425.222.333"
     },
     {
@@ -159,7 +158,6 @@
       "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.type">type</a>" : {
         "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
           {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/v2-0203",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "MD",
             "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Medical License number"
           }
@@ -192,6 +190,20 @@
       "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.line">line</a>" : [
         "Vulcansstraat 120"
       ],
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.line">_line</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#string#string.extension">extension</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "Vulcansstraat"
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "120"
+            }
+          ]
+        }
+      ],
       "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.city">city</a>" : "Brussel",
       "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.postalCode">postalCode</a>" : "1000",
       "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.country">country</a>" : "BE"
@@ -208,6 +220,20 @@
       "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.text">text</a>" : "120, Rue des Vulcans, 1000 Bruxelles",
       "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.line">line</a>" : [
         "120, Rue des Vulcans"
+      ],
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.line">_line</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#string#string.extension">extension</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "Rue des Vulcans"
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
+              "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a>" : "120"
+            }
+          ]
+        }
       ],
       "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.city">city</a>" : "Bruxelles",
       "<a href="http://hl7.org/fhir/R4/datatypes.html#Address#Address.postalCode">postalCode</a>" : "1000",
