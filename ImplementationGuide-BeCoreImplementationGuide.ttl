@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "TheCoreBelgianFederalFHIRProfiles"];
   fhir:ImplementationGuide.title [ fhir:value "The Core Belgian Federal FHIR Profiles"];
   fhir:ImplementationGuide.status [ fhir:value "active"];
-  fhir:ImplementationGuide.date [ fhir:value "2020-04-27T09:33:05+02:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2020-04-27T11:01:37+02:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "eHealth Platform"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -834,6 +834,24 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Coverage" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Coverage-coverage1.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/Coverage/coverage1>;
+         fhir:Reference.reference [ fhir:value "Coverage/coverage1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "coverage 1" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "coverage 1" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 31;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "Observation" ]
        ], [
          fhir:index 1;
@@ -851,7 +869,7 @@
          fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-observation>
        ]
      ], [
-       fhir:index 31;
+       fhir:index 32;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -872,7 +890,7 @@
          fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization>
        ]
      ], [
-       fhir:index 32;
+       fhir:index 33;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -893,7 +911,7 @@
          fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient>
        ]
      ], [
-       fhir:index 33;
+       fhir:index 34;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -914,7 +932,7 @@
          fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner>
        ]
      ], [
-       fhir:index 34;
+       fhir:index 35;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];

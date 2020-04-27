@@ -10,7 +10,7 @@
   "name": "TheCoreBelgianFederalFHIRProfiles",
   "title": "The Core Belgian Federal FHIR Profiles",
   "status": "active",
-  "date": "2020-04-27T09:33:05+02:00",
+  "date": "2020-04-27T11:01:37+02:00",
   "publisher": "eHealth Platform",
   "contact": [
     {
@@ -832,6 +832,24 @@
         "name": "BeMyCareNetEAgreementMessageHeader 1",
         "description": "BeMyCareNetEAgreementMessageHeader 1",
         "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-mycareneteagreementmessageheader"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Coverage"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Coverage-coverage1.html"
+          }
+        ],
+        "reference": {
+          "reference": "Coverage/coverage1"
+        },
+        "name": "coverage 1",
+        "description": "coverage 1",
+        "exampleBoolean": true
       },
       {
         "extension": [

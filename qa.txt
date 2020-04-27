@@ -1,15 +1,16 @@
 ﻿TheCoreBelgianFederalFHIRProfiles : Validation Results
 =========================================
 
-err = 9, warn = 10, info = 2
+err = 0, warn = 8, info = 2
 IG Publisher Version: v1.0.82-SNAPSHOT
-Generated Mon Apr 27 09:34:06 CEST 2020. FHIR version 4.0.1 for BeCoreImplementationGuide#1.1.0 (canonical = https://www.ehealth.fgov.be/standards/fhir)
+Generated Mon Apr 27 11:02:35 CEST 2020. FHIR version 4.0.1 for BeCoreImplementationGuide#1.1.0 (canonical = https://www.ehealth.fgov.be/standards/fhir)
 
- Build Errors : 23 / 0
+ Build Errors : 19 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\ImplementationGuide-BeCoreImplementationGuide : 0 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\allergyintolerance-allergyIntolerance1 : 0 / 0
- C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\bundle-bemycareneteagreementdemand1 : 2 / 7
- C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\claim-bemycarenetclaim1 : 7 / 2
+ C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\bundle-bemycareneteagreementdemand1 : 0 / 7
+ C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\claim-bemycarenetclaim1 : 0 / 0
+ C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\coverage-coverage1 : 0 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\messageheader-bemycareneteagreementmessageheader1 : 0 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\observation-observation1 : 0 / 1
  C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\organization-organization1 : 0 / 0
@@ -44,10 +45,6 @@ Generated Mon Apr 27 09:34:06 CEST 2020. FHIR version 4.0.1 for BeCoreImplementa
  C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\valueset-be-riskmanifestation : 0 / 0
 </table>
 == n/a ==
-ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\Claim-bemycarenetclaim1.html#/html/body/div/div/div/div/div/div/p/a at Line 146, column 1263: The link 'enterer1' for "enterer1" cannot be resolved
-ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\Claim-bemycarenetclaim1.html#/html/body/div/div/div/div/div/div/p/a at Line 146, column 1318: The link 'provider1' for "provider1" cannot be resolved
-ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\Claim-bemycarenetclaim1.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 146, column 2178: The link 'coverage1' for "coverage1" cannot be resolved
-ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\MessageHeader-bemycareneteagreementmessageheader1.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 146, column 419: The link 'testuri' for "testuri" cannot be resolved
 ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\StructureDefinition-be-mycarenetclaim.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 244, column 940: The link 'StructureDefinition-be-mycarenetclaim-definitions.html#Claim.supportingInfo.category.coding' for "coding" cannot be resolved (valid targets: 254 targets)
 ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\StructureDefinition-be-mycarenetclaim.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 251, column 927: The link 'StructureDefinition-be-mycarenetclaim-definitions.html#Claim.supportingInfo.category.coding' for "coding" cannot be resolved (valid targets: 254 targets)
 ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\StructureDefinition-be-mycarenetclaim.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 850, column 940: The link 'StructureDefinition-be-mycarenetclaim-definitions.html#Claim.supportingInfo.category.coding' for "coding" cannot be resolved (valid targets: 254 targets)
@@ -71,8 +68,6 @@ ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\toc.html: The html so
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\AllergyIntolerance-allergyIntolerance1.json ==
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\Bundle-bemycareneteagreementdemand1.json ==
 WARNING: Bundle/bemycareneteagreementdemand1: Bundle.entry[0].resource.event.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-ERROR: Bundle/bemycareneteagreementdemand1: Bundle.entry[2].resource.enterer: Unable to resolve resource "enterer/1"
-ERROR: Bundle/bemycareneteagreementdemand1: Bundle.entry[2].resource.provider: Unable to resolve resource "provider/1"
 WARNING: Bundle/bemycareneteagreementdemand1: Bundle.entry[2]: Entry 'test2' isn't reachable by traversing from first Bundle entry
 WARNING: Bundle/bemycareneteagreementdemand1: Bundle.entry[3]: Entry 'test3' isn't reachable by traversing from first Bundle entry
 WARNING: Bundle/bemycareneteagreementdemand1: Bundle.entry[4]: Entry 'test4' isn't reachable by traversing from first Bundle entry
@@ -80,15 +75,7 @@ WARNING: Bundle/bemycareneteagreementdemand1: Bundle.entry[5]: Entry 'test5' isn
 WARNING: Bundle/bemycareneteagreementdemand1: Bundle.entry[6]: Entry 'test6' isn't reachable by traversing from first Bundle entry
 WARNING: Bundle/bemycareneteagreementdemand1: Bundle.entry[7]: Entry 'test7' isn't reachable by traversing from first Bundle entry
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\Claim-bemycarenetclaim1.json ==
-ERROR: Claim/bemycarenetclaim1: Claim.supportingInfo[0]: Unsupported fixed pattern type for discriminator(category.coding.code) for slice Claim.supportingInfo:Annex: org.hl7.fhir.r5.model.CodeType
-ERROR: Claim/bemycarenetclaim1: Claim.supportingInfo[1]: Unsupported fixed pattern type for discriminator(category.coding.code) for slice Claim.supportingInfo:Annex: org.hl7.fhir.r5.model.CodeType
-ERROR: Claim/bemycarenetclaim1: Claim.supportingInfo[0]: Unsupported fixed pattern type for discriminator(category.coding.code) for slice Claim.supportingInfo:AdditionalInformation: org.hl7.fhir.r5.model.CodeType
-ERROR: Claim/bemycarenetclaim1: Claim.supportingInfo[1]: Unsupported fixed pattern type for discriminator(category.coding.code) for slice Claim.supportingInfo:AdditionalInformation: org.hl7.fhir.r5.model.CodeType
-ERROR: Claim/bemycarenetclaim1: Claim.enterer: Unable to resolve resource "enterer1"
-ERROR: Claim/bemycarenetclaim1: Claim.provider: Unable to resolve resource "provider1"
-WARNING: Claim/bemycarenetclaim1: Claim.supportingInfo[0].category.coding[0]: A code with no system has no defined meaning. A system should be provided
-WARNING: Claim/bemycarenetclaim1: Claim.supportingInfo[1].category.coding[0]: A code with no system has no defined meaning. A system should be provided
-ERROR: Claim/bemycarenetclaim1: Claim.insurance[0].coverage: Unable to resolve resource "coverage1"
+== C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\Coverage-coverage1.json ==
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\MessageHeader-bemycareneteagreementmessageheader1.json ==
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\Observation-observation1.json ==
 INFORMATION: Observation/observation1: Observation.code.coding[2]: Code System URI "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/albert" is unknown so the code cannot be validated
