@@ -18,7 +18,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: allergyIntolerance1</p><p><b>meta</b>: </p><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical code 'active' = 'Active', given as 'Active'})</span></p><p><b>verificationStatus</b>: Confirmed <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-verification code 'confirmed' = 'Confirmed)</span></p><p><b>type</b>: allergy</p><p><b>category</b>: food</p><p><b>criticality</b>: high</p><p><b>code</b>: Allergic to peanut <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '762952008' = 'Peanut (substance)', given as 'Peanut (substance)'})</span></p><p><b>patient</b>: <a href=\"Patient/example\">Patient/example</a></p><p><b>onset</b>: 01-janv.-2004 0:00:00</p><p><b>recordedDate</b>: 09-oct.-2014 5:58:00</p><p><b>recorder</b>: <a href=\"Practitioner/example\">Practitioner/example</a></p><p><b>asserter</b>: <a href=\"Patient/example\">Patient/example</a></p><p><b>lastOccurrence</b>: 01-juin-2012 0:00:00</p><p><b>note</b>: Some extra information can be given here.</p><h3>Reactions</h3><table class=\"grid\"><tr><td>-</td><td><b>Manifestation</b></td><td><b>Onset</b></td><td><b>Severity</b></td></tr><tr><td>*</td><td>Anaphylactic reaction <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '39579001' = 'Anaphylaxis', given as 'Anaphylactic reaction'})</span></td><td>12-juin-2012 0:00:00</td><td>severe</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: allergyIntolerance1</p><p><b>meta</b>: </p><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical code 'active' = 'Active', given as 'Active'})</span></p><p><b>verificationStatus</b>: Confirmed <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-verification code 'confirmed' = 'Confirmed)</span></p><p><b>type</b>: allergy</p><p><b>category</b>: food</p><p><b>criticality</b>: high</p><p><b>code</b>: Allergic to peanut <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '762952008' = 'Peanut (substance)', given as 'Peanut (substance)'})</span></p><p><b>patient</b>: <a href=\"Patient-patient1.html\">Generated Summary: id: patient1; 79121137740 (OFFICIAL), Social Beneficiary Identifier = 79121137740 (OFFICIAL), Medical record number = 45XXP0PA-4 (USUAL); active; Josephine Nessa La Paradisio ; nessa.laparadisio@belgium.be, ph: +322476792979(MOBILE), ph: +3226718655(HOME), ph: +322476799(WORK); gender: female; birthDate: 1979-12-11; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus D}, {https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-civilstate 41}\">Divorced</span></a></p><p><b>onset</b>: 01-janv.-2004 0:00:00</p><p><b>recordedDate</b>: 09-oct.-2014 5:58:00</p><p><b>recorder</b>: <a href=\"Practitioner-practitioner1.html\">Generated Summary: id: practitioner1; 79121137740 (OFFICIAL), 18749704477 (OFFICIAL); Katherine Pulaski (OFFICIAL); katherine.pulaski@enterprisehospital.be(WORK), ph: 022675198(WORK), fax: 022675209(WORK); gender: female; birthDate: 1979-12-11</a></p><p><b>asserter</b>: <a href=\"Patient-patient1.html\">Generated Summary: id: patient1; 79121137740 (OFFICIAL), Social Beneficiary Identifier = 79121137740 (OFFICIAL), Medical record number = 45XXP0PA-4 (USUAL); active; Josephine Nessa La Paradisio ; nessa.laparadisio@belgium.be, ph: +322476792979(MOBILE), ph: +3226718655(HOME), ph: +322476799(WORK); gender: female; birthDate: 1979-12-11; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus D}, {https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-civilstate 41}\">Divorced</span></a></p><p><b>lastOccurrence</b>: 01-juin-2012 0:00:00</p><p><b>note</b>: Some extra information can be given here.</p><h3>Reactions</h3><table class=\"grid\"><tr><td>-</td><td><b>Manifestation</b></td><td><b>Onset</b></td><td><b>Severity</b></td></tr><tr><td>*</td><td>Anaphylactic reaction <span style=\"background: LightGoldenRodYellow\">(Details : {SNOMED CT code '39579001' = 'Anaphylaxis', given as 'Anaphylactic reaction'})</span></td><td>12-juin-2012 0:00:00</td><td>severe</td></tr></table></div>"
   ];
   fhir:AllergyIntolerance.clinicalStatus [
      fhir:CodeableConcept.coding [
@@ -52,18 +52,18 @@
      fhir:CodeableConcept.text [ fhir:value "Allergic to peanut" ]
   ];
   fhir:AllergyIntolerance.patient [
-     fhir:link <https://www.ehealth.fgov.be/standards/fhir/Patient/example>;
-     fhir:Reference.reference [ fhir:value "Patient/example" ]
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/Patient/patient1>;
+     fhir:Reference.reference [ fhir:value "Patient/patient1" ]
   ];
   fhir:AllergyIntolerance.onsetDateTime [ fhir:value "2004"^^xsd:gYear];
   fhir:AllergyIntolerance.recordedDate [ fhir:value "2014-10-09T14:58:00+11:00"^^xsd:dateTime];
   fhir:AllergyIntolerance.recorder [
-     fhir:link <https://www.ehealth.fgov.be/standards/fhir/Practitioner/example>;
-     fhir:Reference.reference [ fhir:value "Practitioner/example" ]
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/Practitioner/practitioner1>;
+     fhir:Reference.reference [ fhir:value "Practitioner/practitioner1" ]
   ];
   fhir:AllergyIntolerance.asserter [
-     fhir:link <https://www.ehealth.fgov.be/standards/fhir/Patient/example>;
-     fhir:Reference.reference [ fhir:value "Patient/example" ]
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/Patient/patient1>;
+     fhir:Reference.reference [ fhir:value "Patient/patient1" ]
   ];
   fhir:AllergyIntolerance.lastOccurrence [ fhir:value "2012-06"^^xsd:gYearMonth];
   fhir:AllergyIntolerance.note [

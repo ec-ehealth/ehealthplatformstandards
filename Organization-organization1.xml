@@ -6,12 +6,13 @@
     <profile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: organization1</p><p><b>meta</b>: </p><p><b>identifier</b>: Provider Number = 0425.222.333 (OFFICIAL), Medical License number = 999999999 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>name</b>: Enterprise Hospital Ziekenhuis</p><p><b>telecom</b>: ph: 322675199(WORK)</p><p><b>address</b>: </p><ul><li>Vulcansstraat 120, 1000 Brussel(WORK)</li><li>120, Rue des Vulcans, 1000 Bruxelles(WORK)</li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: organization1</p><p><b>meta</b>: </p><p><b>identifier</b>: Provider Number = 0425.222.333 (OFFICIAL), Medical License number = 999999999 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>type</b>: orghospital <span style="background: LightGoldenRodYellow">(Details : {https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty code 'orghospital' = 'orghospital)</span></p><p><b>name</b>: Enterprise Hospital Ziekenhuis</p><p><b>telecom</b>: ph: 322675199(WORK)</p><p><b>address</b>: </p><ul><li>Vulcansstraat 120, 1000 Brussel(WORK)</li><li>120, Rue des Vulcans, 1000 Bruxelles(WORK)</li></ul></div>
   </text>
   <identifier>
     <use value="official"/>
     <type>
       <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
         <code value="PRN"/>
         <display value="Provider Number"/>
       </coding>
@@ -23,6 +24,7 @@
     <use value="official"/>
     <type>
       <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
         <code value="MD"/>
         <display value="Medical License number"/>
       </coding>
@@ -31,6 +33,12 @@
     <value value="999999999"/>
   </identifier>
   <active value="true"/>
+  <type>
+    <coding>
+      <system value="https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty"/>
+      <code value="orghospital"/>
+    </coding>
+  </type>
   <name value="Enterprise Hospital Ziekenhuis"/>
   <telecom>
     <system value="phone"/>

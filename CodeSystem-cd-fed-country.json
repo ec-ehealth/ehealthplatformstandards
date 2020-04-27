@@ -1,0 +1,34 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "cd-fed-country",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>CodeSystem CD-FED-COUNTRY</h2><div><p>FedICT country codes.</p>\n</div><p>This code system https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-fed-country defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">BE<a name=\"cd-fed-country-BE\"> </a></td><td>Belgium</td><td/></tr></table></div>"
+  },
+  "url": "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-fed-country",
+  "version": "1.1.0",
+  "name": "Cdfedcountry",
+  "title": "CodeSystem CD-FED-COUNTRY",
+  "status": "active",
+  "date": "2020-04-27T09:33:05+02:00",
+  "publisher": "eHealth Platform",
+  "contact": [
+    {
+      "name": "Etienne Cantineau",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "etienne.cantineau@ehealth.fgov.be"
+        }
+      ]
+    }
+  ],
+  "description": "FedICT country codes.",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "BE",
+      "display": "Belgium"
+    }
+  ]
+}

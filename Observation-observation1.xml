@@ -6,7 +6,7 @@
     <profile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-observation"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: observation1</p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/observation-category code 'vital-signs' = 'Vital Signs', given as 'Vital Signs'})</span></p><p><b>code</b>: Heart rate <span style="background: LightGoldenRodYellow">(Details : {LOINC code '8867-4' = 'Heart rate', given as 'Heart rate'}; {SNOMED CT code '364075005' = 'Heart rate', given as 'Heart rate (observable entity)'}; {http://my-own-custom-codes code 'H-RATE' = 'H-RATE', given as 'Heart rate'})</span></p><p><b>subject</b>: <a href="Patient/example">Patient/example</a></p><p><b>effective</b>: 02-juil.-1999 0:00:00</p><p><b>performer</b>: <a href="Practitioner/example">Practitioner/example</a></p><p><b>value</b>: 44 beats/minute<span style="background: LightGoldenRodYellow"> (Details: UCUM code /min = '/min')</span></p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: observation1</p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>category</b>: Vital Signs <span style="background: LightGoldenRodYellow">(Details : {http://terminology.hl7.org/CodeSystem/observation-category code 'vital-signs' = 'Vital Signs', given as 'Vital Signs'})</span></p><p><b>code</b>: Heart rate <span style="background: LightGoldenRodYellow">(Details : {LOINC code '8867-4' = 'Heart rate', given as 'Heart rate'}; {SNOMED CT code '364075005' = 'Heart rate', given as 'Heart rate (observable entity)'}; {https://www.ehealth.fgov.be/standards/fhir/CodeSystem/albert code 'H-RATE' = 'H-RATE', given as 'Heart rate'})</span></p><p><b>subject</b>: <a href="Patient-patient1.html">Generated Summary: id: patient1; 79121137740 (OFFICIAL), Social Beneficiary Identifier = 79121137740 (OFFICIAL), Medical record number = 45XXP0PA-4 (USUAL); active; Josephine Nessa La Paradisio ; nessa.laparadisio@belgium.be, ph: +322476792979(MOBILE), ph: +3226718655(HOME), ph: +322476799(WORK); gender: female; birthDate: 1979-12-11; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus D}, {https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-civilstate 41}">Divorced</span></a></p><p><b>effective</b>: 02-juil.-1999 0:00:00</p><p><b>performer</b>: <a href="Practitioner-practitioner1.html">Generated Summary: id: practitioner1; 79121137740 (OFFICIAL), 18749704477 (OFFICIAL); Katherine Pulaski (OFFICIAL); katherine.pulaski@enterprisehospital.be(WORK), ph: 022675198(WORK), fax: 022675209(WORK); gender: female; birthDate: 1979-12-11</a></p><p><b>value</b>: 44 beats/minute<span style="background: LightGoldenRodYellow"> (Details: UCUM code /min = '/min')</span></p></div>
   </text>
   <status value="final"/>
   <category>
@@ -29,18 +29,18 @@
       <display value="Heart rate (observable entity)"/>
     </coding>
     <coding>
-      <system value="http://my-own-custom-codes"/>
+      <system value="https://www.ehealth.fgov.be/standards/fhir/CodeSystem/albert"/>
       <code value="H-RATE"/>
       <display value="Heart rate"/>
     </coding>
     <text value="Heart rate"/>
   </code>
   <subject>
-    <reference value="Patient/example"/>
+    <reference value="Patient/patient1"/>
   </subject>
   <effectiveDateTime value="1999-07-02"/>
   <performer>
-    <reference value="Practitioner/example"/>
+    <reference value="Practitioner/practitioner1"/>
   </performer>
   <valueQuantity>
     <value value="44"/>

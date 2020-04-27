@@ -1,21 +1,21 @@
 ﻿TheCoreBelgianFederalFHIRProfiles : Validation Results
 =========================================
 
-err = 16, warn = 12, info = 7
-IG Publisher Version: v1.0.81-SNAPSHOT Out of date - current version is v1.0.82-SNAPSHOT
-Generated Fri Apr 24 08:50:32 CEST 2020. FHIR version 4.0.1 for BeCoreImplementationGuide#1.1.0 (canonical = https://www.ehealth.fgov.be/standards/fhir)
+err = 9, warn = 10, info = 2
+IG Publisher Version: v1.0.82-SNAPSHOT
+Generated Mon Apr 27 09:34:06 CEST 2020. FHIR version 4.0.1 for BeCoreImplementationGuide#1.1.0 (canonical = https://www.ehealth.fgov.be/standards/fhir)
 
- Build Errors : 28 / 0
+ Build Errors : 23 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\ImplementationGuide-BeCoreImplementationGuide : 0 / 0
- C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\allergyintolerance-allergyIntolerance1 : 3 / 0
- C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\bundle-bemycareneteagreementdemand1 : 2 / 8
- C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\claim-bemycarenetclaim1 : 7 / 3
- C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\messageheader-bemycareneteagreementmessageheader1 : 0 / 1
- C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\observation-observation1 : 2 / 2
- C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\organization-organization1 : 0 / 2
- C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\patient-patient1 : 0 / 2
+ C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\allergyintolerance-allergyIntolerance1 : 0 / 0
+ C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\bundle-bemycareneteagreementdemand1 : 2 / 7
+ C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\claim-bemycarenetclaim1 : 7 / 2
+ C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\messageheader-bemycareneteagreementmessageheader1 : 0 / 0
+ C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\observation-observation1 : 0 / 1
+ C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\organization-organization1 : 0 / 0
+ C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\patient-patient1 : 0 / 1
  C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\practitioner-practitioner1 : 0 / 0
- C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\practitionerrole-practitionerrole1 : 2 / 0
+ C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\practitionerrole-practitionerrole1 : 0 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\structuredefinition-be-address : 0 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\structuredefinition-be-allergyintolerance : 0 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\structuredefinition-be-mycarenetclaim : 0 / 0
@@ -30,6 +30,7 @@ Generated Fri Apr 24 08:50:32 CEST 2020. FHIR version 4.0.1 for BeCoreImplementa
  C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\codesystem-agreement-types : 0 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\codesystem-cd-civilstate : 0 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\codesystem-cd-contact-person : 0 / 0
+ C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\codesystem-cd-fed-country : 0 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\codesystem-cd-hcparty : 0 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\codesystem-message-events : 0 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\codesystem-nihdi-legal-physiotherapy-fa : 0 / 0
@@ -43,15 +44,10 @@ Generated Fri Apr 24 08:50:32 CEST 2020. FHIR version 4.0.1 for BeCoreImplementa
  C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\valueset-be-riskmanifestation : 0 / 0
 </table>
 == n/a ==
-ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\AllergyIntolerance-allergyIntolerance1.html#/html/body/div/div/div/div/div/div/p/a at Line 146, column 865: The link 'Patient/example' for "Patient/example" cannot be resolved
-ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\AllergyIntolerance-allergyIntolerance1.html#/html/body/div/div/div/div/div/div/p/a at Line 146, column 1024: The link 'Practitioner/example' for "Practitioner/example" cannot be resolved
-ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\AllergyIntolerance-allergyIntolerance1.html#/html/body/div/div/div/div/div/div/p/a at Line 146, column 1103: The link 'Patient/example' for "Patient/example" cannot be resolved
-ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\Claim-bemycarenetclaim1.html#/html/body/div/div/div/div/div/div/p/a at Line 146, column 1226: The link 'enterer1' for "enterer1" cannot be resolved
-ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\Claim-bemycarenetclaim1.html#/html/body/div/div/div/div/div/div/p/a at Line 146, column 1281: The link 'provider1' for "provider1" cannot be resolved
-ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\Claim-bemycarenetclaim1.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 146, column 2141: The link 'coverage1' for "coverage1" cannot be resolved
-ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\MessageHeader-bemycareneteagreementmessageheader1.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 146, column 397: The link 'testuri' for "testuri" cannot be resolved
-ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\Observation-observation1.html#/html/body/div/div/div/div/div/div/p/a at Line 146, column 731: The link 'Patient/example' for "Patient/example" cannot be resolved
-ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\Observation-observation1.html#/html/body/div/div/div/div/div/div/p/a at Line 146, column 847: The link 'Practitioner/example' for "Practitioner/example" cannot be resolved
+ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\Claim-bemycarenetclaim1.html#/html/body/div/div/div/div/div/div/p/a at Line 146, column 1263: The link 'enterer1' for "enterer1" cannot be resolved
+ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\Claim-bemycarenetclaim1.html#/html/body/div/div/div/div/div/div/p/a at Line 146, column 1318: The link 'provider1' for "provider1" cannot be resolved
+ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\Claim-bemycarenetclaim1.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 146, column 2178: The link 'coverage1' for "coverage1" cannot be resolved
+ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\MessageHeader-bemycareneteagreementmessageheader1.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 146, column 419: The link 'testuri' for "testuri" cannot be resolved
 ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\StructureDefinition-be-mycarenetclaim.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 244, column 940: The link 'StructureDefinition-be-mycarenetclaim-definitions.html#Claim.supportingInfo.category.coding' for "coding" cannot be resolved (valid targets: 254 targets)
 ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\StructureDefinition-be-mycarenetclaim.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 251, column 927: The link 'StructureDefinition-be-mycarenetclaim-definitions.html#Claim.supportingInfo.category.coding' for "coding" cannot be resolved (valid targets: 254 targets)
 ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\StructureDefinition-be-mycarenetclaim.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 850, column 940: The link 'StructureDefinition-be-mycarenetclaim-definitions.html#Claim.supportingInfo.category.coding' for "coding" cannot be resolved (valid targets: 254 targets)
@@ -73,12 +69,8 @@ ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\index.html: The html 
 ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\toc.html: The html source does not contain the publish box
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\ImplementationGuide-BeCoreImplementationGuide.json ==
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\AllergyIntolerance-allergyIntolerance1.json ==
-ERROR: AllergyIntolerance/allergyIntolerance1: AllergyIntolerance.patient: Unable to resolve resource "Patient/example"
-ERROR: AllergyIntolerance/allergyIntolerance1: AllergyIntolerance.recorder: Unable to resolve resource "Practitioner/example"
-ERROR: AllergyIntolerance/allergyIntolerance1: AllergyIntolerance.asserter: Unable to resolve resource "Patient/example"
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\Bundle-bemycareneteagreementdemand1.json ==
 WARNING: Bundle/bemycareneteagreementdemand1: Bundle.entry[0].resource.event.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-INFORMATION: Bundle/bemycareneteagreementdemand1: Bundle.entry[2].resource.subType.coding[0]: Code System URI "https://www.mycarenet.be/fhir/CodeSystem/agreement-types" is unknown so the code cannot be validated
 ERROR: Bundle/bemycareneteagreementdemand1: Bundle.entry[2].resource.enterer: Unable to resolve resource "enterer/1"
 ERROR: Bundle/bemycareneteagreementdemand1: Bundle.entry[2].resource.provider: Unable to resolve resource "provider/1"
 WARNING: Bundle/bemycareneteagreementdemand1: Bundle.entry[2]: Entry 'test2' isn't reachable by traversing from first Bundle entry
@@ -92,29 +84,19 @@ ERROR: Claim/bemycarenetclaim1: Claim.supportingInfo[0]: Unsupported fixed patte
 ERROR: Claim/bemycarenetclaim1: Claim.supportingInfo[1]: Unsupported fixed pattern type for discriminator(category.coding.code) for slice Claim.supportingInfo:Annex: org.hl7.fhir.r5.model.CodeType
 ERROR: Claim/bemycarenetclaim1: Claim.supportingInfo[0]: Unsupported fixed pattern type for discriminator(category.coding.code) for slice Claim.supportingInfo:AdditionalInformation: org.hl7.fhir.r5.model.CodeType
 ERROR: Claim/bemycarenetclaim1: Claim.supportingInfo[1]: Unsupported fixed pattern type for discriminator(category.coding.code) for slice Claim.supportingInfo:AdditionalInformation: org.hl7.fhir.r5.model.CodeType
-INFORMATION: Claim/bemycarenetclaim1: Claim.subType.coding[0]: Code System URI "https://www.mycarenet.be/fhir/CodeSystem/agreement-types" is unknown so the code cannot be validated
 ERROR: Claim/bemycarenetclaim1: Claim.enterer: Unable to resolve resource "enterer1"
 ERROR: Claim/bemycarenetclaim1: Claim.provider: Unable to resolve resource "provider1"
 WARNING: Claim/bemycarenetclaim1: Claim.supportingInfo[0].category.coding[0]: A code with no system has no defined meaning. A system should be provided
 WARNING: Claim/bemycarenetclaim1: Claim.supportingInfo[1].category.coding[0]: A code with no system has no defined meaning. A system should be provided
 ERROR: Claim/bemycarenetclaim1: Claim.insurance[0].coverage: Unable to resolve resource "coverage1"
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\MessageHeader-bemycareneteagreementmessageheader1.json ==
-INFORMATION: MessageHeader/bemycareneteagreementmessageheader1: MessageHeader.event.ofType(Coding): Code System URI "https://www.mycarenet.be/fhir/CodeSystem/message-events" is unknown so the code cannot be validated
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\Observation-observation1.json ==
-INFORMATION: Observation/observation1: Observation.code.coding[2]: This element does not match any known slice defined in the profile https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-observationcodeableconcept
-INFORMATION: Observation/observation1: Observation.code.coding[2]: Code System URI "http://my-own-custom-codes" is unknown so the code cannot be validated
-ERROR: Observation/observation1: Observation.subject: Unable to resolve resource "Patient/example"
-ERROR: Observation/observation1: Observation.performer[0]: Unable to resolve resource "Practitioner/example"
+INFORMATION: Observation/observation1: Observation.code.coding[2]: Code System URI "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/albert" is unknown so the code cannot be validated
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\Organization-organization1.json ==
-WARNING: Organization/organization1: Organization.identifier[0].type.coding[0]: A code with no system has no defined meaning. A system should be provided
-WARNING: Organization/organization1: Organization.identifier[1].type.coding[0]: A code with no system has no defined meaning. A system should be provided
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\Patient-Patient1.json ==
 INFORMATION: Patient/patient1: Patient.identifier[2]: This element does not match any known slice defined in the profile https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient
-INFORMATION: Patient/patient1: Patient.extension[0].extension[0].value.ofType(CodeableConcept).coding[0]: Code System URI "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-fed-country" is unknown so the code cannot be validated
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\Practitioner-practitioner1.json ==
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\PractitionerRole-practitionerrole1.json ==
-ERROR: PractitionerRole/practitionerrole1: PractitionerRole.practitioner: Unable to resolve resource "https://www.anotherfhirserver.be/fhir/Practitioner/01"
-ERROR: PractitionerRole/practitionerrole1: PractitionerRole.code[0].coding[0]: Unknown Code https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty#persphysician in https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty for "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty#persphysician"
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\StructureDefinition-be-address.json ==
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\StructureDefinition-be-allergyintolerance.json ==
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\StructureDefinition-be-mycarenetclaim.json ==
@@ -129,6 +111,7 @@ ERROR: PractitionerRole/practitionerrole1: PractitionerRole.code[0].coding[0]: U
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\CodeSystem-agreement-types.json ==
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\CodeSystem-cd-civilstate.json ==
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\CodeSystem-cd-contact-person.json ==
+== C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\CodeSystem-cd-fed-country.json ==
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\CodeSystem-cd-hcparty.json ==
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\CodeSystem-message-events.json ==
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\CodeSystem-nihdi-legal-physiotherapy-fa.json ==

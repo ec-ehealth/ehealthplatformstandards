@@ -17,7 +17,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: organization1</p><p><b>meta</b>: </p><p><b>identifier</b>: Provider Number = 0425.222.333 (OFFICIAL), Medical License number = 999999999 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>name</b>: Enterprise Hospital Ziekenhuis</p><p><b>telecom</b>: ph: 322675199(WORK)</p><p><b>address</b>: </p><ul><li>Vulcansstraat 120, 1000 Brussel(WORK)</li><li>120, Rue des Vulcans, 1000 Bruxelles(WORK)</li></ul></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: organization1</p><p><b>meta</b>: </p><p><b>identifier</b>: Provider Number = 0425.222.333 (OFFICIAL), Medical License number = 999999999 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>type</b>: orghospital <span style=\"background: LightGoldenRodYellow\">(Details : {https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty code 'orghospital' = 'orghospital)</span></p><p><b>name</b>: Enterprise Hospital Ziekenhuis</p><p><b>telecom</b>: ph: 322675199(WORK)</p><p><b>address</b>: </p><ul><li>Vulcansstraat 120, 1000 Brussel(WORK)</li><li>120, Rue des Vulcans, 1000 Bruxelles(WORK)</li></ul></div>"
   ];
   fhir:Organization.identifier [
      fhir:index 0;
@@ -25,6 +25,7 @@
      fhir:Identifier.type [
        fhir:CodeableConcept.coding [
          fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ];
          fhir:Coding.code [ fhir:value "PRN" ];
          fhir:Coding.display [ fhir:value "Provider Number" ]
        ]
@@ -37,6 +38,7 @@
      fhir:Identifier.type [
        fhir:CodeableConcept.coding [
          fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ];
          fhir:Coding.code [ fhir:value "MD" ];
          fhir:Coding.display [ fhir:value "Medical License number" ]
        ]
@@ -45,6 +47,14 @@
      fhir:Identifier.value [ fhir:value "999999999" ]
   ];
   fhir:Organization.active [ fhir:value "true"^^xsd:boolean];
+  fhir:Organization.type [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty" ];
+       fhir:Coding.code [ fhir:value "orghospital" ]
+     ]
+  ];
   fhir:Organization.name [ fhir:value "Enterprise Hospital Ziekenhuis"];
   fhir:Organization.telecom [
      fhir:index 0;

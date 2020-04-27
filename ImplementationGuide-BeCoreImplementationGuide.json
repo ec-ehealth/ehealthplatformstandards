@@ -10,7 +10,7 @@
   "name": "TheCoreBelgianFederalFHIRProfiles",
   "title": "The Core Belgian Federal FHIR Profiles",
   "status": "active",
-  "date": "2020-04-24T08:49:07+02:00",
+  "date": "2020-04-27T09:33:05+02:00",
   "publisher": "eHealth Platform",
   "contact": [
     {
@@ -669,6 +669,24 @@
         },
         "name": "CodeSystem CD-CONTACT-PERSON",
         "description": "Contact person",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "CodeSystem-cd-fed-country.html"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/cd-fed-country"
+        },
+        "name": "CodeSystem CD-FED-COUNTRY",
+        "description": "FedICT country codes.",
         "exampleBoolean": false
       },
       {

@@ -8,11 +8,11 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: bemycareneteagreementmessageheader1</p><p><b>meta</b>: </p><p><b>event</b>: mycode (Details: https://www.mycarenet.be/fhir/CodeSystem/message-events code mycode = 'mycode', stated as 'null')</p><h3>Sources</h3><table class=\"grid\"><tr><td>-</td><td><b>Endpoint</b></td></tr><tr><td>*</td><td><a href=\"testuri\">testuri</a></td></tr></table></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: bemycareneteagreementmessageheader1</p><p><b>meta</b>: </p><p><b>event</b>: claim-ask (Details: https://www.ehealth.fgov.be/standards/fhir/CodeSystem/message-events code claim-ask = 'claim-ask', stated as 'null')</p><h3>Sources</h3><table class=\"grid\"><tr><td>-</td><td><b>Endpoint</b></td></tr><tr><td>*</td><td><a href=\"testuri\">testuri</a></td></tr></table></div>"
   },
   "eventCoding": {
-    "system": "https://www.mycarenet.be/fhir/CodeSystem/message-events",
-    "code": "mycode"
+    "system": "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/message-events",
+    "code": "claim-ask"
   },
   "source": {
     "endpoint": "testuri"

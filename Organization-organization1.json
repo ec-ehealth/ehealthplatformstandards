@@ -8,7 +8,7 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: organization1</p><p><b>meta</b>: </p><p><b>identifier</b>: Provider Number = 0425.222.333 (OFFICIAL), Medical License number = 999999999 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>name</b>: Enterprise Hospital Ziekenhuis</p><p><b>telecom</b>: ph: 322675199(WORK)</p><p><b>address</b>: </p><ul><li>Vulcansstraat 120, 1000 Brussel(WORK)</li><li>120, Rue des Vulcans, 1000 Bruxelles(WORK)</li></ul></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: organization1</p><p><b>meta</b>: </p><p><b>identifier</b>: Provider Number = 0425.222.333 (OFFICIAL), Medical License number = 999999999 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>type</b>: orghospital <span style=\"background: LightGoldenRodYellow\">(Details : {https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty code 'orghospital' = 'orghospital)</span></p><p><b>name</b>: Enterprise Hospital Ziekenhuis</p><p><b>telecom</b>: ph: 322675199(WORK)</p><p><b>address</b>: </p><ul><li>Vulcansstraat 120, 1000 Brussel(WORK)</li><li>120, Rue des Vulcans, 1000 Bruxelles(WORK)</li></ul></div>"
   },
   "identifier": [
     {
@@ -16,6 +16,7 @@
       "type": {
         "coding": [
           {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
             "code": "PRN",
             "display": "Provider Number"
           }
@@ -29,6 +30,7 @@
       "type": {
         "coding": [
           {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
             "code": "MD",
             "display": "Medical License number"
           }
@@ -39,6 +41,16 @@
     }
   ],
   "active": true,
+  "type": [
+    {
+      "coding": [
+        {
+          "system": "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty",
+          "code": "orghospital"
+        }
+      ]
+    }
+  ],
   "name": "Enterprise Hospital Ziekenhuis",
   "telecom": [
     {
