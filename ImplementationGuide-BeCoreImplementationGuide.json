@@ -10,7 +10,7 @@
   "name": "TheCoreBelgianFederalFHIRProfiles",
   "title": "The Core Belgian Federal FHIR Profiles",
   "status": "active",
-  "date": "2020-04-28T09:59:39+02:00",
+  "date": "2020-04-28T14:40:18+02:00",
   "publisher": "eHealth Platform",
   "contact": [
     {
@@ -805,6 +805,24 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "NamingSystem-be-cbe.html"
+          }
+        ],
+        "reference": {
+          "reference": "NamingSystem/be-cbe"
+        },
+        "name": "NamingSystem CBE",
+        "description": "The CBE naming system",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "NamingSystem"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "NamingSystem-be-ehp.html"
           }
         ],
@@ -813,7 +831,43 @@
         },
         "name": "NamingSystem EHP",
         "description": "The EHP naming system",
-        "exampleBoolean": true
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "NamingSystem"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "NamingSystem-be-nihdi.html"
+          }
+        ],
+        "reference": {
+          "reference": "NamingSystem/be-nihdi"
+        },
+        "name": "NamingSystem NIHDI",
+        "description": "The NIHDI naming system",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "NamingSystem"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "NamingSystem-be-ssin.html"
+          }
+        ],
+        "reference": {
+          "reference": "NamingSystem/be-ssin"
+        },
+        "name": "NamingSystem SSIN",
+        "description": "The SSIN naming system",
+        "exampleBoolean": false
       },
       {
         "extension": [

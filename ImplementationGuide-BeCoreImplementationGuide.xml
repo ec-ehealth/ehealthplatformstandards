@@ -11,7 +11,7 @@
   <name value="TheCoreBelgianFederalFHIRProfiles"/>
   <title value="The Core Belgian Federal FHIR Profiles"/>
   <status value="active"/>
-  <date value="2020-04-28T09:59:39+02:00"/>
+  <date value="2020-04-28T14:40:18+02:00"/>
   <publisher value="eHealth Platform"/>
   <contact>
     <name value="Etienne Cantineau"/>
@@ -582,6 +582,20 @@
         <valueString value="NamingSystem"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="NamingSystem-be-cbe.html"/>
+      </extension>
+      <reference>
+        <reference value="NamingSystem/be-cbe"/>
+      </reference>
+      <name value="NamingSystem CBE"/>
+      <description value="The CBE naming system"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="NamingSystem"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="NamingSystem-be-ehp.html"/>
       </extension>
       <reference>
@@ -589,7 +603,35 @@
       </reference>
       <name value="NamingSystem EHP"/>
       <description value="The EHP naming system"/>
-      <exampleBoolean value="true"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="NamingSystem"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="NamingSystem-be-nihdi.html"/>
+      </extension>
+      <reference>
+        <reference value="NamingSystem/be-nihdi"/>
+      </reference>
+      <name value="NamingSystem NIHDI"/>
+      <description value="The NIHDI naming system"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="NamingSystem"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="NamingSystem-be-ssin.html"/>
+      </extension>
+      <reference>
+        <reference value="NamingSystem/be-ssin"/>
+      </reference>
+      <name value="NamingSystem SSIN"/>
+      <description value="The SSIN naming system"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

@@ -55,7 +55,7 @@ A note on this level SHOULD be avoided when not absolutely necessary. Preferably
   <name value="BeAllergyIntolerance"/>
   <title value="Allergy Intolerance core BE profile"/>
   <status value="active"/>
-  <date value="2020-04-28T09:59:39+02:00"/>
+  <date value="2020-04-28T14:40:18+02:00"/>
   <publisher value="eHealth Platform"/>
   <contact>
     <name value="Etienne Cantineau"/>

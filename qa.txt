@@ -3,7 +3,7 @@
 
 err = 0, warn = 8, info = 2
 IG Publisher Version: v1.0.82-SNAPSHOT
-Generated Tue Apr 28 10:00:42 CEST 2020. FHIR version 4.0.1 for BeCoreImplementationGuide#1.1.0 (canonical = https://www.ehealth.fgov.be/standards/fhir)
+Generated Tue Apr 28 14:41:19 CEST 2020. FHIR version 4.0.1 for BeCoreImplementationGuide#1.1.0 (canonical = https://www.ehealth.fgov.be/standards/fhir)
 
  Build Errors : 19 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\ImplementationGuide-BeCoreImplementationGuide : 0 / 0
@@ -13,7 +13,10 @@ Generated Tue Apr 28 10:00:42 CEST 2020. FHIR version 4.0.1 for BeCoreImplementa
  C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\claim-bemycarenetclaim1 : 0 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\coverage-coverage1 : 0 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\messageheader-bemycareneteagreementmessageheader1 : 0 / 0
+ C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\namingsystem-be-cbe : 0 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\namingsystem-be-ehp : 0 / 0
+ C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\namingsystem-be-nihdi : 0 / 0
+ C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\namingsystem-be-ssin : 0 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\observation-observation1 : 0 / 1
  C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\organization-organization1 : 0 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\patient-patient1 : 0 / 1
@@ -82,7 +85,10 @@ WARNING: Bundle/bemycareneteagreementdemand1: Bundle.entry[7]: Entry 'test7' isn
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\Claim-bemycarenetclaim1.json ==
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\Coverage-coverage1.json ==
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\MessageHeader-bemycareneteagreementmessageheader1.json ==
+== C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\NamingSystem-be-cbe.json ==
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\NamingSystem-be-ehp.json ==
+== C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\NamingSystem-be-nihdi.json ==
+== C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\NamingSystem-be-ssin.json ==
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\Observation-observation1.json ==
 INFORMATION: Observation/observation1: Observation.code.coding[2]: Code System URI "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/albert" is unknown so the code cannot be validated
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\Organization-organization1.json ==
