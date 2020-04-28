@@ -1,0 +1,126 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.ehealth.fgov.be/standards/fhir/Bundle/bundle1> a fhir:Bundle;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "bundle1"];
+  fhir:Bundle.type [ fhir:value "transaction"];
+  fhir:Bundle.entry [
+     fhir:index 0;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:8df87da3-5c85-4bea-8996-33b364a0eea9" ];
+     fhir:Bundle.entry.resource <urn:uuid:8df87da3-5c85-4bea-8996-33b364a0eea9>;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "POST" ];
+       fhir:Bundle.entry.request.url [ fhir:value "Practitioner" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:2a971dd8-b621-4a74-b984-ca2a7a619220" ];
+     fhir:Bundle.entry.resource <urn:uuid:2a971dd8-b621-4a74-b984-ca2a7a619220>;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "POST" ];
+       fhir:Bundle.entry.request.url [ fhir:value "Organization" ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:Bundle.entry.fullUrl [ fhir:value "urn:uuid:8cf2c41f-988e-40b8-8832-cad4f10803f5" ];
+     fhir:Bundle.entry.resource <urn:uuid:8cf2c41f-988e-40b8-8832-cad4f10803f5>;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "POST" ];
+       fhir:Bundle.entry.request.url [ fhir:value "Provenance" ]
+     ]
+  ] .
+
+<urn:uuid:8df87da3-5c85-4bea-8996-33b364a0eea9> a fhir:Practitioner;
+  fhir:Resource.id [ fhir:value "Practitioner2"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner";
+       fhir:index 0;
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: Practitioner2</p><p><b>meta</b>: </p><p><b>name</b>: Dupont</p></div>"
+  ];
+  fhir:Practitioner.name [
+     fhir:index 0;
+     fhir:HumanName.text [ fhir:value "Dupont" ]
+  ] .
+
+<urn:uuid:2a971dd8-b621-4a74-b984-ca2a7a619220> a fhir:Organization;
+  fhir:Resource.id [ fhir:value "Organization2"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization";
+       fhir:index 0;
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: Organization2</p><p><b>meta</b>: </p><p><b>name</b>: testorga</p></div>"
+  ];
+  fhir:Organization.name [ fhir:value "testorga"] .
+
+<urn:uuid:8cf2c41f-988e-40b8-8832-cad4f10803f5> a fhir:Provenance;
+  fhir:Resource.id [ fhir:value "Provenance2"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-provenance";
+       fhir:index 0;
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-provenance>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: Provenance2</p><p><b>meta</b>: </p><p><b>target</b>: <a href=\"#backboneelement_Practitioner2\">Generated Summary: unknown resource entry</a></p><p><b>recorded</b>: 27-juin-2019 8:39:24</p><p><b>reason</b>: Healthcare Operations <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/v3-ActReason code 'HOPERAT' = 'healthcare operations', given as 'Healthcare Operations'})</span></p><p><b>activity</b>: create <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/v3-DataOperation code 'CREATE' = 'create)</span></p><h3>Agents</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Who</b></td></tr><tr><td>*</td><td>Author <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/provenance-participant-type code 'author' = 'Author)</span></td><td><a href=\"#backboneelement_Organization2\">Enterprise Hospital Ziekenhuis. Generated Summary: unknown resource entry</a></td></tr></table></div>"
+  ];
+  fhir:Provenance.target [
+     fhir:index 0;
+     fhir:Reference.reference [ fhir:value "urn:uuid:8df87da3-5c85-4bea-8996-33b364a0eea9" ]
+  ];
+  fhir:Provenance.recorded [ fhir:value "2019-06-27T08:39:24+02:00"^^xsd:dateTime];
+  fhir:Provenance.reason [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ActReason" ];
+       fhir:Coding.code [ fhir:value "HOPERAT" ];
+       fhir:Coding.display [ fhir:value "Healthcare Operations" ]
+     ]
+  ];
+  fhir:Provenance.activity [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-DataOperation" ];
+       fhir:Coding.code [ fhir:value "CREATE" ]
+     ]
+  ];
+  fhir:Provenance.agent [
+     fhir:index 0;
+     fhir:Provenance.agent.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/provenance-participant-type" ];
+         fhir:Coding.code [ fhir:value "author" ]
+       ]
+     ];
+     fhir:Provenance.agent.who [
+       fhir:Reference.reference [ fhir:value "urn:uuid:2a971dd8-b621-4a74-b984-ca2a7a619220" ];
+       fhir:Reference.display [ fhir:value "Enterprise Hospital Ziekenhuis" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.ehealth.fgov.be/standards/fhir/Bundle/bundle1.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

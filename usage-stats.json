@@ -57,6 +57,12 @@
         "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitionerrole",
         "title": "Practitioner Role core BE profile"
       }
+    ],
+    "Provenance": [
+      {
+        "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-provenance",
+        "title": "Provenance core BE profile"
+      }
     ]
   },
   "usage": {

@@ -3,20 +3,23 @@
 
 err = 0, warn = 8, info = 2
 IG Publisher Version: v1.0.82-SNAPSHOT
-Generated Mon Apr 27 11:02:35 CEST 2020. FHIR version 4.0.1 for BeCoreImplementationGuide#1.1.0 (canonical = https://www.ehealth.fgov.be/standards/fhir)
+Generated Tue Apr 28 10:00:42 CEST 2020. FHIR version 4.0.1 for BeCoreImplementationGuide#1.1.0 (canonical = https://www.ehealth.fgov.be/standards/fhir)
 
  Build Errors : 19 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\ImplementationGuide-BeCoreImplementationGuide : 0 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\allergyintolerance-allergyIntolerance1 : 0 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\bundle-bemycareneteagreementdemand1 : 0 / 7
+ C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\bundle-bundle1 : 0 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\claim-bemycarenetclaim1 : 0 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\coverage-coverage1 : 0 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\messageheader-bemycareneteagreementmessageheader1 : 0 / 0
+ C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\namingsystem-be-ehp : 0 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\observation-observation1 : 0 / 1
  C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\organization-organization1 : 0 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\patient-patient1 : 0 / 1
  C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\practitioner-practitioner1 : 0 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\practitionerrole-practitionerrole1 : 0 / 0
+ C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\provenance-provenance1 : 0 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\structuredefinition-be-address : 0 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\structuredefinition-be-allergyintolerance : 0 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\structuredefinition-be-mycarenetclaim : 0 / 0
@@ -28,6 +31,7 @@ Generated Mon Apr 27 11:02:35 CEST 2020. FHIR version 4.0.1 for BeCoreImplementa
  C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\structuredefinition-be-patient : 0 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\structuredefinition-be-practitioner : 0 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\structuredefinition-be-practitionerrole : 0 / 0
+ C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\structuredefinition-be-provenance : 0 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\codesystem-agreement-types : 0 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\codesystem-cd-civilstate : 0 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\codesystem-cd-contact-person : 0 / 0
@@ -74,9 +78,11 @@ WARNING: Bundle/bemycareneteagreementdemand1: Bundle.entry[4]: Entry 'test4' isn
 WARNING: Bundle/bemycareneteagreementdemand1: Bundle.entry[5]: Entry 'test5' isn't reachable by traversing from first Bundle entry
 WARNING: Bundle/bemycareneteagreementdemand1: Bundle.entry[6]: Entry 'test6' isn't reachable by traversing from first Bundle entry
 WARNING: Bundle/bemycareneteagreementdemand1: Bundle.entry[7]: Entry 'test7' isn't reachable by traversing from first Bundle entry
+== C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\Bundle-bundle1.json ==
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\Claim-bemycarenetclaim1.json ==
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\Coverage-coverage1.json ==
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\MessageHeader-bemycareneteagreementmessageheader1.json ==
+== C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\NamingSystem-be-ehp.json ==
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\Observation-observation1.json ==
 INFORMATION: Observation/observation1: Observation.code.coding[2]: Code System URI "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/albert" is unknown so the code cannot be validated
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\Organization-organization1.json ==
@@ -84,6 +90,7 @@ INFORMATION: Observation/observation1: Observation.code.coding[2]: Code System U
 INFORMATION: Patient/patient1: Patient.identifier[2]: This element does not match any known slice defined in the profile https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\Practitioner-practitioner1.json ==
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\PractitionerRole-practitionerrole1.json ==
+== C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\Provenance-provenance1.json ==
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\StructureDefinition-be-address.json ==
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\StructureDefinition-be-allergyintolerance.json ==
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\StructureDefinition-be-mycarenetclaim.json ==
@@ -95,6 +102,7 @@ INFORMATION: Patient/patient1: Patient.identifier[2]: This element does not matc
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\StructureDefinition-be-patient.json ==
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\StructureDefinition-be-practitioner.json ==
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\StructureDefinition-be-practitionerrole.json ==
+== C:\Sushi\Belgium profiles - IG eHealth\build\input\profiles\StructureDefinition-be-provenance.json ==
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\CodeSystem-agreement-types.json ==
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\CodeSystem-cd-civilstate.json ==
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\CodeSystem-cd-contact-person.json ==

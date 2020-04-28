@@ -224,6 +224,19 @@ the 'insurancystatus' (covered in a seperate FHIR resource: Coverage), 'insuranc
                </td>
                <td>Belgian federal profile for a practitioner role. Initially based on the functional description of the NIHDI.</td>
             </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-be-provenance.html"
+                     title="StructureDefinition/be-provenance">Provenance core BE profile</a>
+               </td>
+               <td>Belgian federal profile for a provenance. Note this profile does not introduce any changes from the base profile but has been created to mark its importance, 
+specifically when FHIR is used in a non-document approach. General use case remarks: 'Provenance of a resource is a record that describes entities and processes involved in producing and delivering or 
+otherwise influencing that resource.' (cfr. the HL7 base specifications) According to the FHIR specifications, the provenance resource SHALL only be provided when no other resource already plays this role: 
+for a Patient it SHOULD be its managing organization, provenance of an Observation SHOULD be its performer, provenance of an AllergyIntolerance SHOULD be its recorder. 
+'Many other FHIR resources contain some elements that represent information about how the resource was obtained, and therefore they overlap with the functionality of the Provenance.' 
+Special remarks for KMEHR users: The FHIR Provenance resource in general refers to an entity that had something to do with the creation or updating of something else. In a KMEHR context, 
+this is somewhat different – as it is ‘XML document’ based, each KMEHR message has an 'author' element that is responsible.</td>
+            </tr>
          </tbody>
       </table>
    </p>
@@ -239,7 +252,7 @@ the 'insurancystatus' (covered in a seperate FHIR resource: Coverage), 'insuranc
                   <a href="StructureDefinition-be-address.html"
                      title="StructureDefinition/be-address">Address core BE profile</a>
                </td>
-               <td>Belgain federal profile on address, to provide the possibility in the 'line' element to provide a seperate streetname, housenumber and postal box. It is always RECOMMENDED to give these elements seperately.</td>
+               <td>Belgian federal profile on address, to provide the possibility in the 'line' element to provide a seperate streetname, housenumber and postal box. It is always RECOMMENDED to give these elements seperately.</td>
             </tr>
             <tr>
                <td style="column-width:30%">
@@ -388,6 +401,12 @@ for the Belgian specific code.</td>
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="NamingSystem-be-ehp.html" title="NamingSystem/be-ehp">NamingSystem EHP</a>
+               </td>
+               <td>The EHP naming system</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="Claim-bemycarenetclaim1.html" title="Claim/bemycarenetclaim1">BeMyCareNetClaim 1</a>
                </td>
                <td>BeMyCareNetClaim 1</td>
@@ -405,6 +424,12 @@ for the Belgian specific code.</td>
                      title="MessageHeader/bemycareneteagreementmessageheader1">BeMyCareNetEAgreementMessageHeader 1</a>
                </td>
                <td>BeMyCareNetEAgreementMessageHeader 1</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Bundle-bundle1.html" title="Bundle/bundle1">Bundle 1</a>
+               </td>
+               <td>Bundle 1</td>
             </tr>
             <tr>
                <td style="column-width:30%">
@@ -444,6 +469,12 @@ for the Belgian specific code.</td>
                      title="PractitionerRole/practitionerrole1">Practitioner role 1</a>
                </td>
                <td>Practitioner role 1</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Provenance-provenance1.html" title="Provenance/provenance1">Provenance 1</a>
+               </td>
+               <td>Provenance 1</td>
             </tr>
          </tbody>
       </table>

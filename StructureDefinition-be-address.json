@@ -10,7 +10,7 @@
   "name": "BeAddress",
   "title": "Address core BE profile",
   "status": "active",
-  "date": "2020-04-27T11:01:37+02:00",
+  "date": "2020-04-28T09:59:39+02:00",
   "publisher": "eHealth Platform",
   "contact": [
     {
@@ -23,7 +23,7 @@
       ]
     }
   ],
-  "description": "Belgain federal profile on address, to provide the possibility in the 'line' element to provide a seperate streetname, housenumber and postal box. It is always RECOMMENDED to give these elements seperately.",
+  "description": "Belgian federal profile on address, to provide the possibility in the 'line' element to provide a seperate streetname, housenumber and postal box. It is always RECOMMENDED to give these elements seperately.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

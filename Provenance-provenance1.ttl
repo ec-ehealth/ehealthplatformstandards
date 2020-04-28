@@ -1,0 +1,66 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.ehealth.fgov.be/standards/fhir/Provenance/provenance1> a fhir:Provenance;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "provenance1"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-provenance";
+       fhir:index 0;
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-provenance>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: provenance1</p><p><b>meta</b>: </p><p><b>target</b>: <a href=\"Practitioner-practitioner1.html\">Generated Summary: id: practitioner1; 79121137740 (OFFICIAL), 18749704477 (OFFICIAL); Katherine Pulaski (OFFICIAL); katherine.pulaski@enterprisehospital.be(WORK), ph: 022675198(WORK), fax: 022675209(WORK); gender: female; birthDate: 1979-12-11</a></p><p><b>recorded</b>: 27-juin-2019 8:39:24</p><p><b>reason</b>: Healthcare Operations <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/v3-ActReason code 'HOPERAT' = 'healthcare operations', given as 'Healthcare Operations'})</span></p><p><b>activity</b>: create <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/v3-DataOperation code 'CREATE' = 'create)</span></p><h3>Agents</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Who</b></td></tr><tr><td>*</td><td>Author <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/provenance-participant-type code 'author' = 'Author)</span></td><td><a href=\"Organization-organization1.html\">Enterprise Hospital Ziekenhuis. Generated Summary: id: organization1; Provider Number = 0425.222.333 (OFFICIAL), Medical License number = 999999999 (OFFICIAL); active; <span title=\"Codes: {https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty orghospital}\">orghospital</span>; name: Enterprise Hospital Ziekenhuis; ph: 322675199(WORK)</a></td></tr></table></div>"
+  ];
+  fhir:Provenance.target [
+     fhir:index 0;
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/Practitioner/practitioner1>;
+     fhir:Reference.reference [ fhir:value "Practitioner/practitioner1" ]
+  ];
+  fhir:Provenance.recorded [ fhir:value "2019-06-27T08:39:24+02:00"^^xsd:dateTime];
+  fhir:Provenance.reason [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ActReason" ];
+       fhir:Coding.code [ fhir:value "HOPERAT" ];
+       fhir:Coding.display [ fhir:value "Healthcare Operations" ]
+     ]
+  ];
+  fhir:Provenance.activity [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-DataOperation" ];
+       fhir:Coding.code [ fhir:value "CREATE" ]
+     ]
+  ];
+  fhir:Provenance.agent [
+     fhir:index 0;
+     fhir:Provenance.agent.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/provenance-participant-type" ];
+         fhir:Coding.code [ fhir:value "author" ]
+       ]
+     ];
+     fhir:Provenance.agent.who [
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/Organization/organization1>;
+       fhir:Reference.reference [ fhir:value "Organization/organization1" ];
+       fhir:Reference.display [ fhir:value "Enterprise Hospital Ziekenhuis" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.ehealth.fgov.be/standards/fhir/Provenance/provenance1.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

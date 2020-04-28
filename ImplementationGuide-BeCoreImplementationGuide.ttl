@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "TheCoreBelgianFederalFHIRProfiles"];
   fhir:ImplementationGuide.title [ fhir:value "The Core Belgian Federal FHIR Profiles"];
   fhir:ImplementationGuide.status [ fhir:value "active"];
-  fhir:ImplementationGuide.date [ fhir:value "2020-04-27T11:01:37+02:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2020-04-28T09:59:39+02:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "eHealth Platform"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -293,7 +293,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/be-address" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Address core BE profile" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Belgain federal profile on address, to provide the possibility in the 'line' element to provide a seperate streetname, housenumber and postal box. It is always RECOMMENDED to give these elements seperately." ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Belgian federal profile on address, to provide the possibility in the 'line' element to provide a seperate streetname, housenumber and postal box. It is always RECOMMENDED to give these elements seperately." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 1;
@@ -480,6 +480,24 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "StructureDefinition-be-provenance.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-provenance>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/be-provenance" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Provenance core BE profile" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Belgian federal profile for a provenance. Note this profile does not introduce any changes from the base profile but has been created to mark its importance, \nspecifically when FHIR is used in a non-document approach. General use case remarks: 'Provenance of a resource is a record that describes entities and processes involved in producing and delivering or \notherwise influencing that resource.' (cfr. the HL7 base specifications) According to the FHIR specifications, the provenance resource SHALL only be provided when no other resource already plays this role: \nfor a Patient it SHOULD be its managing organization, provenance of an Observation SHOULD be its performer, provenance of an AllergyIntolerance SHOULD be its recorder. \n'Many other FHIR resources contain some elements that represent information about how the resource was obtained, and therefore they overlap with the functionality of the Provenance.' \nSpecial remarks for KMEHR users: The FHIR Provenance resource in general refers to an entity that had something to do with the creation or updating of something else. In a KMEHR context, \nthis is somewhat different – as it is ‘XML document’ based, each KMEHR message has an 'author' element that is responsible." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 12;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ], [
          fhir:index 1;
@@ -494,7 +512,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes as communicated by NIHDI and the FOD Terminology Center differentiating types of allergy intolerance codes. This valueset supports the Belgian federal FHIR profiling effort." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 12;
+       fhir:index 13;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -512,7 +530,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes as communicated by NIHDI and the FPS Terminology Center differentiating types of causative agent. This valueset supports the Belgian federal FHIR profiling effort." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 13;
+       fhir:index 14;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -530,7 +548,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes supported by eHealth Platform differentiating types of civil state. This valueset supports the Belgian federal FHIR profiling effort. \nWhenever possible add a code from http://terminology.hl7.org/CodeSystem/v3-MaritalStatus for international interoperability but also use https://www.ehealth.fgov.be/standards/fhir/CodeSystem/CD-CIVILSTATE \nfor the Belgian specific code." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 14;
+       fhir:index 15;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -548,7 +566,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Maximum valuest to define category of a contact person, using the HL7 values and the Belgian CD-CONTACT-PERSON values." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 15;
+       fhir:index 16;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -566,7 +584,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes to illustrate differentiating types of exposure route. This valueset supports the Belgian federal FHIR profiling effort." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 16;
+       fhir:index 17;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -584,7 +602,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes as communicated by the FOD Terminology Center differentiating types of no allergies. This valueset supports the Belgian federal FHIR profiling effort." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 17;
+       fhir:index 18;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -602,7 +620,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "NIHDI codes for use to describe eAgreement products or services in the MyCareNet eAgreement flows." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 18;
+       fhir:index 19;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -620,7 +638,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Codes as communicated by NIHDI and the FPS Terminology Center differentiating types of risk manifestation. This valueset supports the Belgian federal FHIR profiling effort." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 19;
+       fhir:index 20;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -638,7 +656,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Civil state in Belgium." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 20;
+       fhir:index 21;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -656,7 +674,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Contact person" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 21;
+       fhir:index 22;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -674,7 +692,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "FedICT country codes." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 22;
+       fhir:index 23;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -692,7 +710,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "healthcare party in Belgium." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 23;
+       fhir:index 24;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -710,7 +728,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Agreement types for MyCareNet flows. Not all codes are defined here, a full list can be found on mycarenet.be" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 24;
+       fhir:index 25;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -728,7 +746,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Message events for MyCareNet flows.Not all codes are defined here, a full list can be found on mycarenet.be" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 25;
+       fhir:index 26;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -746,7 +764,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Legal pathology codes as defined by NIHDI to be used in the pathology registration flows of MyCareNet. These values are managed by NIHDI. \r\n	The codes are not defined here. Consult the cookbooks on mycarenet.be for concrete usage intstrcutions." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 26;
+       fhir:index 27;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -767,7 +785,25 @@
          fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-allergyintolerance>
        ]
      ], [
-       fhir:index 27;
+       fhir:index 28;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "NamingSystem" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "NamingSystem-be-ehp.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/NamingSystem/be-ehp>;
+         fhir:Reference.reference [ fhir:value "NamingSystem/be-ehp" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "NamingSystem EHP" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The EHP naming system" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 29;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -788,7 +824,7 @@
          fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-mycarenetclaim>
        ]
      ], [
-       fhir:index 28;
+       fhir:index 30;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -809,7 +845,7 @@
          fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-mycareneteagreementdemand>
        ]
      ], [
-       fhir:index 29;
+       fhir:index 31;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -830,7 +866,25 @@
          fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-mycareneteagreementmessageheader>
        ]
      ], [
-       fhir:index 30;
+       fhir:index 32;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Bundle-bundle1.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/Bundle/bundle1>;
+         fhir:Reference.reference [ fhir:value "Bundle/bundle1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Bundle 1" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Bundle 1" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 33;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -848,7 +902,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "coverage 1" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 31;
+       fhir:index 34;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -869,7 +923,7 @@
          fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-observation>
        ]
      ], [
-       fhir:index 32;
+       fhir:index 35;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -890,7 +944,7 @@
          fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization>
        ]
      ], [
-       fhir:index 33;
+       fhir:index 36;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -911,7 +965,7 @@
          fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient>
        ]
      ], [
-       fhir:index 34;
+       fhir:index 37;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -932,7 +986,7 @@
          fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner>
        ]
      ], [
-       fhir:index 35;
+       fhir:index 38;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -951,6 +1005,27 @@
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitionerrole";
          fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitionerrole>
+       ]
+     ], [
+       fhir:index 39;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Provenance" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/implementationguide-page" ];
+         fhir:Extension.valueUri [ fhir:value "Provenance-provenance1.html" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/Provenance/provenance1>;
+         fhir:Reference.reference [ fhir:value "Provenance/provenance1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Provenance 1" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Provenance 1" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-provenance";
+         fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-provenance>
        ]
      ];
      fhir:ImplementationGuide.definition.page [
