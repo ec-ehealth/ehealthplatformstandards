@@ -5,7 +5,7 @@
   <meta>
     <profile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-mycareneteagreementdemand"/>
   </meta>
-  <type value="message"/>
+  <type value="transaction"/>
   <entry>
     <fullUrl value="MessageHeader/2"/>
     <resource>
@@ -26,9 +26,13 @@
         </source>
       </MessageHeader>
     </resource>
+    <request>
+      <method value="POST"/>
+      <url value="MessageHeader"/>
+    </request>
   </entry>
   <entry>
-    <fullUrl value="test2"/>
+    <fullUrl value="Practitioner/2"/>
     <resource>
       <Practitioner>
         <id value="Practitioner2"/>
@@ -43,6 +47,10 @@
         </name>
       </Practitioner>
     </resource>
+    <request>
+      <method value="POST"/>
+      <url value="Practitioner"/>
+    </request>
   </entry>
   <entry>
     <fullUrl value="Claim/2"/>
@@ -98,9 +106,13 @@
         </insurance>
       </Claim>
     </resource>
+    <request>
+      <method value="POST"/>
+      <url value="Claim"/>
+    </request>
   </entry>
   <entry>
-    <fullUrl value="test4"/>
+    <fullUrl value="PractitionerRole/2"/>
     <resource>
       <PractitionerRole>
         <id value="PractitionerRole2"/>
@@ -115,9 +127,13 @@
         </practitioner>
       </PractitionerRole>
     </resource>
+    <request>
+      <method value="POST"/>
+      <url value="PractitionerRole"/>
+    </request>
   </entry>
   <entry>
-    <fullUrl value="test5"/>
+    <fullUrl value="Coverage/2"/>
     <resource>
       <Coverage>
         <id value="Coverage2"/>
@@ -133,9 +149,13 @@
         </payor>
       </Coverage>
     </resource>
+    <request>
+      <method value="POST"/>
+      <url value="Coverage"/>
+    </request>
   </entry>
   <entry>
-    <fullUrl value="test6"/>
+    <fullUrl value="Organization/2"/>
     <resource>
       <Organization>
         <id value="Organization2"/>
@@ -148,9 +168,13 @@
         <name value="testorga"/>
       </Organization>
     </resource>
+    <request>
+      <method value="POST"/>
+      <url value="Organization"/>
+    </request>
   </entry>
   <entry>
-    <fullUrl value="test7"/>
+    <fullUrl value="Patient/2"/>
     <resource>
       <Patient>
         <id value="Patient2"/>
@@ -163,5 +187,9 @@
         <gender value="male"/>
       </Patient>
     </resource>
+    <request>
+      <method value="POST"/>
+      <url value="Patient"/>
+    </request>
   </entry>
 </Bundle>

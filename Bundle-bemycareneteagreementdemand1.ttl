@@ -15,35 +15,63 @@
        fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-mycareneteagreementdemand>
      ]
   ];
-  fhir:Bundle.type [ fhir:value "message"];
+  fhir:Bundle.type [ fhir:value "transaction"];
   fhir:Bundle.entry [
      fhir:index 0;
      fhir:Bundle.entry.fullUrl [ fhir:value "MessageHeader/2" ];
-     fhir:Bundle.entry.resource <MessageHeader/2>
+     fhir:Bundle.entry.resource <MessageHeader/2>;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "POST" ];
+       fhir:Bundle.entry.request.url [ fhir:value "MessageHeader" ]
+     ]
   ], [
      fhir:index 1;
-     fhir:Bundle.entry.fullUrl [ fhir:value "test2" ];
-     fhir:Bundle.entry.resource <test2>
+     fhir:Bundle.entry.fullUrl [ fhir:value "Practitioner/2" ];
+     fhir:Bundle.entry.resource <Practitioner/2>;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "POST" ];
+       fhir:Bundle.entry.request.url [ fhir:value "Practitioner" ]
+     ]
   ], [
      fhir:index 2;
      fhir:Bundle.entry.fullUrl [ fhir:value "Claim/2" ];
-     fhir:Bundle.entry.resource <Claim/2>
+     fhir:Bundle.entry.resource <Claim/2>;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "POST" ];
+       fhir:Bundle.entry.request.url [ fhir:value "Claim" ]
+     ]
   ], [
      fhir:index 3;
-     fhir:Bundle.entry.fullUrl [ fhir:value "test4" ];
-     fhir:Bundle.entry.resource <test4>
+     fhir:Bundle.entry.fullUrl [ fhir:value "PractitionerRole/2" ];
+     fhir:Bundle.entry.resource <PractitionerRole/2>;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "POST" ];
+       fhir:Bundle.entry.request.url [ fhir:value "PractitionerRole" ]
+     ]
   ], [
      fhir:index 4;
-     fhir:Bundle.entry.fullUrl [ fhir:value "test5" ];
-     fhir:Bundle.entry.resource <test5>
+     fhir:Bundle.entry.fullUrl [ fhir:value "Coverage/2" ];
+     fhir:Bundle.entry.resource <Coverage/2>;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "POST" ];
+       fhir:Bundle.entry.request.url [ fhir:value "Coverage" ]
+     ]
   ], [
      fhir:index 5;
-     fhir:Bundle.entry.fullUrl [ fhir:value "test6" ];
-     fhir:Bundle.entry.resource <test6>
+     fhir:Bundle.entry.fullUrl [ fhir:value "Organization/2" ];
+     fhir:Bundle.entry.resource <Organization/2>;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "POST" ];
+       fhir:Bundle.entry.request.url [ fhir:value "Organization" ]
+     ]
   ], [
      fhir:index 6;
-     fhir:Bundle.entry.fullUrl [ fhir:value "test7" ];
-     fhir:Bundle.entry.resource <test7>
+     fhir:Bundle.entry.fullUrl [ fhir:value "Patient/2" ];
+     fhir:Bundle.entry.resource <Patient/2>;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "POST" ];
+       fhir:Bundle.entry.request.url [ fhir:value "Patient" ]
+     ]
   ] .
 
 <MessageHeader/2> a fhir:MessageHeader;
@@ -67,7 +95,7 @@
      fhir:MessageHeader.source.endpoint [ fhir:value "testuri" ]
   ] .
 
-<test2> a fhir:Practitioner;
+<Practitioner/2> a fhir:Practitioner;
   fhir:Resource.id [ fhir:value "Practitioner2"];
   fhir:Resource.meta [
      fhir:Meta.profile [
@@ -149,7 +177,7 @@
      ]
   ] .
 
-<test4> a fhir:PractitionerRole;
+<PractitionerRole/2> a fhir:PractitionerRole;
   fhir:Resource.id [ fhir:value "PractitionerRole2"];
   fhir:Resource.meta [
      fhir:Meta.profile [
@@ -167,7 +195,7 @@
      fhir:Reference.reference [ fhir:value "Practitioner/Practitioner2" ]
   ] .
 
-<test5> a fhir:Coverage;
+<Coverage/2> a fhir:Coverage;
   fhir:Resource.id [ fhir:value "Coverage2"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
@@ -184,7 +212,7 @@
      fhir:Reference.reference [ fhir:value "Patient/Patient2" ]
   ] .
 
-<test6> a fhir:Organization;
+<Organization/2> a fhir:Organization;
   fhir:Resource.id [ fhir:value "Organization2"];
   fhir:Resource.meta [
      fhir:Meta.profile [
@@ -199,7 +227,7 @@
   ];
   fhir:Organization.name [ fhir:value "testorga"] .
 
-<test7> a fhir:Patient;
+<Patient/2> a fhir:Patient;
   fhir:Resource.id [ fhir:value "Patient2"];
   fhir:Resource.meta [
      fhir:Meta.profile [

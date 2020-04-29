@@ -1,14 +1,14 @@
 ﻿TheCoreBelgianFederalFHIRProfiles : Validation Results
 =========================================
 
-err = 0, warn = 7, info = 2
-IG Publisher Version: v1.0.82-SNAPSHOT
-Generated Wed Apr 29 09:18:18 CEST 2020. FHIR version 4.0.1 for BeCoreImplementationGuide#1.1.0 (canonical = https://www.ehealth.fgov.be/standards/fhir)
+err = 0, warn = 1, info = 2
+IG Publisher Version: v1.0.82-SNAPSHOT Out of date - current version is v1.0.84-SNAPSHOT
+Generated Wed Apr 29 10:50:00 CEST 2020. FHIR version 4.0.1 for BeCoreImplementationGuide#1.1.0 (canonical = https://www.ehealth.fgov.be/standards/fhir)
 
  Build Errors : 19 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\ImplementationGuide-BeCoreImplementationGuide : 0 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\allergyintolerance-allergyIntolerance1 : 0 / 0
- C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\bundle-bemycareneteagreementdemand1 : 0 / 6
+ C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\bundle-bemycareneteagreementdemand1 : 0 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\bundle-bundle1 : 0 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\claim-bemycarenetclaim1 : 0 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\coverage-coverage1 : 0 / 0
@@ -74,12 +74,6 @@ ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\toc.html: The html so
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\ImplementationGuide-BeCoreImplementationGuide.json ==
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\AllergyIntolerance-allergyIntolerance1.json ==
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\Bundle-bemycareneteagreementdemand1.json ==
-WARNING: Bundle/bemycareneteagreementdemand1: Bundle.entry[2]: Entry 'test2' isn't reachable by traversing from first Bundle entry
-WARNING: Bundle/bemycareneteagreementdemand1: Bundle.entry[3]: Entry 'Claim/2' isn't reachable by traversing from first Bundle entry
-WARNING: Bundle/bemycareneteagreementdemand1: Bundle.entry[4]: Entry 'test4' isn't reachable by traversing from first Bundle entry
-WARNING: Bundle/bemycareneteagreementdemand1: Bundle.entry[5]: Entry 'test5' isn't reachable by traversing from first Bundle entry
-WARNING: Bundle/bemycareneteagreementdemand1: Bundle.entry[6]: Entry 'test6' isn't reachable by traversing from first Bundle entry
-WARNING: Bundle/bemycareneteagreementdemand1: Bundle.entry[7]: Entry 'test7' isn't reachable by traversing from first Bundle entry
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\Bundle-bundle1.json ==
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\Claim-bemycarenetclaim1.json ==
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\Coverage-coverage1.json ==

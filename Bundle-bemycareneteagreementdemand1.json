@@ -6,7 +6,7 @@
       "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-mycareneteagreementdemand"
     ]
   },
-  "type": "message",
+  "type": "transaction",
   "entry": [
     {
       "fullUrl": "MessageHeader/2",
@@ -29,10 +29,14 @@
         "source": {
           "endpoint": "testuri"
         }
+      },
+      "request": {
+        "method": "POST",
+        "url": "MessageHeader"
       }
     },
     {
-      "fullUrl": "test2",
+      "fullUrl": "Practitioner/2",
       "resource": {
         "resourceType": "Practitioner",
         "id": "Practitioner2",
@@ -50,6 +54,10 @@
             "text": "Dupont"
           }
         ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Practitioner"
       }
     },
     {
@@ -117,10 +125,14 @@
             }
           }
         ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Claim"
       }
     },
     {
-      "fullUrl": "test4",
+      "fullUrl": "PractitionerRole/2",
       "resource": {
         "resourceType": "PractitionerRole",
         "id": "PractitionerRole2",
@@ -136,10 +148,14 @@
         "practitioner": {
           "reference": "Practitioner/Practitioner2"
         }
+      },
+      "request": {
+        "method": "POST",
+        "url": "PractitionerRole"
       }
     },
     {
-      "fullUrl": "test5",
+      "fullUrl": "Coverage/2",
       "resource": {
         "resourceType": "Coverage",
         "id": "Coverage2",
@@ -156,10 +172,14 @@
             "reference": "Patient/Patient2"
           }
         ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Coverage"
       }
     },
     {
-      "fullUrl": "test6",
+      "fullUrl": "Organization/2",
       "resource": {
         "resourceType": "Organization",
         "id": "Organization2",
@@ -173,10 +193,14 @@
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: Organization2</p><p><b>meta</b>: </p><p><b>name</b>: testorga</p></div>"
         },
         "name": "testorga"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Organization"
       }
     },
     {
-      "fullUrl": "test7",
+      "fullUrl": "Patient/2",
       "resource": {
         "resourceType": "Patient",
         "id": "Patient2",
@@ -190,6 +214,10 @@
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: Patient2</p><p><b>meta</b>: </p><p><b>gender</b>: male</p></div>"
         },
         "gender": "male"
+      },
+      "request": {
+        "method": "POST",
+        "url": "Patient"
       }
     }
   ]
