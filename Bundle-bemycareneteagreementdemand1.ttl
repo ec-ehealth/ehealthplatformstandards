@@ -18,16 +18,16 @@
   fhir:Bundle.type [ fhir:value "message"];
   fhir:Bundle.entry [
      fhir:index 0;
-     fhir:Bundle.entry.fullUrl [ fhir:value "test1" ];
-     fhir:Bundle.entry.resource <test1>
+     fhir:Bundle.entry.fullUrl [ fhir:value "MessageHeader/2" ];
+     fhir:Bundle.entry.resource <MessageHeader/2>
   ], [
      fhir:index 1;
      fhir:Bundle.entry.fullUrl [ fhir:value "test2" ];
      fhir:Bundle.entry.resource <test2>
   ], [
      fhir:index 2;
-     fhir:Bundle.entry.fullUrl [ fhir:value "test3" ];
-     fhir:Bundle.entry.resource <test3>
+     fhir:Bundle.entry.fullUrl [ fhir:value "Claim/2" ];
+     fhir:Bundle.entry.resource <Claim/2>
   ], [
      fhir:index 3;
      fhir:Bundle.entry.fullUrl [ fhir:value "test4" ];
@@ -46,7 +46,7 @@
      fhir:Bundle.entry.resource <test7>
   ] .
 
-<test1> a fhir:MessageHeader;
+<MessageHeader/2> a fhir:MessageHeader;
   fhir:Resource.id [ fhir:value "MessageHeader2"];
   fhir:Resource.meta [
      fhir:Meta.profile [
@@ -57,9 +57,10 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: MessageHeader2</p><p><b>meta</b>: </p><p><b>event</b>: claim-ask (Details: [not stated] code claim-ask = 'claim-ask', stated as 'null')</p><h3>Sources</h3><table class=\"grid\"><tr><td>-</td><td><b>Endpoint</b></td></tr><tr><td>*</td><td><a href=\"testuri\">testuri</a></td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: MessageHeader2</p><p><b>meta</b>: </p><p><b>event</b>: claim-ask (Details: https://www.ehealth.fgov.be/standards/fhir/CodeSystem/message-events code claim-ask = 'claim-ask', stated as 'null')</p><h3>Sources</h3><table class=\"grid\"><tr><td>-</td><td><b>Endpoint</b></td></tr><tr><td>*</td><td><a href=\"testuri\">testuri</a></td></tr></table></div>"
   ];
   fhir:MessageHeader.eventCoding [
+     fhir:Coding.system [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/message-events" ];
      fhir:Coding.code [ fhir:value "claim-ask" ]
   ];
   fhir:MessageHeader.source [
@@ -84,7 +85,7 @@
      fhir:HumanName.text [ fhir:value "Dupont" ]
   ] .
 
-<test3> a fhir:Claim;
+<Claim/2> a fhir:Claim;
   fhir:Resource.id [ fhir:value "Claim2"];
   fhir:Resource.meta [
      fhir:Meta.profile [

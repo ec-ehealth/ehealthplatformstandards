@@ -146,16 +146,16 @@
   <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.type">fhir:Bundle.type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;message&quot;];
   <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">fhir:Bundle.entry</a> [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 0;
-     <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:Bundle.entry.fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;test1&quot; ];
-     <a href="http://hl7.org/fhir/R4/messageheader.html#MessageHeader">fhir:Bundle.entry.resource</a> &lt;test1&gt;
+     <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:Bundle.entry.fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;MessageHeader/2&quot; ];
+     <a href="http://hl7.org/fhir/R4/messageheader.html#MessageHeader">fhir:Bundle.entry.resource</a> &lt;MessageHeader/2&gt;
   ], [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 1;
      <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:Bundle.entry.fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;test2&quot; ];
      <a href="http://hl7.org/fhir/R4/practitioner.html#Practitioner">fhir:Bundle.entry.resource</a> &lt;test2&gt;
   ], [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 2;
-     <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:Bundle.entry.fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;test3&quot; ];
-     <a href="http://hl7.org/fhir/R4/claim.html#Claim">fhir:Bundle.entry.resource</a> &lt;test3&gt;
+     <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:Bundle.entry.fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;Claim/2&quot; ];
+     <a href="http://hl7.org/fhir/R4/claim.html#Claim">fhir:Bundle.entry.resource</a> &lt;Claim/2&gt;
   ], [
      <a href="http://hl7.org/fhir/R4/rdf.html#index">fhir:index</a> 3;
      <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fhir:Bundle.entry.fullUrl</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;test4&quot; ];
@@ -174,7 +174,7 @@
      <a href="http://hl7.org/fhir/R4/patient.html#Patient">fhir:Bundle.entry.resource</a> &lt;test7&gt;
   ].
 
-&lt;test1&gt; <a href="http://hl7.org/fhir/R4/messageheader.html">a</a> fhir:MessageHeader;
+&lt;MessageHeader/2&gt; <a href="http://hl7.org/fhir/R4/messageheader.html">a</a> fhir:MessageHeader;
   <a href="http://hl7.org/fhir/R4/messageheader.html#MessageHeader.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;MessageHeader2&quot;];
   <a href="http://hl7.org/fhir/R4/messageheader.html#MessageHeader.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [
@@ -184,9 +184,10 @@
   ];
   <a href="http://hl7.org/fhir/R4/messageheader.html#MessageHeader.text">fhir:DomainResource.text</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:Narrative.status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;generated&quot; ];
-     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: MessageHeader2&lt;/p&gt;&lt;p&gt;&lt;b&gt;meta&lt;/b&gt;: &lt;/p&gt;&lt;p&gt;&lt;b&gt;event&lt;/b&gt;: claim-ask (Details: [not stated] code claim-ask = 'claim-ask', stated as 'null')&lt;/p&gt;&lt;h3&gt;Sources&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Endpoint&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;testuri\&quot;&gt;testuri&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;
+     fhir:Narrative.div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: MessageHeader2&lt;/p&gt;&lt;p&gt;&lt;b&gt;meta&lt;/b&gt;: &lt;/p&gt;&lt;p&gt;&lt;b&gt;event&lt;/b&gt;: claim-ask (Details: https://www.ehealth.fgov.be/standards/fhir/CodeSystem/message-events code claim-ask = 'claim-ask', stated as 'null')&lt;/p&gt;&lt;h3&gt;Sources&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Endpoint&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;testuri\&quot;&gt;testuri&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;&quot;
   ];
   <a href="http://hl7.org/fhir/R4/messageheader.html#MessageHeader.event[x]">fhir:MessageHeader.eventCoding</a> [
+     <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:Coding.system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:value</a> &quot;https://www.ehealth.fgov.be/standards/fhir/CodeSystem/message-events&quot; ];
      <a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:Coding.code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:value</a> &quot;claim-ask&quot; ]
   ];
   <a href="http://hl7.org/fhir/R4/messageheader.html#MessageHeader.source">fhir:MessageHeader.source</a> [
@@ -210,7 +211,7 @@
      <a href="http://hl7.org/fhir/R4/datatypes.html#HumanName#HumanName.text">fhir:HumanName.text</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Dupont&quot; ]
   ].
 
-&lt;test3&gt; <a href="http://hl7.org/fhir/R4/claim.html">a</a> fhir:Claim;
+&lt;Claim/2&gt; <a href="http://hl7.org/fhir/R4/claim.html">a</a> fhir:Claim;
   <a href="http://hl7.org/fhir/R4/claim.html#Claim.id">fhir:Resource.id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:value</a> &quot;Claim2&quot;];
   <a href="http://hl7.org/fhir/R4/claim.html#Claim.meta">fhir:Resource.meta</a> [
      <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:Meta.profile</a> [

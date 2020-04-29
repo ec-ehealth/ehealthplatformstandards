@@ -138,7 +138,7 @@
   "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.type">type</a>" : "message",
   "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry">entry</a>" : [
     {
-      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "test1",
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "MessageHeader/2",
       "<a href="http://hl7.org/fhir/R4/messageheader.html#MessageHeader">resource</a>" : {
         "<a href="http://hl7.org/fhir/R4/messageheader.html">resourceType</a>" : "MessageHeader",
         "<a href="http://hl7.org/fhir/R4/messageheader.html#MessageHeader.id">id</a>" : "MessageHeader2",
@@ -149,9 +149,10 @@
         },
         "<a href="http://hl7.org/fhir/R4/messageheader.html#MessageHeader.text">text</a>" : {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: MessageHeader2&lt;/p&gt;&lt;p&gt;&lt;b&gt;meta&lt;/b&gt;: &lt;/p&gt;&lt;p&gt;&lt;b&gt;event&lt;/b&gt;: claim-ask (Details: [not stated] code claim-ask = 'claim-ask', stated as 'null')&lt;/p&gt;&lt;h3&gt;Sources&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Endpoint&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;testuri\&quot;&gt;testuri&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative with Details&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;id&lt;/b&gt;: MessageHeader2&lt;/p&gt;&lt;p&gt;&lt;b&gt;meta&lt;/b&gt;: &lt;/p&gt;&lt;p&gt;&lt;b&gt;event&lt;/b&gt;: claim-ask (Details: https://www.ehealth.fgov.be/standards/fhir/CodeSystem/message-events code claim-ask = 'claim-ask', stated as 'null')&lt;/p&gt;&lt;h3&gt;Sources&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Endpoint&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;testuri\&quot;&gt;testuri&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
         },
         "<a href="http://hl7.org/fhir/R4/messageheader.html#MessageHeader.event[x]">eventCoding</a>" : {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/message-events",
           "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "claim-ask"
         },
         "<a href="http://hl7.org/fhir/R4/messageheader.html#MessageHeader.source">source</a>" : {
@@ -181,7 +182,7 @@
       }
     },
     {
-      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "test3",
+      "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "Claim/2",
       "<a href="http://hl7.org/fhir/R4/claim.html#Claim">resource</a>" : {
         "<a href="http://hl7.org/fhir/R4/claim.html">resourceType</a>" : "Claim",
         "<a href="http://hl7.org/fhir/R4/claim.html#Claim.id">id</a>" : "Claim2",

@@ -1,22 +1,18 @@
 ﻿TheCoreBelgianFederalFHIRProfiles : Validation Results
 =========================================
 
-err = 0, warn = 8, info = 2
+err = 0, warn = 7, info = 2
 IG Publisher Version: v1.0.82-SNAPSHOT
-Generated Tue Apr 28 14:41:19 CEST 2020. FHIR version 4.0.1 for BeCoreImplementationGuide#1.1.0 (canonical = https://www.ehealth.fgov.be/standards/fhir)
+Generated Wed Apr 29 09:18:18 CEST 2020. FHIR version 4.0.1 for BeCoreImplementationGuide#1.1.0 (canonical = https://www.ehealth.fgov.be/standards/fhir)
 
  Build Errors : 19 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\ImplementationGuide-BeCoreImplementationGuide : 0 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\allergyintolerance-allergyIntolerance1 : 0 / 0
- C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\bundle-bemycareneteagreementdemand1 : 0 / 7
+ C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\bundle-bemycareneteagreementdemand1 : 0 / 6
  C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\bundle-bundle1 : 0 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\claim-bemycarenetclaim1 : 0 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\coverage-coverage1 : 0 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\messageheader-bemycareneteagreementmessageheader1 : 0 / 0
- C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\namingsystem-be-cbe : 0 / 0
- C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\namingsystem-be-ehp : 0 / 0
- C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\namingsystem-be-nihdi : 0 / 0
- C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\namingsystem-be-ssin : 0 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\observation-observation1 : 0 / 1
  C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\organization-organization1 : 0 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\patient-patient1 : 0 / 1
@@ -42,6 +38,10 @@ Generated Tue Apr 28 14:41:19 CEST 2020. FHIR version 4.0.1 for BeCoreImplementa
  C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\codesystem-cd-hcparty : 0 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\codesystem-message-events : 0 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\codesystem-nihdi-legal-physiotherapy-fa : 0 / 0
+ C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\namingsystem-be-cbe : 0 / 0
+ C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\namingsystem-be-ehp : 0 / 0
+ C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\namingsystem-be-nihdi : 0 / 0
+ C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\namingsystem-be-ssin : 0 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\valueset-be-allergyintolerancecode : 0 / 1
  C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\valueset-be-beproductorservice : 0 / 0
  C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\valueset-be-causativeagent : 0 / 0
@@ -74,9 +74,8 @@ ERROR: C:\Sushi\Belgium profiles - IG eHealth\build\output\toc.html: The html so
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\ImplementationGuide-BeCoreImplementationGuide.json ==
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\AllergyIntolerance-allergyIntolerance1.json ==
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\Bundle-bemycareneteagreementdemand1.json ==
-WARNING: Bundle/bemycareneteagreementdemand1: Bundle.entry[0].resource.event.ofType(Coding): A code with no system has no defined meaning. A system should be provided
 WARNING: Bundle/bemycareneteagreementdemand1: Bundle.entry[2]: Entry 'test2' isn't reachable by traversing from first Bundle entry
-WARNING: Bundle/bemycareneteagreementdemand1: Bundle.entry[3]: Entry 'test3' isn't reachable by traversing from first Bundle entry
+WARNING: Bundle/bemycareneteagreementdemand1: Bundle.entry[3]: Entry 'Claim/2' isn't reachable by traversing from first Bundle entry
 WARNING: Bundle/bemycareneteagreementdemand1: Bundle.entry[4]: Entry 'test4' isn't reachable by traversing from first Bundle entry
 WARNING: Bundle/bemycareneteagreementdemand1: Bundle.entry[5]: Entry 'test5' isn't reachable by traversing from first Bundle entry
 WARNING: Bundle/bemycareneteagreementdemand1: Bundle.entry[6]: Entry 'test6' isn't reachable by traversing from first Bundle entry
@@ -85,10 +84,6 @@ WARNING: Bundle/bemycareneteagreementdemand1: Bundle.entry[7]: Entry 'test7' isn
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\Claim-bemycarenetclaim1.json ==
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\Coverage-coverage1.json ==
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\MessageHeader-bemycareneteagreementmessageheader1.json ==
-== C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\NamingSystem-be-cbe.json ==
-== C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\NamingSystem-be-ehp.json ==
-== C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\NamingSystem-be-nihdi.json ==
-== C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\NamingSystem-be-ssin.json ==
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\Observation-observation1.json ==
 INFORMATION: Observation/observation1: Observation.code.coding[2]: Code System URI "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/albert" is unknown so the code cannot be validated
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\examples\Organization-organization1.json ==
@@ -116,6 +111,10 @@ INFORMATION: Patient/patient1: Patient.identifier[2]: This element does not matc
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\CodeSystem-cd-hcparty.json ==
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\CodeSystem-message-events.json ==
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\CodeSystem-nihdi-legal-physiotherapy-fa.json ==
+== C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\NamingSystem-be-cbe.json ==
+== C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\NamingSystem-be-ehp.json ==
+== C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\NamingSystem-be-nihdi.json ==
+== C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\NamingSystem-be-ssin.json ==
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\ValueSet-be-allergyintolerancecode.json ==
 WARNING: be-allergyintolerancecode: Error from server: Unable to provide support for code system https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-causativeagent
 == C:\Sushi\Belgium profiles - IG eHealth\build\input\vocabulary\ValueSet-be-beproductorservice.json ==
