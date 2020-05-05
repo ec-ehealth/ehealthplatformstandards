@@ -10,25 +10,66 @@
   fhir:Resource.id [ fhir:value "be-noallergy"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ValueSet no allergies</h2><div><p>Codes as communicated by the FOD Terminology Center differentiating types of no allergies. This valueset supports the Belgian federal FHIR profiling effort.</p>\n</div><ul/><p>This value set includes codes based on the following rules:</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ValueSet no allergies</h2><div><p>Codes as communicated by the FOD Terminology Center differentiating types of no allergies. This valueset supports the Belgian federal FHIR profiling effort.</p>\n</div><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=716186003\">716186003</a></td><td>No known allergy (situation)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=409137002\">409137002</a></td><td>No known drug allergy (situation)</td><td/></tr></table></li></ul><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>English (English, en)</b></td><td><b>French (Belgium) (fr)</b></td><td><b>Nederlands (België) (Dutch (Belgium), nl)</b></td></tr><tr><td>716186003</td><td>No known allergy</td><td>pas d'allergie connue</td><td>geen gekende allergie</td></tr><tr><td>409137002</td><td>No known drug allergy</td><td>pas d'allergie aux drogues et/ou médicaments connue</td><td>geen gekende drugs- en/of geneesmiddelenallergie</td></tr></table></div>"
   ];
   fhir:ValueSet.url [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-noallergy"];
   fhir:ValueSet.version [ fhir:value "1.1.0"];
   fhir:ValueSet.name [ fhir:value "BeNoAllergy"];
   fhir:ValueSet.title [ fhir:value "ValueSet no allergies"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2020-04-29T10:48:59+02:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2020-05-05T08:12:52+02:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "eHealth Platform"];
   fhir:ValueSet.contact [
      fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "Etienne Cantineau" ];
+     fhir:ContactDetail.name [ fhir:value "Message structure" ];
      fhir:ContactDetail.telecom [
        fhir:index 0;
        fhir:ContactPoint.system [ fhir:value "email" ];
-       fhir:ContactPoint.value [ fhir:value "etienne.cantineau@ehealth.fgov.be" ]
+       fhir:ContactPoint.value [ fhir:value "message-structure@ehealth.fgov.be" ]
      ]
   ];
-  fhir:ValueSet.description [ fhir:value "Codes as communicated by the FOD Terminology Center differentiating types of no allergies. This valueset supports the Belgian federal FHIR profiling effort."] .
+  fhir:ValueSet.description [ fhir:value "Codes as communicated by the FOD Terminology Center differentiating types of no allergies. This valueset supports the Belgian federal FHIR profiling effort."];
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "716186003" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "No known allergy (situation)" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "No known allergy" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "pas d'allergie connue" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "geen gekende allergie" ]
+         ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "409137002" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "No known drug allergy (situation)" ];
+         fhir:ValueSet.compose.include.concept.designation [
+           fhir:index 0;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "en" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "No known drug allergy" ]
+         ], [
+           fhir:index 1;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "fr-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "pas d'allergie aux drogues et/ou médicaments connue" ]
+         ], [
+           fhir:index 2;
+           fhir:ValueSet.compose.include.concept.designation.language [ fhir:value "nl-BE" ];
+           fhir:ValueSet.compose.include.concept.designation.value [ fhir:value "geen gekende drugs- en/of geneesmiddelenallergie" ]
+         ]
+       ]
+     ]
+  ] .
 
 # - ontology header ------------------------------------------------------------
 

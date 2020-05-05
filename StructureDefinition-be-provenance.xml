@@ -11,13 +11,13 @@
   <name value="BeProvenance"/>
   <title value="Provenance core BE profile"/>
   <status value="active"/>
-  <date value="2020-04-29T10:48:59+02:00"/>
+  <date value="2020-05-05T08:12:52+02:00"/>
   <publisher value="eHealth Platform"/>
   <contact>
-    <name value="Etienne Cantineau"/>
+    <name value="Message structure"/>
     <telecom>
       <system value="email"/>
-      <value value="etienne.cantineau@ehealth.fgov.be"/>
+      <value value="message-structure@ehealth.fgov.be"/>
     </telecom>
   </contact>
   <description value="Belgian federal profile for a provenance. Note this profile does not introduce any changes from the base profile but has been created to mark its importance, &#xA;specifically when FHIR is used in a non-document approach. General use case remarks: &#39;Provenance of a resource is a record that describes entities and processes involved in producing and delivering or &#xA;otherwise influencing that resource.&#39; (cfr. the HL7 base specifications) According to the FHIR specifications, the provenance resource SHALL only be provided when no other resource already plays this role: &#xA;for a Patient it SHOULD be its managing organization, provenance of an Observation SHOULD be its performer, provenance of an AllergyIntolerance SHOULD be its recorder. &#xA;&#39;Many other FHIR resources contain some elements that represent information about how the resource was obtained, and therefore they overlap with the functionality of the Provenance.&#39; &#xA;Special remarks for KMEHR users: The FHIR Provenance resource in general refers to an entity that had something to do with the creation or updating of something else. In a KMEHR context, &#xA;this is somewhat different &#x2013; as it is &#x2018;XML document&#x2019; based, each KMEHR message has an &#39;author&#39; element that is responsible."/>

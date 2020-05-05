@@ -10,15 +10,15 @@
   "name": "TheCoreBelgianFederalFHIRProfiles",
   "title": "The Core Belgian Federal FHIR Profiles",
   "status": "active",
-  "date": "2020-04-29T10:48:59+02:00",
+  "date": "2020-05-05T08:12:52+02:00",
   "publisher": "eHealth Platform",
   "contact": [
     {
-      "name": "Etienne Cantineau",
+      "name": "Message structure",
       "telecom": [
         {
           "system": "email",
-          "value": "etienne.cantineau@ehealth.fgov.be"
+          "value": "message-structure@ehealth.fgov.be"
         }
       ]
     }
@@ -337,6 +337,24 @@
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-be-diagnosticreport.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/be-diagnosticreport"
+        },
+        "name": "Disagnostic Report core BE profile",
+        "description": "Belgian federal profile for an disagnostic report.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
             "valueUri": "StructureDefinition-be-mycarenetclaim.html"
           }
         ],
@@ -513,6 +531,24 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "StructureDefinition-be-servicerequest.html"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/be-servicerequest"
+        },
+        "name": "Service Request core BE profile",
+        "description": "Belgian federal profile for an Service Request.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "ValueSet"
           },
           {
@@ -597,24 +633,6 @@
         },
         "name": "ValueSet exposureroute",
         "description": "Codes to illustrate differentiating types of exposure route. This valueset supports the Belgian federal FHIR profiling effort.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-            "valueUri": "ValueSet-be-noallergy.html"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/be-noallergy"
-        },
-        "name": "ValueSet no allergies",
-        "description": "Codes as communicated by the FOD Terminology Center differentiating types of no allergies. This valueset supports the Belgian federal FHIR profiling effort.",
         "exampleBoolean": false
       },
       {
@@ -855,6 +873,24 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ValueSet-be-noallergy.html"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/be-noallergy"
+        },
+        "name": "ValueSet no allergies",
+        "description": "Codes as communicated by the FOD Terminology Center differentiating types of no allergies. This valueset supports the Belgian federal FHIR profiling effort.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "NamingSystem"
           },
           {
@@ -963,6 +999,42 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "DiagnosticReport"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "DiagnosticReport-diagnosticreport1.html"
+          }
+        ],
+        "reference": {
+          "reference": "DiagnosticReport/diagnosticreport1"
+        },
+        "name": "DiagnosticReport 1",
+        "description": "DiagnosticReport 1",
+        "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-diagnosticreport"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "DiagnosticReport"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "DiagnosticReport-diagnosticreport2.html"
+          }
+        ],
+        "reference": {
+          "reference": "DiagnosticReport/diagnosticreport2"
+        },
+        "name": "DiagnosticReport 2",
+        "description": "DiagnosticReport 2",
+        "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-diagnosticreport"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Observation"
           },
           {
@@ -975,6 +1047,60 @@
         },
         "name": "Observation 1",
         "description": "Observation 1",
+        "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-observation"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Observation-observation2.html"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/observation2"
+        },
+        "name": "Observation 2",
+        "description": "Observation 2",
+        "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-observation"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Observation-observation3.html"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/observation3"
+        },
+        "name": "Observation 3",
+        "description": "Observation 3",
+        "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-observation"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Observation-observation4.html"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/observation4"
+        },
+        "name": "Observation 4",
+        "description": "Observation 4",
         "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-observation"
       },
       {
@@ -1066,6 +1192,96 @@
         "name": "Provenance 1",
         "description": "Provenance 1",
         "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-provenance"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ServiceRequest"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "ServiceRequest-servicerequest1.html"
+          }
+        ],
+        "reference": {
+          "reference": "ServiceRequest/servicerequest1"
+        },
+        "name": "ServiceRequest 1",
+        "description": "ServiceRequest 1",
+        "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-servicerequest"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Specimen"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Specimen-specimen1.html"
+          }
+        ],
+        "reference": {
+          "reference": "Specimen/specimen1"
+        },
+        "name": "Specimen 1",
+        "description": "Specimen 1",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Specimen"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Specimen-specimen2.html"
+          }
+        ],
+        "reference": {
+          "reference": "Specimen/specimen2"
+        },
+        "name": "Specimen 2",
+        "description": "Specimen 2",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Specimen"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Specimen-specimen3.html"
+          }
+        ],
+        "reference": {
+          "reference": "Specimen/specimen3"
+        },
+        "name": "Specimen 3",
+        "description": "Specimen 3",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Specimen"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+            "valueUri": "Specimen-specimen4.html"
+          }
+        ],
+        "reference": {
+          "reference": "Specimen/specimen4"
+        },
+        "name": "Specimen 4",
+        "description": "Specimen 4",
+        "exampleBoolean": true
       }
     ],
     "page": {

@@ -1,57 +1,187 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="da2b935a-134b-4496-8d52-6592b30546a1"/>
+  <id value="eeae836c-adcc-48d7-9353-682b66db821e"/>
   <meta>
-    <lastUpdated value="2020-04-29T10:48:59.037+02:00"/>
+    <lastUpdated value="2020-05-05T08:12:52.967+02:00"/>
   </meta>
   <type value="collection"/>
   <entry>
-    <fullUrl value="https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-causativeagent"/>
+    <fullUrl value="https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-allergyintolerancecode"/>
     <resource>
       <ValueSet>
-        <id value="be-causativeagent"/>
+        <id value="be-allergyintolerancecode"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 0 concepts</p>
+            <p>This value set contains 3 concepts</p>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>
+                  <a href="ValueSet-be-causativeagent.html">ValueSet causative agent v1.1.0 (ValueSet)</a>
+                </li>
+                <li>
+                  <a href="ValueSet-be-noallergy.html">ValueSet no allergies v1.1.0 (ValueSet)</a>
+                </li>
+                <li>SNOMED CT International edition 09-mars 2020</li>
+              </ul>
+            </div>
+            <p>All codes from system 
+              <a href="http://hl7.org/fhir/R4/codesystem-snomedct.html">
+                <code>http://snomed.info/sct</code>
+              </a>
+            </p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
                   <b>Code</b>
                 </td>
                 <td>
-                  <b>System</b>
-                </td>
-                <td>
                   <b>Display</b>
                 </td>
+                <td>
+                  <b>Logical Definition (CLD)</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-391737006"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=391737006">391737006</a>
+                </td>
+                <td>Almond oil (substance)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-716186003"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=716186003">716186003</a>
+                </td>
+                <td>geen gekende allergie</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-409137002"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=409137002">409137002</a>
+                </td>
+                <td>geen gekende drugs- en/of geneesmiddelenallergie</td>
+                <td/>
               </tr>
             </table>
           </div>
         </text>
-        <url value="https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-causativeagent"/>
+        <url value="https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-allergyintolerancecode"/>
         <version value="1.1.0"/>
-        <name value="BeCausativeAgent"/>
-        <title value="ValueSet causative agent"/>
+        <name value="BeAllergyIntoleranceCode"/>
+        <title value="ValueSet allergy intolerance code"/>
         <status value="active"/>
-        <date value="2020-04-29T10:48:59+02:00"/>
+        <date value="2020-05-05T08:12:52+02:00"/>
         <publisher value="eHealth Platform"/>
         <contact>
-          <name value="Etienne Cantineau"/>
+          <name value="Message structure"/>
           <telecom>
             <system value="email"/>
-            <value value="etienne.cantineau@ehealth.fgov.be"/>
+            <value value="message-structure@ehealth.fgov.be"/>
           </telecom>
         </contact>
-        <description value="Codes as communicated by NIHDI and the FPS Terminology Center differentiating types of causative agent. This valueset supports the Belgian federal FHIR profiling effort."/>
+        <description value="Codes as communicated by NIHDI and the FOD Terminology Center differentiating types of allergy intolerance codes. This valueset supports the Belgian federal FHIR profiling effort."/>
         <expansion>
-          <identifier value="urn:uuid:11e3f614-6219-4537-aa4e-c12522b9d119"/>
-          <timestamp value="2020-04-29T10:49:15+02:00"/>
+          <identifier value="urn:uuid:0f725c4a-a18c-4af3-ab86-428ea4f19b5e"/>
+          <timestamp value="2020-05-05T08:13:14+02:00"/>
+          <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
           </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-causativeagent|1.1.0"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueString value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20200309"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-noallergy|1.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="391737006"/>
+            <display value="Almond oil (substance)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="716186003"/>
+            <display value="geen gekende allergie"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="409137002"/>
+            <display value="geen gekende drugs- en/of geneesmiddelenallergie"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 1 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 09-mars 2020</p>
+            <p>All codes from system 
+              <a href="http://hl7.org/fhir/R4/codesystem-snomedct.html">
+                <code>http://snomed.info/sct</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Logical Definition (CLD)</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-391737006"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=391737006">391737006</a>
+                </td>
+                <td>Almond oil (substance)</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <status value="active"/>
+        <expansion>
+          <identifier value="urn:uuid:7e5a42f0-bc16-48f5-949f-393e14982c28"/>
+          <timestamp value="2020-04-30T06:52:08.784Z"/>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueString value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20200309"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="391737006"/>
+            <display value="Almond oil (substance)"/>
+          </contains>
         </expansion>
       </ValueSet>
     </resource>
@@ -88,7 +218,7 @@
                   <b>Display</b>
                 </td>
                 <td>
-                  <b>Definition</b>
+                  <b>Logical Definition (CLD)</b>
                 </td>
               </tr>
               <tr>
@@ -252,19 +382,19 @@
         <name value="BeCivilState"/>
         <title value="ValueSet civil state"/>
         <status value="active"/>
-        <date value="2020-04-29T10:48:59+02:00"/>
+        <date value="2020-05-05T08:12:52+02:00"/>
         <publisher value="eHealth Platform"/>
         <contact>
-          <name value="Etienne Cantineau"/>
+          <name value="Message structure"/>
           <telecom>
             <system value="email"/>
-            <value value="etienne.cantineau@ehealth.fgov.be"/>
+            <value value="message-structure@ehealth.fgov.be"/>
           </telecom>
         </contact>
         <description value="Codes supported by eHealth Platform differentiating types of civil state. This valueset supports the Belgian federal FHIR profiling effort. &#xA;Whenever possible add a code from http://terminology.hl7.org/CodeSystem/v3-MaritalStatus for international interoperability but also use https://www.ehealth.fgov.be/standards/fhir/CodeSystem/CD-CIVILSTATE &#xA;for the Belgian specific code."/>
         <expansion>
-          <identifier value="urn:uuid:1d7e597a-a524-4156-bb2d-463336b6a314"/>
-          <timestamp value="2020-04-29T10:49:15+02:00"/>
+          <identifier value="urn:uuid:6098b728-b001-4bbf-aac7-9efc4f875c88"/>
+          <timestamp value="2020-05-05T08:13:14+02:00"/>
           <total value="17"/>
           <parameter>
             <name value="excludeNested"/>
@@ -399,7 +529,7 @@
                   <b>Display</b>
                 </td>
                 <td>
-                  <b>Definition</b>
+                  <b>Logical Definition (CLD)</b>
                 </td>
               </tr>
               <tr>
@@ -680,19 +810,19 @@
         <name value="BeContactPerson"/>
         <title value="ValueSet contact person"/>
         <status value="active"/>
-        <date value="2020-04-29T10:48:59+02:00"/>
+        <date value="2020-05-05T08:12:52+02:00"/>
         <publisher value="eHealth Platform"/>
         <contact>
-          <name value="Etienne Cantineau"/>
+          <name value="Message structure"/>
           <telecom>
             <system value="email"/>
-            <value value="etienne.cantineau@ehealth.fgov.be"/>
+            <value value="message-structure@ehealth.fgov.be"/>
           </telecom>
         </contact>
         <description value="Maximum valuest to define category of a contact person, using the HL7 values and the Belgian CD-CONTACT-PERSON values."/>
         <expansion>
-          <identifier value="urn:uuid:e45dbc96-2562-4185-83da-7723c19e3999"/>
-          <timestamp value="2020-04-29T10:49:15+02:00"/>
+          <identifier value="urn:uuid:c35f3b94-20fd-489e-8796-8d88f4dc0bad"/>
+          <timestamp value="2020-05-05T08:13:14+02:00"/>
           <total value="30"/>
           <parameter>
             <name value="excludeNested"/>
@@ -861,10 +991,10 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-causativeagent"/>
+    <fullUrl value="https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-exposureroute"/>
     <resource>
       <ValueSet>
-        <id value="be-causativeagent"/>
+        <id value="be-exposureroute"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -884,74 +1014,24 @@
             </table>
           </div>
         </text>
-        <url value="https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-causativeagent"/>
+        <url value="https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-exposureroute"/>
         <version value="1.1.0"/>
-        <name value="BeCausativeAgent"/>
-        <title value="ValueSet causative agent"/>
+        <name value="BeExposureRoute"/>
+        <title value="ValueSet exposureroute"/>
         <status value="active"/>
-        <date value="2020-04-29T10:48:59+02:00"/>
+        <date value="2020-05-05T08:12:52+02:00"/>
         <publisher value="eHealth Platform"/>
         <contact>
-          <name value="Etienne Cantineau"/>
+          <name value="Message structure"/>
           <telecom>
             <system value="email"/>
-            <value value="etienne.cantineau@ehealth.fgov.be"/>
+            <value value="message-structure@ehealth.fgov.be"/>
           </telecom>
         </contact>
-        <description value="Codes as communicated by NIHDI and the FPS Terminology Center differentiating types of causative agent. This valueset supports the Belgian federal FHIR profiling effort."/>
+        <description value="Codes to illustrate differentiating types of exposure route. This valueset supports the Belgian federal FHIR profiling effort."/>
         <expansion>
-          <identifier value="urn:uuid:11e3f614-6219-4537-aa4e-c12522b9d119"/>
-          <timestamp value="2020-04-29T10:49:15+02:00"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-causativeagent"/>
-    <resource>
-      <ValueSet>
-        <id value="be-causativeagent"/>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 0 concepts</p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>System</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-causativeagent"/>
-        <version value="1.1.0"/>
-        <name value="BeCausativeAgent"/>
-        <title value="ValueSet causative agent"/>
-        <status value="active"/>
-        <date value="2020-04-29T10:48:59+02:00"/>
-        <publisher value="eHealth Platform"/>
-        <contact>
-          <name value="Etienne Cantineau"/>
-          <telecom>
-            <system value="email"/>
-            <value value="etienne.cantineau@ehealth.fgov.be"/>
-          </telecom>
-        </contact>
-        <description value="Codes as communicated by NIHDI and the FPS Terminology Center differentiating types of causative agent. This valueset supports the Belgian federal FHIR profiling effort."/>
-        <expansion>
-          <identifier value="urn:uuid:11e3f614-6219-4537-aa4e-c12522b9d119"/>
-          <timestamp value="2020-04-29T10:49:15+02:00"/>
+          <identifier value="urn:uuid:b0569f38-f612-40be-b450-f1bdd03e0641"/>
+          <timestamp value="2020-05-05T08:13:14+02:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -992,19 +1072,19 @@
         <name value="BeProductorServiceNihdiEAgreement"/>
         <title value="ValueSet productor service"/>
         <status value="active"/>
-        <date value="2020-04-29T10:48:59+02:00"/>
+        <date value="2020-05-05T08:12:52+02:00"/>
         <publisher value="eHealth Platform"/>
         <contact>
-          <name value="Etienne Cantineau"/>
+          <name value="Message structure"/>
           <telecom>
             <system value="email"/>
-            <value value="etienne.cantineau@ehealth.fgov.be"/>
+            <value value="message-structure@ehealth.fgov.be"/>
           </telecom>
         </contact>
         <description value="NIHDI codes for use to describe eAgreement products or services in the MyCareNet eAgreement flows."/>
         <expansion>
-          <identifier value="urn:uuid:6102f824-7ff3-4cee-9e0a-52f5f8950916"/>
-          <timestamp value="2020-04-29T10:49:15+02:00"/>
+          <identifier value="urn:uuid:1e8bd100-2817-4967-b0b7-bf5dc7135cbd"/>
+          <timestamp value="2020-05-05T08:13:14+02:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -1018,10 +1098,10 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-causativeagent"/>
+    <fullUrl value="https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-exposureroute"/>
     <resource>
       <ValueSet>
-        <id value="be-causativeagent"/>
+        <id value="be-exposureroute"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -1041,28 +1121,98 @@
             </table>
           </div>
         </text>
-        <url value="https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-causativeagent"/>
+        <url value="https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-exposureroute"/>
         <version value="1.1.0"/>
-        <name value="BeCausativeAgent"/>
-        <title value="ValueSet causative agent"/>
+        <name value="BeExposureRoute"/>
+        <title value="ValueSet exposureroute"/>
         <status value="active"/>
-        <date value="2020-04-29T10:48:59+02:00"/>
+        <date value="2020-05-05T08:12:52+02:00"/>
         <publisher value="eHealth Platform"/>
         <contact>
-          <name value="Etienne Cantineau"/>
+          <name value="Message structure"/>
           <telecom>
             <system value="email"/>
-            <value value="etienne.cantineau@ehealth.fgov.be"/>
+            <value value="message-structure@ehealth.fgov.be"/>
           </telecom>
         </contact>
-        <description value="Codes as communicated by NIHDI and the FPS Terminology Center differentiating types of causative agent. This valueset supports the Belgian federal FHIR profiling effort."/>
+        <description value="Codes to illustrate differentiating types of exposure route. This valueset supports the Belgian federal FHIR profiling effort."/>
         <expansion>
-          <identifier value="urn:uuid:11e3f614-6219-4537-aa4e-c12522b9d119"/>
-          <timestamp value="2020-04-29T10:49:15+02:00"/>
+          <identifier value="urn:uuid:b0569f38-f612-40be-b450-f1bdd03e0641"/>
+          <timestamp value="2020-05-05T08:13:14+02:00"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
           </parameter>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 2 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 09-mars 2020</p>
+            <p>All codes from system 
+              <a href="http://hl7.org/fhir/R4/codesystem-snomedct.html">
+                <code>http://snomed.info/sct</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Logical Definition (CLD)</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-716186003"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=716186003">716186003</a>
+                </td>
+                <td>geen gekende allergie</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-409137002"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=409137002">409137002</a>
+                </td>
+                <td>geen gekende drugs- en/of geneesmiddelenallergie</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <status value="active"/>
+        <expansion>
+          <identifier value="urn:uuid:bf7ad667-8103-4620-85e0-461a75ee0524"/>
+          <timestamp value="2020-05-04T11:59:42.413Z"/>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueString value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20200309"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="716186003"/>
+            <display value="geen gekende allergie"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="409137002"/>
+            <display value="geen gekende drugs- en/of geneesmiddelenallergie"/>
+          </contains>
         </expansion>
       </ValueSet>
     </resource>

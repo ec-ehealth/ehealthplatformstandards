@@ -17,15 +17,15 @@
   fhir:ValueSet.name [ fhir:value "BeCivilState"];
   fhir:ValueSet.title [ fhir:value "ValueSet civil state"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2020-04-29T10:48:59+02:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2020-05-05T08:12:52+02:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "eHealth Platform"];
   fhir:ValueSet.contact [
      fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "Etienne Cantineau" ];
+     fhir:ContactDetail.name [ fhir:value "Message structure" ];
      fhir:ContactDetail.telecom [
        fhir:index 0;
        fhir:ContactPoint.system [ fhir:value "email" ];
-       fhir:ContactPoint.value [ fhir:value "etienne.cantineau@ehealth.fgov.be" ]
+       fhir:ContactPoint.value [ fhir:value "message-structure@ehealth.fgov.be" ]
      ]
   ];
   fhir:ValueSet.description [ fhir:value "Codes supported by eHealth Platform differentiating types of civil state. This valueset supports the Belgian federal FHIR profiling effort. \nWhenever possible add a code from http://terminology.hl7.org/CodeSystem/v3-MaritalStatus for international interoperability but also use https://www.ehealth.fgov.be/standards/fhir/CodeSystem/CD-CIVILSTATE \nfor the Belgian specific code."];

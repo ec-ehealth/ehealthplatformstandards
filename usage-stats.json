@@ -10,6 +10,12 @@
         "title": "Allergy Intolerance core BE profile"
       }
     ],
+    "DiagnosticReport": [
+      {
+        "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-diagnosticreport",
+        "title": "Disagnostic Report core BE profile"
+      }
+    ],
     "Claim": [
       {
         "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-mycarenetclaim",
@@ -63,6 +69,12 @@
         "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-provenance",
         "title": "Provenance core BE profile"
       }
+    ],
+    "ServiceRequest": [
+      {
+        "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-servicerequest",
+        "title": "Service Request core BE profile"
+      }
     ]
   },
   "usage": {
@@ -86,6 +98,7 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber": [
       "Address.line",
+      "Bundle.entry.resource.address.line",
       "Organization.address.line"
     ],
     "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox": [
@@ -93,10 +106,12 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName": [
       "Address.line",
+      "Bundle.entry.resource.address.line",
       "Organization.address.line"
     ],
     "http://hl7.org/fhir/StructureDefinition/language": [
       "Address",
+      "Bundle.entry.resource.address",
       "Organization.address",
       "Patient.address",
       "Practitioner.address"

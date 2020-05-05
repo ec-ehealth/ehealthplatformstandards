@@ -1,0 +1,92 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.ehealth.fgov.be/standards/fhir/Observation/observation2> a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "observation2"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-observation";
+       fhir:index 0;
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-observation>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: observation2</p><p><b>meta</b>: </p><p><b>status</b>: final</p><p><b>category</b>: laboratory studies <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/observation-category code 'laboratory' = 'Laboratory', given as 'laboratory'})</span></p><p><b>code</b>: Erythrocyte sedimentation rate <span style=\"background: LightGoldenRodYellow\">(Details : {LOINC code '30341-2' = 'Erythrocyte sedimentation rate', given as 'Erythrocyte sedimentation rate'})</span></p><p><b>subject</b>: <a href=\"Patient-patient1.html\">Generated Summary: id: patient1; 79121137740 (OFFICIAL), Social Beneficiary Identifier = 79121137740 (OFFICIAL), Medical record number = 45XXP0PA-4 (USUAL); active; Josephine Nessa La Paradisio ; nessa.laparadisio@belgium.be, ph: +322476792979(MOBILE), ph: +3226718655(HOME), ph: +322476799(WORK); gender: female; birthDate: 1979-12-11; <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus D}, {https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-civilstate 41}\">Divorced</span></a></p><p><b>effective</b>: 04-nov.-2015 15:16:00</p><p><b>performer</b>: <a href=\"Practitioner-practitioner1.html\">Generated Summary: id: practitioner1; 79121137740 (OFFICIAL), 18749704477 (OFFICIAL); Katherine Pulaski (OFFICIAL); katherine.pulaski@enterprisehospital.be(WORK), ph: 022675198(WORK), fax: 022675209(WORK); gender: female; birthDate: 1979-12-11</a></p><p><b>value</b>: 2 mm/h<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mm/h = 'mm/h')</span></p><p><b>specimen</b>: <a href=\"Specimen-specimen1.html\">Generated Summary: id: specimen1; 1; <span title=\"Codes: {http://snomed.info/sct 119297000}\">Blood specimen</span>; receivedTime: 04-nov.-2015 0:00:00</a></p><h3>ReferenceRanges</h3><table class=\"grid\"><tr><td>-</td><td><b>Low</b></td><td><b>High</b></td><td><b>Type</b></td></tr><tr><td>*</td><td>0 mm/h<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mm/h = 'mm/h')</span></td><td>30 mm/h<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mm/h = 'mm/h')</span></td><td>Normal Range <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/referencerange-meaning code 'normal' = 'Normal Range)</span></td></tr></table></div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ];
+       fhir:Coding.code [ fhir:value "laboratory" ];
+       fhir:Coding.display [ fhir:value "laboratory" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "laboratory studies" ]
+  ];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:30341-2;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "30341-2" ];
+       fhir:Coding.display [ fhir:value "Erythrocyte sedimentation rate" ]
+     ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/Patient/patient1>;
+     fhir:Reference.reference [ fhir:value "Patient/patient1" ]
+  ];
+  fhir:Observation.effectiveDateTime [ fhir:value "2015-11-04T09:16:00-05:00"^^xsd:dateTime];
+  fhir:Observation.performer [
+     fhir:index 0;
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/Practitioner/practitioner1>;
+     fhir:Reference.reference [ fhir:value "Practitioner/practitioner1" ]
+  ];
+  fhir:Observation.valueQuantity [
+     fhir:Quantity.value [ fhir:value "2"^^xsd:decimal ];
+     fhir:Quantity.unit [ fhir:value "mm/h" ];
+     fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+     fhir:Quantity.code [ fhir:value "mm/h" ]
+  ];
+  fhir:Observation.specimen [
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/Specimen/specimen1>;
+     fhir:Reference.reference [ fhir:value "Specimen/specimen1" ]
+  ];
+  fhir:Observation.referenceRange [
+     fhir:index 0;
+     fhir:Observation.referenceRange.low [
+       fhir:Quantity.value [ fhir:value "0"^^xsd:decimal ];
+       fhir:Quantity.unit [ fhir:value "mm/h" ];
+       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+       fhir:Quantity.code [ fhir:value "mm/h" ]
+     ];
+     fhir:Observation.referenceRange.high [
+       fhir:Quantity.value [ fhir:value "30"^^xsd:decimal ];
+       fhir:Quantity.unit [ fhir:value "mm/h" ];
+       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+       fhir:Quantity.code [ fhir:value "mm/h" ]
+     ];
+     fhir:Observation.referenceRange.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/referencerange-meaning" ];
+         fhir:Coding.code [ fhir:value "normal" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.ehealth.fgov.be/standards/fhir/Observation/observation2.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

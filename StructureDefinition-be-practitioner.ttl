@@ -17,15 +17,15 @@
   fhir:StructureDefinition.name [ fhir:value "BePractitioner"];
   fhir:StructureDefinition.title [ fhir:value "Practitioner core BE profile"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2020-04-29T10:48:59+02:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2020-05-05T08:12:52+02:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "eHealth Platform"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "Etienne Cantineau" ];
+     fhir:ContactDetail.name [ fhir:value "Message structure" ];
      fhir:ContactDetail.telecom [
        fhir:index 0;
        fhir:ContactPoint.system [ fhir:value "email" ];
-       fhir:ContactPoint.value [ fhir:value "etienne.cantineau@ehealth.fgov.be" ]
+       fhir:ContactPoint.value [ fhir:value "message-structure@ehealth.fgov.be" ]
      ]
   ];
   fhir:StructureDefinition.description [ fhir:value "Belgian federal profile for a practitioner. Initially based on the functional description of the NIHDI."];

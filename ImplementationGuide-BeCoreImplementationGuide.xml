@@ -11,13 +11,13 @@
   <name value="TheCoreBelgianFederalFHIRProfiles"/>
   <title value="The Core Belgian Federal FHIR Profiles"/>
   <status value="active"/>
-  <date value="2020-04-29T10:48:59+02:00"/>
+  <date value="2020-05-05T08:12:52+02:00"/>
   <publisher value="eHealth Platform"/>
   <contact>
-    <name value="Etienne Cantineau"/>
+    <name value="Message structure"/>
     <telecom>
       <system value="email"/>
-      <value value="etienne.cantineau@ehealth.fgov.be"/>
+      <value value="message-structure@ehealth.fgov.be"/>
     </telecom>
   </contact>
   <description value="The Core Belgian Profiles provide the essential and common requirement for FHIR implementations in Belgium."/>
@@ -218,6 +218,20 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-be-diagnosticreport.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/be-diagnosticreport"/>
+      </reference>
+      <name value="Disagnostic Report core BE profile"/>
+      <description value="Belgian federal profile for an disagnostic report."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
         <valueUri value="StructureDefinition-be-mycarenetclaim.html"/>
       </extension>
       <reference>
@@ -355,6 +369,20 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-be-servicerequest.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/be-servicerequest"/>
+      </reference>
+      <name value="Service Request core BE profile"/>
+      <description value="Belgian federal profile for an Service Request."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
@@ -421,20 +449,6 @@
       </reference>
       <name value="ValueSet exposureroute"/>
       <description value="Codes to illustrate differentiating types of exposure route. This valueset supports the Belgian federal FHIR profiling effort."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
-        <valueUri value="ValueSet-be-noallergy.html"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/be-noallergy"/>
-      </reference>
-      <name value="ValueSet no allergies"/>
-      <description value="Codes as communicated by the FOD Terminology Center differentiating types of no allergies. This valueset supports the Belgian federal FHIR profiling effort."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -621,6 +635,20 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ValueSet-be-noallergy.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/be-noallergy"/>
+      </reference>
+      <name value="ValueSet no allergies"/>
+      <description value="Codes as communicated by the FOD Terminology Center differentiating types of no allergies. This valueset supports the Belgian federal FHIR profiling effort."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="NamingSystem"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
@@ -705,6 +733,34 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DiagnosticReport"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="DiagnosticReport-diagnosticreport1.html"/>
+      </extension>
+      <reference>
+        <reference value="DiagnosticReport/diagnosticreport1"/>
+      </reference>
+      <name value="DiagnosticReport 1"/>
+      <description value="DiagnosticReport 1"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-diagnosticreport"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DiagnosticReport"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="DiagnosticReport-diagnosticreport2.html"/>
+      </extension>
+      <reference>
+        <reference value="DiagnosticReport/diagnosticreport2"/>
+      </reference>
+      <name value="DiagnosticReport 2"/>
+      <description value="DiagnosticReport 2"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-diagnosticreport"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Observation"/>
       </extension>
       <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
@@ -715,6 +771,48 @@
       </reference>
       <name value="Observation 1"/>
       <description value="Observation 1"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Observation-observation2.html"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation2"/>
+      </reference>
+      <name value="Observation 2"/>
+      <description value="Observation 2"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Observation-observation3.html"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation3"/>
+      </reference>
+      <name value="Observation 3"/>
+      <description value="Observation 3"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-observation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Observation-observation4.html"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation4"/>
+      </reference>
+      <name value="Observation 4"/>
+      <description value="Observation 4"/>
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-observation"/>
     </resource>
     <resource>
@@ -786,6 +884,76 @@
       <name value="Provenance 1"/>
       <description value="Provenance 1"/>
       <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-provenance"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="ServiceRequest-servicerequest1.html"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/servicerequest1"/>
+      </reference>
+      <name value="ServiceRequest 1"/>
+      <description value="ServiceRequest 1"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-servicerequest"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Specimen"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Specimen-specimen1.html"/>
+      </extension>
+      <reference>
+        <reference value="Specimen/specimen1"/>
+      </reference>
+      <name value="Specimen 1"/>
+      <description value="Specimen 1"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Specimen"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Specimen-specimen2.html"/>
+      </extension>
+      <reference>
+        <reference value="Specimen/specimen2"/>
+      </reference>
+      <name value="Specimen 2"/>
+      <description value="Specimen 2"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Specimen"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Specimen-specimen3.html"/>
+      </extension>
+      <reference>
+        <reference value="Specimen/specimen3"/>
+      </reference>
+      <name value="Specimen 3"/>
+      <description value="Specimen 3"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Specimen"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="Specimen-specimen4.html"/>
+      </extension>
+      <reference>
+        <reference value="Specimen/specimen4"/>
+      </reference>
+      <name value="Specimen 4"/>
+      <description value="Specimen 4"/>
+      <exampleBoolean value="true"/>
     </resource>
     <page>
       <nameUrl value="toc.html"/>

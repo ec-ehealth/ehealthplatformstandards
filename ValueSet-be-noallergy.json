@@ -3,25 +3,70 @@
   "id": "be-noallergy",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ValueSet no allergies</h2><div><p>Codes as communicated by the FOD Terminology Center differentiating types of no allergies. This valueset supports the Belgian federal FHIR profiling effort.</p>\n</div><ul/><p>This value set includes codes based on the following rules:</p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ValueSet no allergies</h2><div><p>Codes as communicated by the FOD Terminology Center differentiating types of no allergies. This valueset supports the Belgian federal FHIR profiling effort.</p>\n</div><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=716186003\">716186003</a></td><td>No known allergy (situation)</td><td/></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=409137002\">409137002</a></td><td>No known drug allergy (situation)</td><td/></tr></table></li></ul><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>English (English, en)</b></td><td><b>French (Belgium) (fr)</b></td><td><b>Nederlands (België) (Dutch (Belgium), nl)</b></td></tr><tr><td>716186003</td><td>No known allergy</td><td>pas d'allergie connue</td><td>geen gekende allergie</td></tr><tr><td>409137002</td><td>No known drug allergy</td><td>pas d'allergie aux drogues et/ou médicaments connue</td><td>geen gekende drugs- en/of geneesmiddelenallergie</td></tr></table></div>"
   },
   "url": "https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-noallergy",
   "version": "1.1.0",
   "name": "BeNoAllergy",
   "title": "ValueSet no allergies",
   "status": "active",
-  "date": "2020-04-29T10:48:59+02:00",
+  "date": "2020-05-05T08:12:52+02:00",
   "publisher": "eHealth Platform",
   "contact": [
     {
-      "name": "Etienne Cantineau",
+      "name": "Message structure",
       "telecom": [
         {
           "system": "email",
-          "value": "etienne.cantineau@ehealth.fgov.be"
+          "value": "message-structure@ehealth.fgov.be"
         }
       ]
     }
   ],
-  "description": "Codes as communicated by the FOD Terminology Center differentiating types of no allergies. This valueset supports the Belgian federal FHIR profiling effort."
+  "description": "Codes as communicated by the FOD Terminology Center differentiating types of no allergies. This valueset supports the Belgian federal FHIR profiling effort.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "716186003",
+            "display": "No known allergy (situation)",
+            "designation": [
+              {
+                "language": "en",
+                "value": "No known allergy"
+              },
+              {
+                "language": "fr-BE",
+                "value": "pas d'allergie connue"
+              },
+              {
+                "language": "nl-BE",
+                "value": "geen gekende allergie"
+              }
+            ]
+          },
+          {
+            "code": "409137002",
+            "display": "No known drug allergy (situation)",
+            "designation": [
+              {
+                "language": "en",
+                "value": "No known drug allergy"
+              },
+              {
+                "language": "fr-BE",
+                "value": "pas d'allergie aux drogues et/ou médicaments connue"
+              },
+              {
+                "language": "nl-BE",
+                "value": "geen gekende drugs- en/of geneesmiddelenallergie"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }

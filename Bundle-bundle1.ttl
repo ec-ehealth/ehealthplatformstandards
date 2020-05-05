@@ -36,7 +36,7 @@
   ] .
 
 <urn:uuid:8df87da3-5c85-4bea-8996-33b364a0eea9> a fhir:Practitioner;
-  fhir:Resource.id [ fhir:value "Practitioner2"];
+  fhir:Resource.id [ fhir:value "Practitioner3"];
   fhir:Resource.meta [
      fhir:Meta.profile [
        fhir:value "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner";
@@ -46,15 +46,70 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: Practitioner2</p><p><b>meta</b>: </p><p><b>name</b>: Dupont</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: Practitioner3</p><p><b>meta</b>: </p><p><b>identifier</b>: 79121137740 (OFFICIAL), 18749704477 (OFFICIAL)</p><p><b>name</b>: Katherine Pulaski (OFFICIAL)</p><p><b>telecom</b>: katherine.pulaski@enterprisehospital.be(WORK), ph: 022675198(WORK), fax: 022675209(WORK)</p><p><b>address</b>: Jupiterlaan 5, 1853 Grimbergen(HOME)</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1979-12-11</p></div>"
+  ];
+  fhir:Practitioner.identifier [
+     fhir:index 0;
+     fhir:Identifier.use [ fhir:value "official" ];
+     fhir:Identifier.system [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin" ];
+     fhir:Identifier.value [ fhir:value "79121137740" ]
+  ], [
+     fhir:index 1;
+     fhir:Identifier.use [ fhir:value "official" ];
+     fhir:Identifier.system [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi" ];
+     fhir:Identifier.value [ fhir:value "18749704477" ]
   ];
   fhir:Practitioner.name [
      fhir:index 0;
-     fhir:HumanName.text [ fhir:value "Dupont" ]
-  ] .
+     fhir:HumanName.use [ fhir:value "official" ];
+     fhir:HumanName.family [ fhir:value "Pulaski" ];
+     fhir:HumanName.given [
+       fhir:value "Katherine";
+       fhir:index 0
+     ];
+     fhir:HumanName.suffix [
+       fhir:value "MD";
+       fhir:index 0
+     ]
+  ];
+  fhir:Practitioner.telecom [
+     fhir:index 0;
+     fhir:ContactPoint.system [ fhir:value "email" ];
+     fhir:ContactPoint.value [ fhir:value "katherine.pulaski@enterprisehospital.be" ];
+     fhir:ContactPoint.use [ fhir:value "work" ]
+  ], [
+     fhir:index 1;
+     fhir:ContactPoint.system [ fhir:value "phone" ];
+     fhir:ContactPoint.value [ fhir:value "022675198" ];
+     fhir:ContactPoint.use [ fhir:value "work" ]
+  ], [
+     fhir:index 2;
+     fhir:ContactPoint.system [ fhir:value "fax" ];
+     fhir:ContactPoint.value [ fhir:value "022675209" ];
+     fhir:ContactPoint.use [ fhir:value "work" ]
+  ];
+  fhir:Practitioner.address [
+     fhir:index 0;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/language" ];
+       fhir:Extension.valueCode [ fhir:value "nl" ]
+     ];
+     fhir:Address.use [ fhir:value "home" ];
+     fhir:Address.text [ fhir:value "Jupiterlaan 5, 1853 Grimbergen" ];
+     fhir:Address.line [
+       fhir:value "Jupiterlaan 5";
+       fhir:index 0
+     ];
+     fhir:Address.city [ fhir:value "Grimbergen" ];
+     fhir:Address.postalCode [ fhir:value "1853" ];
+     fhir:Address.country [ fhir:value "BE" ]
+  ];
+  fhir:Practitioner.gender [ fhir:value "female"];
+  fhir:Practitioner.birthDate [ fhir:value "1979-12-11"^^xsd:date] .
 
 <urn:uuid:2a971dd8-b621-4a74-b984-ca2a7a619220> a fhir:Organization;
-  fhir:Resource.id [ fhir:value "Organization2"];
+  fhir:Resource.id [ fhir:value "Organization3"];
   fhir:Resource.meta [
      fhir:Meta.profile [
        fhir:value "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization";
@@ -64,12 +119,107 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: Organization2</p><p><b>meta</b>: </p><p><b>name</b>: testorga</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: Organization3</p><p><b>meta</b>: </p><p><b>identifier</b>: Provider Number = 0425.222.333 (OFFICIAL), Medical License number = 999999999 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>type</b>: orghospital <span style=\"background: LightGoldenRodYellow\">(Details : {https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty code 'orghospital' = 'orghospital)</span></p><p><b>name</b>: Enterprise Hospital Ziekenhuis</p><p><b>telecom</b>: ph: 322675199(WORK)</p><p><b>address</b>: </p><ul><li>Vulcansstraat 120, 1000 Brussel(WORK)</li><li>120, Rue des Vulcans, 1000 Bruxelles(WORK)</li></ul></div>"
   ];
-  fhir:Organization.name [ fhir:value "testorga"] .
+  fhir:Organization.identifier [
+     fhir:index 0;
+     fhir:Identifier.use [ fhir:value "official" ];
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ];
+         fhir:Coding.code [ fhir:value "PRN" ];
+         fhir:Coding.display [ fhir:value "Provider Number" ]
+       ]
+     ];
+     fhir:Identifier.system [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/cbe" ];
+     fhir:Identifier.value [ fhir:value "0425.222.333" ]
+  ], [
+     fhir:index 1;
+     fhir:Identifier.use [ fhir:value "official" ];
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ];
+         fhir:Coding.code [ fhir:value "MD" ];
+         fhir:Coding.display [ fhir:value "Medical License number" ]
+       ]
+     ];
+     fhir:Identifier.system [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi" ];
+     fhir:Identifier.value [ fhir:value "999999999" ]
+  ];
+  fhir:Organization.active [ fhir:value "true"^^xsd:boolean];
+  fhir:Organization.type [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty" ];
+       fhir:Coding.code [ fhir:value "orghospital" ]
+     ]
+  ];
+  fhir:Organization.name [ fhir:value "Enterprise Hospital Ziekenhuis"];
+  fhir:Organization.telecom [
+     fhir:index 0;
+     fhir:ContactPoint.system [ fhir:value "phone" ];
+     fhir:ContactPoint.value [ fhir:value "322675199" ];
+     fhir:ContactPoint.use [ fhir:value "work" ]
+  ];
+  fhir:Organization.address [
+     fhir:index 0;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/language" ];
+       fhir:Extension.valueCode [ fhir:value "nl" ]
+     ];
+     fhir:Address.use [ fhir:value "work" ];
+     fhir:Address.type [ fhir:value "both" ];
+     fhir:Address.text [ fhir:value "Vulcansstraat 120, 1000 Brussel" ];
+     fhir:Address.line [
+       fhir:value "Vulcansstraat 120";
+       fhir:index 0;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName" ];
+         fhir:Extension.valueString [ fhir:value "Vulcansstraat" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber" ];
+         fhir:Extension.valueString [ fhir:value "120" ]
+       ]
+     ];
+     fhir:Address.city [ fhir:value "Brussel" ];
+     fhir:Address.postalCode [ fhir:value "1000" ];
+     fhir:Address.country [ fhir:value "BE" ]
+  ], [
+     fhir:index 1;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/language" ];
+       fhir:Extension.valueCode [ fhir:value "fr" ]
+     ];
+     fhir:Address.use [ fhir:value "work" ];
+     fhir:Address.type [ fhir:value "both" ];
+     fhir:Address.text [ fhir:value "120, Rue des Vulcans, 1000 Bruxelles" ];
+     fhir:Address.line [
+       fhir:value "120, Rue des Vulcans";
+       fhir:index 0;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName" ];
+         fhir:Extension.valueString [ fhir:value "Rue des Vulcans" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber" ];
+         fhir:Extension.valueString [ fhir:value "120" ]
+       ]
+     ];
+     fhir:Address.city [ fhir:value "Bruxelles" ];
+     fhir:Address.postalCode [ fhir:value "1000" ];
+     fhir:Address.country [ fhir:value "BE" ]
+  ] .
 
 <urn:uuid:8cf2c41f-988e-40b8-8832-cad4f10803f5> a fhir:Provenance;
-  fhir:Resource.id [ fhir:value "Provenance2"];
+  fhir:Resource.id [ fhir:value "Provenance3"];
   fhir:Resource.meta [
      fhir:Meta.profile [
        fhir:value "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-provenance";
@@ -79,7 +229,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: Provenance2</p><p><b>meta</b>: </p><p><b>target</b>: <a href=\"#backboneelement_Practitioner2\">Generated Summary: unknown resource entry</a></p><p><b>recorded</b>: 27-juin-2019 8:39:24</p><p><b>reason</b>: Healthcare Operations <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/v3-ActReason code 'HOPERAT' = 'healthcare operations', given as 'Healthcare Operations'})</span></p><p><b>activity</b>: create <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/v3-DataOperation code 'CREATE' = 'create)</span></p><h3>Agents</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Who</b></td></tr><tr><td>*</td><td>Author <span style=\"background: LightGoldenRodYellow\">(Details : {http://terminology.hl7.org/CodeSystem/provenance-participant-type code 'author' = 'Author)</span></td><td><a href=\"#backboneelement_Organization2\">Enterprise Hospital Ziekenhuis. Generated Summary: unknown resource entry</a></td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This provenance relates to <a href=\"urn:uuid:8df87da3-5c85-4bea-8996-33b364a0eea9\">urn:uuid:8df87da3-5c85-4bea-8996-33b364a0eea9</a></p><p>Summary</p><table class=\"grid\"><tr><td>Recorded</td><td>27-juin-2019 8:39:24</td></tr><tr><td>Activity</td><td><span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-DataOperation CREATE}\">create</span></td></tr></table><p>Agents</p><table class=\"grid\"><tr><td><b>type</b></td><td><b>who</b></td></tr><tr><td><span title=\"Codes: {http://terminology.hl7.org/CodeSystem/provenance-participant-type author}\">Author</span></td><td><a href=\"urn:uuid:2a971dd8-b621-4a74-b984-ca2a7a619220\">Enterprise Hospital Ziekenhuis</a></td></tr></table></div>"
   ];
   fhir:Provenance.target [
      fhir:index 0;

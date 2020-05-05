@@ -22,13 +22,13 @@ As that 2-letter format is also the standard in a KMEHR address, it is hence REC
   <name value="BeAddress"/>
   <title value="Address core BE profile"/>
   <status value="active"/>
-  <date value="2020-04-29T10:48:59+02:00"/>
+  <date value="2020-05-05T08:12:52+02:00"/>
   <publisher value="eHealth Platform"/>
   <contact>
-    <name value="Etienne Cantineau"/>
+    <name value="Message structure"/>
     <telecom>
       <system value="email"/>
-      <value value="etienne.cantineau@ehealth.fgov.be"/>
+      <value value="message-structure@ehealth.fgov.be"/>
     </telecom>
   </contact>
   <description value="Belgian federal profile on address, to provide the possibility in the &#39;line&#39; element to provide a seperate streetname, housenumber and postal box. It is always RECOMMENDED to give these elements seperately."/>

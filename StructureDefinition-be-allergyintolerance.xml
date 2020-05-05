@@ -55,13 +55,13 @@ A note on this level SHOULD be avoided when not absolutely necessary. Preferably
   <name value="BeAllergyIntolerance"/>
   <title value="Allergy Intolerance core BE profile"/>
   <status value="active"/>
-  <date value="2020-04-29T10:48:59+02:00"/>
+  <date value="2020-05-05T08:12:52+02:00"/>
   <publisher value="eHealth Platform"/>
   <contact>
-    <name value="Etienne Cantineau"/>
+    <name value="Message structure"/>
     <telecom>
       <system value="email"/>
-      <value value="etienne.cantineau@ehealth.fgov.be"/>
+      <value value="message-structure@ehealth.fgov.be"/>
     </telecom>
   </contact>
   <description value="Belgian federal profile for an allergy and/or an intolerance. Initially based on the functional description of the NIHDI."/>

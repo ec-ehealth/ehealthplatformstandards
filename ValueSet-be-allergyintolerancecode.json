@@ -3,22 +3,22 @@
   "id": "be-allergyintolerancecode",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ValueSet allergy intolerance code</h2><div><p>Codes as communicated by NIHDI and the FOD Terminology Center differentiating types of allergy intolerance codes. This valueset supports the Belgian federal FHIR profiling effort.</p>\n</div><ul><li>Include all codes defined in <code>https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-causativeagent</code></li><li>Include all codes defined in <code>https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-noallergy</code></li></ul><p>This value set includes codes based on the following rules:</p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ValueSet allergy intolerance code</h2><div><p>Codes as communicated by NIHDI and the FOD Terminology Center differentiating types of allergy intolerance codes. This valueset supports the Belgian federal FHIR profiling effort.</p>\n</div><ul><li>Import all the codes that are contained in <a href=\"ValueSet-be-causativeagent.html\">https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-causativeagent</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-be-noallergy.html\">https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-noallergy</a></li></ul><p>This value set includes codes based on the following rules:</p></div>"
   },
   "url": "https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-allergyintolerancecode",
   "version": "1.1.0",
   "name": "BeAllergyIntoleranceCode",
   "title": "ValueSet allergy intolerance code",
   "status": "active",
-  "date": "2020-04-29T10:48:59+02:00",
+  "date": "2020-05-05T08:12:52+02:00",
   "publisher": "eHealth Platform",
   "contact": [
     {
-      "name": "Etienne Cantineau",
+      "name": "Message structure",
       "telecom": [
         {
           "system": "email",
-          "value": "etienne.cantineau@ehealth.fgov.be"
+          "value": "message-structure@ehealth.fgov.be"
         }
       ]
     }
@@ -27,10 +27,14 @@
   "compose": {
     "include": [
       {
-        "system": "https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-causativeagent"
+        "valueSet": [
+          "https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-causativeagent"
+        ]
       },
       {
-        "system": "https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-noallergy"
+        "valueSet": [
+          "https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-noallergy"
+        ]
       }
     ]
   }
