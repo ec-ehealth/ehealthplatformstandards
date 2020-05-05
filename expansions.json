@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "eeae836c-adcc-48d7-9353-682b66db821e",
+  "id" : "f19c9093-c2c2-48f8-b317-476713d1734d",
   "meta" : {
-    "lastUpdated" : "2020-05-05T08:12:52.967+02:00"
+    "lastUpdated" : "2020-05-05T08:44:50.741+02:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -19,7 +19,7 @@
       "name" : "BeAllergyIntoleranceCode",
       "title" : "ValueSet allergy intolerance code",
       "status" : "active",
-      "date" : "2020-05-05T08:12:52+02:00",
+      "date" : "2020-05-05T08:44:50+02:00",
       "publisher" : "eHealth Platform",
       "contact" : [{
         "name" : "Message structure",
@@ -30,8 +30,8 @@
       }],
       "description" : "Codes as communicated by NIHDI and the FOD Terminology Center differentiating types of allergy intolerance codes. This valueset supports the Belgian federal FHIR profiling effort.",
       "expansion" : {
-        "identifier" : "urn:uuid:0f725c4a-a18c-4af3-ab86-428ea4f19b5e",
-        "timestamp" : "2020-05-05T08:13:14+02:00",
+        "identifier" : "urn:uuid:bc74044d-c66a-4d73-a79c-7cd043c84093",
+        "timestamp" : "2020-05-05T08:45:08+02:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -112,7 +112,7 @@
       "name" : "BeCivilState",
       "title" : "ValueSet civil state",
       "status" : "active",
-      "date" : "2020-05-05T08:12:52+02:00",
+      "date" : "2020-05-05T08:44:50+02:00",
       "publisher" : "eHealth Platform",
       "contact" : [{
         "name" : "Message structure",
@@ -123,8 +123,8 @@
       }],
       "description" : "Codes supported by eHealth Platform differentiating types of civil state. This valueset supports the Belgian federal FHIR profiling effort. \nWhenever possible add a code from http://terminology.hl7.org/CodeSystem/v3-MaritalStatus for international interoperability but also use https://www.ehealth.fgov.be/standards/fhir/CodeSystem/CD-CIVILSTATE \nfor the Belgian specific code.",
       "expansion" : {
-        "identifier" : "urn:uuid:6098b728-b001-4bbf-aac7-9efc4f875c88",
-        "timestamp" : "2020-05-05T08:13:14+02:00",
+        "identifier" : "urn:uuid:ce0dafc6-93bc-4ddf-9338-b76f649a90a9",
+        "timestamp" : "2020-05-05T08:45:09+02:00",
         "total" : 17,
         "parameter" : [{
           "name" : "excludeNested",
@@ -240,7 +240,7 @@
       "name" : "BeContactPerson",
       "title" : "ValueSet contact person",
       "status" : "active",
-      "date" : "2020-05-05T08:12:52+02:00",
+      "date" : "2020-05-05T08:44:50+02:00",
       "publisher" : "eHealth Platform",
       "contact" : [{
         "name" : "Message structure",
@@ -251,8 +251,8 @@
       }],
       "description" : "Maximum valuest to define category of a contact person, using the HL7 values and the Belgian CD-CONTACT-PERSON values.",
       "expansion" : {
-        "identifier" : "urn:uuid:c35f3b94-20fd-489e-8796-8d88f4dc0bad",
-        "timestamp" : "2020-05-05T08:13:14+02:00",
+        "identifier" : "urn:uuid:594daa72-5533-41c3-9b53-fc202bb7303c",
+        "timestamp" : "2020-05-05T08:45:09+02:00",
         "total" : 30,
         "parameter" : [{
           "name" : "excludeNested",
@@ -433,7 +433,7 @@
       "name" : "BeExposureRoute",
       "title" : "ValueSet exposureroute",
       "status" : "active",
-      "date" : "2020-05-05T08:12:52+02:00",
+      "date" : "2020-05-05T08:44:50+02:00",
       "publisher" : "eHealth Platform",
       "contact" : [{
         "name" : "Message structure",
@@ -444,8 +444,8 @@
       }],
       "description" : "Codes to illustrate differentiating types of exposure route. This valueset supports the Belgian federal FHIR profiling effort.",
       "expansion" : {
-        "identifier" : "urn:uuid:b0569f38-f612-40be-b450-f1bdd03e0641",
-        "timestamp" : "2020-05-05T08:13:14+02:00",
+        "identifier" : "urn:uuid:ad9553ca-2326-4a86-bf6f-f76e39efb9b8",
+        "timestamp" : "2020-05-05T08:45:09+02:00",
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
@@ -467,7 +467,7 @@
       "name" : "BeProductorServiceNihdiEAgreement",
       "title" : "ValueSet productor service",
       "status" : "active",
-      "date" : "2020-05-05T08:12:52+02:00",
+      "date" : "2020-05-05T08:44:50+02:00",
       "publisher" : "eHealth Platform",
       "contact" : [{
         "name" : "Message structure",
@@ -478,8 +478,8 @@
       }],
       "description" : "NIHDI codes for use to describe eAgreement products or services in the MyCareNet eAgreement flows.",
       "expansion" : {
-        "identifier" : "urn:uuid:1e8bd100-2817-4967-b0b7-bf5dc7135cbd",
-        "timestamp" : "2020-05-05T08:13:14+02:00",
+        "identifier" : "urn:uuid:9582b84f-4792-48eb-a7a4-d3263175137f",
+        "timestamp" : "2020-05-05T08:45:09+02:00",
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
@@ -505,7 +505,7 @@
       "name" : "BeExposureRoute",
       "title" : "ValueSet exposureroute",
       "status" : "active",
-      "date" : "2020-05-05T08:12:52+02:00",
+      "date" : "2020-05-05T08:44:50+02:00",
       "publisher" : "eHealth Platform",
       "contact" : [{
         "name" : "Message structure",
@@ -516,8 +516,8 @@
       }],
       "description" : "Codes to illustrate differentiating types of exposure route. This valueset supports the Belgian federal FHIR profiling effort.",
       "expansion" : {
-        "identifier" : "urn:uuid:b0569f38-f612-40be-b450-f1bdd03e0641",
-        "timestamp" : "2020-05-05T08:13:14+02:00",
+        "identifier" : "urn:uuid:ad9553ca-2326-4a86-bf6f-f76e39efb9b8",
+        "timestamp" : "2020-05-05T08:45:09+02:00",
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false

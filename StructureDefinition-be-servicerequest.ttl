@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "BeServiceRequest"];
   fhir:StructureDefinition.title [ fhir:value "Service Request core BE profile"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2020-05-05T08:12:52+02:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2020-05-05T08:44:50+02:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "eHealth Platform"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
