@@ -48,7 +48,9 @@
       {
         "id": "CodeableConcept.coding:LOINC",
         "path": "CodeableConcept.coding",
-        "sliceName": "LOINC"
+        "sliceName": "LOINC",
+        "min": 0,
+        "max": "*"
       },
       {
         "id": "CodeableConcept.coding:LOINC.system",
@@ -64,7 +66,9 @@
       {
         "id": "CodeableConcept.coding:SNOMED-CT",
         "path": "CodeableConcept.coding",
-        "sliceName": "SNOMED-CT"
+        "sliceName": "SNOMED-CT",
+        "min": 0,
+        "max": "*"
       },
       {
         "id": "CodeableConcept.coding:SNOMED-CT.system",
@@ -80,7 +84,9 @@
       {
         "id": "CodeableConcept.coding:ALBERTCODE",
         "path": "CodeableConcept.coding",
-        "sliceName": "ALBERTCODE"
+        "sliceName": "ALBERTCODE",
+        "min": 0,
+        "max": "*"
       },
       {
         "id": "CodeableConcept.coding:ALBERTCODE.system",

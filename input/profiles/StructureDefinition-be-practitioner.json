@@ -55,6 +55,8 @@
         "id": "Practitioner.identifier:NIHDI",
         "path": "Practitioner.identifier",
         "sliceName": "NIHDI",
+        "min": 0,
+        "max": "*",
         "mustSupport": true
       },
       {
@@ -72,6 +74,8 @@
         "id": "Practitioner.identifier:CBE",
         "path": "Practitioner.identifier",
         "sliceName": "CBE",
+        "min": 0,
+        "max": "*",
         "mustSupport": true
       },
       {
@@ -89,6 +93,8 @@
         "id": "Practitioner.identifier:SSIN",
         "path": "Practitioner.identifier",
         "sliceName": "SSIN",
+        "min": 0,
+        "max": "*",
         "mustSupport": true
       },
       {

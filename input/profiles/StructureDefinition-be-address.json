@@ -41,6 +41,7 @@
         "id": "Address.extension:language",
         "path": "Address.extension",
         "sliceName": "language",
+        "min": 0,
         "max": "1",
         "type": [
           {
@@ -69,6 +70,8 @@
         "id": "Address.line.extension:streetName",
         "path": "Address.line.extension",
         "sliceName": "streetName",
+        "min": 0,
+        "max": "*",
         "type": [
           {
             "code": "Extension",
@@ -81,12 +84,15 @@
       {
         "id": "Address.line.extension:streetName.valueString",
         "path": "Address.line.extension.valueString",
-        "min": 0
+        "min": 0,
+        "max": "1"
       },
       {
         "id": "Address.line.extension:houseNumber",
         "path": "Address.line.extension",
         "sliceName": "houseNumber",
+        "min": 0,
+        "max": "*",
         "type": [
           {
             "code": "Extension",
@@ -99,12 +105,15 @@
       {
         "id": "Address.line.extension:houseNumber.valueString",
         "path": "Address.line.extension.valueString",
-        "min": 0
+        "min": 0,
+        "max": "1"
       },
       {
         "id": "Address.line.extension:postBox",
         "path": "Address.line.extension",
         "sliceName": "postBox",
+        "min": 0,
+        "max": "*",
         "type": [
           {
             "code": "Extension",
@@ -117,7 +126,8 @@
       {
         "id": "Address.line.extension:postBox.valueString",
         "path": "Address.line.extension.valueString",
-        "min": 0
+        "min": 0,
+        "max": "1"
       },
       {
         "id": "Address.country",

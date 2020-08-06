@@ -60,6 +60,8 @@
         "id": "Patient.extension:nationality",
         "path": "Patient.extension",
         "sliceName": "nationality",
+        "min": 0,
+        "max": "*",
         "type": [
           {
             "code": "Extension",
@@ -76,7 +78,9 @@
       },
       {
         "id": "Patient.extension:nationality.extension:code.valueCodeableConcept",
-        "path": "Patient.extension.extension.valueCodeableConcept"
+        "path": "Patient.extension.extension.valueCodeableConcept",
+        "min": 1,
+        "max": "1"
       },
       {
         "id": "Patient.extension:nationality.extension:period",
@@ -85,12 +89,15 @@
       },
       {
         "id": "Patient.extension:nationality.extension:period.valuePeriod",
-        "path": "Patient.extension.extension.valuePeriod"
+        "path": "Patient.extension.extension.valuePeriod",
+        "min": 1,
+        "max": "1"
       },
       {
         "id": "Patient.extension:birthPlace",
         "path": "Patient.extension",
         "sliceName": "birthPlace",
+        "min": 0,
         "max": "1",
         "type": [
           {
@@ -104,7 +111,8 @@
       {
         "id": "Patient.extension:birthPlace.valueAddress",
         "path": "Patient.extension.valueAddress",
-        "min": 0
+        "min": 0,
+        "max": "1"
       },
       {
         "id": "Patient.identifier",
@@ -123,6 +131,8 @@
         "id": "Patient.identifier:SSIN",
         "path": "Patient.identifier",
         "sliceName": "SSIN",
+        "min": 0,
+        "max": "*",
         "mustSupport": true
       },
       {
@@ -175,6 +185,7 @@
         "id": "Patient.birthDate.extension:BirthTime",
         "path": "Patient.birthDate.extension",
         "sliceName": "BirthTime",
+        "min": 0,
         "max": "1",
         "type": [
           {
@@ -188,7 +199,8 @@
       {
         "id": "Patient.birthDate.extension:BirthTime.valueDateTime",
         "path": "Patient.birthDate.extension.valueDateTime",
-        "min": 0
+        "min": 0,
+        "max": "1"
       },
       {
         "id": "Patient.deceased[x]",

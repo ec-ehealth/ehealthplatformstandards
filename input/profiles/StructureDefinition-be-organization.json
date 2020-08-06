@@ -55,6 +55,8 @@
         "id": "Organization.identifier:NIHDI",
         "path": "Organization.identifier",
         "sliceName": "NIHDI",
+        "min": 0,
+        "max": "*",
         "mustSupport": true
       },
       {
@@ -72,6 +74,8 @@
         "id": "Organization.identifier:CBE",
         "path": "Organization.identifier",
         "sliceName": "CBE",
+        "min": 0,
+        "max": "*",
         "mustSupport": true
       },
       {
@@ -89,6 +93,8 @@
         "id": "Organization.identifier:SSIN",
         "path": "Organization.identifier",
         "sliceName": "SSIN",
+        "min": 0,
+        "max": "*",
         "mustSupport": true
       },
       {
@@ -106,6 +112,8 @@
         "id": "Organization.identifier:EHP",
         "path": "Organization.identifier",
         "sliceName": "EHP",
+        "min": 0,
+        "max": "*",
         "mustSupport": true
       },
       {
@@ -142,7 +150,9 @@
       {
         "id": "Organization.type:CD-HCPARTY",
         "path": "Organization.type",
-        "sliceName": "CD-HCPARTY"
+        "sliceName": "CD-HCPARTY",
+        "min": 0,
+        "max": "*"
       },
       {
         "id": "Organization.type:CD-HCPARTY.coding.system",

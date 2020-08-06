@@ -1,7 +1,7 @@
 {
   "resourceType": "ImplementationGuide",
-  "id": "fed.be.core",
-  "url": "https://www.ehealth.fgov.be/standards/fhir/ImplementationGuide/fed.be.core",
+  "id": "BeCoreImplementationGuide",
+  "url": "https://www.ehealth.fgov.be/standards/fhir/ImplementationGuide/BeCoreImplementationGuide",
   "version": "1.1.0",
   "name": "TheCoreBelgianFederalFHIRProfiles",
   "title": "The Core Belgian Federal FHIR Profiles",
@@ -28,7 +28,7 @@
     }
   ],
   "description": "The Core Belgian Profiles provide the essential and common requirement for FHIR implementations in Belgium.",
-  "packageId": "fed.be.core",
+  "packageId": "BeCoreImplementationGuide",
   "license": "CC0-1.0",
   "fhirVersion": [
     "4.0.1"
@@ -49,38 +49,6 @@
         },
         "name": "Allergy Intolerance core BE profile",
         "description": "Belgian federal profile for an allergy and/or an intolerance. Initially based on the functional description of the NIHDI.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/be-diagnosticreport"
-        },
-        "name": "Disagnostic Report core BE profile",
-        "description": "Belgian federal profile for an disagnostic report.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/be-mycarenetclaim"
-        },
-        "name": "My CareNet Claim BE profile",
-        "description": "Claim profile for use in the different eAgreement flow from MyCareNet.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/be-mycareneteagreementdemand"
-        },
-        "name": "My CareNet eAgreement Demand Bundle BE profile",
-        "description": "The profile for the demand for an agreement.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/be-mycareneteagreementmessageheader"
-        },
-        "name": "My CareNet eAgreement MessageHeader BE profile",
-        "description": "This is the generic MessageHeader profile for use in the different eAgreement flows from MyCareNet.",
         "exampleBoolean": false
       },
       {
@@ -141,14 +109,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/be-servicerequest"
-        },
-        "name": "Service Request core BE profile",
-        "description": "Belgian federal profile for an Service Request.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "ValueSet/be-allergyintolerancecode"
         },
         "name": "ValueSet allergy intolerance code",
@@ -173,14 +133,6 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/be-beproductorservice"
-        },
-        "name": "ValueSet productor service",
-        "description": "NIHDI codes for use to describe eAgreement products or services in the MyCareNet eAgreement flows.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "CodeSystem/cd-civilstate"
         },
         "name": "CodeSystem CD-CIVILSTATE",
@@ -201,30 +153,6 @@
         },
         "name": "CodeSystem CD-FED-COUNTRY",
         "description": "FedICT country codes.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "CodeSystem/agreement-types"
-        },
-        "name": "CodeSystem agreement types",
-        "description": "Agreement types for MyCareNet flows. Not all codes are defined here, a full list can be found on mycarenet.be",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "CodeSystem/message-events"
-        },
-        "name": "CodeSystem message events",
-        "description": "Message events for MyCareNet flows.Not all codes are defined here, a full list can be found on mycarenet.be",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "CodeSystem/nihdi-legal-physiotherapy-fa"
-        },
-        "name": "CodeSystem NIHDILegalPhysiotherapyFa",
-        "description": "Legal pathology codes as defined by NIHDI to be used in the pathology registration flows of MyCareNet. These values are managed by NIHDI. \r\n\tThe codes are not defined here. Consult the cookbooks on mycarenet.be for concrete usage intstrcutions.",
         "exampleBoolean": false
       },
       {
@@ -297,30 +225,6 @@
       },
       {
         "reference": {
-          "reference": "Claim/bemycarenetclaim1"
-        },
-        "name": "BeMyCareNetClaim 1",
-        "description": "BeMyCareNetClaim 1",
-        "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-mycarenetclaim"
-      },
-      {
-        "reference": {
-          "reference": "Bundle/bemycareneteagreementdemand1"
-        },
-        "name": "BeMyCareNetEAgreementDemand 1",
-        "description": "BeMyCareNetEAgreementDemand 1",
-        "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-mycareneteagreementdemand"
-      },
-      {
-        "reference": {
-          "reference": "MessageHeader/bemycareneteagreementmessageheader1"
-        },
-        "name": "BeMyCareNetEAgreementMessageHeader 1",
-        "description": "BeMyCareNetEAgreementMessageHeader 1",
-        "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-mycareneteagreementmessageheader"
-      },
-      {
-        "reference": {
           "reference": "Bundle/bundle1"
         },
         "name": "Bundle 1",
@@ -344,30 +248,6 @@
       },
       {
         "reference": {
-          "reference": "Coverage/coverage1"
-        },
-        "name": "coverage 1",
-        "description": "coverage 1",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "DiagnosticReport/diagnosticreport1"
-        },
-        "name": "DiagnosticReport 1",
-        "description": "DiagnosticReport 1",
-        "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-diagnosticreport"
-      },
-      {
-        "reference": {
-          "reference": "DiagnosticReport/diagnosticreport2"
-        },
-        "name": "DiagnosticReport 2",
-        "description": "DiagnosticReport 2",
-        "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-diagnosticreport"
-      },
-      {
-        "reference": {
           "reference": "Organization/eHealthPlatform"
         },
         "name": "eHealth Platform organization",
@@ -380,30 +260,6 @@
         },
         "name": "Observation 1",
         "description": "Observation 1",
-        "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-observation"
-      },
-      {
-        "reference": {
-          "reference": "Observation/observation2"
-        },
-        "name": "Observation 2",
-        "description": "Observation 2",
-        "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-observation"
-      },
-      {
-        "reference": {
-          "reference": "Observation/observation3"
-        },
-        "name": "Observation 3",
-        "description": "Observation 3",
-        "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-observation"
-      },
-      {
-        "reference": {
-          "reference": "Observation/observation4"
-        },
-        "name": "Observation 4",
-        "description": "Observation 4",
         "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-observation"
       },
       {
@@ -445,46 +301,6 @@
         "name": "Provenance 1",
         "description": "Provenance 1",
         "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-provenance"
-      },
-      {
-        "reference": {
-          "reference": "ServiceRequest/servicerequest1"
-        },
-        "name": "ServiceRequest 1",
-        "description": "ServiceRequest 1",
-        "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-servicerequest"
-      },
-      {
-        "reference": {
-          "reference": "Specimen/specimen1"
-        },
-        "name": "Specimen 1",
-        "description": "Specimen 1",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Specimen/specimen2"
-        },
-        "name": "Specimen 2",
-        "description": "Specimen 2",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Specimen/specimen3"
-        },
-        "name": "Specimen 3",
-        "description": "Specimen 3",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Specimen/specimen4"
-        },
-        "name": "Specimen 4",
-        "description": "Specimen 4",
-        "exampleBoolean": true
       }
     ],
     "page": {

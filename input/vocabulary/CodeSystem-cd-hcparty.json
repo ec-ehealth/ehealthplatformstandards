@@ -1,7 +1,7 @@
 {
   "resourceType": "CodeSystem",
   "id": "cd-hcparty",
-  "name": "Cdhcparty",
+  "name": "HCParty",
   "description": "healthcare party in Belgium.",
   "version": "1.1.0",
   "url": "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty",

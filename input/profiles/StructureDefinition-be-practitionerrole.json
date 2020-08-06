@@ -79,6 +79,8 @@
         "id": "PractitionerRole.code:CD-HCPARTY",
         "path": "PractitionerRole.code",
         "sliceName": "CD-HCPARTY",
+        "min": 0,
+        "max": "*",
         "mustSupport": true
       },
       {
@@ -96,6 +98,8 @@
         "id": "PractitionerRole.code:SNOMED-CT",
         "path": "PractitionerRole.code",
         "sliceName": "SNOMED-CT",
+        "min": 0,
+        "max": "*",
         "mustSupport": true
       },
       {
@@ -125,7 +129,9 @@
       {
         "id": "PractitionerRole.specialty:SNOMED-CT",
         "path": "PractitionerRole.specialty",
-        "sliceName": "SNOMED-CT"
+        "sliceName": "SNOMED-CT",
+        "min": 0,
+        "max": "*"
       },
       {
         "id": "PractitionerRole.specialty:SNOMED-CT.coding.system",
