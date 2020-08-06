@@ -1,0 +1,11 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "NIHDILegalPhysiotherapyFa",
+  "id": "nihdi-legal-physiotherapy-fa",
+  "title": "CodeSystem NIHDILegalPhysiotherapyFa",
+  "description": "Legal pathology codes as defined by NIHDI to be used in the pathology registration flows of MyCareNet. These values are managed by NIHDI. \r\n\tThe codes are not defined here. Consult the cookbooks on mycarenet.be for concrete usage intstrcutions.",
+  "version": "1.1.0",
+  "url": "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/nihdi-legal-physiotherapy-fa"
+}

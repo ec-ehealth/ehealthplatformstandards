@@ -1,0 +1,82 @@
+{
+  "resourceType": "Organization",
+  "id": "eHealthPlatform",
+  "meta": {
+    "profile": [
+      "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization"
+    ]
+  },
+  "address": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/language",
+          "valueCode": "nl"
+        }
+      ],
+      "_line": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
+              "valueString": "Willebroekkaai"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
+              "valueString": "38"
+            }
+          ]
+        }
+      ],
+      "use": "work",
+      "type": "both",
+      "text": "Willebroekkaai 38, 1000 Brussel",
+      "line": [
+        "Willebroekkaai 38"
+      ],
+      "city": "Brussel",
+      "postalCode": "1000",
+      "country": "BE"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/language",
+          "valueCode": "fr"
+        }
+      ],
+      "_line": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
+              "valueString": "Quai de Willeborek"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
+              "valueString": "38"
+            }
+          ]
+        }
+      ],
+      "use": "work",
+      "type": "both",
+      "text": "38, Quai de Willeborek, 1000 Bruxelles",
+      "line": [
+        "38, Quai de Willeborek"
+      ],
+      "city": "Bruxelles",
+      "postalCode": "1000",
+      "country": "BE"
+    }
+  ],
+  "active": true,
+  "name": "eHealth Platform",
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "3228918611",
+      "use": "work"
+    }
+  ]
+}

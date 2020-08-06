@@ -1,0 +1,61 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "Cdcivilstate",
+  "id": "cd-civilstate",
+  "title": "CodeSystem CD-CIVILSTATE",
+  "description": "Civil state in Belgium.",
+  "version": "1.1.0",
+  "url": "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-civilstate",
+  "concept": [
+    {
+      "code": "10",
+      "display": "Unmarried"
+    },
+    {
+      "code": "20",
+      "display": "Married"
+    },
+    {
+      "code": "25",
+      "display": "Annuled"
+    },
+    {
+      "code": "26",
+      "display": "Putative marriage"
+    },
+    {
+      "code": "30",
+      "display": "Widowed"
+    },
+    {
+      "code": "40",
+      "display": "Divorced"
+    },
+    {
+      "code": "41",
+      "display": "Divorced since 1/10/1994"
+    },
+    {
+      "code": "50",
+      "display": "Legal separation"
+    },
+    {
+      "code": "51",
+      "display": "Legal separation since 1/10/1994"
+    },
+    {
+      "code": "60",
+      "display": "Repudiation"
+    },
+    {
+      "code": "80",
+      "display": "Partnership"
+    },
+    {
+      "code": "81",
+      "display": "End of partnership"
+    }
+  ]
+}

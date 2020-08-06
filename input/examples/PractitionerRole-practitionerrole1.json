@@ -1,0 +1,75 @@
+{
+  "resourceType": "PractitionerRole",
+  "id": "practitionerrole1",
+  "meta": {
+    "profile": [
+      "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitionerrole"
+    ]
+  },
+  "specialty": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "419772000",
+          "display": "Family practice"
+        }
+      ]
+    }
+  ],
+  "identifier": [
+    {
+      "system": "http://www.acme.org/practitioners",
+      "value": "23"
+    }
+  ],
+  "active": true,
+  "period": {
+    "start": "2019-08-01T00:00:00.000Z",
+    "end": "2019-12-01T00:00:00.000Z"
+  },
+  "practitioner": {
+    "reference": "Practitioner/practitioner1",
+    "display": "Dr Katherine Pulaski"
+  },
+  "code": [
+    {
+      "coding": [
+        {
+          "system": "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty",
+          "code": "persphysician",
+          "display": "physician"
+        }
+      ]
+    }
+  ],
+  "availableTime": [
+    {
+      "daysOfWeek": [
+        "mon",
+        "tue",
+        "wed"
+      ],
+      "availableStartTime": "09:00:00",
+      "availableEndTime": "16:30:00"
+    },
+    {
+      "daysOfWeek": [
+        "thu",
+        "fri"
+      ],
+      "availableStartTime": "09:00:00",
+      "availableEndTime": "16:30:00"
+    }
+  ],
+  "notAvailable": [
+    {
+      "description": "Katherine will be on extended leave during August 2020",
+      "during": {
+        "start": "2020-08-01T00:00:00.000Z",
+        "end": "2020-08-20T00:00:00.000Z"
+      }
+    }
+  ],
+  "availabilityExceptions": "Katherine is generally unavailable on public holidays and during the Christmas/New Year break"
+}

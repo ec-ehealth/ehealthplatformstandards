@@ -1,0 +1,140 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "be-practitioner",
+  "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner",
+  "version": "1.1.0",
+  "name": "BePractitioner",
+  "title": "Practitioner core BE profile",
+  "status": "active",
+  "description": "Belgian federal profile for a practitioner. Initially based on the functional description of the NIHDI.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "servd",
+      "uri": "http://www.omg.org/spec/ServD/1.0/",
+      "name": "ServD"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Practitioner",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Practitioner",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Practitioner.identifier",
+        "path": "Practitioner.identifier",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "definition": "An identifier that applies to this person in this role. Typically, a NIHDI value and/or a SSIN value are given. Other systems remain allowed. Flows in organizations will most likely want to also include a local identifier, \nusing its own system. A type can be added if needed. When it is given, a consumer SHALL NOT ignore it."
+      },
+      {
+        "id": "Practitioner.identifier:NIHDI",
+        "path": "Practitioner.identifier",
+        "sliceName": "NIHDI",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.identifier:NIHDI.system",
+        "path": "Practitioner.identifier.system",
+        "min": 1,
+        "fixedUri": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi"
+      },
+      {
+        "id": "Practitioner.identifier:NIHDI.value",
+        "path": "Practitioner.identifier.value",
+        "min": 1
+      },
+      {
+        "id": "Practitioner.identifier:CBE",
+        "path": "Practitioner.identifier",
+        "sliceName": "CBE",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.identifier:CBE.system",
+        "path": "Practitioner.identifier.system",
+        "min": 1,
+        "fixedUri": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/cbe"
+      },
+      {
+        "id": "Practitioner.identifier:CBE.value",
+        "path": "Practitioner.identifier.value",
+        "min": 1
+      },
+      {
+        "id": "Practitioner.identifier:SSIN",
+        "path": "Practitioner.identifier",
+        "sliceName": "SSIN",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.identifier:SSIN.system",
+        "path": "Practitioner.identifier.system",
+        "min": 1,
+        "fixedUri": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
+      },
+      {
+        "id": "Practitioner.identifier:SSIN.value",
+        "path": "Practitioner.identifier.value",
+        "min": 1
+      },
+      {
+        "id": "Practitioner.active",
+        "path": "Practitioner.active",
+        "definition": "Whether this practitioner's record is in active use.\n\nIt is RECOMMENDED to keep the value ‘true’ as long as the practitioner is still being treated by the provider of the data."
+      },
+      {
+        "id": "Practitioner.name",
+        "path": "Practitioner.name",
+        "definition": "The name(s) associated with the practitioner.\n\nTypically RECOMMENDED to include one familyname and at least one given name and to define this use as ‘official’.",
+        "min": 1
+      },
+      {
+        "id": "Practitioner.telecom",
+        "path": "Practitioner.telecom",
+        "definition": "A contact detail for the practitioner, e.g. a telephone number or an email address.\n\nIt is RECOMMENDED to at least add one phone or email address."
+      },
+      {
+        "id": "Practitioner.address",
+        "path": "Practitioner.address",
+        "type": [
+          {
+            "code": "Address",
+            "profile": [
+              "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-address"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Practitioner.communication",
+        "path": "Practitioner.communication",
+        "definition": "A language the practitioner can use in patient communication.\n\nIt is RECOMMENDED to include this when available"
+      }
+    ]
+  }
+}

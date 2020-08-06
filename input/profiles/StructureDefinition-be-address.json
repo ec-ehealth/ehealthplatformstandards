@@ -1,0 +1,129 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "be-address",
+  "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-address",
+  "version": "1.1.0",
+  "name": "BeAddress",
+  "title": "Address core BE profile",
+  "status": "active",
+  "description": "Belgian federal profile on address, to provide the possibility in the 'line' element to provide a seperate streetname, housenumber and postal box. It is always RECOMMENDED to give these elements seperately.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "servd",
+      "uri": "http://www.omg.org/spec/ServD/1.0/",
+      "name": "ServD"
+    },
+    {
+      "identity": "vcard",
+      "uri": "http://w3.org/vcard",
+      "name": "vCard Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "type": "Address",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Address",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Address.extension:language",
+        "path": "Address.extension",
+        "sliceName": "language",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/language"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Address.line.extension",
+        "path": "Address.line.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Address.line.extension:streetName",
+        "path": "Address.line.extension",
+        "sliceName": "streetName",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Address.line.extension:streetName.valueString",
+        "path": "Address.line.extension.valueString",
+        "min": 0
+      },
+      {
+        "id": "Address.line.extension:houseNumber",
+        "path": "Address.line.extension",
+        "sliceName": "houseNumber",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Address.line.extension:houseNumber.valueString",
+        "path": "Address.line.extension.valueString",
+        "min": 0
+      },
+      {
+        "id": "Address.line.extension:postBox",
+        "path": "Address.line.extension",
+        "sliceName": "postBox",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Address.line.extension:postBox.valueString",
+        "path": "Address.line.extension.valueString",
+        "min": 0
+      },
+      {
+        "id": "Address.country",
+        "path": "Address.country",
+        "definition": "Country - a nation as commonly understood or generally accepted. Concerning the codification of the country, the FHIR specification defines its country field as a string and suggests using a ISO 3166 2 or 3 letter codes. \nAs that 2-letter format is also the standard in a KMEHR address, it is hence RECOMMENDED to codify the country in the same way as in KMEHR."
+      }
+    ]
+  }
+}

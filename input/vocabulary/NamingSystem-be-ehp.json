@@ -1,0 +1,43 @@
+{
+  "resourceType": "NamingSystem",
+  "id": "be-ehp",
+  "name": "BeEhealthPartnerIDNamingSystem",
+  "status": "active",
+  "kind": "identifier",
+  "date": "2019-06-05T00:00:00+02:00",
+  "uniqueId": [
+    {
+      "type": "uri",
+      "value": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ehp",
+      "preferred": true
+    },
+    {
+      "type": "oid",
+      "value": "2.16.840.1.113883.3.6777.5.6",
+      "preferred": false
+    }
+  ],
+  "publisher": "eHealth Platform",
+  "contact": [
+    {
+      "name": "HL7",
+      "telecom": [
+        {
+          "system": "other",
+          "value": "http://hl7.org/Special/committees/fiwg"
+        }
+      ]
+    }
+  ],
+  "description": "EHP",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ]
+}

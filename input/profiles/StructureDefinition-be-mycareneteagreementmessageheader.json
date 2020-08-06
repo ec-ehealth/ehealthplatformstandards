@@ -1,0 +1,77 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "be-mycareneteagreementmessageheader",
+  "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-mycareneteagreementmessageheader",
+  "version": "1.1.0",
+  "name": "BeMyCareNetEAgreementMessageHeader",
+  "title": "My CareNet eAgreement MessageHeader BE profile",
+  "status": "active",
+  "description": "This is the generic MessageHeader profile for use in the different eAgreement flows from MyCareNet.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "MessageHeader",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/MessageHeader",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "MessageHeader.eventCoding",
+        "path": "MessageHeader.eventCoding",
+        "min": 0,
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ]
+      },
+      {
+        "id": "MessageHeader.eventCoding.system",
+        "path": "MessageHeader.eventCoding.system",
+        "patternUri": "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/message-events"
+      },
+      {
+        "id": "MessageHeader.enterer",
+        "path": "MessageHeader.enterer",
+        "max": "0"
+      },
+      {
+        "id": "MessageHeader.author",
+        "path": "MessageHeader.author",
+        "max": "0"
+      },
+      {
+        "id": "MessageHeader.responsible",
+        "path": "MessageHeader.responsible",
+        "max": "0"
+      },
+      {
+        "id": "MessageHeader.reason",
+        "path": "MessageHeader.reason",
+        "max": "0"
+      },
+      {
+        "id": "MessageHeader.definition",
+        "path": "MessageHeader.definition",
+        "max": "0"
+      }
+    ]
+  }
+}

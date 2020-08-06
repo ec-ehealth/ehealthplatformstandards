@@ -1,0 +1,105 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "Cdcontactperson",
+  "id": "cd-contact-person",
+  "title": "CodeSystem CD-CONTACT-PERSON",
+  "description": "Contact person",
+  "version": "1.1.0",
+  "url": "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contact-person",
+  "concept": [
+    {
+      "code": "father",
+      "display": "father"
+    },
+    {
+      "code": "mother",
+      "display": "mother"
+    },
+    {
+      "code": "child",
+      "display": "child"
+    },
+    {
+      "code": "spouse",
+      "display": "spouse"
+    },
+    {
+      "code": "husband",
+      "display": "husband"
+    },
+    {
+      "code": "partner",
+      "display": "partner"
+    },
+    {
+      "code": "brother",
+      "display": "brother"
+    },
+    {
+      "code": "sister",
+      "display": "sister"
+    },
+    {
+      "code": "brotherinlaw",
+      "display": "brotherinlaw"
+    },
+    {
+      "code": "tutor",
+      "display": "tutor"
+    },
+    {
+      "code": "notary",
+      "display": "notary"
+    },
+    {
+      "code": "lawyer",
+      "display": "lawyer"
+    },
+    {
+      "code": "employer",
+      "display": "employer"
+    },
+    {
+      "code": "grandparent",
+      "display": "grandparent"
+    },
+    {
+      "code": "son",
+      "display": "son"
+    },
+    {
+      "code": "daughter",
+      "display": "daughter"
+    },
+    {
+      "code": "grandchild",
+      "display": "grandchild"
+    },
+    {
+      "code": "neighbour",
+      "display": "neighbour"
+    },
+    {
+      "code": "stepson",
+      "display": "stepson"
+    },
+    {
+      "code": "stepdaughter",
+      "display": "stepdaughter"
+    },
+    {
+      "code": "stepfather",
+      "display": "stepfather"
+    },
+    {
+      "code": "stepmother",
+      "display": "stepmother"
+    },
+    {
+      "code": "sisterinlaw",
+      "display": "sisterinlaw"
+    }
+  ]
+}

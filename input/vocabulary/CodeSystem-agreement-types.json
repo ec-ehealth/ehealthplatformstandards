@@ -1,0 +1,17 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "MyCareNetAgreementTypes",
+  "id": "agreement-types",
+  "title": "CodeSystem agreement types",
+  "description": "Agreement types for MyCareNet flows. Not all codes are defined here, a full list can be found on mycarenet.be",
+  "version": "1.1.0",
+  "url": "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/agreement-types",
+  "concept": [
+    {
+      "code": "physiotherapy_fa",
+      "display": "physiotherapy_fa"
+    }
+  ]
+}

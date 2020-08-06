@@ -1,0 +1,51 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "be-provenance",
+  "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-provenance",
+  "version": "1.1.0",
+  "name": "BeProvenance",
+  "title": "Provenance core BE profile",
+  "status": "active",
+  "description": "Belgian federal profile for a provenance. Note this profile does not introduce any changes from the base profile but has been created to mark its importance, \nspecifically when FHIR is used in a non-document approach. General use case remarks: 'Provenance of a resource is a record that describes entities and processes involved in producing and delivering or \notherwise influencing that resource.' (cfr. the HL7 base specifications) According to the FHIR specifications, the provenance resource SHALL only be provided when no other resource already plays this role: \nfor a Patient it SHOULD be its managing organization, provenance of an Observation SHOULD be its performer, provenance of an AllergyIntolerance SHOULD be its recorder. \n'Many other FHIR resources contain some elements that represent information about how the resource was obtained, and therefore they overlap with the functionality of the Provenance.' \nSpecial remarks for KMEHR users: The FHIR Provenance resource in general refers to an entity that had something to do with the creation or updating of something else. In a KMEHR context, \nthis is somewhat different – as it is ‘XML document’ based, each KMEHR message has an 'author' element that is responsible.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w3c.prov",
+      "uri": "http://www.w3.org/ns/prov",
+      "name": "W3C PROV"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "fhirauditevent",
+      "uri": "http://hl7.org/fhir/auditevent",
+      "name": "FHIR AuditEvent Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Provenance",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Provenance",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Provenance",
+        "path": "Provenance"
+      }
+    ]
+  }
+}

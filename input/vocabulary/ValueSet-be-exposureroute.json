@@ -1,0 +1,48 @@
+{
+  "resourceType": "ValueSet",
+  "id": "be-exposureroute",
+  "name": "BeExposureRoute",
+  "description": "Codes to illustrate differentiating types of exposure route. This valueset supports the Belgian federal FHIR profiling effort.",
+  "version": "1.1.0",
+  "url": "https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-exposureroute",
+  "status": "active",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "447694001",
+            "display": "Respiratory tract route",
+            "designation": [
+              {
+                "language": "en",
+                "value": "Respiratory tract route"
+              }
+            ]
+          },
+          {
+            "code": "6064005",
+            "display": "Topical route",
+            "designation": [
+              {
+                "language": "en",
+                "value": "Topical route"
+              }
+            ]
+          },
+          {
+            "code": "26643006",
+            "display": "Oral route",
+            "designation": [
+              {
+                "language": "en",
+                "value": "Oral route"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

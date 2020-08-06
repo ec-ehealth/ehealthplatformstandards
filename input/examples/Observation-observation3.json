@@ -1,0 +1,133 @@
+{
+  "resourceType": "Observation",
+  "id": "observation3",
+  "meta": {
+    "profile": [
+      "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-observation"
+    ]
+  },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory",
+          "display": "laboratory"
+        }
+      ],
+      "text": "laboratory studies"
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "18769-0",
+        "display": "Microbial susceptibility tests Set"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/patient1"
+  },
+  "effectiveDateTime": "2015-02-02T23:00:00-05:00",
+  "performer": [
+    {
+      "reference": "Practitioner/practitioner1"
+    }
+  ],
+  "specimen": {
+    "reference": "Specimen/specimen3"
+  },
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "29-9",
+            "display": "Ampicillin Islt KB"
+          }
+        ]
+      },
+      "interpretation": [
+        {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+              "code": "R",
+              "display": "Resistant"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "516-5",
+            "display": "TMP SMX Islt MIC"
+          }
+        ]
+      },
+      "interpretation": [
+        {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+              "code": "S",
+              "display": "Susceptible"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "363-2",
+            "display": "Nitrofurantoin Islt MIC"
+          }
+        ]
+      },
+      "interpretation": [
+        {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+              "code": "R",
+              "display": "Resistant"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "51774-8",
+            "display": "Cefuroxime Islt MIC"
+          }
+        ]
+      },
+      "interpretation": [
+        {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+              "code": "R",
+              "display": "Resistant"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

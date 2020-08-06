@@ -1,0 +1,22 @@
+{
+  "resourceType": "Specimen",
+  "id": "specimen2",
+  "identifier": [
+    {
+      "value": "1"
+    }
+  ],
+  "type": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "258529004",
+        "display": "Throat swab"
+      }
+    ]
+  },
+  "receivedTime": "2015-02-02",
+  "collection": {
+    "collectedDateTime": "2015-11-03"
+  }
+}

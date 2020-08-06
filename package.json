@@ -1,0 +1,25 @@
+{
+  "name": "fed.be.core",
+  "version": "1.1.0",
+  "canonical": "https://www.ehealth.fgov.be/standards/fhir",
+  "url": "https://www.ehealth.fgov.be/standards/fhir",
+  "title": "The Core Belgian Federal FHIR Profiles",
+  "description": "The Core Belgian Profiles provide the essential and common requirement for FHIR implementations in Belgium.",
+  "dependencies": {
+    "hl7.fhir.r4.core": "4.0.1"
+  },
+  "keywords": [
+    "Belgium",
+    "Profiles",
+    "SUSHI"
+  ],
+  "language": "en",
+  "author": "eHealth Platform",
+  "maintainers": [
+    {
+      "name": "Etienne Cantineau",
+      "email": "etienne.cantineau@ehealth.fgov.be"
+    }
+  ],
+  "license": "CC0-1.0"
+}

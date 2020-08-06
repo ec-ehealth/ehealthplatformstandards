@@ -1,0 +1,22 @@
+{
+  "resourceType": "Specimen",
+  "id": "specimen1",
+  "identifier": [
+    {
+      "value": "1"
+    }
+  ],
+  "type": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "119297000",
+        "display": "Blood specimen"
+      }
+    ]
+  },
+  "receivedTime": "2015-11-04",
+  "collection": {
+    "collectedDateTime": "2015-11-03"
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "be-organization",
+  "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization",
+  "version": "1.1.0",
+  "name": "BeOrganization",
+  "title": "Organization core BE profile",
+  "status": "active",
+  "description": "Belgian federal profile for an organization. Initially based on the functional description of the NIHDI.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "servd",
+      "uri": "http://www.omg.org/spec/ServD/1.0/",
+      "name": "ServD"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Organization",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Organization",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Organization.identifier",
+        "path": "Organization.identifier",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        },
+        "definition": "Identifier for the organization that is used to identify the organization across multiple disparate systems. Typically, a NIHDI value and/or a CBE or EHP value are given. \nOther systems are allowed. Flows in organizations will most likely want to also include a local identifier, using its own system. A type can be added if needed. When it is given, a consumer SHALL NOT ignore it."
+      },
+      {
+        "id": "Organization.identifier:NIHDI",
+        "path": "Organization.identifier",
+        "sliceName": "NIHDI",
+        "mustSupport": true
+      },
+      {
+        "id": "Organization.identifier:NIHDI.system",
+        "path": "Organization.identifier.system",
+        "min": 1,
+        "fixedUri": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi"
+      },
+      {
+        "id": "Organization.identifier:NIHDI.value",
+        "path": "Organization.identifier.value",
+        "min": 1
+      },
+      {
+        "id": "Organization.identifier:CBE",
+        "path": "Organization.identifier",
+        "sliceName": "CBE",
+        "mustSupport": true
+      },
+      {
+        "id": "Organization.identifier:CBE.system",
+        "path": "Organization.identifier.system",
+        "min": 1,
+        "fixedUri": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/cbe"
+      },
+      {
+        "id": "Organization.identifier:CBE.value",
+        "path": "Organization.identifier.value",
+        "min": 1
+      },
+      {
+        "id": "Organization.identifier:SSIN",
+        "path": "Organization.identifier",
+        "sliceName": "SSIN",
+        "mustSupport": true
+      },
+      {
+        "id": "Organization.identifier:SSIN.system",
+        "path": "Organization.identifier.system",
+        "min": 1,
+        "fixedUri": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"
+      },
+      {
+        "id": "Organization.identifier:SSIN.value",
+        "path": "Organization.identifier.value",
+        "min": 1
+      },
+      {
+        "id": "Organization.identifier:EHP",
+        "path": "Organization.identifier",
+        "sliceName": "EHP",
+        "mustSupport": true
+      },
+      {
+        "id": "Organization.identifier:EHP.system",
+        "path": "Organization.identifier.system",
+        "min": 1,
+        "fixedUri": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ehp"
+      },
+      {
+        "id": "Organization.identifier:EHP.value",
+        "path": "Organization.identifier.value",
+        "min": 1
+      },
+      {
+        "id": "Organization.active",
+        "path": "Organization.active",
+        "definition": "Whether the organization's record is still in active use. It is RECOMMENDED to keep the value ‘true’ as long as the organization is known to be active."
+      },
+      {
+        "id": "Organization.type",
+        "path": "Organization.type",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "coding.system"
+            }
+          ],
+          "rules": "open",
+          "description": "Slice based on the identifier.code pattern"
+        },
+        "definition": "The kind(s) of organization that this is.\n\nProposed use of CD-HCPARTY to type the organisation using dept... or org... codes. Other systems remain allowed. In typical use, RECOMMENDED to type the organization. \nIn the future, specific other systems might also be proposed from a federal level to better type an organization."
+      },
+      {
+        "id": "Organization.type:CD-HCPARTY",
+        "path": "Organization.type",
+        "sliceName": "CD-HCPARTY"
+      },
+      {
+        "id": "Organization.type:CD-HCPARTY.coding.system",
+        "path": "Organization.type.coding.system",
+        "min": 1,
+        "fixedUri": "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty"
+      },
+      {
+        "id": "Organization.type:CD-HCPARTY.coding.code",
+        "path": "Organization.type.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Organization.telecom",
+        "path": "Organization.telecom",
+        "definition": "A contact detail for the organization.\n\nIt is RECOMMENDED to at least add one phone or email address."
+      },
+      {
+        "id": "Organization.address",
+        "path": "Organization.address",
+        "definition": "An address for the individual.\n\nIt is RECOMMENDED to include an address when available. When needed to express the availablity of a Patient at home (e.g. only Wednesdays), another solution will be defined.",
+        "type": [
+          {
+            "code": "Address",
+            "profile": [
+              "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-address"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "be-practitionerrole",
+  "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitionerrole",
+  "version": "1.1.0",
+  "name": "BePractitionerRole",
+  "title": "Practitioner Role core BE profile",
+  "status": "active",
+  "description": "Belgian federal profile for a practitioner role. Initially based on the functional description of the NIHDI.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "servd",
+      "uri": "http://www.omg.org/spec/ServD/1.0/",
+      "name": "ServD"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "PractitionerRole",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/PractitionerRole",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "PractitionerRole.practitioner",
+        "path": "PractitionerRole.practitioner",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "PractitionerRole.organization",
+        "path": "PractitionerRole.organization",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "PractitionerRole.code",
+        "path": "PractitionerRole.code",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "coding.system"
+            }
+          ],
+          "rules": "open"
+        },
+        "definition": "Roles which this practitioner is authorized to perform for the organization.\n\nFor compatibility reasons, CD-HCPARTY is described here to express the role of the practitioner. Other coding systems remain allowed. Towards the future, the use of SNOMED-CT codes is also RECOMMENDED here. \nIn the future, other ways to codfy might however be also proposed.\n\nWhen available, a provider SHOULD include it. When given, a consumer SHALL record this in its consuming system."
+      },
+      {
+        "id": "PractitionerRole.code:CD-HCPARTY",
+        "path": "PractitionerRole.code",
+        "sliceName": "CD-HCPARTY",
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.code:CD-HCPARTY.coding.system",
+        "path": "PractitionerRole.code.coding.system",
+        "min": 1,
+        "fixedUri": "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty"
+      },
+      {
+        "id": "PractitionerRole.code:CD-HCPARTY.coding.code",
+        "path": "PractitionerRole.code.coding.code",
+        "min": 1
+      },
+      {
+        "id": "PractitionerRole.code:SNOMED-CT",
+        "path": "PractitionerRole.code",
+        "sliceName": "SNOMED-CT",
+        "mustSupport": true
+      },
+      {
+        "id": "PractitionerRole.code:SNOMED-CT.coding.system",
+        "path": "PractitionerRole.code.coding.system",
+        "min": 1,
+        "fixedUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "PractitionerRole.code:SNOMED-CT.coding.code",
+        "path": "PractitionerRole.code.coding.code",
+        "min": 1
+      },
+      {
+        "id": "PractitionerRole.specialty",
+        "path": "PractitionerRole.specialty",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "coding.system"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "PractitionerRole.specialty:SNOMED-CT",
+        "path": "PractitionerRole.specialty",
+        "sliceName": "SNOMED-CT"
+      },
+      {
+        "id": "PractitionerRole.specialty:SNOMED-CT.coding.system",
+        "path": "PractitionerRole.specialty.coding.system",
+        "min": 1,
+        "fixedUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "PractitionerRole.specialty:SNOMED-CT.coding.code",
+        "path": "PractitionerRole.specialty.coding.code",
+        "min": 1
+      }
+    ]
+  }
+}

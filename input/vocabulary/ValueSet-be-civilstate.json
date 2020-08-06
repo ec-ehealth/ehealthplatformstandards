@@ -1,0 +1,67 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "BeCivilState",
+  "id": "be-civilstate",
+  "title": "ValueSet civil state",
+  "description": "Codes supported by eHealth Platform differentiating types of civil state. This valueset supports the Belgian federal FHIR profiling effort. \nWhenever possible add a code from http://terminology.hl7.org/CodeSystem/v3-MaritalStatus for international interoperability but also use https://www.ehealth.fgov.be/standards/fhir/CodeSystem/CD-CIVILSTATE \nfor the Belgian specific code.",
+  "version": "1.1.0",
+  "url": "https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-civilstate",
+  "compose": {
+    "include": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "A"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "D"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "M"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "U"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "W"
+          }
+        ]
+      },
+      {
+        "system": "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-civilstate"
+      }
+    ]
+  }
+}

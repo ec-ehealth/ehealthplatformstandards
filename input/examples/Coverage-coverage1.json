@@ -1,0 +1,13 @@
+{
+  "resourceType": "Coverage",
+  "id": "coverage1",
+  "status": "active",
+  "beneficiary": {
+    "reference": "Patient/patient1"
+  },
+  "payor": [
+    {
+      "reference": "Patient/patient1"
+    }
+  ]
+}

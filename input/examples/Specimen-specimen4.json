@@ -1,0 +1,18 @@
+{
+  "resourceType": "Specimen",
+  "id": "specimen4",
+  "identifier": [
+    {
+      "value": "1"
+    }
+  ],
+  "type": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "112283007",
+        "display": "Escherichia coli"
+      }
+    ]
+  }
+}

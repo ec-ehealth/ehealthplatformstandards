@@ -1,0 +1,18 @@
+{
+  "resourceType": "Specimen",
+  "id": "specimen3",
+  "identifier": [
+    {
+      "value": "1"
+    }
+  ],
+  "type": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "243301005",
+        "display": "Morganella Morganii"
+      }
+    ]
+  }
+}
