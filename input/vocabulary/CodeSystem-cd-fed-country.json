@@ -1,7 +1,7 @@
 {
   "resourceType": "CodeSystem",
   "status": "active",
-  "content": "complete",
+  "content": "fragment",
   "name": "Cdfedcountry",
   "id": "cd-fed-country",
   "title": "CodeSystem CD-FED-COUNTRY",
@@ -13,6 +13,5 @@
       "code": "BE",
       "display": "Belgium"
     }
-  ],
-  "count": 1
+  ]
 }
