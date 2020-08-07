@@ -10,6 +10,10 @@
 {% endcomment %} -->
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd" >
   <a name="scope"> </a>
+  <h3>Versioning</h3>
+  
+  <p>Please consult the <a href="changes.html">changes page</a></p>
+  
   <h3>Scope</h3>
 	
 	
