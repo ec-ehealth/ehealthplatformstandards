@@ -6,7 +6,7 @@
   "id": "cd-civilstate",
   "title": "CodeSystem CD-CIVILSTATE",
   "description": "Civil state in Belgium.",
-  "version": "1.1.0",
+  "version": "1.0.0",
   "url": "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-civilstate",
   "concept": [
     {

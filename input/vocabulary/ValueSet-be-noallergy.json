@@ -3,7 +3,7 @@
   "id": "be-noallergy",
   "name": "BeNoAllergy",
   "description": "Codes as communicated by the FOD Terminology Center differentiating types of no allergies. This valueset supports the Belgian federal FHIR profiling effort.",
-  "version": "1.1.0",
+  "version": "1.0.0",
   "url": "https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-noallergy",
   "status": "active",
   "compose": {

@@ -5,7 +5,7 @@
   "id": "be-allergyintolerancecode",
   "title": "ValueSet allergy intolerance code",
   "description": "Codes as communicated by NIHDI and the FOD Terminology Center differentiating types of allergy intolerance codes. This valueset supports the Belgian federal FHIR profiling effort.",
-  "version": "1.1.0",
+  "version": "1.0.0",
   "url": "https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-allergyintolerancecode",
   "compose": {
     "include": [

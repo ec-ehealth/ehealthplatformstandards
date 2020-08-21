@@ -5,7 +5,7 @@
   "id": "be-contactperson",
   "title": "ValueSet contact person",
   "description": "Maximum valuest to define category of a contact person, using the HL7 values and the Belgian CD-CONTACT-PERSON values.",
-  "version": "1.1.0",
+  "version": "1.0.0",
   "url": "https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-contactperson",
   "compose": {
     "include": [

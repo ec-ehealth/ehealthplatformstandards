@@ -1,8 +1,18 @@
 {
   "resourceType": "StructureDefinition",
   "id": "be-provenance",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Foundation.Security"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "not-classified"
+    }
+  ],
   "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-provenance",
-  "version": "1.1.0",
+  "version": "1.0.0",
   "name": "BeProvenance",
   "title": "Provenance core BE profile",
   "status": "active",

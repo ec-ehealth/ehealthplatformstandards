@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "be-address",
   "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-address",
-  "version": "1.1.0",
+  "version": "1.0.0",
   "name": "BeAddress",
   "title": "Address core BE profile",
   "status": "active",

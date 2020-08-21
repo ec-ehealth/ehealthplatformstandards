@@ -1,8 +1,18 @@
 {
   "resourceType": "StructureDefinition",
   "id": "be-patient",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Base.Individuals"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "patient"
+    }
+  ],
   "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient",
-  "version": "1.1.0",
+  "version": "1.0.0",
   "name": "BePatient",
   "title": "Patient core BE profile",
   "status": "active",

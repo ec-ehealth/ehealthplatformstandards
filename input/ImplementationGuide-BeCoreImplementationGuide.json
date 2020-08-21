@@ -155,12 +155,28 @@
         "description": "FedICT country codes.",
         "exampleBoolean": false
       },
+	  {
+        "reference": {
+          "reference": "CodeSystem/albert"
+        },
+        "name": "CodeSystem ALBERT",
+        "description": "CodeSystem ALBERT.",
+        "exampleBoolean": false
+      },
       {
         "reference": {
           "reference": "AllergyIntolerance/allergyIntolerance1"
         },
         "name": "AllergyIntolerance 1",
         "description": "AllergyIntolerance 1",
+        "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-allergyintolerance"
+      },
+      {
+        "reference": {
+          "reference": "AllergyIntolerance/allergyIntolerance2"
+        },
+        "name": "AllergyIntolerance 2",
+        "description": "AllergyIntolerance 2",
         "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-allergyintolerance"
       },
       {
@@ -264,6 +280,14 @@
       },
       {
         "reference": {
+          "reference": "Observation/observation2"
+        },
+        "name": "Observation 2",
+        "description": "Observation 2",
+        "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-observation"
+      },
+      {
+        "reference": {
           "reference": "Organization/organization1"
         },
         "name": "Organization 1",
@@ -276,6 +300,14 @@
         },
         "name": "Patient 1",
         "description": "Patient 1",
+        "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient"
+      },
+      {
+        "reference": {
+          "reference": "Patient/patient2"
+        },
+        "name": "Patient 2",
+        "description": "Patient 2",
         "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient"
       },
       {

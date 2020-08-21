@@ -1,6 +1,6 @@
 {
   "resourceType": "Patient",
-  "id": "patient1",
+  "id": "patient2",
   "meta": {
     "profile": [
       "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient"
@@ -203,7 +203,10 @@
   },
   "generalPractitioner": [
     {
-      "reference": "Practitioner/practitioner1"
+      "identifier": {
+        "system": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi",
+        "value": "11530231003"
+      }
     }
   ],
   "contact": [

@@ -1,8 +1,18 @@
 {
   "resourceType": "StructureDefinition",
   "id": "be-allergyintolerance",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
+      "valueString": "Clinical.Summary"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
+      "valueCode": "patient"
+    }
+  ],
   "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-allergyintolerance",
-  "version": "1.1.0",
+  "version": "1.0.0",
   "name": "BeAllergyIntolerance",
   "title": "Allergy Intolerance core BE profile",
   "status": "active",

@@ -1,0 +1,18 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "fragment",
+  "name": "Albert",
+  "id": "albert",
+  "title": "CodeSystem Albert",
+  "description": "This code system is to identify Albert code",
+  "version": "1.0.0",
+  "url": "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/albert",
+  "concept": [
+    {
+      "code": "H-RATE",
+      "display": "heart rate"
+    }
+  ],
+  "count": 1
+}
