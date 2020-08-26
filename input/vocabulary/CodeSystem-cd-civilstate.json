@@ -18,16 +18,8 @@
       "display": "Married"
     },
     {
-      "code": "25",
-      "display": "Annuled"
-    },
-    {
       "code": "26",
       "display": "Putative marriage"
-    },
-    {
-      "code": "30",
-      "display": "Widowed"
     },
     {
       "code": "40",
