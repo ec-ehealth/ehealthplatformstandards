@@ -32,11 +32,11 @@
     "coding": [
       {
         "system": "http://snomed.info/sct",
-        "code": "762952008",
-        "display": "Peanut (substance)"
+        "code": "278840001",
+        "display": "Shrimp (substance)"
       }
     ],
-    "text": "Allergic to peanut"
+    "text": "Allergic to shrimp"
   },
   "patient": {
     "reference": "Patient/patient1"
@@ -73,3 +73,4 @@
     }
   ]
 }
+

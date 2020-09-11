@@ -10,8 +10,8 @@
   "url": "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/albert",
   "concept": [
     {
-      "code": "H-RATE",
-      "display": "heart rate"
+      "code": "26223",
+      "display": "Aldosterone (urine)"
     }
   ],
   "count": 1
