@@ -17,11 +17,6 @@
         "system": "http://snomed.info/sct",
         "code": "364075005",
         "display": "Heart rate (observable entity)"
-      },
-      {
-        "system": "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/albert",
-        "code": "H-RATE",
-        "display": "Heart rate"
       }
     ],
     "text": "Heart rate"

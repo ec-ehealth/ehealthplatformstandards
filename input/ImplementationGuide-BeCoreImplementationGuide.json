@@ -1,7 +1,7 @@
 {
   "resourceType": "ImplementationGuide",
-  "id": "BeCoreImplementationGuide",
-  "url": "https://www.ehealth.fgov.be/standards/fhir/ImplementationGuide/BeCoreImplementationGuide",
+  "id": "fed.be.core",
+  "url": "https://www.ehealth.fgov.be/standards/fhir/ImplementationGuide/fed.be.core",
   "version": "1.1.0",
   "name": "TheCoreBelgianFederalFHIRProfiles",
   "title": "The Core Belgian Federal FHIR Profiles",
@@ -28,7 +28,7 @@
     }
   ],
   "description": "The Core Belgian Profiles provide the essential and common requirement for FHIR implementations in Belgium.",
-  "packageId": "BeCoreImplementationGuide",
+  "packageId": "fed.be.core",
   "license": "CC0-1.0",
   "fhirVersion": [
     "4.0.1"
