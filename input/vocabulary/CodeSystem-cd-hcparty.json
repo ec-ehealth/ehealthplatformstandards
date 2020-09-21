@@ -1964,7 +1964,13 @@
           "language": "de",
           "value": "Pflegeperson"
         }
-      ]
+      ],
+	  "property": [ 
+		{
+			"code": "status", 
+			"valueCode":"deprecated"
+		}
+	  ]
     },
     {
       "code": "persdietician",
