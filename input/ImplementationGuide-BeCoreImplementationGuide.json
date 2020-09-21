@@ -374,7 +374,7 @@
       },
       {
         "code": "releaselabel",
-        "value": "CI Build"
+        "value": "published"
       },
       {
         "code": "show-inherited-invariants",

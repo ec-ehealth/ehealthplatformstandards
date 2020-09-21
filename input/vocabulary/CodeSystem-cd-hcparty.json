@@ -2581,6 +2581,116 @@
           "value": "Klinischer Orthopädagoge"
         }
       ]
+    },
+    {
+      "code": "orgretirementhome",
+      "display": "retirementhome",
+      "designation": [
+        {
+          "language": "en",
+          "value": "retirementhome"
+        },
+        {
+          "language": "nl-BE",
+          "value": "woonzorgcentrum"
+        },
+        {
+          "language": "fr-BE",
+          "value": "maison de repos"
+        },
+        {
+          "language": "de",
+          "value": "Altenheim"
+        }
+      ]
+    },
+    {
+      "code": "orgrevalidationcenter",
+      "display": "revalidation center",
+      "designation": [
+        {
+          "language": "en",
+          "value": "revalidation center"
+        },
+        {
+          "language": "nl-BE",
+          "value": "revalidatiecentrum"
+        },
+        {
+          "language": "fr-BE",
+          "value": "centre de revalidation"
+        },
+        {
+          "language": "de",
+          "value": "Unfallkrankenhaus"
+        }
+      ]
+    },
+    {
+      "code": "orgshelteredliving",
+      "display": "sheltered living",
+      "designation": [
+        {
+          "language": "en",
+          "value": "sheltered living"
+        },
+        {
+          "language": "nl-BE",
+          "value": "initiatief voor beschut wonen"
+        },
+        {
+          "language": "fr-BE",
+          "value": "initiative d’habitation protégée"
+        },
+        {
+          "language": "de",
+          "value": "geschütztes Leben"
+        }
+      ]
+    },
+    {
+      "code": "orgpsychiatriccarehome",
+      "display": "psychiatric care home",
+      "designation": [
+        {
+          "language": "en",
+          "value": "psychiatric care home"
+        },
+        {
+          "language": "nl-BE",
+          "value": "psychiatrische verzorgingstehuis"
+        },
+        {
+          "language": "fr-BE",
+          "value": "maison de soins psychiatriques"
+        },
+        {
+          "language": "de",
+          "value": "psychiatrisches Pflegeheim"
+        }
+      ]
+    },
+    {
+      "code": "orgpolyclinic",
+      "display": "polyclinic",
+      "designation": [
+        {
+          "language": "en",
+          "value": "polyclinic"
+        },
+        {
+          "language": "nl-BE",
+          "value": "polikliniek"
+        },
+        {
+          "language": "fr-BE",
+          "value": "polyclinique"
+        },
+        {
+          "language": "de",
+          "value": "Poliklinik"
+        }
+      ]
     }
   ]
 }
