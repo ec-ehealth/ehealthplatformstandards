@@ -253,7 +253,7 @@
         },
         "name": "Bundle History",
         "description": "This Bundle contains the history of the value sets and code systems",
-        "exampleBoolean": true
+        "exampleBoolean": false
       },
       {
         "reference": {
@@ -268,7 +268,7 @@
         },
         "name": "eHealth Platform organization",
         "description": "eHealth Platform organization",
-        "exampleCanonical": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization"
+        "exampleBoolean": false
       },
       {
         "reference": {
