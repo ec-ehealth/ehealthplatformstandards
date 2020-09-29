@@ -1,6 +1,6 @@
 {
   "resourceType": "NamingSystem",
-  "id": "ssin",
+  "id": "be-ssin",
   "name": "BeSSINNamingSystem",
   "status": "active",
   "kind": "identifier",
@@ -8,7 +8,7 @@
   "uniqueId": [
     {
       "type": "uri",
-      "value": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin",
+      "value": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/be-ssin",
       "preferred": true
     },
     {

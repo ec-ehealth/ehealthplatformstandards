@@ -233,7 +233,7 @@
       },
       {
         "reference": {
-          "reference": "NamingSystem/ssin"
+          "reference": "NamingSystem/be-ssin"
         },
         "name": "NamingSystem SSIN",
         "description": "The SSIN naming system",
