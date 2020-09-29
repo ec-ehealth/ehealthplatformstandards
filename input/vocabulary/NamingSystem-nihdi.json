@@ -1,0 +1,21 @@
+{
+  "resourceType": "NamingSystem",
+  "id": "nihdi",
+  "name": "BeNIHDINamingSystem",
+  "status": "active",
+  "kind": "identifier",
+  "date": "2019-06-05T00:00:00+02:00",
+  "uniqueId": [
+    {
+      "type": "uri",
+      "value": "https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi",
+      "preferred": true
+    },
+    {
+      "type": "oid",
+      "value": "2.16.840.1.113883.3.6777.5.2",
+      "preferred": false
+    }
+  ],
+  "description": "RIZIV/INAMI"
+}

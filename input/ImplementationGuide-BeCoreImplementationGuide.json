@@ -188,7 +188,7 @@
       },
       {
         "reference": {
-          "reference": "NamingSystem/be-cbe"
+          "reference": "NamingSystem/cbe"
         },
         "name": "NamingSystem CBE",
         "description": "The CBE naming system",
@@ -196,7 +196,7 @@
       },
       {
         "reference": {
-          "reference": "NamingSystem/be-ehp"
+          "reference": "NamingSystem/ehp"
         },
         "name": "NamingSystem EHP",
         "description": "The EHP naming system",
@@ -211,7 +211,7 @@
       },
       {
         "reference": {
-          "reference": "NamingSystem/be-nihdi"
+          "reference": "NamingSystem/nihdi"
         },
         "name": "NamingSystem NIHDI",
         "description": "The NIHDI naming system",
